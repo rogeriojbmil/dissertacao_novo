@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classe do documento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Nós usamos a classe "unb-cic".  Deixe apenas uma das linhas
+% abaixo não-comentada, dependendo se você for do bacharelado ou
+% da licenciatura.
+
+% Para tirar os comentários, é só mudar o comando para fazer nada.
+\newcommand{\com}[1]{\textcolor{red}{#1}}%
+
+\documentclass[mpca]{unb-cic}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Pacotes importados
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[brazil,american]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{indentfirst}
+\usepackage{natbib}
+\usepackage{xcolor,graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{footnote}
+%\usepackage{minipage}
+\usepackage{tablefootnote}
+\usepackage{listings}
+\usepackage{enumerate}
+\usepackage{graphicx} % pacote grafico
+\usepackage{tabularx}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{latexsym}
+\usepackage{amssymb,proof}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cores dos links
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Veja o arquivos cores.tex se quiser ver que outras cores estão
+% pré-definidas.  Utilizando o comando \hypersetup abaixo nós
+% evitamos aquelas caixas vermelhas feias em volta dos links.
+
+\input{cores}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=DarkScarletRed,
+  citecolor=DarkScarletRed,
+  filecolor=DarkScarletRed,
+  urlcolor= DarkScarletRed
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Informações sobre a monografia
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{UnB-CIC: Uma classe em LaTeX para textos do Departamento de Ciência da Computação}%
+
+\orientador{\prof \dr Rodrigo Bonifácio de Almeida}{CIC/UnB}
+\coorientador[a]{\prof[a] \dr[a] Edna Dias Canedo}{CIC/UnB}
+\coordenador[a]{\prof \dr Marcelo Ladeira}{CIC/UnB}
+\diamesano{24}{dezembro}{2014}%
+
+\membrobanca{\prof[a] \dr[a] Membra da Banca}{MEC}
+\membrobanca{\prof \dr Membro do Banco}{CIC/UnB}
+
+\autor{Rogério Alves da.}{Conceição}
+\CDU{004.4}
+
+\palavraschave{Interoperabilidade, Segurança em arquiteturas orientadas a serviço, Web Services, Arquitetura de referência em SOA} % palavras-chave do trabalho
+\keywords{Interoperability, Security in service-oriented architectures, Web Services, SOA Reference Architecture} % palavras-chave do trabalho em ingles
+
+
+
+\graphicspath{{.}{img/}}%
+\newcommand{\unbcic}{\texttt{UnB-CIC}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Texto
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+  \maketitle
+
+  \begin{dedicatoria}
+Citando o poeta: ``Eu dedico essa música a primeira garota que tá sentada ali na fila. Brigado!''
+  \end{dedicatoria}
+
+  \begin{agradecimentos}
+Agradeço ao Prof. José Ralha, cujos esforços na versão anterior foram bem ``adaptados'' a este trabalho.
+  \end{agradecimentos}
+
+\hyphenation{au-xi-li-ar}
+
+\begin{resumo}
+  A DITEC, Divisão de Tecnologia da Polícia Civil do Distrito Federal, tem como responsabilidade estratégica o desenvolvimento dos softwares da instituição, muitas vezes apresentando necessidades de integração e compartilhamento de informações sensíveis com órgãos conveniados. Dada a criticidade desses sistemas e informações compartilhadas, preocupações relacionadas a segurança devem ser tratadas sob uma perspectiva arquitetural dentro da instituição, que atualmente adota diferentes alternativas de integração, desde \emph{Web Services} até a replicação das bases de dados para instituições parceiras. O objetivo desse trabalho é propor uma arquitetura orientada a serviços para ser adotada como alternativa única de integração, balanceando os requisitos de segurança com outros atributos de qualidade; em particular o tempo de processamento das requisições.
+\end{resumo}
+
+\selectlanguage{american}
+\begin{abstract}
+ DITEC, Technology Division Civil Police of the Federal District, is responsible for the software's institution strategic development, often presenting needs of integration and sharing of sensitive information with government insured. Given the criticality of these systems and shared information, security concerns should be treated under an architectural perspective within the institution, which currently adopts different integration alternatives, from \ emph {Web Services} to the replication of databases for partner institutions. The aim of this paper is to propose a service-oriented architecture to be adopted as an alternative single integration, balancing security requirements with other quality attributes, in particular the processing time of the requests.
+
+\end{abstract}
+\selectlanguage{brazil}
+\hyphenation{a-tri-bu-tos}
+  \tableofcontents
+  \listoffigures
+  \listoftables
+  
+  
+
+
+\renewcommand{\appendixname}{Anexo}
+
+
+  \textual
+
+  \input{tex/Capitulo1}
+  \input{tex/Capitulo2}
+  \input{tex/Capitulo3}
+  \input{tex/Capitulo4}
+  \input{tex/Capitulo5}
+  % inserir demais capítulos
+
+
+  \postextual
+  \bibliographystyle{plain}
+  %\bibliography{bibliografia}
+  %\bibliography{bibliografia2}
+  \bibliography{reflatex}
+
+%\appendix
+%  \input{tex/Anexo1}
+
+\end{document}

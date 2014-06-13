@@ -1,0 +1,265 @@
+% boites.sty
+% (c) 1998-1999 Vincent Zoonekynd <zoonek@math.jussieu.fr>
+% Distributed under the GNU Public Licence
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Mars 1999 : Il y a certaines lignes �  ne pas numéroter (par
+%%             exemple, celles qui ne contiennent que des espaces
+%%             verticaux avant ou après une énumération).
+%% Mars 1999 : commentaires
+%%
+%% Modifiations par VZ, Juillet 1998
+%%
+%% Il y a quelques bugs, en particulier des traits qui sont trop
+%% longs, trop courts, trop épais ou trop fins. Si Quelqu'un sait � 
+%% quoi c'est dû, qu'il me le dise.
+%%
+%% Il ne devrait plus y avoir de problème �  cause d'un environement de
+%% type liste (itemize, enumerate, etc.) �  l'intérieur des boites.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% D'après :
+% eclbkbox.sty by Hideki Isozaki, 1992
+% Date: May  28, 1993
+
+\ProvidesFile{boites.sty}
+\ProvidesPackage{boites}[2013/11/21 v1.1 Colored, framed and breakable across pages boxes]
+
+\newbox\bk@bxb
+\newbox\bk@bxa
+\newif\if@bkcont 
+\newif\ifbkcount
+\newcount\bk@lcnt
+
+\def\breakboxskip{2pt}
+\def\breakboxparindent{1.8em}
+
+%% Paramètres modifiables
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\bkvz@before@breakbox{\ifhmode\par\fi\vskip\breakboxskip\relax}
+
+% Ce que l'on met �  gauche du texte, par exemple, une ligne verticale
+% pour faire un cadre, ou une ligne qui ondule.
+\def\bkvz@left{\vrule \@width\fboxrule\hskip\fboxsep}
+
+% De même, ce que l'on met �  droite,
+\def\bkvz@right{\hskip\fboxsep\vrule \@width\fboxrule}
+
+% en haut
+\def\bkvz@top{\hrule\@height\fboxrule}
+
+% ou en bas
+\def\bkvz@bottom{\hrule\@height\fboxrule}
+
+% Si vous modifiez l'une de ces macros, il ne faut pas oublier de
+% modifier aussi la suivante, qui change la valeur de \linewidth en
+% lui retirant la largeur de tout ce que l'on vient de mettre sur le
+% côté. 
+\def\bkvz@set@linewidth{%
+  \advance\linewidth -2\fboxrule
+  \advance\linewidth -2\fboxsep
+}
+
+%% FIN DES PARAMÈTRES MODIFIABLES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Le début de l'environement
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\breakbox{%
+    % On n'est pas nécessairement en mode vertical.
+    % C'est \bkvz@before@breakbox qui s'en occupe (ou non).
+  \bkvz@before@breakbox
+    % on met tout dans une \vbox (\bk@bxb)
+  \setbox\bk@bxb\vbox\bgroup
+    % À l'intérieur de cette \vbox, on change la valeur de \hsize (et
+    % aussi \linewidth).
+  \bkvz@set@linewidth
+  \hsize\linewidth
+    % je ne sais pas ce que fait la commande \@parboxrestore.
+  \@parboxrestore
+    % On indente éventuellement, si l'utilisateur le désire. 
+  \parindent\breakboxparindent\relax
+}
+
+%% On coupe la boite
+%%%%%%%%%%%%%%%%%%%%%%
+% \@tempdimb: amount of vertical skip 
+% between the first line (\bk@bxa) and the rest (\bk@bxb)
+\def\bk@split{%
+    % On calcule la hauteur totale (hauteur + profondeur) de la boite.
+  \@tempdimb\ht\bk@bxb % height of original box
+  \advance\@tempdimb\dp\bk@bxb 
+    % On coupe, �  l'aide de la commande \vsplit... to 0pt
+    % Le morceau du haut se retrouve dans \bk@bxa, 
+    % celui du bas dans \bk@bxb.
+  \setbox\bk@bxa\vsplit\bk@bxb to\z@ % split it
+    % L'un des problèmes, c'est que la première boite a une hauteur vide. 
+    % On peut lui redonner sa hauteur initiale grace �  \vbox{\unvbox...}
+  \setbox\bk@bxa\vbox{\unvbox\bk@bxa}% recover height & depth of \bk@bxa
+    % L'autre problème, c'est que l'on a perdu l'espace (interligne) entre
+    % nos deux boites. Pour le récupérer, on ajoute la hauteur de ces deux
+    % boites, et on fait la différence avec la hauteur initiale.
+  \setbox\@tempboxa\vbox{\copy\bk@bxa\copy\bk@bxb}% naive concatenation
+  \advance\@tempdimb-\ht\@tempboxa 
+  \advance\@tempdimb-\dp\@tempboxa
+    % Désormais, \@tempdimb contient l'espace entre les deux boites, que
+    % l'on utilisera avec \bk@addskipdp.
+}% gap between two boxes
+ 
+%% Rajouter \fboxsep �  la première ligne
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \@tempdima: height of the first line (\bk@bxa) + fboxsep
+\def\bk@addfsepht{%
+  \setbox\bk@bxa\vbox{\vskip\fboxsep\box\bk@bxa}%
+}
+
+%% cette macro n'est pas utilisée
+\def\bk@addskipht{%
+  \setbox\bk@bxa\vbox{\vskip\@tempdimb\box\bk@bxa}%
+}
+
+%% Rajouter \fboxsep �  la dernière ligne
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \@tempdima: depth of the first line (\bk@bxa) + fboxsep
+\def\bk@addfsepdp{%
+  \@tempdima\dp\bk@bxa
+  \advance\@tempdima\fboxsep
+  \dp\bk@bxa\@tempdima
+}
+
+%% Rajouter l'espace qui a été perdu par \vsplit... to 0pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \@tempdima: depth of the first line (\bk@bxa) + vertical skip
+\def\bk@addskipdp{%
+  \@tempdima\dp\bk@bxa
+  \advance\@tempdima\@tempdimb
+  \dp\bk@bxa\@tempdima
+}
+
+%% On ne compte pas toutes les lignes, mais uniquement celles qui en
+%% sont vraiment. J'ai pris comme critère une largeur supérieure � 
+%% 1mm.  La même distance se retrouve un peu plus loin, dans
+%% \bk@line. 
+\def\bkvz@countlines{%
+  \ifdim\wd\bk@bxa>1mm
+    \advance\bk@lcnt\@ne
+  \fi
+}
+
+%% Afficher la ligne que l'on vient de couper
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\bk@line{%
+  \hbox to \linewidth{%
+    \ifdim\wd\bk@bxa>1mm
+      \ifbkcount\smash{\llap{\the\bk@lcnt\ }}\fi
+    \fi
+    \bkvz@left
+    \box\bk@bxa
+      % Il arrive que la boite ne soit pas aussi large que la ligne
+      % (par exemple, espace avant une énumération)
+    \hfil
+    \bkvz@right
+  }%
+}
+
+%% La fin de l'environement
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\endbreakbox{%
+    % On ferme la \vbox (\bk@bxb)
+  \egroup
+  %\ifhmode\par\fi
+  {%
+    \noindent
+      % On remet le compteur de lignes �  un.
+    \bk@lcnt 0%
+      % Le booléen que nous allons utiliser dans la boucle plus loin.
+    \@bkconttrue
+      % Comme on va empiler des boites, on met certains ressorts �  zéro,
+      % pour éviter les espaces verticaux non désirés.
+    \splittopskip\z@ % glue inserted at the top of a box resulting from a \vsplit
+    \baselineskip\z@
+    \lineskiplimit\z@
+    \lineskip\z@
+    \vfuzz\maxdimen
+      % On coupe la boite
+    \bk@split
+      % On ajoute un peu d'espace vertical (\fboxsep) au dessus
+    \bk@addfsepht
+      % On ajoute en dessous l'espace qui avait été perdu par la commande
+      % \vsplit.
+    \bk@addskipdp
+      % De deux choses l'une,
+    \ifvoid\bk@bxb
+        % Soit, il n'y a qu'une ligne
+      \def\bk@fstln{%
+          % On rajoute un peu d'espace (\fboxsep) en dessous.
+        \bk@addfsepdp
+          % On construit la boite : le haut, le milieu (qui contient la gauche
+          % et la droite) et le bas.
+        \bkvz@countlines
+        \vbox{\bk@singleline}%
+      }%
+      % Soit, il y en a plusieurs.
+    \else
+      \def\bk@fstln{%
+          % On met le haut
+        \bkvz@countlines
+        \vbox{\bk@firstline}%
+          % ??? (Si on l'enlève, ça ne marche plus.)
+        \hfil
+          % On commence �  compter les lignes
+        %\advance\bk@lcnt\@ne %%%%%%%%%%%%%%%%%%%% Voir \bkvz@countlines
+          % Début de la boucle
+        \loop
+            % On coupe ce qui reste de la boite.
+          \bk@split
+            % On rajoute l'espace vertical qui a été perdu.
+          \bk@addskipdp
+            % Éventuellement, on augmente le numéro de la ligne
+          \bkvz@countlines
+            % ???
+          \leavevmode
+            % S'il s'agit de la dernière ligne
+          \ifvoid\bk@bxb
+              % On met le booléen indiquant que la boucle doit se poursuivre �  FAUX.
+            \@bkcontfalse
+              % On met un peu d'espace vertical (\fboxsep)
+            \bk@addfsepdp
+              % En envoie la dernière ligne.
+              % POURQUOI \vtop ??? Pour que l'éventuel numéro de ligne soit �  la
+              % bonne hauteur.
+            \vtop{\bk@lastline}%
+          \else               % 2,...,(n-1)
+            \bk@middleline
+          \fi
+          \hfil
+          %\advance\bk@lcnt\@ne %%%%%%%%%%%%%%%% Voir \bkvz@countlines
+          \if@bkcont\repeat
+      }%
+    \fi
+    \leavevmode\bk@fstln\par
+  }%
+  \vskip\breakboxskip\relax
+}
+
+\bkcountfalse
+
+\def\bk@singleline{%
+  \bkvz@top
+  \bk@line
+  \bkvz@bottom
+}
+
+\def\bk@firstline{%
+  \bkvz@top
+  \bk@line
+}
+
+\def\bk@middleline{%
+  \bk@line
+}
+
+\def\bk@lastline{%
+  \bk@line
+  \bkvz@bottom
+}

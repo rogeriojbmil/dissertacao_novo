@@ -1,0 +1,91 @@
+\BOOKMARK [0][-]{dedication.0}{Dedicat\363ria}{}% 1
+\BOOKMARK [0][-]{acknowledgements.0}{Agradecimentos}{}% 2
+\BOOKMARK [0][-]{resumo.0}{Resumo}{}% 3
+\BOOKMARK [0][-]{abstract.0}{Abstract}{}% 4
+\BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 5
+\BOOKMARK [1][-]{section.1.1}{Problema da pesquisa}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Justificativa}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.3}{Objetivos}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.3.1}{Objetivo Geral}{section.1.3}% 9
+\BOOKMARK [2][-]{subsection.1.3.2}{Objetivos Espec\355ficos}{section.1.3}% 10
+\BOOKMARK [1][-]{section.1.4}{Organiza\347\343o do Trabalho}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{Mapeamento Sistem\341tico}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Introdu\347\343o}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{Mapeamento Sistem\341tico}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.3}{Protocolo de Estudo}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.4}{Quest\365es de pesquisa \(QP\)}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.5}{Estrat\351gia de Busca}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.6}{Crit\351rios de Inclus\343o e Exclus\343o}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.7}{Coleta, Armazenamento dos Dados e An\341lise}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.8}{Resultados}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.8.1}{QP 1 \040Quest\343o de Pesquisa 1}{section.2.8}% 21
+\BOOKMARK [2][-]{subsection.2.8.2}{QP 2 \040Quest\343o de Pesquisa 2}{section.2.8}% 22
+\BOOKMARK [2][-]{subsection.2.8.3}{QP 3 \040Quest\343o de Pesquisa 3}{section.2.8}% 23
+\BOOKMARK [2][-]{subsection.2.8.4}{QP 4 \040Quest\343o de Pesquisa 4}{section.2.8}% 24
+\BOOKMARK [2][-]{subsection.2.8.5}{Discuss\343o sobre os resultados}{section.2.8}% 25
+\BOOKMARK [2][-]{subsection.2.8.6}{S\355ntese do cap\355tulo}{section.2.8}% 26
+\BOOKMARK [0][-]{chapter.3}{Revis\343o de Literatura}{}% 27
+\BOOKMARK [1][-]{section.3.1}{Arquitetura orientada a servi\347os}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.2}{WEB SERVICES}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.2.1}{Simple Object Accesss Protocol \(SOAP\)}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.2}{Web Services Description Language \(WSDL\)}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.3}{Universal Description, Discovery and Integration \(UDDI\)}{section.3.2}% 32
+\BOOKMARK [1][-]{section.3.3}{Representational State Transfer}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.4}{Seguran\347a em SOA}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.4.1}{Conceitos b\341sicos}{section.3.4}% 35
+\BOOKMARK [2][-]{subsection.3.4.2}{Criptografia}{section.3.4}% 36
+\BOOKMARK [2][-]{subsection.3.4.3}{Criptografia de Chave Sim\351trica}{section.3.4}% 37
+\BOOKMARK [2][-]{subsection.3.4.4}{Criptografia de Chave Assim\351trica}{section.3.4}% 38
+\BOOKMARK [2][-]{subsection.3.4.5}{Fun\347\365es de Hash}{section.3.4}% 39
+\BOOKMARK [2][-]{subsection.3.4.6}{Assinatura digital}{section.3.4}% 40
+\BOOKMARK [2][-]{subsection.3.4.7}{Certificados Digitais}{section.3.4}% 41
+\BOOKMARK [1][-]{section.3.5}{Vulnerabilidades em SOA}{chapter.3}% 42
+\BOOKMARK [2][-]{subsection.3.5.1}{Altera\347\343o das mensagens}{section.3.5}% 43
+\BOOKMARK [2][-]{subsection.3.5.2}{Nega\347\343o de Servi\347os}{section.3.5}% 44
+\BOOKMARK [2][-]{subsection.3.5.3}{Ataques de refer\352ncias externas}{section.3.5}% 45
+\BOOKMARK [2][-]{subsection.3.5.4}{Intercepta\347\343o das mensagens}{section.3.5}% 46
+\BOOKMARK [2][-]{subsection.3.5.5}{Descoberta de informa\347\343o}{section.3.5}% 47
+\BOOKMARK [1][-]{section.3.6}{Protocolos de Autentica\347\343o e Autoriza\347\343o}{chapter.3}% 48
+\BOOKMARK [2][-]{subsection.3.6.1}{OpenID}{section.3.6}% 49
+\BOOKMARK [2][-]{subsection.3.6.2}{SAML}{section.3.6}% 50
+\BOOKMARK [2][-]{subsection.3.6.3}{OAuth}{section.3.6}% 51
+\BOOKMARK [2][-]{subsection.3.6.4}{Traust}{section.3.6}% 52
+\BOOKMARK [2][-]{subsection.3.6.5}{eXtensible Access Control Markup Language}{section.3.6}% 53
+\BOOKMARK [1][-]{section.3.7}{S\355ntese do cap\355tulo}{chapter.3}% 54
+\BOOKMARK [0][-]{chapter.4}{Protocolo de Autentica\347\343o e Autoriza\347\343o proposto}{}% 55
+\BOOKMARK [1][-]{section.4.1}{Introdu\347\343o}{chapter.4}% 56
+\BOOKMARK [1][-]{section.4.2}{Requisitos do Protocolo}{chapter.4}% 57
+\BOOKMARK [1][-]{section.4.3}{Arquitetura do Protoloco}{chapter.4}% 58
+\BOOKMARK [2][-]{subsection.4.3.1}{Vis\343o geral do protocolo de Autentica\347\343o e Autoriza\347\343o proposto}{section.4.3}% 59
+\BOOKMARK [1][-]{section.4.4}{Formaliza\347\343o do protocolo}{chapter.4}% 60
+\BOOKMARK [1][-]{section.4.5}{L\363gica BAN}{chapter.4}% 61
+\BOOKMARK [2][-]{subsection.4.5.1}{Nota\347\343o b\341sica}{section.4.5}% 62
+\BOOKMARK [2][-]{subsection.4.5.2}{Postulados l\363gicos}{section.4.5}% 63
+\BOOKMARK [1][-]{section.4.6}{An\341lise formal do protocolo proposto}{chapter.4}% 64
+\BOOKMARK [2][-]{subsection.4.6.1}{Idealiza\347\343o do protocolo}{section.4.6}% 65
+\BOOKMARK [2][-]{subsection.4.6.2}{Suposi\347\365es}{section.4.6}% 66
+\BOOKMARK [2][-]{subsection.4.6.3}{Provas}{section.4.6}% 67
+\BOOKMARK [2][-]{subsection.4.6.4}{An\341lise}{section.4.6}% 68
+\BOOKMARK [1][-]{section.4.7}{Implementa\347\343o}{chapter.4}% 69
+\BOOKMARK [2][-]{subsection.4.7.1}{Prot\363tipo}{section.4.7}% 70
+\BOOKMARK [1][-]{section.4.8}{An\341lise de Seguran\347a}{chapter.4}% 71
+\BOOKMARK [2][-]{subsection.4.8.1}{Seguran\347a da sess\343o}{section.4.8}% 72
+\BOOKMARK [2][-]{subsection.4.8.2}{Responsabiliza\347\343o dos usu\341rios conveniados}{section.4.8}% 73
+\BOOKMARK [2][-]{subsection.4.8.3}{Ataques de repeti\347\343o}{section.4.8}% 74
+\BOOKMARK [2][-]{subsection.4.8.4}{Ataques de nega\347\343o de servi\347o}{section.4.8}% 75
+\BOOKMARK [2][-]{subsection.4.8.5}{Roubo de credenciais de autentica\347\343o e autoriza\347\343o}{section.4.8}% 76
+\BOOKMARK [2][-]{subsection.4.8.6}{Ponto \372nico de ataque}{section.4.8}% 77
+\BOOKMARK [1][-]{section.4.9}{S\355ntese do cap\355tulo}{chapter.4}% 78
+\BOOKMARK [0][-]{chapter.5}{Avalia\347\343o e an\341lise de desempenho}{}% 79
+\BOOKMARK [1][-]{section.5.1}{Introdu\347\343o}{chapter.5}% 80
+\BOOKMARK [1][-]{section.5.2}{Testes de desempenho}{chapter.5}% 81
+\BOOKMARK [1][-]{section.5.3}{Estudo de caso 1}{chapter.5}% 82
+\BOOKMARK [2][-]{subsection.5.3.1}{Configura\347\343o do ambiente de teste}{section.5.3}% 83
+\BOOKMARK [2][-]{subsection.5.3.2}{Planejamento do experimento}{section.5.3}% 84
+\BOOKMARK [2][-]{subsection.5.3.3}{An\341lise dos resultados}{section.5.3}% 85
+\BOOKMARK [1][-]{section.5.4}{Estudo de caso 2}{chapter.5}% 86
+\BOOKMARK [2][-]{subsection.5.4.1}{Configura\347\343o do ambiente de teste}{section.5.4}% 87
+\BOOKMARK [2][-]{subsection.5.4.2}{Planejamento do experimento}{section.5.4}% 88
+\BOOKMARK [2][-]{subsection.5.4.3}{An\341lise dos resultados}{section.5.4}% 89
+\BOOKMARK [1][-]{section.5.5}{S\355ntese do cap\355tulo}{chapter.5}% 90
+\BOOKMARK [0][-]{section*.10}{Refer\352ncias}{}% 91
