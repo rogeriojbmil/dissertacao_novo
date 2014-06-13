@@ -1,31 +1,39 @@
 \chapter{Protocolo de Autenticação e Autorização proposto}\label{cap:Protocolo}
-\section{Introdução}
+
 %A Polícia Civil do Distrito Federal, diante da necessidade de compartilhar suas informações com órgão parceiros, no intuito de possibilitar que os sistemas possam ser integrados de forma eficiente e principalmente segura busca estabelecer uma arquitetura de referência para a adoção de uma arquitetura orientada a serviços. Essa arquitetura deve primar pela segurança, haja vista a criticidade e sensibilidade das informações que são tratadas no âmbito da PCDF.
 
 %Dessa forma, optou-se por adotar a tecnologia de Web Services usando o protocolo REST para implementar SOA na instituição. Neste caso, estudos específicos foram realizados com vistas a estabelecer uma política de segurança eficiente que possibilite o fornecimento dos serviços e promova a integração com os órgãos parceiros.
-A Polícia Civil do Distrito Federal, diante da necessidade de compartilhar suas informações com órgão parceiros, no intuito de possibilitar que os sistemas possam ser integrados de forma eficiente e principalmente segura busca estabelecer uma arquitetura de referência para a adoção de uma arquitetura orientada a serviços. Essa arquitetura deve primar pela segurança, haja vista a criticidade e sensibilidade das informações que são tratadas no âmbito da PCDF.
 
-Dessa forma, optou-se por adotar a Web services \emph{RESTFull} para implementar SOA na Instituição. Neste caso, estudos específicos foram realizados com vistas a estabelecer uma política de segurança eficiente que possibilite o fornecimento dos serviços e promova a integração com os órgãos parceiros. Sendo assim, surgiu a necessidade da criação de um protocolo seguro e personalizado de autenticação e autorização que atenda às necessidades da PCDF.
+A Polícia Civil do Distrito Federal, diante da necessidade de compartilhar suas informações com órgão parceiros, de forma eficiente e segura, 
+objetiva estabelecer uma arquitetura de referência para a adoção de uma arquitetura orientada a servi\c cos. Essa arquitetura deve primar pela segurança, 
+dada a criticidade e sensibilidade das informações que são tratadas no âmbito da PCDF ({\color{red}conforme discutido no Cap\'{i}tulo~\ref{}}).
+Dessa forma, optou-se por adotar uma solu\c c\~{a}o {\color{red}baseada no modelo \emph{REST}} para implementar uma arquitetura orientada a servi\c cos 
+na Instituição. Neste cen\'{a}rio, essa disserta\c c\~{a}o contribui com um protocolo de autenticação e autorização que atende às 
+necessidades particulares da PCDF, mas que tamb\'{e}m pode ser adotado em outras institui\c c\~{o}es. {\color{red}Este cap\'{i}tulo inicia com a apresenta\c c\~{a}o 
+dos requisitos do protocolo, \ldots}.
 
 \section{Requisitos do Protocolo}\label{sec:reqprotocolo}
 
-O protocolo de autenticação e autorização proposto deverá ser aderente a arquitetura REST, de forma que possa permitir que os serviços ofertados pela Divisão de Tecnologia possam ser acessados por um número relativamente grande de clientes. Os requisitos inerentes ao protocolo são descritos nesta seção.
+Conforme discutido, p protocolo de autenticação e autorização \'{e} aderente a arquitetura REST ({\color{blue}importante discutir o porqu\^{e} da escolha por REST, em algum ponto do documento}), de forma que possa permitir que os serviços ofertados pela Divisão de Tecnologia possam ser acessados por um número relativamente grande de clientes. Os requisitos inerentes ao protocolo são descritos nesta seção.
 
 \begin{enumerate}[RQ1]
 
-\item Para promover a segurança de sessão, toda comunicação entre o cliente e o servidor será realizada utilizando HTTPS \emph{(Hypertext Transfer Protocol over Secure Sockets Layer)}, usando o SSL/TLS para garantir a confidencialidade e integridade para a sessão. Para isso será usado o certificado digital X.509, emitido por uma autoridade de certificação, para encriptar as comunicações e garantir a autenticidade do servidor e do cliente. Devendo os clientes realizar a validação do certificado antes de interagir com o servidor.
+\item Segurança de sessão. Toda comunicação entre o cliente e o servidor deve ser realizada utilizando HTTPS \emph{(Hypertext Transfer Protocol over Secure Sockets Layer)}, usando o SSL/TLS para garantir a confidencialidade e integridade para a sessão. Para isso será usado o certificado digital X.509, emitido por uma autoridade de certificação, para encriptar as comunicações e garantir a autenticidade do servidor e do cliente. Devendo os clientes realizar a validação do certificado antes de interagir com o servidor.
 
-\item Será utilizado a criptografia assimétrica para promover a segurança na troca de mensagens realizada entre o Cliente e a PCDF. Todas as mensagens deverão ser assinadas digitalmente. Para isso, será utilizado uma função hash, com o algoritmo SHA(Secure Hash Algorithm).
+\item Seguran\c ca na troca de mensagens. Deve ser utilizada criptografia assimétrica para promover a segurança na troca de mensagens realizada entre o Cliente e a PCDF. Todas as mensagens deverão ser assinadas digitalmente. Para isso, será utilizado uma função HASH, com o algoritmo SHA (Secure Hash Algorithm).
 
-\item O protocolo deverá permitir acesso aos serviços apenas ao pessoal autorizado, de forma que a autenticação e autorização, siga padrões definidos na política de segurança. Sendo que para ser autenticado e autorizado o usuário deverá apresentar credenciais válidas. Essas credenciais deverão ser criptografadas, assinadas e enviadas no cabeçalho do protocolo HTTPS. Devendo ser escalável em termos de sobrecarga, tamanho do domínio de proteção e de manutenção. Além disso, ele deverá permitir a preservação de privacidade, uma vez que para proteger os clientes e fornecedores de recursos de entidades maliciosas, suas interações deverão revelar o mínimo de informações possíveis.
+\item Autoriza\c c\~{a}o e escalabildiade. O protocolo deve permitir acesso aos serviços apenas ao pessoal autorizado, de forma que a autenticação e autorização siga os padrões definidos na política de segurança. Para ser autenticado e autorizado, o usuário deve apresentar credenciais válidas. Essas credenciais devem ser criptografadas, assinadas e enviadas no cabeçalho do protocolo HTTPS. {\color{red}quem deve ser escalado, quem \'{e} ``ele'' mais a frente. Reescrever. Os requisitos nesse par\'{a}grafo est\~{a}o bem misturados.} Devendo ser escalável em termos de sobrecarga, tamanho do domínio de proteção e de manutenção. Além disso, ele deverá permitir a preservação de privacidade, uma vez que para proteger os clientes e fornecedores de recursos de entidades maliciosas, suas interações deverão revelar o mínimo de informações possíveis.
 
-\item A autenticação e autorização será baseada em desafios e resposta, que serão elaborados a partir da apresentação de declarações de identidade (Claims). Tal requisito torna mais flexível o gerenciamento da identidade do usuário, uma vez que possibilita ao administrador desabilitar credenciais que tenham sido comprometidas de forma transparente ao usuário.
+\item Flexibilidade. A autenticação e autorização deve ser baseada em desafios e resposta, que serão elaborados a partir da apresentação de declarações de identidade (\emph{Claims}). Tal requisito torna mais flexível o gerenciamento da identidade do usuário, uma vez que possibilita ao administrador desabilitar credenciais que tenham sido comprometidas de forma transparente ao usuário.
 
-\item A política de autenticação e autorização proposta no protocolo será estabelecida por meio de contrato onde serão definidos todas as regras que deverão ser atendidas pelos usuário e pelo fornecedor do serviço.
+\item {\color{red}classificar esse tipo de requisito, como os demais.} A política de autenticação e autorização proposta no protocolo será estabelecida por meio de contrato onde serão definidos todas as regras que deverão ser atendidas pelos usuário e pelo fornecedor do serviço.
 
-    Dessa forma, para que qualquer usuário possa ter acesso aos serviços ofertados pela Divisão de Tecnologia da PCDF ele deverá concordar com um contrato prévio de acesso. Devendo primeiramente ser cadastrado e ter definido quais são seus privilégios de acesso/autorização. Uma vez cadastrado o usuário deverá informar os dados que possam comprovar sua identidade no momento da autenticação de forma que ele possa ser autorizado de acordo com o seus privilégios.
+\end{enumerate}
 
-    No momento do credenciamento será gerado para o cliente múltiplas credenciais, que serão utilizadas no processo de autenticação e autorização, essas informações serão compartilhados entre o Cliente o Servidor de Autenticação e Autorização e o Servidor REST. Além disso, o Contrato poderá ter acesso a múltiplos serviços. A Figura ~\ref{fig:diagrama_relacionamento} apresenta o relacionamento entre o contrato, credenciais e serviços.
+Dessa forma, para que qualquer usu\'{a}rio {\color{red}(usuário ou insitui\c c\~{a}o)} possa ter acesso aos serviços ofertados pela Divisão de Tecnologia da PCDF ele deverá concordar com um contrato prévio de acesso. Devendo primeiramente ser cadastrado e ter definido quais são seus privilégios de acesso/autorização. Uma vez cadastrado o {\color{red}usuário ou institui\c c\~{a}o} deverá informar os dados que possam comprovar sua identidade no momento da autenticação, de forma que ele possa ser autorizado de acordo com o seus {\color{red}privilégios ou permiss\~{o}es}.
+
+No momento do credenciamento será gerado para o cliente múltiplas credenciais, que devem ser utilizadas no processo de autenticação e autorização. Essas informações 
+devem ser compartilhados entre o Cliente, o Servidor de Autenticação e Autorização e o Servidor REST ({\color{red}esses n\'{o}s processadores j\'{a} foram introduzidos}). Além disso, o Contrato poderá ter acesso a múltiplos serviços. A Figura ~\ref{fig:diagrama_relacionamento} apresenta o relacionamento entre o contrato, as credenciais e os serviços.
 
 \begin{figure}[!htb]
     \centering
@@ -33,8 +41,6 @@ O protocolo de autenticação e autorização proposto deverá ser aderente a ar
     \caption{Diagrama de relacionamento entre contrato, credenciais e usuários}
     \label{fig:diagrama_relacionamento}
 \end{figure}
-
-\end{enumerate}
 
 
 %Para a implementação de segurança em aplicações REST, verificou-se que ela passa basicamente pela aplicação de segurança em protocolos \emph{HTTP}, que oferece dois tipos de autenticação:  \emph{Basic} e \emph{Digest}.
