@@ -7,33 +7,58 @@
 A Polícia Civil do Distrito Federal, diante da necessidade de compartilhar suas informações com órgão parceiros, de forma eficiente e segura, 
 objetiva estabelecer uma arquitetura de referência para a adoção de uma arquitetura orientada a servi\c cos. Essa arquitetura deve primar pela segurança, 
 dada a criticidade e sensibilidade das informações que são tratadas no âmbito da PCDF ({\color{red}conforme discutido no Cap\'{i}tulo~\ref{}}).
-Dessa forma, optou-se por adotar uma solu\c c\~{a}o {\color{red}baseada no modelo \emph{REST}} para implementar uma arquitetura orientada a servi\c cos 
-na Instituição. Neste cen\'{a}rio, essa disserta\c c\~{a}o contribui com um protocolo de autenticação e autorização que atende às 
+Dessa forma, optou-se pela ado\c c\~{a}o de uma solu\c c\~{a}o {\color{red}baseada no modelo \emph{REST}} para implementar uma arquitetura orientada a servi\c cos 
+na instituição. Neste cen\'{a}rio, essa disserta\c c\~{a}o contribui com um protocolo de autenticação e autorização que atende às 
 necessidades particulares da PCDF, mas que tamb\'{e}m pode ser adotado em outras institui\c c\~{o}es. {\color{red}Este cap\'{i}tulo inicia com a apresenta\c c\~{a}o 
 dos requisitos do protocolo, \ldots}.
 
 \section{Requisitos do Protocolo}\label{sec:reqprotocolo}
 
-Conforme discutido, p protocolo de autenticação e autorização \'{e} aderente a arquitetura REST ({\color{blue}importante discutir o porqu\^{e} da escolha por REST, em algum ponto do documento}), de forma que possa permitir que os serviços ofertados pela Divisão de Tecnologia possam ser acessados por um número relativamente grande de clientes. Os requisitos inerentes ao protocolo são descritos nesta seção.
+Conforme discutido, o protocolo de autenticação e autorização deve ser aderente a arquitetura REST ({\color{blue}importante discutir o porqu\^{e} da escolha por REST, em algum ponto do documento}), de forma a permitir que os serviços ofertados pela Divisão de Tecnologia possam ser acessados por um número relativamente grande de clientes {\color{red}\'{e} isso mesmo?}. 
+Os requisitos inerentes ao protocolo são descritos nesta seção.
 
 \begin{enumerate}[RQ1]
 
-\item Segurança de sessão. Toda comunicação entre o cliente e o servidor deve ser realizada utilizando HTTPS \emph{(Hypertext Transfer Protocol over Secure Sockets Layer)}, usando o SSL/TLS para garantir a confidencialidade e integridade para a sessão. Para isso será usado o certificado digital X.509, emitido por uma autoridade de certificação, para encriptar as comunicações e garantir a autenticidade do servidor e do cliente. Devendo os clientes realizar a validação do certificado antes de interagir com o servidor.
+\item Segurança de sessão. Toda comunicação entre o cliente e o servidor deve ser realizada utilizando HTTPS 
+\emph{(Hypertext Transfer Protocol over Secure Sockets Layer)}, usando o SSL/TLS para garantir a confidencialidade 
+e integridade para a sessão. Para isso será usado o certificado digital X.509, emitido por uma autoridade de certificação, 
+para encriptar as comunicações e garantir a autenticidade do servidor e do cliente. Os clientes devem realizar a validação do 
+certificado antes de interagir com o servidor.
 
-\item Seguran\c ca na troca de mensagens. Deve ser utilizada criptografia assimétrica para promover a segurança na troca de mensagens realizada entre o Cliente e a PCDF. Todas as mensagens deverão ser assinadas digitalmente. Para isso, será utilizado uma função HASH, com o algoritmo SHA (Secure Hash Algorithm).
+\item Seguran\c ca na troca de mensagens. Deve ser utilizada criptografia assimétrica {\color{red} em quais situa\c c\~{o}es?} 
+para promover a segurança na troca de mensagens realizada entre o Cliente e a PCDF. 
+Todas as mensagens deverão ser assinadas digitalmente. Para isso, será utilizado uma função HASH, com o algoritmo SHA (Secure Hash Algorithm).
 
-\item Autoriza\c c\~{a}o e escalabildiade. O protocolo deve permitir acesso aos serviços apenas ao pessoal autorizado, de forma que a autenticação e autorização siga os padrões definidos na política de segurança. Para ser autenticado e autorizado, o usuário deve apresentar credenciais válidas. Essas credenciais devem ser criptografadas, assinadas e enviadas no cabeçalho do protocolo HTTPS. {\color{red}quem deve ser escalado, quem \'{e} ``ele'' mais a frente. Reescrever. Os requisitos nesse par\'{a}grafo est\~{a}o bem misturados.} Devendo ser escalável em termos de sobrecarga, tamanho do domínio de proteção e de manutenção. Além disso, ele deverá permitir a preservação de privacidade, uma vez que para proteger os clientes e fornecedores de recursos de entidades maliciosas, suas interações deverão revelar o mínimo de informações possíveis.
+\item Autoriza\c c\~{a}o e escalabildiade. O protocolo deve permitir acesso aos serviços apenas ao pessoal {\color{red}pessoal ou institui\c c\~{o}es} 
+autorizado, de forma que a autenticação e autorização siga os padrões definidos na política de segurança. Para ser autenticado e autorizado, o usuário 
+deve apresentar credenciais válidas. Essas credenciais devem ser criptografadas, assinadas e enviadas no cabeçalho do protocolo HTTPS. 
+Devendo ser escalável em termos de sobrecarga, tamanho do domínio de proteção e de manutenção. Além disso, ele deverá permitir a 
+preservação de privacidade, uma vez que para proteger os clientes e fornecedores de recursos de entidades maliciosas, suas interações 
+deverão revelar o mínimo de informações possíveis. {\color{red}quem deve ser escalado, quem \'{e} ``ele'' anteriormente. 
+Reescrever. Os requisitos nesse par\'{a}grafo est\~{a}o bem misturados.} 
 
 \item Flexibilidade. A autenticação e autorização deve ser baseada em desafios e resposta, que serão elaborados a partir da apresentação de declarações de identidade (\emph{Claims}). Tal requisito torna mais flexível o gerenciamento da identidade do usuário, uma vez que possibilita ao administrador desabilitar credenciais que tenham sido comprometidas de forma transparente ao usuário.
 
-\item {\color{red}classificar esse tipo de requisito, como os demais.} A política de autenticação e autorização proposta no protocolo será estabelecida por meio de contrato onde serão definidos todas as regras que deverão ser atendidas pelos usuário e pelo fornecedor do serviço.
+\item Contratos previamente definidos. A política de autenticação e autorização 
+proposta no protocolo será estabelecida por meio de contratos, onde serão definidos 
+todas as regras que deverão ser atendidas pelos usuário e pelo fornecedor do serviço.
 
 \end{enumerate}
 
-Dessa forma, para que qualquer usu\'{a}rio {\color{red}(usuário ou insitui\c c\~{a}o)} possa ter acesso aos serviços ofertados pela Divisão de Tecnologia da PCDF ele deverá concordar com um contrato prévio de acesso. Devendo primeiramente ser cadastrado e ter definido quais são seus privilégios de acesso/autorização. Uma vez cadastrado o {\color{red}usuário ou institui\c c\~{a}o} deverá informar os dados que possam comprovar sua identidade no momento da autenticação, de forma que ele possa ser autorizado de acordo com o seus {\color{red}privilégios ou permiss\~{o}es}.
+Dessa forma, para que qualquer usu\'{a}rio {\color{red}(usuário ou insitui\c c\~{a}o)} 
+possa ter acesso aos serviços ofertados pela Divisão de Tecnologia da PCDF, 
+faz-se necess\'{a}rio o estabelecimento de um contrato prévio de acesso. Ou seja, 
+primeiramente devem ser estabelecidos as restri\c c\~{o}es de acesso e autorização. 
+Uma vez cadastrado, o {\color{red}usuário ou institui\c c\~{a}o} deve 
+informar as credenciais para comprovar a identidade no momento da autenticação, 
+de forma que ele possa ser autorizado de acordo com o seus {\color{red}privilégios ou permiss\~{o}es}.
 
-No momento do credenciamento será gerado para o cliente múltiplas credenciais, que devem ser utilizadas no processo de autenticação e autorização. Essas informações 
-devem ser compartilhados entre o Cliente, o Servidor de Autenticação e Autorização e o Servidor REST ({\color{red}esses n\'{o}s processadores j\'{a} foram introduzidos}). Além disso, o Contrato poderá ter acesso a múltiplos serviços. A Figura ~\ref{fig:diagrama_relacionamento} apresenta o relacionamento entre o contrato, as credenciais e os serviços.
+No momento do estabelecimento do contrato, ser\~{a}o geradas 
+para o cliente múltiplas credenciais, que devem ser utilizadas no processo de autenticação e 
+autorização. Essas informações 
+devem ser compartilhados entre o Cliente, o \servidorAA{} e o \servidorRest{} 
+({\color{red}esses n\'{o}s processadores j\'{a} foram introduzidos?}). 
+Além disso, o Contrato poderá ter acesso a múltiplos serviços. A Figura ~\ref{fig:diagrama_relacionamento} apresenta o relacionamento entre o contrato, as credenciais e os serviços.
 
 \begin{figure}[!htb]
     \centering
@@ -51,7 +76,8 @@ devem ser compartilhados entre o Cliente, o Servidor de Autenticação e Autoriz
 
 \section{Arquitetura do Protoloco}\label{sec:ArqProtocolo}
 
-A arquitetura do protocolo proposto é apresentada na Figura~\ref{fig:arquiteturaprotocolo}. O protocolo é composto por quatro componentes: Cliente, Servidor de Autenticação e Autorização, Servidor REST, e Banco de Dados de Autenticação e Autorização.
+A arquitetura do protocolo proposto é apresentada na Figura~\ref{fig:arquiteturaprotocolo}. O protocolo é composto por quatro componentes: Cliente, 
+\servidorAA, \servidorRest, e \servidorBD--- que gerencia contratos, credenciais e \emph{tokens} de acesso.
 
 \begin{figure}[!htb]
     \centering
@@ -67,11 +93,13 @@ O Servidor de Fachada REST atua como uma fachada, abstraindo toda lógica necess
 
 \subsection{Visão geral do protocolo de Autenticação e Autorização proposto}
 
-Para ter acesso a API \emph{REST}, referente aos serviços ofertados, o cliente deverá ser autenticado e autorizado a acessar o serviço. Para isso, será usado a autenticação baseada em \emph{tokens} de segurança, que são recipientes de reivindicações da autoridade emissora. Os \emph{tokens} de segurança utilizados serão os \emph{Web Tokens} no formato \emph{JSON}. Esse, ao contrário dos tokens \emph{SAML}, que são baseados em \emph{XML}, são mais compactos e, portanto mais adequados para serem usados em um cabeçalho \emph{HTTP}. Além disso, todas as mensagens deverão ser assinadas e criptografadas de forma assimétrica. O processo de autenticação e autorização é descrito em dois cenários distintos. No primeiro cenário, representado na figura ~\ref{fig:protocoloseguro}, o Cliente, não está autenticado. No segundo cenário, ele está autenticado e possui uma credencial de autorização. %Esse último é representado na figura ~\ref{fig:cenario2}.
+Para ter acesso a API \emph{REST}, referente aos serviços ofertados, o cliente deve ser autenticado e autorizado a acessar o serviço. Para isso, o protocolo usa a autenticação baseada em \emph{tokens} de segurança, que são recipientes de reivindicações da autoridade emissora. Os \emph{tokens} de segurança utilizados (\emph{Web Tokens}) seguem o formato \emph{JSON}. Esse formato, ao contrário dos tokens \emph{SAML}, que são baseados em \emph{XML}, são mais compactos e, portanto, mais adequados para serem usados em um cabeçalho \emph{HTTP}. Além disso, todas as mensagens do protocolo s\~{a}o assinadas e criptografadas de forma assimétrica. O processo de autenticação e autorização é descrito em dois cenários distintos. No primeiro cenário, representado na Figura~\ref{fig:protocoloseguro}, o Cliente não está autenticado. No segundo cenário, o Cliente está autenticado e possui uma 
+credencial de autorização. %Esse último é representado na figura ~\ref{fig:cenario2}.
 
 \subsubsection{Primeiro cenário}
-No primeiro cenário, o cliente não está autenticado, e irá solicitar a autenticação pela primeira vez, conforme descrito a seguir:
-\newline
+
+No primeiro cenário, o Cliente não está autenticado e deve solicitar a autenticação pela primeira vez, conforme descrito a seguir:
+
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1.0\textwidth]{fluxo_autenticacao.png}
@@ -80,42 +108,100 @@ No primeiro cenário, o cliente não está autenticado, e irá solicitar a auten
 \end{figure}
 
 
-O protocolo tem início quando o Cliente envia uma solicitação de autenticação ao servidor de Autenticação e Autorização. Esse pedido é realizado por meio de uma mensagem (mensagem 1 da Figura~\ref{fig:protocoloseguro}) que contém um \emph{token} JSON, enviado no cabeçalho HTTP da requisição REST. O \emph{token} contém uma credencial, extraída de forma aleatória da tabela de credenciais do Cliente. O token é assinado digitalmente pelo Cliente e cifrado com a chave pública do servidor de Autenticação e Autorização. É importante frisar que tanto o Cliente quanto o servidor de Autenticação e Autorização possuem as mesmas tabelas de credenciais e de serviços, pois elas são geradas no momento de assinatura do contrato de prestação do serviço.
+O protocolo tem início quando o Cliente envia uma solicitação de autenticação ao \servidorAA.
+Esse pedido é realizado por meio de uma mensagem (mensagem 1 da Figura~\ref{fig:protocoloseguro}) 
+que contém um \emph{token} JSON, enviado no cabeçalho HTTP da requisição REST. O \emph{token} contém uma 
+credencial, extraída de forma aleatória da tabela de credenciais do Cliente. O token é assinado digitalmente pelo Cliente 
+e cifrado com a chave pública do \servidorAA. É importante frisar que tanto o Cliente quanto o 
+\servidorAA{} possuem as mesmas tabelas de credenciais e de serviços, pois elas são 
+geradas no momento de assinatura do contrato de prestação do serviço.
 
-Na segunda mensagem, ao receber uma solicitação de autenticação, o servidor de Autenticação e Autorização extrai o token cifrado com sua chave privada e verifica a autenticidade e integridade da requisição por meio da verificação da assinatura digital do Cliente.  Se houver qualquer problema, uma mensagem de erro HTTP (código 401): usuário não autorizado, é retornada ao Cliente.
-Outra verificação que é realizada é a do \emph{timestamp}, que se refere ao tempo de envio da mensagem, se ela tiver sido enviada em um período de tempo superior ao pré-estabelecido no contrato, o Cliente também recebe uma mensagem de erro HTTP de usuário não autenticado.
+Na segunda mensagem, ao receber uma solicitação de autenticação, o \servidorAA{} extrai o 
+token cifrado com sua chave privada e verifica a autenticidade e integridade da requisição por meio da verificação da assinatura digital do Cliente.  
+Se houver qualquer problema, o c\'{o}digo HTTP 401 (usuário não autorizado) é retornada ao Cliente.
+Tamb\'{e}m \'{e} feita a verifica\c c\~{a}o de \emph{timestamp}, que se refere ao tempo de envio da mensagem. Caso a mensagem tenha 
+sido enviada em um período de tempo superior ao pré-estabelecido no contrato, o Cliente recebe 
+como resposta o c\'{o}digo HTTP {\color{red}adicionar o c\'{o}digo} (usuário não autenticado). {\color{red}importante padronizar a escrita}
 
-Caso não haja problemas, procede-se com o processo de validação da credencial informada, que consiste em consultar a credencial em uma base de dados e se a credencial for válida e estiver associada ao Cliente, o Servidor de Autenticação e Autorização gera um desafio de autenticação. Tal desafio consiste em fazer uma busca aleatória à tabela de credenciais e selecionar um código de credencial que esteja associado ao Cliente. Em seguida grava-se o desafio, a data e hora de geração do desafio e a resposta que o Cliente deverá fornecer. um \emph{token} JSON, contendo o código do desafio, o código da credencial e um \emph{timestamp} representando a data e hora de criação do desafio, é enviado ao Cliente, assinado digitalmente pelo servidor de Autenticação e Autorização e cifrado com a chave pública do Cliente que está solicitando a autenticação.
+Caso não ocorram problemas, procede-se com o processo de validação da credencial informada. Tal processo consiste em 
+consultar a credencial em uma base de dados e verificar se a credencial \'{e} válida e associada ao Cliente. Em seguida, o \servidorAA{} 
+gera um desafio de autenticação. Tal desafio consiste em fazer uma busca aleatória à tabela de credenciais e selecionar um código de 
+credencial que esteja associado ao Cliente. Em seguida, os dados relacionados ao desafio, a data e hora de geração do desafio e a resposta que o Cliente deverá 
+fornecer s\~{a}o persistidos no \servidorBD. Finalmente, o \emph{token} JSON, contendo o código do desafio, o código da credencial e um \emph{timestamp} representando a data e hora de criação do desafio é enviado ao Cliente. Tal \emph{token} \'{e} assinado digitalmente pelo \servidorAA{} \'{e} cifrado com a chave pública do 
+Cliente que está solicitando a autenticação.
 
-Na terceira mensagem, após receber o desafio do servidor de Autenticação e Autorização, o Cliente, extrai o token cifrado com sua chave privada e verifica a autenticidade e integridade da requisição por meio da verificação da assinatura digital do servidor de Autenticação e Autorização. Em seguida verifica o \emph{timestamp}, cujo objetivo é o de verificar se a mensagem foi enviada em um período de tempo superior ao pré-estabelecido no contrato. Se houver qualquer problema, o processo de autenticação atual é descartado e inicia-se um novo processo de autenticação.
+Na terceira mensagem, após receber o desafio do \servidorAA, o Cliente extrai o token cifrado com sua chave 
+privada e verifica a autenticidade e integridade da requisição por meio da verificação da assinatura digital do \servidorAA. 
+Em seguida {\color{red}quem considera?} considera o \emph{timestamp} com o objetivo de verificar se a mensagem foi 
+enviada em um período de tempo superior ao pré-estabelecido no contrato. Se for detectada alguma inconsist\^{e}ncia, 
+o processo de autenticação atual é descartado e inicia-se um novo processo de autenticação.
 
-Caso não haja problemas, o Cliente verifica e responde o desafio solicitado, enviando-o, juntamente com um \emph{timestamp} e o código do serviço, que ele deseja consumir, para o Servidor de Autenticação e Autorização por meio de um \emph{token} JSON, que é assinado digitalmente pelo Cliente e cifrado com a chave pública do servidor de Autenticação e Autorização.
+Caso nenhuma inconsist\^{e}ncia seja identificada, o Cliente verifica e responde o desafio solicitado, enviando-o 
+juntamente com um \emph{timestamp} e o código do serviço que deseja consumir, para o \servidorAA{} 
+por meio de um \emph{token} JSON, que é assinado digitalmente pelo Cliente e cifrado com a chave pública do \servidorAA.
 
-Na quarta mensagem, o servidor de Autenticação e Autorização recebe a resposta do desafio de autenticação, decifra o token e verifica a autenticidade e integridade da requisição por meio da verificação da assinatura digital do Cliente.  Não ocorrendo problemas, inicia-se o processo de verificação da resposta. A primeira verificação que é realizada refere-se ao tempo de geração do desafio, por meio do \emph{timestamp}. Se a resposta tiver sido enviada em um período de tempo superior ao pré-estabelecido em contrato, o servidor de Autenticação e Autorização envia uma mensagem de erro HTTP (código 401): usuário não autorizado, ao Cliente. Caso contrário, ele procede com a verificação do desafio que consiste em realizar uma consulta na tabela de desafios verificando se a resposta dada é a mesma que a esperada. Caso a resposta esteja correta o servidor de Autenticação e Autorização autentica o Cliente. Em seguida ele verifica, pelo código do serviço requisitado se o Cliente tem privilégios necessários para consumir o serviço requisitado.
+Na quarta mensagem, o \servidorAA{} recebe a resposta do desafio de autenticação, decifra o token e verifica a autenticidade e integridade 
+da requisição por meio da verificação da assinatura digital do Cliente.  Não ocorrendo nenhuma viola\c c\~{a}o, inicia-se o processo de 
+verificação da resposta. A primeira verificação realizada refere-se ao tempo de geração do desafio, por meio do \emph{timestamp}. Se a resposta 
+tiver sido enviada em um período de tempo superior ao pré-estabelecido em contrato, o \servidorAA{} responde com o 
+c\'{o}digo HTTP 401 (usuário não autorizado). Caso contrário, {\color{red}esses ``eles'' deixam muita margem de d\'{u}vidas. diria que esse \'{e} o 
+problema de escrita mais recorrente.} \sout{ele} procede com a verificação do desafio que consiste em realizar uma consulta na tabela de desafios 
+verificando se a resposta ao desafio corresponde a esperada. Caso a resposta esteja correta o \servidorAA{} 
+autentica o Cliente. Em seguida o \servidorAA{} verifica, considerando o código do serviço requisitado, 
+se o Cliente tem privilégios necessários para consumir o serviço requisitado.
 
-Se a resposta for positiva, o servidor de Autenticação e Autorização gera uma credencial de autenticação e autorização temporária para o serviço solicitado. Ela é gravada em uma tabela de credencias de autorização temporária juntamente com a data e hora de criação, data de expiração e o código do cliente. A tabela de credencias de autorização temporária será acessada pelo Servidor REST  para verificar quais privilégios a entidade requisitante do serviço tem acesso e se ela está autenticada. O token, contendo a credencial de autenticação e autorização temporária, é  assinado digitalmente pelo servidor de Autenticação e Autorização   e cifrado  com a chave pública do Cliente. Após esse processo ele é enviado ao Cliente.
+Caso o Cliente possua os privil\'{e}gios necess\'{a}rios, o \servidorAA{} gera uma credencial de autenticação e autorização temporária para o serviço solicitado. Tal 
+credencial é gravada em uma tabela de credencias de autorização temporária, juntamente com a data e hora de criação, a 
+data de expiração e o código do cliente. A tabela de credencias de autorização temporária \'{e} posteriormente acessada pelo \servidorRest{}  
+para verificar quais privilégios o Cliente tem acesso e se o mesmo está autenticada. O \emph{token}, contendo a credencial de 
+autenticação e autorização temporária, é  assinado digitalmente pelo \servidorAA{} e cifrado  com a chave pública do Cliente. 
+Após esse processo, o \emph{token} é enviado ao Cliente.
 
-Caso a resposta do desafio esteja em desacordo com a esperada ou se o Cliente não tiver privilégios suficientes para acessar o serviço requisitado, ele recebe uma mensagem de erro HTTP (código 401): usuário não autorizado.
-É importante frisar que a credencial de autenticação e autorização temporária será gerada apenas para o serviço que o Cliente tenha solicitado e possua o privilégio de acesso para utilizá-la. Ela será válida por um período  de tempo que será definido no momento da assinatura do contrato de prestação de serviço, entre o órgão conveniado e a PCDF.
+Caso a resposta do desafio esteja em desacordo com a esperada ou se o Cliente não tiver privilégios 
+suficientes para acessar o serviço requisitado, a resposta do \servidorAA{} cont\'{e}m o c\'{o}digo HTTP 401 (usuário não autorizado).
+É importante destacar que a credencial de autenticação e autorização temporária será gerada apenas para o serviço que o Cliente tenha 
+solicitado e possua o privilégio de acesso para utilizá-la. Nesse caso, a credencial 
+será válida por um período  de tempo que será definido no momento da assinatura do contrato de prestação de serviço, 
+entre o órgão conveniado e a PCDF.
 
-Na quinta mensagem, o Cliente, extrai o token cifrado com sua chave privada e verifica a autenticidade e integridade da requisição por meio da verificação da assinatura digital do servidor de Autenticação e Autorização. Em seguida verifica o \emph{timestamp}, cujo objetivo é o de verificar se a mensagem foi enviada em um período de tempo superior ao pré-estabelecido no contrato. Se houver qualquer problema, o processo de autenticação atual é descartado e inicia-se um novo processo de autenticação.
+Na quinta mensagem, o Cliente, extrai o \emph{token} cifrado com sua chave privada e verifica a autenticidade e integridade 
+da requisição por meio da verificação da assinatura digital do \servidorAA. Em seguida consulta  
+o \emph{timestamp} para verificar se a mensagem foi enviada em um período de tempo superior ao pré-estabelecido no contrato. 
+Caso ocorra alguma inconsist\^{e}ncia, o processo de autenticação atual é descartado e inicia-se um novo processo de autenticação.
 
-Caso não haja problemas, o Cliente verifica a data e hora de validade da credencial de autorização temporária para saber se ela é válida. Confirmada sua validade, ele envia ao servidor REST, a requisição do serviço que deseja consumir juntamente com a credencial de autenticação e autorização temporária. O token de autenticação e autorização temporária é assinado com a chave privada do Cliente e cifrado com chave pública do servidor REST, sendo enviado no cabeçalho da requisição.
+Caso não ocorram inconsist\^{e}ncias, o Cliente verifica a data e hora de validade da credencial de autorização temporária para saber se a 
+mesma é válida. Confirmada sua validade, o Cliente envia ao \servidorRest, a requisição do serviço que deseja consumir, 
+juntamente com a credencial de autenticação e autorização temporária. O \emph{token} de autenticação e autorização 
+temporária é assinado com a chave privada do Cliente e cifrado com chave pública do \servidorRest, 
+sendo enviado no cabeçalho da requisição.
 
-Finalmente, após receber a requisição, o Servidor REST, extrai o token cifrado com sua chave privada e verifica a autenticidade e integridade da requisição por meio da verificação da assinatura digital do servidor de Autenticação e Autorização. Em seguida verifica o \emph{timestamp}, para saber se a mensagem foi enviada em um período de tempo superior ao pré-estabelecido no contrato. Não havendo problemas, o Servidor REST verifica se a credencial de autenticação e autorização temporária é valida. Para isso, ele realiza uma consulta na tabela de credenciais temporárias, com a finalidade de confirmar se a credencial informada não expirou, se  foi realmente gerada para o Cliente e se ela está associada ao serviço solicitado.
+Finalmente, após receber a requisição, o \servidorRest{} extrai o token cifrado com sua chave privada e verifica a autenticidade 
+e integridade da requisição por meio da verificação da assinatura digital do \servidorAA. 
+Em seguida consulta o \emph{timestamp} para checar se a mensagem foi enviada em um período de 
+tempo superior ao pré-estabelecido no contrato. Não havendo inconsist\^{e}ncias, o \servidorRest{} 
+verifica se a credencial de autenticação e autorização temporária é valida. Para isso, ele realiza uma consulta na tabela de 
+credenciais temporárias, com a finalidade de confirmar se a credencial informada não expirou, 
+se  foi realmente gerada para o Cliente e se 
+está associada ao serviço solicitado.
 
-Caso não haja problemas, o Cliente recebe os dados referentes à sua requisição. Havendo qualquer problema ele recebe uma mensagem de erro HTTP (código 401) de usuário não autorizado.
+Nas situa\c c\~{o}es em que a verifica\c c\~{a}o \'{e} consistente, 
+o Cliente recebe os dados referentes à sua requisição. 
+Havendo qualquer problema ele recebe uma resposta contendo o c\'{o}digo HTTP 401 (usuário não autorizado).
+
 
 %Já no segundo cenário, que é representado na figura ~\ref{fig:cenario2}. O Cliente, já possui uma credencial de autorização temporária, neste caso ele deverá apresentá-la sempre que desejar consumir algum serviço que ele tenha acesso.
 \subsubsection{Segundo cenário}
 
-Já no segundo cenário, o Cliente, já possui uma credencial de autorização temporária, neste caso ele deverá apresentá-la sempre que desejar consumir algum serviço que ele tenha acesso conforme descrito a seguir:
-
-Neste caso, o Cliente envia um token contendo uma credencial temporária no cabeçalho da requisição do serviço que deseja consumir, ao Servidor de REST.
-
-O servidor de REST, recebe o token de autenticação e autorização, faz a verificação na tabela de credenciais temporárias para saber se o Cliente possui uma credencial válida, em caso positivo ele verifica quais são os privilégios de autorização da credencial, se ele tiver permissão para acessar o serviço, sua requisição é atendida.
-
-Caso a credencial não seja válida ou tenha expirado o Cliente é redirecionado para o servidor de Autenticação e Autorização para que possa se autenticar novamente e obter uma nova credencial conforme descrito no primeiro cenário. %Esse processo é descrito no fluxo alternativo da figura ~\ref{fig:cenario2}.
+No segundo cenário, o Cliente possui uma credencial de autorização temporária, 
+que deve ser apresentada quando requisitar algum serviço que possui acesso. 
+Neste caso, o Cliente envia um \emph{token} ao \servidorRest{} contendo uma credencial temporária no cabeçalho da requisição do serviço que deseja 
+consumir. O \servidorRest recebe o \emph{token} de autenticação e autorização, faz a verificação na tabela de credenciais temporárias 
+para confirmar que o Cliente possui uma credencial válida e, caso afirmativo, verifica quais são os privilégios de 
+autorização da credencial e verifica se o Cliente possui a permissão necess\'{a}ria para acessar o serviço. Neste cen\'{a}rio, 
+a requisi\c c\~{a}o do Cliente é atendida. Por outro lado, 
+caso a credencial não seja válida ou tenha expirado, o Cliente é redirecionado para o \servidorAA{} 
+para que possa se autenticar novamente e obter uma nova credencial conforme descrito 
+no primeiro cenário. %Esse processo é descrito no fluxo alternativo da figura ~\ref{fig:cenario2}.
 
 %\begin{figure}[!htb]
 %    \centering
@@ -127,17 +213,36 @@ Caso a credencial não seja válida ou tenha expirado o Cliente é redirecionado
 
 \section{Formalização do protocolo}
 
-O emprego de avaliações mais formais na área de criptografia não é recente. Grande parte dos trabalhos nesta área foram desenvolvidos na década de 90~\cite{Meadows95}. O emprego destes métodos possibilita uma análise completa do protocolo criptográfico e sua função principal é especificar se os objetivos propostos pelos autores são alcançados.
+O uso de especifica\c c\~{o}es formais na área de criptografia (em particular para especificar protocolos criptogr\'{a}ficos) 
+não é recente. Parte dos trabalhos nesta área foram desenvolvidos ainda na década de 90~\cite{Meadows95}, 
+possibilitando uma análise mais detalhada dos protocolos. Com isso, o principal objetivo 
+tem sido a verifica\c c\~{a}o dos objetivos de seguran\c ca propostos 
+pelos autores dos protocolos criptogr\'{a}ficos são alcançados.
 
-Neste trabalho, o protocolo proposto foi descrito formalmente, utilizando a lógica BAN, com o intuito de favorecer a comunicação e o entendimento utilizando uma linguagem mais precisa. Além disso, a propriedade de terminação com a geração da credencial temporária de autenticação e autorização foi verificada com um programa escrito em Prolog (ver Apêndice em anexo).
+Neste trabalho, o protocolo proposto foi descrito formalmente utilizando a lógica BAN, 
+com o intuito de favorecer uma melhor comunicação e entendimento utilizando uma linguagem mais precisa. 
+Além disso, a propriedade de terminação com a geração da credencial temporária de autenticação e autorização 
+foi verificada com um programa escrito em Prolog (ver {\color{red}Anexo~\ref{}}.)
 
 
-\section{Lógica BAN}
+\subsection{Lógica BAN}
 
-A lógica BAN foi desenvolvida por Burrows, Abadi e Needham em 1989, ela e uma das mais populares para a análise de crenças e de conhecimento entre os participantes dos protocolos criptográficos. É a primeira lógica a analisar formalmente os protocolos criptográficos,principalmente os de autenticação e distribuição de chaves~\cite{Burrows1990}.
+A lógica BAN foi desenvolvida por Burrows, Abadi e Needham em 1989, tendo alcan\c cado 
+certa popularidade para a análise de confian\c ca e de conhecimento entre os participantes 
+dos protocolos criptográficos~\cite{Burrows1990}. BAN \'{e} uma l\'{o}gica pioneira na especifica\c c\~{a}o de 
+ protocolos criptográficos, em particular protocolos usados na autenticação e 
+distribuição de chaves~\cite{Burrows1990}.
 
-\subsection{Notação básica}
-Na lógica BAN, existem vários tipos distintos de objetos tais como entidades ou partes que se comunicam, chaves de criptografia e fórmulas lógicas. Uma fórmula lógica é uma versão idealizada da mensagem original, e às vezes ela pode ser referenciada como uma declaração lógica. Normalmente, os símbolos A, B e S denotam entidades ou participantes; $Kab$, $Kas$ e $Kbs$ denotam chaves compartilhadas; Ka, Kb e Ks denotam chaves públicas e $Ka^{-1}$, $Kb^{-1}$ e $Ks^{-1}$ denotam as chaves privadas dos participantes. Já $Na$, $Nb$ e $Ns$ são os identificadores gerados pelos participantes. As construções mais frequentemente utilizadas são apresentadas na Tabela~\ref{tab:notacaobasicaBAN}:
+\subsubsection{Notação básica}
+
+Na lógica BAN, existem vários tipos distintos de objetos tais como entidades ou partes que se 
+comunicam, chaves de criptografia e fórmulas lógicas. Uma fórmula lógica é uma versão idealizada da mensagem original, 
+sendo usualmente referenciada como uma declaração lógica. Em geral, os símbolos $A$, $B$ e $S$ denotam 
+entidades ou participantes; $Kab$, $Kas$ e $Kbs$ denotam chaves compartilhadas; $Ka$, $Kb$ e $Ks$ 
+denotam chaves públicas e $Ka^{-1}$, $Kb^{-1}$ e $Ks^{-1}$ denotam as chaves privadas dos participantes. 
+Finalmente, $Na$, $Nb$ e $Ns$ são os identificadores gerados pelos participantes (referenciados como \emph{nonces} 
+na literatura). As construções usadas com maior frequ\^{e}ncia 
+são apresentadas na Tabela~\ref{tab:notacaobasicaBAN}:
 
  \newcommand{\RHQuery}{\textbf{[???]}}
 \newcommand{\RHRemark}[1]{\textbf{[#1]}}
@@ -160,6 +265,7 @@ Na lógica BAN, existem vários tipos distintos de objetos tais como entidades o
 
 %  \begin{tabular}{cp{16cm}}
 \begin{table}[h]
+\begin{center}
     \begin{tabular}{|l|p{10cm}|}
     \hline
     \textbf{\emph{Expressão }}         & \textbf{\emph{Leitura/Significado}}                                                                               \\ \hline
@@ -175,8 +281,8 @@ Na lógica BAN, existem vários tipos distintos de objetos tais como entidades o
     \end{tabular}
     \caption {Notação básica Lógica BAN, adaptação de ~\cite{Burrows1990}.}
 \label{tab:notacaobasicaBAN}
+\end{center}
 \end{table}
-
 
 
 \subsection{Postulados lógicos}
