@@ -269,42 +269,62 @@ são apresentadas na Tabela~\ref{tab:notacaobasicaBAN}:
     \begin{tabular}{|l|p{10cm}|}
     \hline
     \textbf{\emph{Expressão }}         & \textbf{\emph{Leitura/Significado}}                                                                               \\ \hline
-    ${P}\mid\equiv{X}$               & $\Believes{P}{X}$: $P$ crê em $X$, ou $P$ acredita que $X$ é verdadeiro \\ \hline
-    ${P}\triangleleft{X}$            & $\Sees{P}{X}$:Alguém enviou uma mensagem para $P$ contendo $X$ ou de outra forma $P$ recebeu $X$   \\ \hline
-    ${P}\mid\sim{X}$                 & $\Said{P}{X}$:$P$ disse uma vez $X$. A entidade $P$ em algum momento enviou uma mensagem incluíndo a declaração $X$.\\ \hline
-    ${P}\Rightarrow {X}$                 & $\Controls{P}{X}$:$P$ tem jurisdição sobre $X$. Onde $P$ é uma autoridade sobre $X$ é deve ser confiável \\ \hline
-    \#(X)                            & novo$(X)$: a fórmula novo $X$, ela não foi usada numa mensagem anterior à execução protocolo atual.  \\ \hline
-    $\Share{P}{k}{Q}$                & (lê-se ``k é uma chave satisfatória para $P$ e $Q$''). A chave $k$ nunca será descoberta por qualquer participante, exceto por P, Q ou por alguém em quem eles confiam \\ \hline
-    $\{{X}\}_K$                  & fórmula $X$ foi cifrada com a chave $K$. As mensagens cifradas somente são legíveis e verificáveis pelo possuidor da chave \\ \hline
-    $\ShareSecret{P}{k}{Q}$         & ${k}$ é o segredo compartilhado entre ${P}$ e ${Q}$ e possivelmente também com as entidades de confiança deles. Somente ${P}$ e ${Q}$ podem usar k para provar suas identidades \\ \hline
-    $\PubKey{K}{P}$:               & ${k}$ é a chave pública de ${P}$  \\ \hline
+    ${P}\mid\equiv{X}$               & $\Believes{P}{X}$: $P$ confia em $X$, ou $P$ acredita que $X$ é verdadeiro. \\ \hline
+    
+    ${P}\triangleleft{X}$            & $\Sees{P}{X}$: Alguém enviou uma mensagem para $P$ contendo $X$; ou seja, $P$ recebeu $X$.   \\ \hline
+    
+     ${P}\mid\sim{X}$                 & $\Said{P}{X}$: $P$ alguma vez compartilhou $X$. Pode-se assumir que a entidade $P$ 
+        em algum momento enviou uma mensagem incluíndo a declaração $X$.\\ \hline
+    
+    ${P}\Rightarrow {X}$                 & $\Controls{P}{X}$: $P$ tem jurisdição sobre $X$, onde $P$ é uma autoridade sobre $X$ e deve ser confiável. \\ \hline
+
+    \#(X)                            & novo$(X)$: a fórmula $X$ não foi usada em mensagens anteriores à execução atual do protocolo.  \\ \hline
+
+    $\Share{P}{k}{Q}$                & (lê-se ``k é uma chave satisfatória para $P$ e $Q$''). A chave $k$ n\~{a}o pode ser descoberta 
+                                             por qualquer outro participante, exceto $P$, $Q$ ou por alguém que {\color{red}ambos} confiam. \\ \hline
+
+    $\{{X}\}_K$                  & fórmula $X$ foi cifrada com a chave $K$. As mensagens cifradas são legíveis e verificáveis apenas pelos 
+                                       participantes que conhecem a chave $K$. \\ \hline
+
+    $\ShareSecret{P}{k}{Q}$         & ${k}$ é um segredo compartilhado entre ${P}$ e ${Q}$ e possivelmente as entidades de confiança de $P$ e $Q$. 
+                                                 Somente ${P}$ e ${Q}$ podem usar $k$ para provar suas identidades. \\ \hline
+    
+    $\PubKey{K}{P}$:               & ${k}$ é a chave pública de ${P}$.  \\ \hline
     \end{tabular}
-    \caption {Notação básica Lógica BAN, adaptação de ~\cite{Burrows1990}.}
+    \caption {Notação básica da Lógica BAN, adaptação de ~\cite{Burrows1990}.}
 \label{tab:notacaobasicaBAN}
 \end{center}
 \end{table}
 
 
-\subsection{Postulados lógicos}
+\subsubsection{Postulados lógicos}
 
-No estudo de protocolos de segurança é importante diferenciar o tempo das demonstrações ou eventos.  Haja vista que se isso não for observado, problemas, como a não detecção  do  reenvio de mensagens,  poderá acontecer.  Segundo~\cite{Burrows1990}, a lógica BAN trata dessa distinção dividindo-a em duas épocas: presente, que é o tempo durante a execução do protocolo, e o passado,  que refere-se às mensagens enviadas antes da execução do protocolo, o que faz com que elas sejam rejeitadas, uma vez que não são confiáveis .  Essa divisão de tempo é suficiente para facilitar o entendimento de como a lógica pode ser manipulada.
-Para realizar a análise dos protocolos de segurança a lógica BAN possui uma serie de postulados lógicos, regras~\cite{Burrows1990}. Alguns deles  são descritos  a seguir:
+No estudo de protocolos de segurança é importante diferenciar o tempo das demonstrações ou eventos.  
+Caso isso não seja observado, problemas como a não detecção  do  reenvio de mensagens podem 
+ocorrer. Dessa forma, a lógica BAN trata dessa distinção dividindo-a em duas épocas: 
+presente, que é o tempo durante a execução do protocolo, e o passado,  que refere-se às mensagens enviadas antes da execução do protocolo, 
+o que faz com que elas sejam rejeitadas, uma vez que não são confiáveis~\cite{Burrows1990}. 
+Essa divisão de tempo é suficiente para facilitar o entendimento sobre como a lógica pode ser manipulada.
+Para realizar a análise dos protocolos de segurança, a lógica BAN possui uma s\'{e}rie de postulados lógicos. 
+No restante dessa se\c c\~{a}o apresentamos alguns desses postulados, refor\c cando que maiores detalhes 
+podem ser encontrados no artigo que introduziu a nota\c c\~{a}o BAN~\cite{Burrows1990}
 
-\begin{enumerate}[ A )]
+\begin{enumerate}[(P1)]
 
- \item Regra de significado da mensagem. Esta regra faz parte da interpretação das mensagens
-    A1.1. Para as chaves secretas compartilhadas:
+ \item Regra de significado da mensagem. Esta regra faz parte da interpretação das mensagens. 
+    Para as chaves secretas compartilhadas, temos que
+
     \begin{displaymath}
         \infer
         {{P}\mid\equiv{{Q}\mid\sim{X}}}
-        {{P}\mid\equiv{\Share{P}{k}{Q,}}& {P}\triangleleft{\Encrypt{X}{k}}}
+        {{P}\mid\equiv{\Share{P}{k}{Q}}& {P}\triangleleft{\Encrypt{X}{k}}}
         %{\Believes{P}{\Said{Q}{X}}}
         %{\Believes{P}{\Share{P}{k}{Q,}}&\Sees{P}{\Encrypt{X}{k}}}
     \end{displaymath}
 
-    Se $P$ acredita que $k$ é uma chave satisfatória para se comunicar com $Q$ e se $P$ recebeu a mensagem $X$ cifrada com a chave $k$, então $P$ acredita que $Q$ uma vez disse $X$
-
-    A1.2. De forma similar, aplicada a para as chaves públicas:
+Ou seja, assumindo que $P$ acredita que $k$ é uma chave satisfatória para se comunicar com $Q$, e que 
+$P$ recebeu a mensagem $X$ cifrada com a chave $k$, então $P$ acredita que $Q$ uma vez disse $X$. 
+De forma similar, esse postulado quando consideramos chaves p\'{u}blicas estabelece que
 
     \begin{displaymath}
         \infer
@@ -316,7 +336,9 @@ Para realizar a análise dos protocolos de segurança a lógica BAN possui uma s
 
 
 
-\item Regra de verificação do identificador. Essa regra verifica se a mensagem é recente, se foi enviada durante a execução atual do protocolo e consequentemente, se o emissor acredita nela.
+\item Regra de verificação do identificador. Essa regra estabelece que, dada uma mensagem recente, 
+enviada durante a execução atual do protocolo, \'{e} \'{e} poss\'{i}vel 
+assumir que o emissor confia na mensagem.
 
   \begin{displaymath}
     \infer
@@ -326,7 +348,7 @@ Para realizar a análise dos protocolos de segurança a lógica BAN possui uma s
     %{\Believes{P} novo$(X),$ &\Believes{P}{\Said{Q}{X}}}
   \end{displaymath}
 
-   Se $P$ acredita que $X$ é novo e $P$ acredita que em algum momento $Q$ disse $X$,então $P$ também acredita que $Q$ acredita em X.
+   Se $P$ acredita que $X$ é novo e $P$ acredita que em algum momento $Q$ disse $X$, então $P$ assume que $Q$ confia em X.
 
 \item Regra da jurisdição. Esta regra representa a confiança e a autoridade de uma entidade sobre as declarações.
 \begin{displaymath}
@@ -341,31 +363,42 @@ Para realizar a análise dos protocolos de segurança a lógica BAN possui uma s
 
 \end{enumerate}
 
-Estes são alguns dos principais postulados utilizados na construção da análise formal de protocolos criptográficos. A utilização destas regras juntamente com as notações descritas na sessão anterior possibilita que a crença dos participantes de um protocolo possa ser declarada.
+Estes são os postulados fundamentais na análise formal do protocolo criptográfico proposto nessa disserta\c c\~{a}o. 
+A utilização destas regras, juntamente com as notações descritas na sessão anterior, possibilita 
+o estabelecimento da confian\c ca entre os participantes de um protocolo.
 
-\section{Análise formal do protocolo proposto}
-Nesta sessão será realizado a análise formal do protocolo de autenticação e autorização proposto, utilizando a lógica BAN.
+\subsection{Análise formal do protocolo proposto}
 
-Na lógica BAN a análise de um protocolo é dividida em quatro etapas: A idealização do protocolo, que é originada a partir do protocolo original. As hipóteses, que são a suposições a respeito do estado inicial, nessa etapa são definidas as fórmulas lógicas que estão ligadas às declarações do protocolo, as declarações que são afirmações sobre o estado do sistema. As regras de inferência ou postulados lógicos que são aplicadas para os pressupostos e as afirmações a fim de descobrir as crenças detidas pelas partes no protocolo. %Normalmente, as premissas incluem as declarações sobre bens essenciais e partilha, geração de uso único e de confiança entre os diretores. nalanisisisisii %%http:www.tml.tkk.fi/Opinnot/Tik-110.501/1995/ban.html
+Nesta sessão apresentamos a análise formal do protocolo de autenticação e autorização proposto, seguindo o processo 
+descrito em~\cite{Burrows1990}. De acordo com o referido processo, a an\'{a}lise de um protocolo é realizada em quatro etapas, que serviram para 
+organizar o restante dessa se\c c\~{a}o. 
 
-\subsection{Idealização do protocolo}
+\subsubsection{Idealização do protocolo}
+
 \newcommand{\HT}[3]{\{\,{#1}\,\}\,{#2}\,\{\,{#3}\,\}}
 \newcommand{\Msg}[3]{{#1}\longrightarrow{#2}:\,{#3}}
 
-Para especificar o protocolo formalmente foram utilizadas algumas notações para representar os elementos participantes. Logo, os símbolos ${A}$, ${B}$ e ${C}$ são utilizadas para representar respectivamente as entidades, elementos participantes, que trocam mensagens: Cliente, Servidor REST e Servidor de Autenticação e Autorização. As chaves públicas das entidades ${A}$, ${B}$ e ${C}$ são representadas respectivamente por ${Ka}$, ${Kb}$ e  ${Kc}$. Já as chaves privadas, seguindo o mesmo pressuposto, são representadas pelos símbolos ${{Ka} ^{-1}}$, ${{Kb} ^{-1}}$ e ${{Kc} ^{-1}}$. Os elementos ${Cred_A}$ e ${Cod_{Srv_A}}$ representam respectivamente a credencial utilizada pela entidade ${A}$ e o código que identifica o serviço que a entidade ${A}$ está requerendo.
+Para especificar o protocolo formalmente, foram utilizadas algumas notações para representar os elementos participantes. Logo, os símbolos ${A}$, ${B}$ e ${C}$ são utilizadas para representar respectivamente as entidades que trocam mensagens entre si. No protocolo proposto, temos como participantes os n\'{o}s Cliente, \servidorRest{} e 
+\servidorAA. As chaves públicas das entidades ${A}$, ${B}$ e ${C}$ são representadas, respectivamente, por ${Ka}$, ${Kb}$ e ${Kc}$. As chaves privadas, seguindo o mesmo pressuposto, são representadas pelos símbolos ${{Ka}^{-1}}$, ${{Kb} ^{-1}}$ e ${{Kc} ^{-1}}$. Os elementos ${Cred_A}$ e ${Cod_{Srv_A}}$ representam, respectivamente, 
+a credencial utilizada pela entidade ${A}$ e o código que identifica o serviço que a entidade ${A}$ deseja consumir.
 
-O desafio gerado pela entidade ${C}$ é enviado a entidade ${A}$ e representado pela fórmula ${N_{CA}}$ que corresponde aos elementos: Código do Desafio gerado pela entidade ${C}$ e Código da Credencial aleatória da entidade ${A}$. A resposta do desafio gerada pela entidade ${C}$ à entidade ${A}$ é representado  pelo símbolo ${Resp_{AC}}$ que corresponde aos elementos: Código do Desafio gerado pela entidade ${C}$ e Credencial Solicitada da entidade ${A}$. ${Ts_A}$ e ${Ts_C}$ são respectivamente os \emph{timestamps} emitidos pelas entidades ${A}$ e ${C}$.
+O desafio, gerado pela entidade ${C}$ e enviado a entidade ${A}$, \'{e} representado pela fórmula ${N_{CA}}$. Essa f\'{o}rmula contempla o código do desafio gerado pela entidade ${C}$ e 
+o código da credencial aleatória da entidade ${A}$. A resposta do desafio gerada pela entidade ${C}$ e enviada à entidade ${A}$ é representada pela 
+f\'{o}rmula ${Resp_{AC}}$. Essa f\'{o}rmula corresponde ao código do desafio gerado pela entidade ${C}$ e a credencial solicitada pela entidade ${A}$. 
+${Ts_A}$ e ${Ts_C}$ são, respectivamente, os \emph{timestamps} emitidos pelas entidades ${A}$ e ${C}$.
 
-O símbolo ${Msg_{AC}}$ representa o resumo da mensagem enviada pela entidade ${A}$ a entidade ${C}$,  ${Msg_{CA}}$ representa o resumo da mensagem enviada pela entidade ${C}$ a entidade ${A}$ e ${Msg_{AB}}$ representa o resumo da mensagem enviada pela entidade ${A}$ a entidade ${B}$. O elemento ${H}$ representa o \emph{hashing} aplicado a uma mensagem utilizando o algoritmo SHA3.
+O símbolo ${Msg_{AC}}$ representa o resumo da mensagem enviada pela entidade ${A}$ \`{a} entidade ${C}$,  ${Msg_{CA}}$ representa o resumo da mensagem enviada pela entidade ${C}$ 
+\`{a} entidade ${A}$ e ${Msg_{AB}}$ representa o resumo da mensagem enviada pela entidade ${A}$ \`{a} entidade ${B}$. O elemento ${H}$ representa a aplica\c c\~{a}o de 
+uma fun\c c\~{a}o \emph{HASH} a uma mensagem.\footnote{Na implementa\c c\~{a}o do protocolo, foi utilizado o algoritmo SHA3}
+Finalmente, o símbolo ${Exp_A}$ representa a data/hora  de expiração da credencial temporária de autorização e autenticação, ${C_{Aut}}$ corresponde à credencial temporária de autorização e autenticação gerada para a entidade A e ${Req_A}$ refere-se à requisição de serviços realizadas a partir da entidade $A$;
+utilizando algum dos m\'{e}todos do protocolo HTTP (GET, PUT, POST ou DELETE).
 
-E finalmente, o símbolo ${Exp_A}$ representa a data/hora  de expiração da Credencial Temporária de autorização e autenticação, ${C_{Aut}}$ corresponde à credencial temporária de autorização e autenticação gerada para a entidade A e ${Req_A}$, que refere-se à requisição de serviço de A ( Get, Put, Post ou Delete).
-
-Para especificar formalmente um protocolo de segurança utilizando a lógica BAN, é necessário primeiro idealizar o protocolo, objeto da análise, e a partir da aplicação dos postulados e das suposições iniciais verificar se ele atinge ou não o seu objetivo. A idealização do protocolo proposto e descrito na figura ~\ref{fig:protocoidealizado} e representa o fluxo de troca de mensagens executado pelo protocolo. Todas as mensagens são consideradas na análise, pois utilizam criptografia assimétrica desde a primeira troca de mensagens.
+Para especificar formalmente um protocolo de segurança utilizando a lógica BAN, é necessário idealizar o protocolo e, a partir da aplicação dos postulados e das suposições iniciais, verificar se ele atinge ou não o seu objetivo. A idealização do protocolo proposto \'{e} descrito na figura~\ref{fig:protocoidealizado}, representando o fluxo de troca de mensagens executado pelo protocolo. {\color{blue}n\~{a}o entendi: Todas as mensagens são consideradas na análise, pois utilizam criptografia assimétrica desde a primeira troca de mensagens}.
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=0.8\textwidth]{fluxo_autenticacao_BAN.png}
-    \caption{Diagrama de idealização do protocolo de autenticação/autorização proposto}
+    \caption{Diagrama com a idealização do protocolo de autenticação/autorização proposto}
     \label{fig:protocoidealizado}
 \end{figure}
 
@@ -374,10 +407,14 @@ Para especificar formalmente um protocolo de segurança utilizando a lógica BAN
   \item Mensagem 2: $\Msg{C}{A}{\Encrypt{Ts_C,{N_{CA}},H{\Encrypt{Msg_{CA}}{Kc ^{-1}}}}{Ka}}$.
   \item Mensagem 3: $\Msg{A}{C}{\Encrypt{Ts_A,{Resp_{AC}},Cod_{Srv_A},H{\Encrypt{Msg_{AC}}{Ka ^{-1}}}}{Kc}}$.
   \item Mensagem 4: $\Msg{C}{A}{\Encrypt{Ts_C,Exp_A,\#(\ShareSecret{A}{{C_{Aut}}}{C}),H{\Encrypt{Msg_{CA}}{Kc ^{-1}}}}{Ka}}$.
-  \item Mensagem 5: $\Msg{A}{B}{\Encrypt{Ts_A,(\ShareSecret{A}{{C_{Aut}}}{C}),H{\Encrypt{Msg_{AB}}{Ka ^{-1}}}}{Ka}},{Req_A}$.
+  {\color{blue}\item Mensagem 5: $\Msg{A}{B}{\Encrypt{Ts_A,(\ShareSecret{A}{{C_{Aut}}}{C}),H{\Encrypt{Msg_{AB}}{Ka ^{-1}}}}{Ka}},{Req_A}$.}\footnote{V\'{a}rias d\'{u}vidas. Por que enviar 
+$Req_A$? Por que essa mensagem para B?} 
 \end{enumerate}
-\subsection{Suposições}\label{sec:Suposicoes}
-O objetivo do protocolo é fazer que a entidade ${A}$ seja autenticada pela entidade ${C}$ e obtenha uma credencial de autenticação e autorização temporária referente a uma requisição de um serviço que a entidade ${A}$ deseja consumir. De forma que a credencial de autenticação e autorização temporária  possa ser utilizada pela entidade ${A}$ no momento da requisição do serviço a entidade ${B}$ e obtenha o que deseja. Para isso, algumas suposições iniciais são estabelecidas e juntamente com a aplicação  dos postulados da lógica BAN, busca-se concluir que o protocolo alcance o objetivo proposto. Todas as suposições, apresentadas na Tabela~\ref{tab:suposicoesBAN} são baseadas em um canal seguro de comunicação SSL/TSL, onde tanto o receptor  quanto o emissor do serviço são conhecidos e autenticados usando-se certificados digitais X.509.
+
+\subsubsection{Suposições}\label{sec:Suposicoes}
+
+O objetivo do protocolo é fazer com que a entidade ${A}$ seja autenticada pela entidade ${C}$ e obtenha uma credencial de autenticação e autorização temporária, referente a uma requisição de um serviço que a entidade ${A}$ deseja consumir. Com isso, a credencial de autenticação e autorização temporária pode ser utilizada pela entidade ${A}$ no momento da requisição do serviço \`{a} entidade ${B}$ e, assim, realizar a computa\c c\~{a}o que deseja via o consumo a um servi\c co de forma segura. Para isso, algumas suposições iniciais são estabelecidas e, juntamente com a aplicação  dos postulados da lógica BAN, busca-se verificar se o protocolo alcan\c ca o objetivo proposto. Todas as suposições, apresentadas na Tabela~\ref{tab:suposicoesBAN}, são baseadas no uso de um canal seguro de comunicação SSL/TSL; onde tanto o receptor  quanto o emissor do serviço são conhecidos e 
+autenticados {\color{blue}isso eh necess\'{a}rio indicar?} com o uso de certificados digitais X.509.
 
 \begin{table}[h]
 \begin{tabular}{cllcl}
@@ -400,13 +437,16 @@ O objetivo do protocolo é fazer que a entidade ${A}$ seja autenticada pela enti
 \end{table}
 
 
-Dessa forma, temos que as suposições 1,2 e 3 garantem que as entidades participantes ${A}$, ${B}$ e ${C}$ confiam  nas chaves públicas das entidades que farão as trocas de mensagem. As suposições 4, 5 e 6 são \emph{timestamps}, o que denota que as entidades ${A}$, ${B}$ e ${C}$ devem estar sincronizadas. Sendo assim, a entidade ${A}$ acredita que o \emph{timestamp} ${Ts_C}$ é novo e foi gerado recentemente. Da mesma forma que as entidades ${B}$ e ${C}$ acreditam  que o \emph{timestamp} ${Ts_A}$ também é novo e foi gerado recentemente. A suposição 7 é utilizada pela entidade ${A}$ para garantir que a credencial de autenticação e autorização gerado pela entidade ${C}$ não expirou e que pode ser utilizada. As suposições 8 e 9 denotam que as entidades ${A}$, ${B}$ acreditam que entidade ${C}$ tem jurisdição  sobre a credencial de autenticação e autorização gerada. Portanto, as suposições 10 e 11 garantem que as entidades ${A}$, ${B}$ acreditam que a credencial de autenticação e autorização gerada é nova é foi realmente gerada pela entidade ${C}$. Finalmente, as suposições 12 e 13 garantem que as entidades ${A}$, ${B}$ acreditam na nova credencial de autenticação e autorização temporária, ${C_{Aut}}$.
+Dessa forma, temos que as suposições 1, 2 e 3 garantem que as entidades participantes ${A}$, ${B}$ e ${C}$ confiam  nas chaves públicas das entidades que farão as trocas de mensagem. As suposições 4, 5 e 6 são \emph{timestamps}, o que denota que as entidades ${A}$, ${B}$ e ${C}$ devem estar sincronizadas. Sendo assim, a entidade ${A}$ acredita que o \emph{timestamp} ${Ts_C}$ é novo e foi gerado recentemente. Da mesma forma que as entidades ${B}$ e ${C}$ acreditam  que o \emph{timestamp} ${Ts_A}$ também é novo e foi gerado recentemente. A suposição 7 é utilizada pela entidade ${A}$ para garantir que a credencial de autenticação e autorização gerado pela entidade ${C}$ não expirou e que pode ser utilizada. As suposições 8 e 9 denotam que as entidades ${A}$ e ${B}$ acreditam que entidade ${C}$ tem jurisdição  sobre a credencial de autenticação e autorização gerada. Portanto, as suposições 10 e 11 garantem que as entidades ${A}$, ${B}$ acreditam que a credencial de autenticação e autorização gerada é nova é foi realmente gerada pela entidade ${C}$. Finalmente, as suposições 12 e 13 garantem que as entidades ${A}$ e ${B}$ acreditam na nova credencial de autenticação e autorização temporária representada por ${C_{Aut}}$.
 
-\subsection{Provas}
+\subsubsection{Provas}
 
-Como o objetivo final do protocolo é autenticar a entidade ${A}$, de forma que ela obtenha uma credencial de autenticação e autorização temporária, referente a uma requisição de serviço desejado. Será realizado uma análise de cada mensagem  do protocolo idealizado. Para isso, serão aplicados os postulados lógicos e suposições, a fim de provar que o protocolo consegue atingir o objetivo proposto.
+Como o objetivo final do protocolo é autenticar a entidade ${A}$, de forma que ela obtenha uma credencial de autenticação e autorização temporária e referente a uma requisição de serviço desejado. Nessa se\c c\~{a}o, será realizada uma análise de cada mensagem do protocolo idealizado, aplicando os postulados lógicos e suposições com 
+o intuito de provar que o protocolo consegue atingir o objetivo proposto.
 
-Na primeira mensagem, a entidade ${A}$ envia sua credencial, um \emph{timestamp} e o código do serviço que ele está querendo consumir ao servidor de autenticação e autorização, representado pela entidade ${C}$. A mensagem enviada é assinada com a chave privada do participante ${A}$  e cifrada com a chave pública do participante ${C}$. Esse processo e descrito a seguir:
+Na primeira mensagem, a entidade ${A}$ envia sua credencial, um \emph{timestamp} e o código do serviço que ele está querendo consumir ao \servidorAA, 
+representado pela entidade ${C}$. A mensagem enviada é assinada com a chave privada do participante ${A}$  e cifrada com a chave pública do participante ${C}$. 
+Ap\'{o}s o recebimento dessa mensagem, o estado da execu\c c\~{a}o do protocolo evolui conforme a descri\c c\~{a}o
 
 \textbf{Mensagem 1}: $\Msg{A}{C}{\Encrypt{Ts_A,Cred_A,H{\Encrypt{Msg_{AC}}{Ka ^{-1}}}}{Kc}}$.
 
@@ -418,31 +458,28 @@ $C\mid\equiv A \mid\sim$ ${\#Ts_A}$
 
 $C\mid\equiv$ ${Cred_A,Cod_{Srv_A}}$
 
-Sendo assim, ${\textbf{C}}$ recebe a fórmula ${\Encrypt{Ts_A,Cred_A,Cod_{Srv_A},H{\Encrypt{Msg_{AC}}{Ka ^{-1}}}}{Kc}}$, e usando sua chave privada, decifra a fórmula recebida. Após decifrar a fórmula, e aplicando a regra do significado da mensagem na suposição 3 usando a função $H \{Msg_{AC}\}$ confirma a autenticidade e integridade da mensagem. Por fim, aplica a regra de verificação do identificador na suposição 6 usando a fórmula ${Ts_A}$ para obter a credencial da entidade ${A}$ :  ${Cred_A}$.
+Dessa forma, $C$ recebe a fórmula ${\Encrypt{Ts_A,Cred_A,Cod_{Srv_A},H{\Encrypt{Msg_{AC}}{Ka ^{-1}}}}{Kc}}$ e, usando sua chave privada, decifra a fórmula recebida. 
+Após decifrar a fórmula, e aplicando a regra do significado da mensagem na suposição 3 e usando a função $H \{Msg_{AC}\}$ confirma a autenticidade e integridade da mensagem. 
+Por fim, aplica a regra de verificação do identificador na suposição 6 usando a fórmula ${Ts_A}$ para obter a credencial da entidade ${A}$ (identificada pela 
+f\'{o}rmula ${Cred_A}$). 
 
-Resultado:
-
-${C}$ obtém  a credencial da entidade $A$: ${Cred_A}$
-
-Na segunda mensagem, após receber e validar os dados enviados por $A$, a entidade ${C}$ gera um desafio de autenticação, ${N_{CA}}$. O desafio consiste em fazer uma busca aleatória à tabela de credenciais e selecionar um código de credencial que esteja associado a entidade $A$. Em seguida grava-se o desafio, a data e hora de geração do desafio e a resposta esperada em uma base de dados. Na sequência, uma mensagem, contendo o desafio e um \emph{timestamp}, é enviada a entidade $A$, assinada com a chave privada da entidade ${C}$ e cifrada com a chave pública da entidade ${A}$. Logo temos:
+Na segunda mensagem, após receber e validar os dados enviados por $A$, a entidade ${C}$ gera um desafio de autenticação, ${N_{CA}}$. O desafio consiste em fazer uma busca aleatória à tabela de credenciais e selecionar um código de credencial que esteja associado \`{a} entidade $A$. Em seguida grava-se o desafio, a data e hora de geração do desafio e a resposta esperada em uma base de dados. Na sequência, uma mensagem \'{e} enviada uma mensagem \'{a} entidade $A$. Tal mensagem, que contem 
+o desafio e um \emph{timestamp}, precisa ser assinada com a chave privada da entidade ${C}$ e cifrada com a chave pública da entidade ${A}$. 
+Logo, temos que:
 
 \textbf{Mensagem 2}: $\Msg{C}{A}{\Encrypt{Ts_C,{N_{CA}},H{\Encrypt{Msg_{CA}}{Kc ^{-1}}}}{Ka}}$.
 
-$\textbf{A}\triangleleft$ ${\Encrypt{Ts_C,{N_{CA}},H{\Encrypt{Msg_{CA}}{Kc ^{-1}}}}{Ka}}$
+$A \triangleleft$ ${\Encrypt{Ts_C,{N_{CA}},H{\Encrypt{Msg_{CA}}{Kc ^{-1}}}}{Ka}}$
 
-$\textbf{A}\mid\equiv \textbf{C} \mid\sim $  $H \{Msg_{CA}\}$
+$A \mid\equiv C \mid\sim $  $H \{Msg_{CA}\}$
 
-$\textbf{A}\mid\equiv \textbf{C} \mid\sim$ ${Ts_C}$
+$A \mid\equiv C \mid\sim$ ${Ts_C}$
 
-$\textbf{A}\mid\equiv$ ${N_{CA}}$
+$A \mid\equiv$ ${N_{CA}}$
 
-A entidade ${\textbf{A}}$ recebe a fórmula ${\Encrypt{Ts_C,{N_{CA}},H{\Encrypt{Msg_{CA}}{Kc ^{-1}}}}{Ka}}$ e a decifra usando sua chave privada, em seguida aplicando a regra do significado da mensagem na suposição 1 usando a função $H \{Msg_{CA}\}$ confirma a autenticidade e integridade da mensagem. Por fim, aplica a regra de verificação do identificador na suposição 4 e usando a fórmula ${Ts_C}$ para obter o desafio,${N_{CA}}$, gerado pela entidade ${C}$.
+A entidade $A$ recebe a fórmula ${\Encrypt{Ts_C,{N_{CA}},H{\Encrypt{Msg_{CA}}{Kc ^{-1}}}}{Ka}}$ e a decifra usando sua chave privada. Em seguida, aplicando a regra do significado da mensagem na suposição 1 usando a função $H \{Msg_{CA}\}$, confirma a autenticidade e integridade da mensagem. Por fim, aplica a regra de verificação do identificador na suposição 4, usando a fórmula ${Ts_C}$ para obter o desafio ${N_{CA}}$ gerado pela entidade ${C}$. Como resultado, ${A}$ obtém  o desafio de autenticação gerado pela entidade ${C}$.
 
-Resultado:
-
-${A}$ obtém  o desafio de autenticação gerado pela entidade ${C}$: ${N_{CA}}$
-
-Na terceira mensagem, a entidade ${A}$, após receber e validar o desafio gerado pela entidade ${C}$, envia a resposta ${Resp_{AC}}$, conforme solicitado. Essa resposta consiste em informar o código do desafio gerado pela entidade ${C}$ e a credencial associada ao código de credencial solicitada pela entidade ${C}$. Além disso, a entidade ${A}$ deve informar o código do serviço que deseja consumir. Sendo assim, temos:
+Na terceira mensagem, a entidade ${A}$, após receber e validar o desafio gerado pela entidade ${C}$, envia a resposta ${Resp_{AC}}$, conforme solicitado. Essa resposta consiste em informar o código do desafio gerado pela entidade ${C}$ e a credencial associada ao código de credencial solicitada pela entidade ${C}$. Além disso, a entidade ${A}$ deve informar o código do serviço que deseja consumir. Dessa forma, temos:
 
 \textbf{Mensagem 3}: $\Msg{A}{C}{\Encrypt{Ts_A,{Resp_{AC}},Cod_{Srv_A},H{\Encrypt{Msg_{AC}}{Ka ^{-1}}}}{Kc}}$.
 
@@ -454,122 +491,87 @@ $C\mid\equiv A \mid\sim$ ${\#Ts_A}$
 
 $C\mid\equiv$ ${Resp_{AC}}$
 
-${\textbf{C}}$ recebe a fórmula ${\Encrypt{Ts_A,{Resp_{AC}},H{\Encrypt{Msg_{AC}}{Ka ^{-1}}}}{Kc}}$, e a decifra usando sua chave privada, em seguida aplicando a regra do significado da mensagem na suposição 3 usando a função $H \{Msg_{AC}\}$ confirma a autenticidade e integridade da mensagem. Por fim, aplica a regra de verificação do identificador na suposição 6 usando a fórmula ${Ts_A}$ para obter os dados da resposta do desafio ${Resp_{AC}}$, e assim, validar a resposta enviada e autenticar a entidade ${A}$. Dando início ao processo de autorização.
+A entidade $C$ recebe a fórmula ${\Encrypt{Ts_A,{Resp_{AC}},H{\Encrypt{Msg_{AC}}{Ka ^{-1}}}}{Kc}}$ e a decifra usando sua chave privada. Em seguida, aplicando a regra do significado da mensagem na suposição 3 e usando a função $H \{Msg_{AC}\}$, confirma a autenticidade e integridade da mensagem. Por fim, aplica a regra de verificação do identificador na suposição 6 usando a fórmula ${Ts_A}$ para obter os dados da resposta do desafio ${Resp_{AC}}$. Com isso, \'{e} poss\'{i}vel 
+validar a resposta enviada e autenticar a entidade ${A}$, dando início ao processo de autorização. Como resultado temos que a entidade ${C}$ autentica a entidade ${A}$.
 
-Resultado:
+Na mensagem 4, após autenticar a entidade ${A}$, a entidade ${C}$ procede com o processo de autorização, que consiste em verificar qual serviço a entidade está querendo consumir. 
+Para isso, a entidade C verifica o código de serviço solicitado pela entidade ${A}$, $Cod_{Srv_A}$, que foi informado no envio da mensagem 3. Se a entidade ${A}$ possuir os 
+privilégios necessários para consumir o serviço requisitado, a entidade ${C}$ gera uma nova credencial de autorização temporária para o serviço solicitado. Em seguida, 
+a entidade ${C}$ grava a credencial ${(\ShareSecret{A}{{C_{Aut}}}{C})}$, o código do serviço que a entidade ${A}$ está requerendo, a data e hora de criação, a data de expiração e o código do contrato da entidade ${A}$. Terminado esse procedimento, a entidade ${C}$, envia uma mensagem contendo a credencial ${(\ShareSecret{A}{{C_{Aut}}}{C})}$, a data e hora de expiração da credencial (${Exp_A}$) e um \emph{timestamp} a entidade ${A}$. Esta mensagem é assinada com a chave privada da entidade ${C}$ e cifrada com a chave 
+pública da entidade ${A}$. 
 
-${C}$ autentica a entidade ${A}$.
-
-Na mensagem 4, após autenticar a entidade ${A}$, a entidade ${C}$ procede com o processo de autorização, que consiste em verificar qual serviço a entidade está querendo consumir, para isso verifica o código de serviço solicitado pela entidade ${A}$, $Cod_{Srv_A}$, que foi informado no envio da mensagem 3. Se a entidade ${A}$ possuir privilégios necessários para consumir o serviço requisitado, a entidade ${C}$ gera uma nova credencial de autorização temporária para o serviço solicitado. Em seguida, a entidade ${C}$ grava a credencial ${(\ShareSecret{A}{{C_{Aut}}}{C})}$, o código do serviço que a entidade ${A}$ está requerendo, a data e hora de criação, a data de expiração e o código do contrato da entidade ${A}$. Terminado esse procedimento, a entidade ${C}$, envia, uma mensagem contendo a credencial ${(\ShareSecret{A}{{C_{Aut}}}{C})}$, a data e hora de expiração da credencial,${Exp_A}$ e um \emph{timestamp} a entidade ${A}$. Esta mensagem é assinada com a privada da entidade ${C}$ e cifrada com a chave pública da entidade ${A}$. Logo temos:
 
 \textbf{Mensagem 4}: $\Msg{C}{A}{\Encrypt{Ts_C,Exp_A,\#(\ShareSecret{A}{{C_{Aut}}}{C}),H{\Encrypt{Msg_{CA}}{Kc ^{-1}}}}{Ka}}$.
 
-$\textbf{A}\triangleleft$ $\Msg{C}{A}{\Encrypt{Ts_C,Exp_A,\#(\ShareSecret{A}{{C_{Aut}}}{C}),H{\Encrypt{Msg_{CA}}{Kc ^{-1}}}}{Ka}}$.
+$A \triangleleft$ $\Msg{C}{A}{\Encrypt{Ts_C,Exp_A,\#(\ShareSecret{A}{{C_{Aut}}}{C}),H{\Encrypt{Msg_{CA}}{Kc ^{-1}}}}{Ka}}$.
 
-$\textbf{A}\mid\equiv \textbf{C} \mid\sim $  $H \{Msg_{CA}\}$
+$A \mid\equiv C \mid\sim $  $H \{Msg_{CA}\}$
 
-$\textbf{A}\mid\equiv \textbf{C} \mid\sim$ ${Ts_C}$
+$ A \mid\equiv C \mid\sim$ ${Ts_C}$
 
-$\textbf{A}\mid\equiv \textbf{C} \mid\sim$ ${Exp_A}$
+$A \mid\equiv C \mid\sim$ ${Exp_A}$
 
-$\textbf{A}\mid\equiv \textbf{C} \Rightarrow $  ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$
+$A \mid\equiv C \Rightarrow $  ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$
 
-$\textbf{A}\mid\equiv \textbf{C} \mid\equiv $  ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$
+$A \mid\equiv C \mid\equiv $  ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$
 
-$\textbf{A}\mid\equiv$ ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$
+$A \mid\equiv$ ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$
 
-A entidade ${A}$ recebe a fórmula ${\Encrypt{Ts_C,Exp_A,\#(\ShareSecret{A}{{C_{Aut}}}{C}),H{\Encrypt{Msg_{CA}}{Kc ^{-1}}}}{Ka}}$, e a decifra usando sua chave privada, em seguida aplicando a regra do significado da mensagem na suposição 1 usando a função $H \{Msg_{CA}\}$ confirma a autenticidade e integridade da mensagem. Ela aplica a regra de verificação do identificador nas suposições 4 e 7 usando as fórmulas ${Ts_C}$  e ${Exp_A}$. E, finalmente, aplicando a regra da jurisdição, nas suposições 7 e 9, obtém a credencial de autorização temporária ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$.
+A entidade ${A}$ recebe a fórmula ${\Encrypt{Ts_C,Exp_A,\#(\ShareSecret{A}{{C_{Aut}}}{C}),H{\Encrypt{Msg_{CA}}{Kc ^{-1}}}}{Ka}}$ e a decifra usando sua chave privada. Em seguida, aplicando a regra do significado da mensagem na suposição 1 e usando a função $H \{Msg_{CA}\}$, confirma a autenticidade e integridade da mensagem. A entidade $A$ 
+aplica a regra de verificação do identificador nas suposições 4 e 7 usando as fórmulas ${Ts_C}$  e ${Exp_A}$. E, finalmente, aplicando a regra da jurisdição, nas suposições 7 e 9, obtém a credencial de autorização temporária ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$.
 
-Resultado:
-
-${\textbf{A}}$ obtém a credencial de autorização temporária: ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$.
-
-Finalmente, na quinta mensagem, a entidade ${A}$ após receber e validar a mensagem enviada pela entidade ${C}$, obtendo assim a credencial de autenticação e autorização temporária, ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$, envia uma mensagem a entidade ${B}$  contendo a requisição do serviço que deseja consumir juntamente com a credencial de autorização temporária. Esta mensagem é assinada com a chave privada da entidade ${A}$ e cifrada com a chave pública da entidade ${B}$. Logo temos:
+Finalmente, na quinta mensagem, a entidade ${A}$ após receber e validar a mensagem enviada pela entidade ${C}$, obtendo assim a credencial de autenticação e autorização temporária, ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$, envia uma mensagem \`{a} entidade ${B}$ contendo a requisição do serviço que deseja consumir juntamente com a credencial de autorização temporária. Esta mensagem é assinada com a chave privada da entidade ${A}$ e cifrada com a chave pública da entidade ${B}$. 
 
 \textbf{Mensagem 5}: $\Msg{A}{B}{\Encrypt{Ts_A,(\ShareSecret{A}{{C_{Aut}}}{C}),H{\Encrypt{Msg_{AB}}{Ka ^{-1}}}}{Kb}},{Req_A}$.
 
-$\textbf{B}\triangleleft$  ${\Encrypt{Ts_A,(\ShareSecret{A}{{C_{Aut}}}{C}),H{\Encrypt{Msg_{AB}}{Ka ^{-1}}}}{Kb}},{Req_A}$
+$B\triangleleft$  ${\Encrypt{Ts_A,(\ShareSecret{A}{{C_{Aut}}}{C}),H{\Encrypt{Msg_{AB}}{Ka ^{-1}}}}{Kb}},{Req_A}$
 
-$\textbf{B}\mid\equiv \textbf{A} \mid\sim $  $H\{Msg_{AB}\}$
+$B\mid\equiv A \mid\sim $  $H\{Msg_{AB}\}$
 
-$\textbf{B}\mid\equiv \textbf{A} \mid\sim$ ${Ts_A}$
+$B\mid\equiv A \mid\sim$ ${Ts_A}$
 
-$\textbf{B}\mid\equiv \textbf{A} \Rightarrow $  ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$
+$B\mid\equiv A \Rightarrow $  ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$
 
-$\textbf{B}\mid\equiv \textbf{A} \mid\equiv $  ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$
+$B\mid\equiv A \mid\equiv $  ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$
 
-$\textbf{B}\mid\equiv$ ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$
+$B\mid\equiv$ ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$
 
-A entidade ${\textbf{B}}$ recebe a fórmula ${\Encrypt{Ts_A,(\ShareSecret{A}{{C_{Aut}}}{C}),H{\Encrypt{Msg_{AB}}{Ka ^{-1}}}}{Kb}},{Req_A}$, e a decifra, usando sua chave privada. Em seguida aplicando a regra do significado da mensagem na suposição 2 usando a função $H\{Msg_{AB}\}$ confirma a autenticidade e integridade da mensagem. Ela aplica a regra de verificação do identificador na suposições 5 usando as fórmulas ${Ts_A}$. E, finalmente, aplicando a regra da jurisdição, nas suposições 8 e 10, obtém a credencial de autorização temporária ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$ e autoriza a entidade \textbf{A} a consumir a requisição ${Req_A}$.
+Como resultado, a entidade $B$ recebe a fórmula ${\Encrypt{Ts_A,(\ShareSecret{A}{{C_{Aut}}}{C}),H{\Encrypt{Msg_{AB}}{Ka ^{-1}}}}{Kb}},{Req_A}$, e a decifra, usando sua chave privada. Em seguida, aplicando a regra do significado da mensagem na suposição 2 e usando a função $H\{Msg_{AB}\}$, confirma a autenticidade e integridade da mensagem. A entidade $B$ aplica a regra de verificação do identificador na suposições 5 usando as fórmulas ${Ts_A}$. Finalmente, aplicando a regra da jurisdição nas suposições 8 e 10, obtém a credencial de autorização temporária ${\#(\ShareSecret{A}{{C_{Aut}}}{C})}$ e autoriza a entidade A a consumir a requisição ${Req_A}$. Como resultado, 
+${B}$ autoriza ${A}$, a partir da nova credencial ${(\ShareSecret{A}{{C_{Aut}}}{C})}$, a consumir a requisição ${Req_A}$
 
-Conclusão :
+\subsubsection{Análise}
 
-${B}$ autoriza ${A}$ a partir da nova credencial ${(\ShareSecret{A}{{C_{Aut}}}{C})}$ a consumir a requisição ${Req_A}$
-
-\subsection{Análise}
-
-A análise demonstra que o protocolo de autenticação e autorização proposto alcança os objetivos propostos na Seção~\ref{sec:Suposicoes}, que é a autenticação da entidade ${A}$ e a emissão da credencial de autenticação e autorização temporária. Isso permite que a entidade ${A}$ consuma o serviço requerido. É importante frisar que a lógica BAN foi utilizada para demonstrar a execução do protocolo e que a utilização da lógica é apenas um dos passos necessários para verificar se existem possíveis falhas no protocolo.
-
-Para verificar a segurança do protocolo é necessário que seja empregado um método de criptoanálise sobre a criptografia utilizada e assim verificar quais são vulnerabilidades que o protocolo ou os algoritmos criptográficos empregados estão sujeitos.
+A análise demonstra que o protocolo de autenticação e autorização proposto alcança os objetivos apresentados--- ou seja, a autenticação da entidade ${A}$ e a emissão da credencial de autenticação e autorização temporária. Isso permite que a entidade ${A}$ consuma o serviço requerido. É importante frisar que a lógica BAN foi utilizada para (a) comunicar 
+de forma mais precisa a execução do protocolo e (b) permitir uma verifica\c c\~{a}o mais precisa sobre possíveis falhas no protocolo.
+{\color{blue}precisamos discutir isso, pois voc\^{e} apresenta uma an\'{a}lise de seguran\c ca no pr\'{o}ximo cap\'{i}tulo} Para verificar a segurança do protocolo é necessário que seja empregado um método de criptoanálise sobre a criptografia utilizada e assim verificar quais são vulnerabilidades que o protocolo ou os algoritmos criptográficos empregados estão sujeitos.
 
 
 \section{Implementação}\label{sec:implementacao}
 
-Após a definição do protocolo proposto e para atender a necessidade da realização de testes de desempenho que tem a finalidade de avalizar o impacto da solução proposta no oferecimento de serviços pela PCDF, surgiu a necessidade da criação de um protótipo do protocolo de autenticação e autorização proposto. Esse protótipo foi desenvolvido em conjunto com o corpo acadêmico da UNB, neste caso, o responsável pelo desenvolvimento foi o aluno Alexandre Lucchesi.  A descrição desse protótipo e apresentado a seguir.
+Após a definição do protocolo proposto, e para atender o interesse na realização de testes de desempenho que objetivam avaliar o impacto da solução, 
+foi feita a implementa\c c\~{a}o de um protótipo para o protocolo de autenticação e autorização. Esse protótipo foi desenvolvido em conjunto com um 
+trabalho de conclus\~{a}o de curso do aluno Alexandre Lucchesi (da Engenharia da Computa\c c\~{a}o, UnB).
+
 \subsection{Protótipo}
 
-Para implementar o protótipo do protocolo proposto foi necessário desenvolver cada um dos componentes: Cliente, Servidor de Autenticação e Autorização e Servidor REST, descritos na arquitetura do protocolo na seção~\ref{sec:ArqProtocolo}. Para isso, foi utilizada a linguagem de programação puramente funcional Haskell, com o compilador GHC(Glasgow Haskell Compiler) versão 7.6.3. Para o controle de dependências e gerenciamento de \emph{build} de aplicações foi utilizado à ferramenta Cabal que é um o gerenciador de pacotes do Haskell. Com ele é possível construir aplicações e bibliotecas de forma padronizada, organizada e portável. Para criar o protótipo ainda foi utilizado o framework Haskell para desenvolvimento web, denominado Snap \emph{Framework} que é necessário para manipulação de requisições e respostas HTTP, que são utilizadas pelo protocolo de autenticação e autorização proposto. Além disso, foi utilizado o HsOpenSSL que é um OpenSSL vinculativo para Haskell, utilizado para garantir a utilização do HTTPS em todas as trocas de mensagem a partir de código Haskell.
+Para implementar o protótipo do protocolo proposto foi necessário desenvolver cada um dos componentes (Cliente, \servidorAA e \servidorRest) descritos na arquitetura 
+do protocolo na seção~\ref{sec:ArqProtocolo}. Para isso, foi utilizada a linguagem de programação funcional Haskell, com o compilador GHC (Glasgow Haskell Compiler). 
+Para o controle de dependências e gerenciamento de \emph{build} de aplicações foi utilizada a ferramenta Cabal, que é um o gerenciador de pacotes do Haskell. Com ele é possível construir aplicações e bibliotecas de forma padronizada, organizada e portável. Para criar o protótipo ainda foi utilizado o framework Haskell para desenvolvimento web, denominado Snap \emph{Framework} que é necessário para lidar com as requisições HTTP. Tais requisi\c c\~{o}es são utilizadas pelo protocolo de autenticação e autorização proposto. Além disso, foi utilizado o HsOpenSSL que é um OpenSSL {\color{red}vinculativo} para Haskell, utilizado para garantir a utilização do HTTPS em todas as trocas de mensagem a partir de código Haskell.
 
 Para a assinatura digital das mensagens utilizadas pelo protocolo foi utilizado o algoritmo RSASSA\-PKCS\-v1\_5 SHA\-256 conforme orientação descrita na publicação~\cite{ietfjws} e para criptografia foi utilizado o algoritmo de criptografia assimétrica, RSAES\-PKCS1\-V1\_5, para cifrar a chave simétrica utilizada no algoritmo de criptografia simétrica AES\_128\_CBC\_HMAC\_SHA\_256 que foi utilizado para cifrar a mensagem. Procurou-se seguir a orientação do que é preconizado na publicação~\cite{jwt2014}.
 
-O servidor de banco de dados foi implementado utilizando o banco de dados não relacional \emph{Apache CouchDB}, que é um banco de dados flexível e tolerante a falhas que usa \emph{JSON} para armazenar os dados, JavaScript como sua linguagem de consulta usando o MapReduce, além disso, este banco de dados oferece API estilo REST.
+O servidor de banco de dados foi implementado utilizando o banco de dados não relacional \emph{Apache CouchDB}, que é um banco de dados flexível e tolerante a falhas que usa \emph{JSON} para armazenar os dados e JavaScript como sua linguagem de consulta usando o MapReduce. Além disso, o \emph{Apache CouchDB} 
+oferece uma API de acesso de acordo com o estilo REST.
 
-O protótipo implementado não objetivou a otimização do protocolo, seu objetivo foi o de possibilitar a realização dos testes de desempenho e de verificar as funcionalidades do protocolo proposto.
-
-\section{Análise de Segurança}
-
-Nesta seção serão discutidas as propriedades de segurança do protocolo de autenticação e autorização proposto. São abordadas as propriedades e alguns ataques que podem ser realizados contra ele. Essa seção segue o padrão determinado no trabalho~\cite{traust08}.
-
-\subsection{Segurança da sessão}
-
-O protocolo de Autenticação e Autorização proposto utiliza para segurança de seção e da camada de transporte, o protocolo TLS/SSL. A utilização desse protocolo tem por objetivo evitar o ataque man-in-the-middle. Para isso, é exigido tanto do órgão conveniado como da própria PCDF que ambas utilizem certificados digitais padrão X.509 emitidos e garantidos por uma AC que esteja subordinada à hierarquia da ICP-Brasil.
-
-Com isso, ambas as partes envolvidas no processo de comunicação podem estabelecer um processo de confiança mútua no nível de transporte. Todo o tráfego que flui sobre uma sessão bilateral certificada tem uma fonte confiável. Isso permite que implementações de serviços possam autorizar ou desautorizar interações com base na fonte bem conhecida de uma solicitação HTTP.
-
-Além da segurança oferecida pela utilização da segurança na camada de transporte, com utilização do TLS/SSL, o protocolo utiliza mecanismos de segurança tais como criptografia assimétrica e assinatura digital. Isso Permite que outras partes mal intencionadas não consigam ter acesso ao conteúdo das mensagens trocadas pelo protocolo no processo de comunicação.
-
-Diferentemente do sistema Traust, o protocolo de Autenticação e Autorização proposto, não será executado em ambientes em que nem o cliente nem o servidor tem uma chave pública certificada, procura-se dessa forma, atenuar problemas relacionados ao protocolo TLS, que quando executado em ambientes em que nem o cliente nem o servidor tem uma chave pública certificada, pode ser vulnerável a um ataque man-in-the-middle durante o estabelecimento da sessão~\cite{traust08}.
-
-\subsection{Responsabilização dos usuários conveniados}
-
-Uma das ameaças verificadas diz respeito a possibilidade do uso indevido, por parte dos órgãos conveniados, das informações disponibilizadas nos serviços ofertados pela PCDF. Isso decorre do fato das informações disponibilizadas serem sensíveis e possuírem caráter sigiloso. Dessa forma, para evitar esse problema é exigido dos órgãos conveniados que assinem um contrato para o consumo do serviço. No momento da assinatura do contrato eles recebem uma tabela contendo várias credenciais que servem como identidades e que deverão ser utilizadas no processo de autenticação, conforme descrito no seção~\ref{sec:reqprotocolo}. Isso possibilita que haja uma autenticação mútua entre a PCDF e os consumidores dos serviços. Além disso, com a utilização do protocolo de autenticação e autorização proposto, são empregados mecanismos de criptografia e assinaturas digitais que são geradas a partir de certificados digitais padrão X.509 vinculados aos órgãos e garantidos por AC. Dessa forma, busca-se evitar o não-repúdio por parte dos órgãos conveniados, atribuindo-lhes responsabilidades em caso do mau uso dos serviço ofertados pela PCDF.
-
-Logo, uma vez detectado algum tipo de vazamento de dados proveniente dos serviços ofertados o órgão poderá ser identificado e após uma apuração minuciosa, responsabilizado pelos danos causados à PCDF.
-
-\subsection{Ataques de repetição}
-Esta ameaça, conforme descrito no capitulo~\ref{cap:revisaolit}, seção~\ref{sec:vulnerabilidadessoa}, se empregada contra o protocolo de autenticação e autorização proposto, tem uma chance quase nula de sucesso. Uma vez que são empregados \emph{timestamps} em em todas as trocas de mensagens realizadas pelo protocolo. Além disso, são gerados números únicos, que identificam os desafios de autenticação gerados e podem ser utilizados como \emph{nonces}, que também podem ser empregados contra esse tipo de ataque.
-
-\subsection{Ataques de negação de serviço}
-
-Esta ameaça é muito difícil de ser evitada, haja vista que,  pode ser fruto de ataques via rede, do consumo excessivo de recursos da máquina,  ou ainda,  ser resultante da exploração de qualquer tipo de vulnerabilidade que implique na indisponibilidade do serviço ou de um recurso. O protocolo de autenticação e autorização proposto é baseado no esquema de desafio-resposta. Os desafios são gerados de forma aleatória a partir das credenciais que identificam unicamente os consumidores dos serviços, o que possibilita uma autenticação mútua. Além disso, também são empregados outros mecanismos de segurança como utilização da segurança na camada de transporte e mecanismos de criptografia e assinaturas digitais. Isso minimiza a ameaça de ataques de negação de serviço.
-
-Assim como o sistema Traust,~\cite{traust08}, o servidor de autenticação e autorização proposto pode ser replicado para outros servidores, o que possibilita um balanceamento de carga e minimiza a criação de gargalos. Isso permite que o servidor de autenticação seja escalável e esteja disponível em situações críticas, como no caso dos ataques de negação de serviço.
+O protótipo implementado não objetivou a otimização de c\'{o}digo. Seu objetivo foi o de possibilitar a realização dos testes de desempenho em uma configura\c c\~{a}o 
+mais rudimentar em termos de desempenho, o que leva a possibilidades de melhoria em rela\c c\~{a}o ao processamento das requisi\c c\~{o}es. 
+Al\'{e}m disso, o prot\'{o}tipo permitiu verificar as funcionalidades do protocolo proposto.
 
 
-\subsection{Roubo de credenciais de autenticação e autorização}\label{subsec:RouboCred}
-
-O protocolo de autenticação a autorização proposto após executado corretamente emite um token de segurança que será utilizado para a obtenção do serviço desejado, conforme apresenato na seção~\ref{sec:ArqProtocolo}, cabe ressaltar que se por algum motivo um atacante, conseguir burlar o os mecanismos de segurança utilizados pelo protocolo e conseguir acesso a essa credencial de autenticação e autorização ele terá acesso apenas um serviço, pois o protocolo emite credenciais para um único serviço por vez e com tempo de expiração determinado no momento de sua geração.
-
-Essa é uma situação muito difícil de ser verificada, porém caso ocorra o problema é minimizado e não terá grande impacto na arquitetura do protocolo como um todo.
-
-Outro problema que pode ocorrer é o roubo de credenciais de autenticação, que são as credenciais que o órgão conveniado recebe no momento da assinatura do contrato de oferecimento do serviço. Essa credenciais são utilizadas para responder os desafios que serão realizadas pelo protocolo de autenticação proposto. Caso isso ocorra e seja identificado a PCDF pode de forma rápida e transparente desativar as credenciais que julgar que foram comprometidas sem que o usuário seja prejudicado. Em um caso mais extremo, outras podem ser geradas e redistribuíras ao órgão conveniado.
-
-Porém cabe ressaltar que caso ocorra o roubo de credenciais, o órgão que teve o problema será investigado e poderá ser responsabilizado se for detectado má fé má gestão na guarda das credenciais, conforme descrito na subseção~\ref{subsec:RouboCred}
-
-
-\subsection{Ponto único de ataque}
-
-Uma das possibilidades verificadas é que ocorrendo um ataque, o alvo possa não ser protocolo de autenticação e autorização proposto e sim o próprio servidor de autenticação e autorização. Neste caso, se o atacante for bem sucedido em sua empreitada o servidor poder ficar vulnerável. Esse servidor é responsável pela geração dos desafios de autenticação e pela geração das credenciais de autenticação e autorização. Porém, apesar de realizar estas atividades ele armazena e consulta os dados gerados no processo de autenticação e autorização em outra máquina, que é em um servidor de banco de dados. Em outras palavras o servidor de autenticação e autorização está em uma máquina diferente do servidor de banco de dados, o que minimiza os problemas relacionados a esse tipo de ataque, pois o servidor pode ser replicado para outra máquina e o que estiver com problemas pode ser fácilmente substituído.
 \section{Síntese do capítulo}
 
-Este capítulo apresentou os requisitos e a arquitetura do protocolo de autenticação e autorização proposto.  Além disso,  o capítulo apresentou a formalização do protocolo utilizando à lógica BAN.  Foi descrita de forma sucinta a implementação de um protótipo do protocolo proposto. Ao final foi realizada uma análise de segurança semelhante ao do trabalho proposto em~\cite{traust08}. No próximo capítulo será realizada uma análise de desempenho a fim de mensurar o impacto do protocolo na infraestrutura da PCDF. 
+Este capítulo apresentou os requisitos e a arquitetura do protocolo de autenticação e autorização proposto. Além disso,  o capítulo apresentou a formalização do protocolo utilizando à lógica BAN. Finalmente, foi apresentada de forma sucinta a implementação de um protótipo para p protocolo proposto. No próximo capítulo fazemos uma 
+análise de seguran\c ca do protocolo proposto 
+(conforme o trabalho apresentado em~\cite{traust08}) e apresentamos uma an\'{a}lise de 
+desempenho a fim de mensurar o impacto do protocolo {\color{red}n\~{a}o sei se o impacto \'{e}} 
+na infraestrutura da PCDF. 
