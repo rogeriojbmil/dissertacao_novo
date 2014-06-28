@@ -3,7 +3,6 @@ The style file: plain.bst
 Database file #1: reflatex.bib
 A bad cross reference---entry "JensenGHL2007"
 refers to entry "conf/ecows/2007", which doesn't exist
-Warning--I didn't find a database entry for "goodrich2013introdução"
 Warning--I didn't find a database entry for "conf/ecows/2007"
 Warning--can't use both author and editor fields in TANENBAUM2007
 Warning--can't use both author and editor fields in Cerami2002

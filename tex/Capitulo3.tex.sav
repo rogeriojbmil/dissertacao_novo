@@ -260,9 +260,6 @@ Um certificado digital X.509 normalmente contém os seguintes campos:
 
 \end{itemize}
 
-
-
-
 \section{Vulnerabilidades em SOA}\label{sec:vulnerabilidadessoa}
 
 Segundo~\cite{Verissimo2001}, hackers buscam por falhas e vulnerabilidades dos sistemas operacionais, aplicativos, software de rede e assim por diante. Usuários imprudentes ou administradores podem apresentar outras falhas, por causa da maneira como eles configuram ou executam os sistemas que operam. Esses problemas podem ocorrer em SOA. Para que se possa entender melhor esse contexto, são descritos a seguir conceitos que auxiliam o entendimento de vulnerabilidades.

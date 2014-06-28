@@ -1,8 +1,11 @@
 \chapter{Avaliação e análise de desempenho}
 
+\section{Introdução}
+
 Após a definição da estrutura da arquitetura de referência SOA, que utiliza serviços web \emph{RESTfull}, conforme apresentado no capítulo~\ref{cap:Protocolo},  e onde foi proposto um protocolo de autenticação e autorização que tem por finalidade prover segurança a essa arquitetura, optou-se por realizar experimentos que possibilitem a mensuração do impacto da sua utilização na infraestrutura da PCDF. Desta forma, este capítulo apresenta a avaliação de desempenho da arquitetura proposta.
 
-\section{\emph{Testes de desempenho}}
+\section{Testes de desempenho}
+
 Testes de desempenho são definidos como uma investigação técnica realizada para determinar a capacidade de resposta, produtividade, confiabilidade e ou escalabilidade de um sistema, sob uma determinada carga de trabalho~\cite{Meier2007}.
 A análise de desempenho possibilita identificar problemas que geralmente são encontrados em sistemas computacionais. Esses problemas podem ser agrupados em tópicos de: comparação e configuração de sistemas, identificação de gargalos, caracterização de cargas de trabalho e a previsão de desempenho~\cite{jain1991art}. Sendo assim, a análise de desempenho do protocolo de autenticação e autorização proposto foi dividida em dois estudos de caso que são apresentados nas seções~\ref{sec:caso1} e ~\ref{sec:caso2}.
 
@@ -12,7 +15,7 @@ Nesta seção será apresentada a metodologia empregada para a realização do t
 
 Para este estudo de caso foi utilizado um serviço web \emph{RESTfull}, que retorna informações sobre as ocorrências policiais, tais como: quais tipos de ocorrências criminais estão registras, dados gerais da vítima, autor, dentre outras informações. Esse serviço web é amplamente utilizado pela PCDF e também pelos seus órgãos parceiros. O serviço foi consumido utilizando o protocolo de segurança proposto, buscando-se realizar uma comparação de desempenho com e sem a sua utilização. Como métrica de avaliação verificou-se o tempo médio de resposta, que consiste no tempo entre a solicitação de um serviço por um usuário até o momento em que ele recebe uma resposta completa na sua estação de trabalho~\cite{ Molyneaux2009}.
 
-\subsection{Configuração do Ambiente de Teste}
+\subsection{Configuração do ambiente de teste}
 
 Os ambientes de teste utilizados foram o laboratório de informática da Universidade de Brasília e o da Divisão de Tecnologia da Policia Civil do Distrito Federal, uma vez que se busca resultados mais próximos da realidade hoje vivenciado pela PCDF.
 
@@ -100,7 +103,7 @@ Para a realização dos testes foram utilizadas configurações distintas de com
 
 Os web services adotados serão os mesmos definidos no estudo de caso 1, web service RESTfull de ocorrências criminais, que retornam informações gerais do sistema de ocorrências policiais.
 
-\subsection{\emph{Configuração do Ambiente de Teste}}
+\subsection{\emph{Configuração do ambiente de teste}}
 
 Ambiente de teste foi o da Divisão de Tecnologia da Policia Civil do Distrito Federal, uma vez que se buscam resultados mais próximos da realidade hoje vivenciados pela PCDF.
 
@@ -154,7 +157,7 @@ Média de Bytes      &  1401,05      \\ \hline
 \caption {Estatística básica com a utilização do protocolo de autenticação e autorização para 50 usuários.}\label{tb:estatistica_com_cripto_50}
 \end{table}
 
-\subsection{Síntese do capítulo}
+\section{Síntese do capítulo}
 Neste capítulo foram realizados dois estudos de caso, onde foram detalhados os cenários que seriam analisados, os ambientes e planejamento de testes e as referidas análises dos resultados obtidos.
 
 Os estudos de casos realizados evidenciaram que o impacto no desempenho é significativo quando comparado com a não utilização da proposta. Porém os tempos médios obtidos estão dentro de um tempo médio esperado, que é abaixo de 5 segundos. Observou-se ainda, que em um cenário extremo de utilização, onde a PCDF tenha que atender a uma média de 2 duas requisições por segundo, e um período de 1 uma hora, ou seja 1200 requisições, a arquitetura proposta atende perfeitamente, pois consegue atender a 8,62 requisições por segundo em um cenário extremo onde foram realizados 5000 requisições em aproximadamente em 10 minutos.

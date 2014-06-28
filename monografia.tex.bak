@@ -13,14 +13,25 @@
 
 
 
+%\documentclass[oneside,openright,brazil]{normas-utf-tex} %oneside = para dissertacoes com numero de paginas menor que 100 (apenas frente da folha)
+
+\special{papersize=210mm,297mm}
+% force A4 paper format
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Pacotes importados
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%\usepackage[num,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite} %configuracao correta das referencias bibliograficas.
 \usepackage[brazil,american]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{indentfirst}
-\usepackage{natbib}
+%\usepackage{abntex2cite} % Normas da ABNT
+
+
+%\usepackage[num,abnt-full-initials=yes]{abntex2cite}
+%\usepackage{natbib}
+%\usepackage[num,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite} %configuracao correta das referencias bibliograficas.
 \usepackage{xcolor,graphicx,url}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb,amsthm}
@@ -36,7 +47,18 @@
 \usepackage{booktabs}
 \usepackage{colortbl}
 \usepackage{latexsym}
+\usepackage{tabularx}
 \usepackage{amssymb,proof}
+\usepackage{setspace}                % controla o espaçamento entre linhas
+%  \onehalfspace                      % espaçamento 1.5 linha no texto \begin{spacing}{1.0}
+%\usepackage[num,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite} %configuracao correta das referencias bibliograficas.
+
+\usepackage[final]{pdfpages} % adicao da ata
+\setcounter{tocdepth}{3}
+\renewcommand{\baselinestretch}{1.5} % espaçamento entre linha
+\newcommand{\servidorRest}{servidor de fachada REST}
+\newcommand{\servidorAA}{servidor de Autenticação e Autorização}
+\newcommand{\servidorBD}{servidor de Banco de Dados}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -61,26 +83,27 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Informações sobre a monografia
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{UnB-CIC: Uma classe em LaTeX para textos do Departamento de Ciência da Computação}%
+\title{Proposta de Protocolo de Autenticação e Autorização seguro para aplicações SOA}%
 
-\orientador{\prof \dr Guilherme Novaes Ramos}{CIC/UnB}
-%\coorientador[a]{\prof[a] \dr[a] Coorientadora}{MAT/UnB}
-\coordenador[a]{\prof[a] \dr[a] Coorde Nadora}{CIC/UnB}
+\orientador{\prof \dr Rodrigo Bonifácio de Almeida}{CIC/UnB}
+\coorientador[a]{\prof[a] \dr[a] Edna Dias Canedo}{CIC/UnB}
+\coordenador[a]{\prof \dr Marcelo Ladeira}{CIC/UnB}
 \diamesano{24}{dezembro}{2014}%
 
 \membrobanca{\prof[a] \dr[a] Membra da Banca}{MEC}
 \membrobanca{\prof \dr Membro do Banco}{CIC/UnB}
 
-\autor{Guilherme N.}{Ramos}
+\autor{Rogério Alves da}{Conceição}
 \CDU{004.4}
 
-\palavraschave{\LaTeX, metodologia científica}
-\keywords{\LaTeX, scientific method}
+\palavraschave{Interoperabilidade, Segurança em arquiteturas orientadas a serviço, Web Services, Arquitetura de referência em SOA} % palavras-chave do trabalho
+\keywords{Interoperability, Security in service-oriented architectures, Web Services, SOA Reference Architecture} % palavras-chave do trabalho em ingles
 
 
 
 \graphicspath{{.}{img/}}%
 \newcommand{\unbcic}{\texttt{UnB-CIC}}%
+\setcounter{secnumdepth}{3} % adiciona terceiro nivel
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Texto
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,21 +121,22 @@ Agradeço ao Prof. José Ralha, cujos esforços na versão anterior foram bem ``
 
 \hyphenation{au-xi-li-ar}
 
-  \begin{resumo}
-  Um parágrafo resumindo todo o trabalho. Classe \LaTeX\ para gerar documentos do Departamento de Ciência da Computação da Universidade de Brasília.
-  \end{resumo}
+\begin{resumo}
+  A DITEC, Divisão de Tecnologia da Polícia Civil do Distrito Federal, tem como responsabilidade estratégica o desenvolvimento dos softwares da instituição, muitas vezes apresentando necessidades de integração e compartilhamento de informações sensíveis com órgãos conveniados. Dada a criticidade desses sistemas e informações compartilhadas, preocupações relacionadas a segurança devem ser tratadas sob uma perspectiva arquitetural dentro da instituição, que atualmente adota diferentes alternativas de integração, desde \emph{Web Services} até a replicação das bases de dados para instituições parceiras. O objetivo desse trabalho é propor uma arquitetura orientada a serviços para ser adotada como alternativa única de integração, balanceando os requisitos de segurança com outros atributos de qualidade; em particular o tempo de processamento das requisições.
+\end{resumo}
 
-  \selectlanguage{american}
-  \begin{abstract}
-  Um parágrafo \emph{na língua Inglesa} resumindo todo o trabalho. A \LaTeX\ class for generating documents for the Departament of Computer Science of the University of Brasília.
-  \end{abstract}
-  \selectlanguage{brazil}
+\selectlanguage{american}
+\begin{abstract}
+ DITEC, Technology Division Civil Police of the Federal District, is responsible for the software's institution strategic development, often presenting needs of integration and sharing of sensitive information with government insured. Given the criticality of these systems and shared information, security concerns should be treated under an architectural perspective within the institution, which currently adopts different integration alternatives, from \ emph {Web Services} to the replication of databases for partner institutions. The aim of this paper is to propose a service-oriented architecture to be adopted as an alternative single integration, balancing security requirements with other quality attributes, in particular the processing time of the requests.
+
+\end{abstract}
+\selectlanguage{brazil}
 \hyphenation{a-tri-bu-tos}
   \tableofcontents
   \listoffigures
   \listoftables
-  
-  
+
+
 
 
 \renewcommand{\appendixname}{Anexo}
@@ -123,18 +147,24 @@ Agradeço ao Prof. José Ralha, cujos esforços na versão anterior foram bem ``
   \input{tex/Capitulo1}
   \input{tex/Capitulo2}
   \input{tex/Capitulo3}
-  \input{tex/Capitulo4}
-  \input{tex/Capitulo5}
+  %\input{tex/Capitulo4}
+  \input{tex/Capitulo04_rev_Rogerio}
+  %\input{tex/Capitulo5}
+  \input{tex/cap5}
+  \input{tex/Capitulo05_Proposto}
   % inserir demais capítulos
 
+%\clearpage % this is need for add +1 to pageref of bibstart used in 'ficha catalografica'.
+%\label{bibstart}
+%\bibliography{reflatex} % geracao automatica das referencias a partir do arquivo reflatex.bib
+%\label{bibend}
 
-  \postextual
-  \bibliographystyle{plain}
+ \postextual
+ \bibliographystyle{plain}
   %\bibliography{bibliografia}
   %\bibliography{bibliografia2}
   \bibliography{reflatex}
-
-\appendix
-  \input{tex/Anexo1}
+%\appendix
+%  \input{tex/Anexo1}
 
 \end{document}
