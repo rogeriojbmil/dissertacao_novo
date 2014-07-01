@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.7.15)  12 JUN 2014 11:32
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.8.4)  30 JUN 2014 22:32
 entering extended mode
-**C:/Users/774081/Downloads/monografia*(2)/monografia.tex
-("C:/Users/774081/Downloads/monografia (2)/monografia.tex"
+**E:/monografia*(2)/monografia.tex
+("E:/monografia (2)/monografia.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,21 +13,21 @@ german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("C:\Users\774081\Downloads\monografia (2)\unb-cic.cls"
+("E:\monografia (2)\unb-cic.cls"
 Document Class: unb-cic 2008/06/05 v0.93 Classe para trabalhos CIC UnB
-("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
 Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
 \XKV@toks=\toks14
 \XKV@tempa@toks=\toks15
 \XKV@depth=\count79
 File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\keyval.tex")))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\generic\xkeyval\keyval.tex")))
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -43,21 +43,20 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fixltx2e.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\base\fixltx2e.sty"
 Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
 LaTeX Info: Redefining \em on input line 420.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\relsize.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\ltxmisc\relsize.sty"
 Package: relsize 2003/07/04 ver 3.1
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
 
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
@@ -97,26 +96,25 @@ Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+) ("C:\Arquivos de programas\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen103
 \Hy@linkcounter=\count89
 \Hy@pagecounter=\count90
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count91
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 431
@@ -129,17 +127,17 @@ Package hyperref Info: Backreferencing ON on input line 4461.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\backref.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\hyperref\backref.sty"
 Package: backref 2012/07/25 v1.38 Bibliographical back referencing
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
 \c@Hy@tempcnt=\count92
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
@@ -164,34 +162,34 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver: hpdftex.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count97
 \c@bookmark@seq@number=\count98
 \Hy@SectionHShift=\skip43
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gread@gobject=\count99
 ))
 \Gin@req@height=\dimen107
 \Gin@req@width=\dimen108
 )
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\latex\boites\boites.sty
+("E:\monografia (2)\boites.sty"
 File: boites.sty 
 Package: boites 2013/11/21 v1.1 Colored, framed and breakable across pages boxe
 s
@@ -199,7 +197,7 @@ s
 \bk@bxa=\box27
 \bk@lcnt=\count100
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count101
 \Gm@cntv=\count102
@@ -214,26 +212,26 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutvoffset=\dimen116
 \Gm@dimlist=\toks16
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 \c@TotPaginas=\count104
 \c@definition=\count105
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/08 v3.8m The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\portuges.ldf"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\generic\babel\portuges.ldf"
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count106
 \U@D=\dimen117
@@ -241,33 +239,26 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\english.ldf"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\generic\babel\english.ldf"
 Language: english 2005/03/30 v3.3o English support from the babel system
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip44
-\bibsep=\skip45
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count107
-)
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -281,19 +272,19 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -443,7 +434,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -474,7 +465,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -500,33 +491,33 @@ Now handling font encoding PD1 ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip46
+\@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks19
 \ex@=\dimen118
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen119
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count108
+\inf@bad=\count107
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count109
-\leftroot@=\count110
+\uproot@=\count108
+\leftroot@=\count109
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count111
-\DOTSCASE@=\count112
+\classnum@=\count110
+\DOTSCASE@=\count111
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -535,15 +526,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen120
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count113
-\c@MaxMatrixCols=\count114
+\macc@depth=\count112
+\c@MaxMatrixCols=\count113
 \dotsspace@=\muskip11
-\c@parentequation=\count115
-\dspbrk@lvl=\count116
+\c@parentequation=\count114
+\dspbrk@lvl=\count115
 \tag@help=\toks20
-\row@=\count117
-\column@=\count118
-\maxfields@=\count119
+\row@=\count116
+\column@=\count117
+\maxfields@=\count118
 \andhelp@=\toks21
 \eqnshift@=\dimen121
 \alignsep@=\dimen122
@@ -552,125 +543,124 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \totwidth@=\dimen125
 \lineht@=\dimen126
 \@envbody=\toks22
-\multlinegap=\skip47
-\multlinetaggap=\skip48
+\multlinegap=\skip45
+\multlinetaggap=\skip46
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks24
 \thm@bodyfont=\toks25
 \thm@headfont=\toks26
 \thm@notefont=\toks27
 \thm@headpunct=\toks28
-\thm@preskip=\skip49
-\thm@postskip=\skip50
-\thm@headsep=\skip51
+\thm@preskip=\skip47
+\thm@postskip=\skip48
+\thm@headsep=\skip49
 \dth@everypar=\toks29
 )
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\latex\mdwtools\footnote.sty
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\mdwtools\footnote.sty"
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box30
 \fn@width=\dimen127
 )
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\latex\tablefootnote\tablefootno
-te.sty
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\tablefootnote\tablefootnote.sty
+"
 Package: tablefootnote 2014/01/26 v1.1c Table foot notes (HMM)
-
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\latex\xifthen\xifthen.sty
+ ("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\xifthen\xifthen.sty"
 Package: xifthen 2009/04/17 v1.3 Extended ifthen features
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\misc\etex.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\misc\etex.sty"
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count120
+\et@xins=\count119
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count121
-\calc@Bcount=\count122
+\calc@Acount=\count120
+\calc@Bcount=\count121
 \calc@Adimen=\dimen128
 \calc@Bdimen=\dimen129
-\calc@Askip=\skip52
-\calc@Bskip=\skip53
+\calc@Askip=\skip50
+\calc@Bskip=\skip51
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count123
-\calc@Cskip=\skip54
+\calc@Ccount=\count122
+\calc@Cskip=\skip52
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\latex\ifmtarg\ifmtarg.sty
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\ifmtarg\ifmtarg.sty"
 Package: ifmtarg 2009/09/02 v1.2a check for an empty argument
 ))
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
-\etb@tempcnta=\count124
+\etb@tempcnta=\count123
 ))
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
-\lst@mode=\count125
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count124
 \lst@gtempboxa=\box31
 \lst@token=\toks30
-\lst@length=\count126
+\lst@length=\count125
 \lst@currlwidth=\dimen130
-\lst@column=\count127
-\lst@pos=\count128
+\lst@column=\count126
+\lst@pos=\count127
 \lst@lostspace=\dimen131
 \lst@width=\dimen132
-\lst@newlines=\count129
-\lst@lineno=\count130
+\lst@newlines=\count128
+\lst@lineno=\count129
 \lst@maxwidth=\dimen133
 
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
-\c@lstnumber=\count131
-\lst@skipnumbers=\count132
+\c@lstnumber=\count130
+\lst@skipnumbers=\count131
 \lst@framebox=\box32
 )
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
 Package: listings 2014/03/04 1.5c (Carsten Heinz)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks31
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
 Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen134
 \extrarowheight=\dimen135
 \NC@list=\toks32
-\extratabsurround=\skip55
-\backup@length=\skip56
+\extratabsurround=\skip53
+\backup@length=\skip54
 )
 \TX@col@width=\dimen136
 \TX@old@table=\dimen137
 \TX@old@col=\dimen138
 \TX@target=\dimen139
 \TX@delta=\dimen140
-\TX@cols=\count133
+\TX@cols=\count132
 \TX@ftn=\toks33
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen141
 )
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen142
 \lightrulewidth=\dimen143
@@ -682,26 +672,26 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen149
 \cmidrulekern=\dimen150
 \defaultaddspace=\dimen151
-\@cmidla=\count134
-\@cmidlb=\count135
+\@cmidla=\count133
+\@cmidlb=\count134
 \@aboverulesep=\dimen152
 \@belowrulesep=\dimen153
-\@thisruleclass=\count136
-\@lastruleclass=\count137
+\@thisruleclass=\count135
+\@lastruleclass=\count136
 \@thisrulewidth=\dimen154
 )
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\latex\colortbl\colortbl.sty
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks34
-\minrowclearance=\skip57
+\minrowclearance=\skip55
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\latexsym.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\base\latexsym.sty"
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
 )
-("C:\Users\774081\Downloads\monografia (2)\proof.sty"
+("E:\monografia (2)\proof.sty"
 \inferLineSkip=\dimen155
 \inferLabelSkip=\dimen156
 \@LeftOffset=\dimen157
@@ -726,57 +716,67 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 \@LabelPart=\box35
 \ResultBox=\box36
 )
-("C:\Users\774081\Downloads\monografia (2)\cores.tex")
-Package hyperref Info: Option `colorlinks' set `true' on input line 57.
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
+Package: pdfpages 2013/05/30 v0.4u Insert pages of external PDF documents (AM)
 
-("C:\Users\774081\Downloads\monografia (2)\monografia.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-\AtBeginShipoutBox=\box37
-Package backref Info: ** backref set up for natbib ** on input line 88.
-Package hyperref Info: Link coloring ON on input line 88.
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+)
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
+File: pppdftex.def 2013/05/30 v0.4u Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box37
+\AM@toc@title=\toks35
+\c@AM@survey=\count137
+\AM@templatesizebox=\box38
+)
+("E:\monografia (2)\cores.tex")
+Package hyperref Info: Option `colorlinks' set `true' on input line 79.
+ ("E:\monografia (2)\monografia.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+\AtBeginShipoutBox=\box39
+Package hyperref Info: Link coloring ON on input line 111.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count138
 )
-LaTeX Info: Redefining \ref on input line 88.
-LaTeX Info: Redefining \pageref on input line 88.
-LaTeX Info: Redefining \nameref on input line 88.
-
-("C:\Users\774081\Downloads\monografia (2)\monografia.out")
-("C:\Users\774081\Downloads\monografia (2)\monografia.out")
+LaTeX Info: Redefining \ref on input line 111.
+LaTeX Info: Redefining \pageref on input line 111.
+LaTeX Info: Redefining \nameref on input line 111.
+ ("E:\monografia (2)\monografia.out") ("E:\monografia (2)\monografia.out")
 \@outlinefile=\write3
 
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+("C:\Arquivos de programas\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count139
 \scratchdimen=\dimen174
-\scratchbox=\box38
+\scratchbox=\box40
 \nofMPsegments=\count140
 \nofMParguments=\count141
-\everyMPshowfont=\toks35
+\everyMPshowfont=\toks36
 \MPscratchCnt=\count142
 \MPscratchDim=\dimen175
 \MPnumerator=\count143
 \makeMPintoPDFobject=\count144
-\everyMPtoPDFconversion=\toks36
+\everyMPtoPDFconversion=\toks37
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -812,66 +812,66 @@ LaTeX Info: Redefining \nameref on input line 88.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("C:\Users\774081\Downloads\monografia (2)\hypernat.sty"
-Package: hypernat 2001/07/09 v1.0b hyperref and natbib compatibility (jb)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\hypcap.sty"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\oberdiek\hypcap.sty"
 Package: hypcap 2011/02/16 v1.11 Adjusting the anchors of captions (HO)
 )
 \c@lstlisting=\count145
-\len@brasiliaw=\skip58
-\len@uadesch=\skip59
-\len@uacaph=\skip60
-LaTeX Font Info:    Try loading font information for T1+ua1 on input line 89.
+\len@brasiliaw=\skip56
+\len@uadesch=\skip57
+\len@uacaph=\skip58
+LaTeX Font Info:    Try loading font information for T1+ua1 on input line 112.
 
-(C:\Users\774081\AppData\Roaming\MiKTeX\2.9\tex\latex\arial\t1ua1.fd
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\arial\t1ua1.fd"
 File: t1ua1.fd 2006/03/21 Fontinst v1.928 font definitions for T1/ua1.
 )
 LaTeX Font Info:    Font shape `T1/ua1/bx/n' in size <20> not available
-(Font)              Font shape `T1/ua1/b/n' tried instead on input line 89.
+(Font)              Font shape `T1/ua1/b/n' tried instead on input line 112.
 
-<positivo_cor.pdf, id=367, 119.44624pt x 60.225pt>
+<positivo_cor.pdf, id=363, 119.44624pt x 60.225pt>
 File: positivo_cor.pdf Graphic file (type pdf)
  <use positivo_cor.pdf>
-Package pdftex.def Info: positivo_cor.pdf used on input line 89.
+Package pdftex.def Info: positivo_cor.pdf used on input line 112.
 (pdftex.def)             Requested size: 70.28004pt x 35.43501pt.
-\len@lskipoffset=\skip61
+\len@lskipoffset=\skip59
 LaTeX Font Info:    Font shape `T1/ua1/bx/n' in size <10> not available
-(Font)              Font shape `T1/ua1/b/n' tried instead on input line 89.
-\len@lskipoffset=\skip62
-LaTeX Font Info:    Try loading font information for U+msa on input line 89.
+(Font)              Font shape `T1/ua1/b/n' tried instead on input line 112.
+\len@lskipoffset=\skip60
+LaTeX Font Info:    Try loading font information for U+msa on input line 112.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 89.
+LaTeX Font Info:    Try loading font information for U+msb on input line 112.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 89.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 112.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
 
+Non-PDF special ignored!
 
-{C:/Users/774081/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/7
-74081/Downloads/monografia (2)/positivo_cor.pdf>]
+
+{C:/Documents and Settings/All Users/Dados de aplicativos/MiKTeX/2.9/pdftex/con
+fig/pdftex.map} <E:/monografia (2)/positivo_cor.pdf>]
 \@tempa=\count146
- [2
+
+[2
 
 ]
-\len@brasiliaw=\skip63
-\len@uadesch=\skip64
-\len@uacaph=\skip65
+\len@brasiliaw=\skip61
+\len@uadesch=\skip62
+\len@uacaph=\skip63
 File: positivo_cor.pdf Graphic file (type pdf)
  <use positivo_cor.pdf>
-Package pdftex.def Info: positivo_cor.pdf used on input line 89.
+Package pdftex.def Info: positivo_cor.pdf used on input line 112.
 (pdftex.def)             Requested size: 70.28004pt x 35.43501pt.
-\len@lskipoffset=\skip66
-\len@lskipoffset=\skip67
+\len@lskipoffset=\skip64
+\len@lskipoffset=\skip65
  [3
 
 ] [4
@@ -883,268 +883,276 @@ Package pdftex.def Info: positivo_cor.pdf used on input line 89.
 ] [6
 
 
+] [7
+
+
 ]
-[7
-
-
-] ("C:\Users\774081\Downloads\monografia (2)\monografia.toc" [8
+("E:\monografia (2)\monografia.toc" [8
 
 ] [9])
 \tf@toc=\write4
-
-[10] ("C:\Users\774081\Downloads\monografia (2)\monografia.lof")
+ [10]
+("E:\monografia (2)\monografia.lof")
 \tf@lof=\write5
  [11
 
-]
-("C:\Users\774081\Downloads\monografia (2)\monografia.lot")
+] ("E:\monografia (2)\monografia.lot")
 \tf@lot=\write6
- [12
 
-]
-("C:\Users\774081\Downloads\monografia (2)\tex/Capitulo1.tex"
+[12
+
+] ("E:\monografia (2)\tex/Capitulo1.tex"
 Cap\'{\i }tulo 1.
 [1
 
 
-] [2]) ("C:\Users\774081\Downloads\monografia (2)\tex/Capitulo2.tex" [3]
+] [2]) ("E:\monografia (2)\tex/Capitulo2.tex" [3] [4]
 Cap\'{\i }tulo 2.
-[4
+[5
 
-] [5] [6]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 115.
+] [6] [7]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 116.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Arquivos de programas\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 115.
- [7]
-<qtd_veiculo_publicacao.jpg, id=649, 657.95813pt x 368.87813pt>
-File: qtd_veiculo_publicacao.jpg Graphic file (type jpg)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 116.
 
-<use qtd_veiculo_publicacao.jpg>
-Package pdftex.def Info: qtd_veiculo_publicacao.jpg used on input line 141.
-(pdftex.def)             Requested size: 394.77792pt x 221.32857pt.
- [8 <C:/Users/774081/Downloads/monografia (2)/qtd_veiculo_publicacao.jpg>] [9]
-<tipo_contribuicao_3.jpg, id=673, 369.63094pt x 219.82124pt>
-File: tipo_contribuicao_3.jpg Graphic file (type jpg)
+[8] <qtd_veiculo_publicacao.png, id=659, 674.52pt x 389.20406pt>
+File: qtd_veiculo_publicacao.png Graphic file (type png)
 
-<use tipo_contribuicao_3.jpg>
-Package pdftex.def Info: tipo_contribuicao_3.jpg used on input line 167.
-(pdftex.def)             Requested size: 273.14923pt x 162.44379pt.
- [10 <C:/Users/774081/Downloads/monografia (2)/tipo_contribuicao_3.jpg>]
-<Atributo_Seguranca_Solucao.jpg, id=681, 459.21562pt x 194.22563pt>
-File: Atributo_Seguranca_Solucao.jpg Graphic file (type jpg)
+<use qtd_veiculo_publicacao.png>
+Package pdftex.def Info: qtd_veiculo_publicacao.png used on input line 142.
+(pdftex.def)             Requested size: 472.16078pt x 272.44098pt.
 
-<use Atributo_Seguranca_Solucao.jpg>
-Package pdftex.def Info: Atributo_Seguranca_Solucao.jpg used on input line 182.
+Overfull \hbox (16.91667pt too wide) in paragraph at lines 142--143
+ [][] 
+ []
 
-(pdftex.def)             Requested size: 318.66948pt x 134.78932pt.
+[9 <E:/monografia (2)/qtd_veiculo_publicacao.png>] [10]
+<tipo_contribuicao_3.png, id=682, 411.03563pt x 219.06844pt>
+File: tipo_contribuicao_3.png Graphic file (type png)
 
-<tipo_solucao.jpg, id=684, 277.035pt x 182.18062pt>
-File: tipo_solucao.jpg Graphic file (type jpg)
- <use tipo_solucao.jpg>
-Package pdftex.def Info: tipo_solucao.jpg used on input line 197.
-(pdftex.def)             Requested size: 227.62206pt x 149.68651pt.
+<use tipo_contribuicao_3.png>
+Package pdftex.def Info: tipo_contribuicao_3.png used on input line 168.
+(pdftex.def)             Requested size: 364.19667pt x 194.10452pt.
+ [11 <E:/monografia (2)/tipo_contribuicao_3.png>]
+<Atributo_Seguranca_Solucao.png, id=692, 660.96938pt x 288.3272pt>
+File: Atributo_Seguranca_Solucao.png Graphic file (type png)
 
-[11 <C:/Users/774081/Downloads/monografia (2)/Atributo_Seguranca_Solucao.jpg>]
-[12 <C:/Users/774081/Downloads/monografia (2)/tipo_solucao.jpg>])
-("C:\Users\774081\Downloads\monografia (2)\tex/Capitulo3.tex" [13]
+<use Atributo_Seguranca_Solucao.png>
+Package pdftex.def Info: Atributo_Seguranca_Solucao.png used on input line 183.
+
+(pdftex.def)             Requested size: 455.24411pt x 198.59401pt.
+ [12 <E:/monografia (2)/Atributo_Seguranca_Solucao.png>] <tipo_solucao.png, id=
+701, 573.64313pt x 217.5628pt>
+File: tipo_solucao.png Graphic file (type png)
+
+<use tipo_solucao.png>
+Package pdftex.def Info: tipo_solucao.png used on input line 198.
+(pdftex.def)             Requested size: 455.24411pt x 172.66283pt.
+ [13 <E:/monografia (2)/tipo_solucao.png>])
+("E:\monografia (2)\tex/Capitulo3.tex" [14]
 Cap\'{\i }tulo 3.
-[14
+[15
 
-] [15] [16] [17] <COMPOSICAO_WSDL.jpg, id=741, 206.27063pt x 354.57469pt>
+] [16] [17] [18] <COMPOSICAO_WSDL.jpg, id=755, 206.27063pt x 354.57469pt>
 File: COMPOSICAO_WSDL.jpg Graphic file (type jpg)
 
 <use COMPOSICAO_WSDL.jpg>
-Package pdftex.def Info: COMPOSICAO_WSDL.jpg used on input line 135.
+Package pdftex.def Info: COMPOSICAO_WSDL.jpg used on input line 78.
 (pdftex.def)             Requested size: 103.13506pt x 177.28691pt.
- [18 <C:/Users/774081/Downloads/monografia (2)/COMPOSICAO_WSDL.jpg>] [19] [20] 
-[21]
-<processocriptografia.png, id=780, 402.75468pt x 47.42719pt>
+ [19 <E:/monografia (2)/COMPOSICAO_WSDL.jpg>] [20]
+[21] [22] [23] <processocriptografia.png, id=805, 402.75468pt x 47.42719pt>
 File: processocriptografia.png Graphic file (type png)
 
 <use processocriptografia.png>
-Package pdftex.def Info: processocriptografia.png used on input line 215.
+Package pdftex.def Info: processocriptografia.png used on input line 170.
 (pdftex.def)             Requested size: 364.19667pt x 42.88669pt.
- [22 <C:/Users/774081/Downloads/monografia (2)/processocriptografia.png>]
-<criptosimetrico.png, id=792, 441.90094pt x 136.25906pt>
+
+<criptosimetrico.png, id=809, 441.90094pt x 136.25906pt>
 File: criptosimetrico.png Graphic file (type png)
 
 <use criptosimetrico.png>
-Package pdftex.def Info: criptosimetrico.png used on input line 228.
+Package pdftex.def Info: criptosimetrico.png used on input line 183.
 (pdftex.def)             Requested size: 409.71692pt x 126.34119pt.
- [23 <C:/Users/774081/Downloads/monografia (2)/criptosimetrico.png>] <criptogra
-fiaassimetrica.png, id=802, 531.9875pt x 157.58875pt>
+ [24 <E:/monografia (2)/processocriptografia.png> <E:/monografia (2)/criptosime
+trico.png>]
+<criptografiaassimetrica.png, id=820, 531.9875pt x 157.58875pt>
 File: criptografiaassimetrica.png Graphic file (type png)
 
 <use criptografiaassimetrica.png>
-Package pdftex.def Info: criptografiaassimetrica.png used on input line 241.
+Package pdftex.def Info: criptografiaassimetrica.png used on input line 198.
 (pdftex.def)             Requested size: 409.71692pt x 121.37254pt.
- [24 <C:/Users/774081/Downloads/monografia (2)/criptografiaassimetrica.png>]
-
-Package natbib Warning: Citation `goodrich2013introdu��o' on page 25 undefined 
-on input line 269.
-
-[25] <esquema_assinatura_digital.png, id=820, 1036.87375pt x 508.90125pt>
+ [25 <E:/monografia (2)/criptografiaassimetrica.png>] [26]
+<esquema_assinatura_digital.png, id=839, 1036.87375pt x 508.90125pt>
 File: esquema_assinatura_digital.png Graphic file (type png)
 
 <use esquema_assinatura_digital.png>
-Package pdftex.def Info: esquema_assinatura_digital.png used on input line 275.
+Package pdftex.def Info: esquema_assinatura_digital.png used on input line 232.
 
 (pdftex.def)             Requested size: 409.71692pt x 201.09532pt.
- [26 <C:/Users/774081/Downloads/monografia (2)/esquema_assinatura_digital.png>]
- [27] [28] [29]
-<openiddiagram.png, id=859, 646.415pt x 294.09875pt>
+ [27 <E:/monografia (2)/esquema_assinatura_digital.png>] [28] [29] [30] [31]
+<openiddiagram.png, id=882, 646.415pt x 294.09875pt>
 File: openiddiagram.png Graphic file (type png)
  <use openiddiagram.png>
-Package pdftex.def Info: openiddiagram.png used on input line 357.
+Package pdftex.def Info: openiddiagram.png used on input line 340.
 (pdftex.def)             Requested size: 364.19667pt x 165.69939pt.
 
-[30 <C:/Users/774081/Downloads/monografia (2)/openiddiagram.png>] [31]
-<diagrama_oauth2.png, id=889, 715.67375pt x 325.215pt>
+[32 <E:/monografia (2)/openiddiagram.png>] [33]
+<diagrama_oauth2.png, id=910, 715.67375pt x 325.215pt>
 File: diagrama_oauth2.png Graphic file (type png)
 
 <use diagrama_oauth2.png>
-Package pdftex.def Info: diagrama_oauth2.png used on input line 413.
+Package pdftex.def Info: diagrama_oauth2.png used on input line 396.
 (pdftex.def)             Requested size: 364.19667pt x 165.50015pt.
- [32 <C:/Users/774081/Downloads/monografia (2)/diagrama_oauth2.png>]) ("C:\User
-s\774081\Downloads\monografia (2)\tex/Capitulo4.tex"
-[33] [34]
+ [34 <E:/monografia (2)/diagrama_oauth2.png>] [35])
+("E:\monografia (2)\tex/Capitulo04_rev_Rogerio.tex" [36]
 Cap\'{\i }tulo 4.
-[35
+[37
 
-] [36]
-<modelo_relacionamento_contrato1.png, id=923, 872.90823pt x 311.75294pt>
+] [38]
+<modelo_relacionamento_contrato1.png, id=954, 872.90823pt x 311.75294pt>
 File: modelo_relacionamento_contrato1.png Graphic file (type png)
 
 <use modelo_relacionamento_contrato1.png>
 Package pdftex.def Info: modelo_relacionamento_contrato1.png used on input line
- 32.
-(pdftex.def)             Requested size: 364.19667pt x 130.07433pt.
+ 38.
+(pdftex.def)             Requested size: 455.24411pt x 162.59291pt.
 
-<arquitetura_protocolo.png, id=925, 886.31125pt x 567.11874pt>
+<arquitetura_protocolo.png, id=956, 886.31125pt x 567.11874pt>
 File: arquitetura_protocolo.png Graphic file (type png)
 
 <use arquitetura_protocolo.png>
-Package pdftex.def Info: arquitetura_protocolo.png used on input line 52.
-(pdftex.def)             Requested size: 364.19667pt x 233.0394pt.
- [37 <C:/Users/774081/Downloads/monografia (2)/modelo_relacionamento_contrato1.
-png> <C:/Users/774081/Downloads/monografia (2)/arquitetura_protocolo.png>]
-<fluxo_autenticacao.png, id=932, 612.78937pt x 381.67593pt>
+Package pdftex.def Info: arquitetura_protocolo.png used on input line 56.
+(pdftex.def)             Requested size: 455.24411pt x 291.29492pt.
+ [39 <E:/monografia (2)/modelo_relacionamento_contrato1.png>] [40 <E:/monografi
+a (2)/arquitetura_protocolo.png>]
+<fluxo_autenticacao.png, id=966, 612.78937pt x 381.67593pt>
 File: fluxo_autenticacao.png Graphic file (type png)
 
 <use fluxo_autenticacao.png>
-Package pdftex.def Info: fluxo_autenticacao.png used on input line 77.
+Package pdftex.def Info: fluxo_autenticacao.png used on input line 76.
 (pdftex.def)             Requested size: 455.24411pt x 283.54813pt.
- [38] [39 <C:/Users/774081/Downloads/monografia (2)/fluxo_autenticacao.png>] [4
-0] [41] [42] [43] [44] [45]
-<fluxo_autenticacao_BAN.png, id=989, 612.03656pt x 242.40562pt>
+ [41 <E:/monografia (2)/fluxo_autenticacao.png>]
+[42] [43] <cenario2_autenticacao.png, id=982, 491.58656pt x 479.54156pt>
+File: cenario2_autenticacao.png Graphic file (type png)
+
+<use cenario2_autenticacao.png>
+Package pdftex.def Info: cenario2_autenticacao.png used on input line 127.
+(pdftex.def)             Requested size: 364.19667pt x 355.28691pt.
+ [44] [45 <E:/monografia (2)/cenario2_autenticacao.png>] [46] [47] [48]
+<fluxo_autenticacao_BAN.png, id=1025, 504.38437pt x 306.39468pt>
 File: fluxo_autenticacao_BAN.png Graphic file (type png)
 
 <use fluxo_autenticacao_BAN.png>
-Package pdftex.def Info: fluxo_autenticacao_BAN.png used on input line 261.
-(pdftex.def)             Requested size: 364.19667pt x 144.24237pt.
- [46 <C:/Users/774081/Downloads/monografia (2)/fluxo_autenticacao_BAN.png>] [47
-]
-Overfull \hbox (3.39755pt too wide) in paragraph at lines 315--316
-[]\T1/cmr/m/n/12 Sendo as-sim, $[]$ re-cebe a f�r-mula $[]$, e usando
+Package pdftex.def Info: fluxo_autenticacao_BAN.png used on input line 286.
+(pdftex.def)             Requested size: 364.19667pt x 221.23515pt.
+ [49 <E:/monografia (2)/fluxo_autenticacao_BAN.png>] [50]
+Overfull \hbox (3.07925pt too wide) in paragraph at lines 346--349
+[]\T1/cmr/m/n/12 Dessa forma, $\OML/cmm/m/it/12 C$ \T1/cmr/m/n/12 re-cebe a f�r
+-mula $[]$ e, usando
  []
 
-[48] [49] [50] [51] [52] [53])
-("C:\Users\774081\Downloads\monografia (2)\tex/Capitulo5.tex" [54] [55]
+[51] [52]
+Overfull \hbox (34.48982pt too wide) in paragraph at lines 418--419
+[]\T1/cmr/m/n/12 Como re-sul-tado, a en-ti-dade $\OML/cmm/m/it/12 B$ \T1/cmr/m/
+n/12 re-cebe a f�r-mula $[]\OML/cmm/m/it/12 ; []$\T1/cmr/m/n/12 ,
+ []
+
+[53] [54]) ("E:\monografia (2)\tex/Capitulo5.tex" [55]
 Cap\'{\i }tulo 5.
 [56
 
-]
-Overfull \hbox (25.80287pt too wide) in paragraph at lines 27--34
-[][] 
- []
+] [57] [58] [59] [60] [61]
+<ambiente_teste_desempenho.png, id=1121, 524.71031pt x 258.9675pt>
+File: ambiente_teste_desempenho.png Graphic file (type png)
 
-[57] [58]
-Overfull \hbox (75.52629pt too wide) in paragraph at lines 63--72
-[][] 
- []
-
-
-Overfull \hbox (75.52629pt too wide) in paragraph at lines 76--85
-[][] 
- []
-
-<grafico_teste_desempenho.png, id=1087, 666.99188pt x 447.17062pt>
+<use ambiente_teste_desempenho.png>
+Package pdftex.def Info: ambiente_teste_desempenho.png used on input line 166.
+(pdftex.def)             Requested size: 364.19667pt x 179.7507pt.
+ [62] [63 <E:/monografia (2)/ambiente_teste_desempenho.png>]
+<grafico_teste_desempenho.png, id=1136, 666.99188pt x 447.17062pt>
 File: grafico_teste_desempenho.png Graphic file (type png)
 
 <use grafico_teste_desempenho.png>
-Package pdftex.def Info: grafico_teste_desempenho.png used on input line 92.
+Package pdftex.def Info: grafico_teste_desempenho.png used on input line 222.
 (pdftex.def)             Requested size: 455.24411pt x 305.2183pt.
- [59]
-Overfull \hbox (25.80287pt too wide) in paragraph at lines 116--123
-[][] 
- []
+ [64] [65 <E:/monografia (2)/grafico_teste_desempenho.png>] <comparativowssecur
+ity.png, id=1151, 494.84875pt x 291.0875pt>
+File: comparativowssecurity.png Graphic file (type png)
 
+<use comparativowssecurity.png>
+Package pdftex.def Info: comparativowssecurity.png used on input line 253.
+(pdftex.def)             Requested size: 409.71692pt x 241.00737pt.
+ [66 <E:/monografia (2)/comparativowssecurity.png>]) ("E:\monografia (2)\tex/Ca
+pitulo6.tex" [67]
+Cap\'{\i }tulo 6.
+[68
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[60 <C:/Users/774081/Downloads/monografia (2)/grafico_teste_desempenho.png>]
-[61]) [62] ("C:\Users\774081\Downloads\monografia (2)\monografia.bbl"
-("C:\Users\774081\Downloads\monografia (2)\monografia.brf")
+]) [69] ("E:\monografia (2)\monografia.bbl"
+("E:\monografia (2)\monografia.brf")
 \tf@brf=\write7
- [63
+ [70
 
 
-] [64] [65])
+] [71] [72])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
+ [73]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
 
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
-[66]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
- ("C:\Users\774081\Downloads\monografia (2)\monografia.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
+("E:\monografia (2)\monografia.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: E2194B2476CC12F06BAEF01D7A9EBAEC;6953.
+(rerunfilecheck)             Checksum: 5CFA4756E993F4747B9F849826FC540C;7030.
 Package rerunfilecheck Info: File `monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: A79335D47B5E20C3C9761FC1C46303BA;5350.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
+(rerunfilecheck)             Checksum: 4412CBFF64E49766B6AEBC6444F880C7;6397.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 171.
  )
 (\end occurred when \iffalse on line 469 was incomplete) 
 Here is how much of TeX's memory you used:
- 11788 strings out of 493921
- 165696 string characters out of 3147279
- 270837 words of memory out of 3000000
- 14497 multiletter control sequences out of 15000+200000
- 32818 words of font info for 55 fonts, out of 3000000 for 9000
+ 11986 strings out of 493921
+ 169806 string characters out of 3144003
+ 278630 words of memory out of 3000000
+ 14674 multiletter control sequences out of 15000+200000
+ 32117 words of font info for 54 fonts, out of 3000000 for 9000
  843 hyphenation exceptions out of 8191
- 43i,16n,69p,1353b,628s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\774081\AppDa
-ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti0800.pk> <C:\Users\7
-74081\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1440.pk> 
-<C:\Users\774081\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
-bi1200.pk> <C:\Users\774081\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
-c\dpi600\ecbx1440.pk> <C:\Users\774081\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\774081\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\774081\AppData\Local\MiKT
-eX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\774081\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\774
-081\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C
-:\Users\774081\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm
-1440.pk> <C:\Users\774081\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\
-dpi600\ecbx1728.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc
-}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-sy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/
-Users/774081/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/arial/ua1b8a.pfb>
-Output written on monografia.pdf (78 pages, 980538 bytes).
+ 43i,16n,69p,1495b,518s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Documents and Sett
+ings\Rogerio\Configurações locais\Dados de aplicativos\MiKTeX\2.9\fonts\pk\lj
+four\jknappen\ec\dpi600\ecti0800.pk> <C:\Documents and Settings\Rogerio\Configu
+rações locais\Dados de aplicativos\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
+600\ecbi1200.pk> <C:\Documents and Settings\Rogerio\Configurações locais\Dado
+s de aplicativos\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:
+\Documents and Settings\Rogerio\Configurações locais\Dados de aplicativos\MiK
+TeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Documents and Setti
+ngs\Rogerio\Configurações locais\Dados de aplicativos\MiKTeX\2.9\fonts\pk\ljf
+our\jknappen\ec\dpi600\ecbx2488.pk> <C:\Documents and Settings\Rogerio\Configur
+ações locais\Dados de aplicativos\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
+00\ecbx1200.pk> <C:\Documents and Settings\Rogerio\Configurações locais\Dados
+ de aplicativos\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\
+Documents and Settings\Rogerio\Configurações locais\Dados de aplicativos\MiKT
+eX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Documents and Settin
+gs\Rogerio\Configurações locais\Dados de aplicativos\MiKTeX\2.9\fonts\pk\ljfo
+ur\jknappen\ec\dpi600\ecrm1440.pk> <C:\Documents and Settings\Rogerio\Configura
+ções locais\Dados de aplicativos\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\ecbx1728.pk>{C:/Arquivos de programas/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.
+enc}<C:/Arquivos de programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.
+pfb><C:/Arquivos de programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.p
+fb><C:/Arquivos de programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pf
+b><C:/Arquivos de programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
+><C:/Arquivos de programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+C:/Arquivos de programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
+/Arquivos de programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
+/Arquivos de programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/
+Arquivos de programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/A
+rquivos de programas/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+<C:/Arquivos de programas/MiKTeX 2.9/fonts/type1/urw/arial/ua1b8a.pfb>
+Output written on monografia.pdf (85 pages, 1000586 bytes).
 PDF statistics:
- 1853 PDF objects out of 2073 (max. 8388607)
- 306 named destinations out of 1000 (max. 500000)
- 814 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1889 PDF objects out of 2073 (max. 8388607)
+ 318 named destinations out of 1000 (max. 500000)
+ 821 words of extra memory for PDF output out of 10000 (max. 10000000)
 

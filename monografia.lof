@@ -3,22 +3,26 @@
 \select@language {brazil}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Gr\IeC {\'a}fico representativo da quantidade de contribui\IeC {\c c}\IeC {\~o}es por ve\IeC {\'\i }culo de publica\IeC {\c c}\IeC {\~a}o.}}{8}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Gr\IeC {\'a}fico representativo dos tipos de contribui\IeC {\c c}\IeC {\~o}es}}{10}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Gr\IeC {\'a}fico dos atributos de seguran\IeC {\c c}a abordados na solu\IeC {\c c}\IeC {\~a}o}}{11}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Gr\IeC {\'a}fico dos tipos de Solu\IeC {\c c}\IeC {\~a}o mais propostos}}{12}{figure.2.4}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Gr\IeC {\'a}fico representativo da quantidade de contribui\IeC {\c c}\IeC {\~o}es por ve\IeC {\'\i }culo de publica\IeC {\c c}\IeC {\~a}o.}}{9}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Gr\IeC {\'a}fico representativo dos tipos de contribui\IeC {\c c}\IeC {\~o}es}}{11}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Gr\IeC {\'a}fico dos atributos de seguran\IeC {\c c}a abordados na solu\IeC {\c c}\IeC {\~a}o}}{12}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Gr\IeC {\'a}fico dos tipos de Solu\IeC {\c c}\IeC {\~a}o mais propostos}}{13}{figure.2.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o de servi\IeC {\c c}os WSDL, adaptado de~\cite {Bertino2010}}}{18}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Rela\IeC {\c c}\IeC {\~a}o entre os termos b\IeC {\'a}sicos de criptografia adaptado de~\cite {Schneier1995}.}}{22}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Processo de criptografia sim\IeC {\'e}trica adaptado de ~\cite {stallings2008}.}}{23}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Processo de criptografia assim\IeC {\'e}trica.}}{24}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Processo de assinatura digital com fun\IeC {\c c}\IeC {\~a}o de hash.}}{26}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Fluxo do protocolo OpenId, adaptado de~\cite {rfc6749}}}{30}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Fluxo do protocolo OAuth 2.0 adaptado de~\cite {rfc6749}}}{32}{figure.3.7}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o de servi\IeC {\c c}os WSDL, adaptado de~\cite {Bertino2010}}}{19}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Rela\IeC {\c c}\IeC {\~a}o entre os termos b\IeC {\'a}sicos de criptografia adaptado de~\cite {Schneier1995}.}}{24}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Processo de criptografia sim\IeC {\'e}trica adaptado de ~\cite {stallings2008}.}}{24}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Processo de criptografia assim\IeC {\'e}trica.}}{25}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Processo de assinatura digital com fun\IeC {\c c}\IeC {\~a}o de hash.}}{27}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Fluxo do protocolo OpenId, adaptado de~\cite {rfc6749}}}{32}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Fluxo do protocolo OAuth 2.0 adaptado de~\cite {rfc6749}}}{34}{figure.3.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama de relacionamento entre contrato, credenciais e usu\IeC {\'a}rios}}{37}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 1\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{37}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 1\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{39}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de idealiza\IeC {\c c}\IeC {\~a}o do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto}}{46}{figure.4.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama de relacionamento entre contrato, credenciais e usu\IeC {\'a}rios}}{39}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 1\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{40}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 1\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{41}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 2\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{45}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama com a idealiza\IeC {\c c}\IeC {\~a}o do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto}}{49}{figure.4.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 1\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{60}{figure.5.1}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Ambiente de teste de desempenho do Protocolo de Autentica\IeC {\c c}\IeC {\~a}o e Autoriza\IeC {\c c}\IeC {\~a}o.}}{63}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 1\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{65}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 1\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{66}{figure.5.3}
+\addvspace {10\p@ }

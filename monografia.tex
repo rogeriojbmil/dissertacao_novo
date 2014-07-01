@@ -13,14 +13,25 @@
 
 
 
+%\documentclass[oneside,openright,brazil]{normas-utf-tex} %oneside = para dissertacoes com numero de paginas menor que 100 (apenas frente da folha)
+
+\special{papersize=210mm,297mm}
+% force A4 paper format
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Pacotes importados
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%\usepackage[num,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite} %configuracao correta das referencias bibliograficas.
 \usepackage[brazil,american]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{indentfirst}
-\usepackage{natbib}
+%\usepackage{abntex2cite} % Normas da ABNT
+
+
+%\usepackage[num,abnt-full-initials=yes]{abntex2cite}
+%\usepackage{natbib}
+%\usepackage[num,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite} %configuracao correta das referencias bibliograficas.
 \usepackage{xcolor,graphicx,url}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb,amsthm}
@@ -36,7 +47,18 @@
 \usepackage{booktabs}
 \usepackage{colortbl}
 \usepackage{latexsym}
+\usepackage{tabularx}
 \usepackage{amssymb,proof}
+\usepackage{setspace}                % controla o espaçamento entre linhas
+%  \onehalfspace                      % espaçamento 1.5 linha no texto \begin{spacing}{1.0}
+%\usepackage[num,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite} %configuracao correta das referencias bibliograficas.
+
+\usepackage[final]{pdfpages} % adicao da ata
+\setcounter{tocdepth}{3}
+\renewcommand{\baselinestretch}{1.5} % espaçamento entre linha
+\newcommand{\servidorRest}{servidor de fachada REST}
+\newcommand{\servidorAA}{servidor de Autenticação e Autorização}
+\newcommand{\servidorBD}{servidor de Banco de Dados}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -61,7 +83,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Informações sobre a monografia
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{UnB-CIC: Uma classe em LaTeX para textos do Departamento de Ciência da Computação}%
+\title{Proposta de Protocolo de Autenticação e Autorização seguro para aplicações SOA}%
 
 \orientador{\prof \dr Rodrigo Bonifácio de Almeida}{CIC/UnB}
 \coorientador[a]{\prof[a] \dr[a] Edna Dias Canedo}{CIC/UnB}
@@ -71,7 +93,7 @@
 \membrobanca{\prof[a] \dr[a] Membra da Banca}{MEC}
 \membrobanca{\prof \dr Membro do Banco}{CIC/UnB}
 
-\autor{Rogério Alves da.}{Conceição}
+\autor{Rogério Alves da}{Conceição}
 \CDU{004.4}
 
 \palavraschave{Interoperabilidade, Segurança em arquiteturas orientadas a serviço, Web Services, Arquitetura de referência em SOA} % palavras-chave do trabalho
@@ -81,6 +103,7 @@
 
 \graphicspath{{.}{img/}}%
 \newcommand{\unbcic}{\texttt{UnB-CIC}}%
+\setcounter{secnumdepth}{3} % adiciona terceiro nivel
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Texto
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -112,8 +135,8 @@ Agradeço ao Prof. José Ralha, cujos esforços na versão anterior foram bem ``
   \tableofcontents
   \listoffigures
   \listoftables
-  
-  
+
+
 
 
 \renewcommand{\appendixname}{Anexo}
@@ -124,17 +147,24 @@ Agradeço ao Prof. José Ralha, cujos esforços na versão anterior foram bem ``
   \input{tex/Capitulo1}
   \input{tex/Capitulo2}
   \input{tex/Capitulo3}
-  \input{tex/Capitulo4}
+  %\input{tex/Capitulo4}
+  \input{tex/Capitulo04_rev_Rogerio}
   \input{tex/Capitulo5}
+  %\input{tex/cap5}
+   \input{tex/Capitulo6}
+  %\input{tex/Capitulo05_Proposto}
   % inserir demais capítulos
 
+%\clearpage % this is need for add +1 to pageref of bibstart used in 'ficha catalografica'.
+%\label{bibstart}
+%\bibliography{reflatex} % geracao automatica das referencias a partir do arquivo reflatex.bib
+%\label{bibend}
 
-  \postextual
-  \bibliographystyle{plain}
+ \postextual
+ \bibliographystyle{plain}
   %\bibliography{bibliografia}
   %\bibliography{bibliografia2}
   \bibliography{reflatex}
-
 %\appendix
 %  \input{tex/Anexo1}
 

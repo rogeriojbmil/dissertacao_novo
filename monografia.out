@@ -26,7 +26,7 @@
 \BOOKMARK [2][-]{subsection.2.8.6}{S\355ntese do cap\355tulo}{section.2.8}% 26
 \BOOKMARK [0][-]{chapter.3}{Revis\343o de Literatura}{}% 27
 \BOOKMARK [1][-]{section.3.1}{Arquitetura orientada a servi\347os}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.2}{WEB SERVICES}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.2}{Web Services}{chapter.3}% 29
 \BOOKMARK [2][-]{subsection.3.2.1}{Simple Object Accesss Protocol \(SOAP\)}{section.3.2}% 30
 \BOOKMARK [2][-]{subsection.3.2.2}{Web Services Description Language \(WSDL\)}{section.3.2}% 31
 \BOOKMARK [2][-]{subsection.3.2.3}{Universal Description, Discovery and Integration \(UDDI\)}{section.3.2}% 32
@@ -41,51 +41,50 @@
 \BOOKMARK [2][-]{subsection.3.4.7}{Certificados Digitais}{section.3.4}% 41
 \BOOKMARK [1][-]{section.3.5}{Vulnerabilidades em SOA}{chapter.3}% 42
 \BOOKMARK [2][-]{subsection.3.5.1}{Altera\347\343o das mensagens}{section.3.5}% 43
-\BOOKMARK [2][-]{subsection.3.5.2}{Nega\347\343o de Servi\347os}{section.3.5}% 44
+\BOOKMARK [2][-]{subsection.3.5.2}{Nega\347\343o de Servi\347os e ataques de nega\347\343o de servi\347o distribu\355dos}{section.3.5}% 44
 \BOOKMARK [2][-]{subsection.3.5.3}{Ataques de refer\352ncias externas}{section.3.5}% 45
 \BOOKMARK [2][-]{subsection.3.5.4}{Intercepta\347\343o das mensagens}{section.3.5}% 46
-\BOOKMARK [2][-]{subsection.3.5.5}{Descoberta de informa\347\343o}{section.3.5}% 47
-\BOOKMARK [1][-]{section.3.6}{Protocolos de Autentica\347\343o e Autoriza\347\343o}{chapter.3}% 48
-\BOOKMARK [2][-]{subsection.3.6.1}{OpenID}{section.3.6}% 49
-\BOOKMARK [2][-]{subsection.3.6.2}{SAML}{section.3.6}% 50
-\BOOKMARK [2][-]{subsection.3.6.3}{OAuth}{section.3.6}% 51
-\BOOKMARK [2][-]{subsection.3.6.4}{Traust}{section.3.6}% 52
-\BOOKMARK [2][-]{subsection.3.6.5}{eXtensible Access Control Markup Language}{section.3.6}% 53
-\BOOKMARK [1][-]{section.3.7}{S\355ntese do cap\355tulo}{chapter.3}% 54
-\BOOKMARK [0][-]{chapter.4}{Protocolo de Autentica\347\343o e Autoriza\347\343o proposto}{}% 55
-\BOOKMARK [1][-]{section.4.1}{Introdu\347\343o}{chapter.4}% 56
-\BOOKMARK [1][-]{section.4.2}{Requisitos do Protocolo}{chapter.4}% 57
-\BOOKMARK [1][-]{section.4.3}{Arquitetura do Protoloco}{chapter.4}% 58
-\BOOKMARK [2][-]{subsection.4.3.1}{Vis\343o geral do protocolo de Autentica\347\343o e Autoriza\347\343o proposto}{section.4.3}% 59
-\BOOKMARK [1][-]{section.4.4}{Formaliza\347\343o do protocolo}{chapter.4}% 60
-\BOOKMARK [1][-]{section.4.5}{L\363gica BAN}{chapter.4}% 61
-\BOOKMARK [2][-]{subsection.4.5.1}{Nota\347\343o b\341sica}{section.4.5}% 62
-\BOOKMARK [2][-]{subsection.4.5.2}{Postulados l\363gicos}{section.4.5}% 63
-\BOOKMARK [1][-]{section.4.6}{An\341lise formal do protocolo proposto}{chapter.4}% 64
-\BOOKMARK [2][-]{subsection.4.6.1}{Idealiza\347\343o do protocolo}{section.4.6}% 65
-\BOOKMARK [2][-]{subsection.4.6.2}{Suposi\347\365es}{section.4.6}% 66
-\BOOKMARK [2][-]{subsection.4.6.3}{Provas}{section.4.6}% 67
-\BOOKMARK [2][-]{subsection.4.6.4}{An\341lise}{section.4.6}% 68
-\BOOKMARK [1][-]{section.4.7}{Implementa\347\343o}{chapter.4}% 69
-\BOOKMARK [2][-]{subsection.4.7.1}{Prot\363tipo}{section.4.7}% 70
-\BOOKMARK [1][-]{section.4.8}{An\341lise de Seguran\347a}{chapter.4}% 71
-\BOOKMARK [2][-]{subsection.4.8.1}{Seguran\347a da sess\343o}{section.4.8}% 72
-\BOOKMARK [2][-]{subsection.4.8.2}{Responsabiliza\347\343o dos usu\341rios conveniados}{section.4.8}% 73
-\BOOKMARK [2][-]{subsection.4.8.3}{Ataques de repeti\347\343o}{section.4.8}% 74
-\BOOKMARK [2][-]{subsection.4.8.4}{Ataques de nega\347\343o de servi\347o}{section.4.8}% 75
-\BOOKMARK [2][-]{subsection.4.8.5}{Roubo de credenciais de autentica\347\343o e autoriza\347\343o}{section.4.8}% 76
-\BOOKMARK [2][-]{subsection.4.8.6}{Ponto \372nico de ataque}{section.4.8}% 77
-\BOOKMARK [1][-]{section.4.9}{S\355ntese do cap\355tulo}{chapter.4}% 78
-\BOOKMARK [0][-]{chapter.5}{Avalia\347\343o e an\341lise de desempenho}{}% 79
-\BOOKMARK [1][-]{section.5.1}{Introdu\347\343o}{chapter.5}% 80
+\BOOKMARK [1][-]{section.3.6}{Protocolos de Autentica\347\343o e Autoriza\347\343o}{chapter.3}% 47
+\BOOKMARK [2][-]{subsection.3.6.1}{OpenID}{section.3.6}% 48
+\BOOKMARK [2][-]{subsection.3.6.2}{SAML}{section.3.6}% 49
+\BOOKMARK [2][-]{subsection.3.6.3}{OAuth}{section.3.6}% 50
+\BOOKMARK [2][-]{subsection.3.6.4}{Traust}{section.3.6}% 51
+\BOOKMARK [2][-]{subsection.3.6.5}{eXtensible Access Control Markup Language}{section.3.6}% 52
+\BOOKMARK [1][-]{section.3.7}{S\355ntese do cap\355tulo}{chapter.3}% 53
+\BOOKMARK [0][-]{chapter.4}{Protocolo de Autentica\347\343o e Autoriza\347\343o proposto}{}% 54
+\BOOKMARK [1][-]{section.4.1}{Requisitos do Protocolo}{chapter.4}% 55
+\BOOKMARK [1][-]{section.4.2}{Arquitetura do Protoloco}{chapter.4}% 56
+\BOOKMARK [2][-]{subsection.4.2.1}{Vis\343o geral do protocolo de Autentica\347\343o e Autoriza\347\343o proposto}{section.4.2}% 57
+\BOOKMARK [3][-]{subsubsection.4.2.1.1}{Primeiro cen\341rio}{subsection.4.2.1}% 58
+\BOOKMARK [3][-]{subsubsection.4.2.1.2}{Segundo cen\341rio}{subsection.4.2.1}% 59
+\BOOKMARK [1][-]{section.4.3}{Formaliza\347\343o do protocolo}{chapter.4}% 60
+\BOOKMARK [2][-]{subsection.4.3.1}{L\363gica BAN}{section.4.3}% 61
+\BOOKMARK [3][-]{subsubsection.4.3.1.1}{Nota\347\343o b\341sica}{subsection.4.3.1}% 62
+\BOOKMARK [3][-]{subsubsection.4.3.1.2}{Postulados l\363gicos}{subsection.4.3.1}% 63
+\BOOKMARK [2][-]{subsection.4.3.2}{An\341lise formal do protocolo proposto}{section.4.3}% 64
+\BOOKMARK [3][-]{subsubsection.4.3.2.1}{Idealiza\347\343o do protocolo}{subsection.4.3.2}% 65
+\BOOKMARK [3][-]{subsubsection.4.3.2.2}{Suposi\347\365es}{subsection.4.3.2}% 66
+\BOOKMARK [3][-]{subsubsection.4.3.2.3}{Provas}{subsection.4.3.2}% 67
+\BOOKMARK [3][-]{subsubsection.4.3.2.4}{An\341lise}{subsection.4.3.2}% 68
+\BOOKMARK [1][-]{section.4.4}{Implementa\347\343o}{chapter.4}% 69
+\BOOKMARK [2][-]{subsection.4.4.1}{Prot\363tipo}{section.4.4}% 70
+\BOOKMARK [1][-]{section.4.5}{S\355ntese do cap\355tulo}{chapter.4}% 71
+\BOOKMARK [0][-]{chapter.5}{An\341lise de Seguran\347a e Desempenho}{}% 72
+\BOOKMARK [1][-]{section.5.1}{An\341lise de Seguran\347a}{chapter.5}% 73
+\BOOKMARK [2][-]{subsection.5.1.1}{Seguran\347a da sess\343o}{section.5.1}% 74
+\BOOKMARK [2][-]{subsection.5.1.2}{Responsabiliza\347\343o dos usu\341rios conveniados}{section.5.1}% 75
+\BOOKMARK [2][-]{subsection.5.1.3}{Ataques de repeti\347\343o}{section.5.1}% 76
+\BOOKMARK [2][-]{subsection.5.1.4}{Ataques de nega\347\343o de servi\347o}{section.5.1}% 77
+\BOOKMARK [2][-]{subsection.5.1.5}{Roubo de credenciais de autentica\347\343o e autoriza\347\343o}{section.5.1}% 78
+\BOOKMARK [2][-]{subsection.5.1.6}{Ponto \372nico de ataque}{section.5.1}% 79
+\BOOKMARK [2][-]{subsection.5.1.7}{S\355ntese da an\341lise de seguran\347a}{section.5.1}% 80
 \BOOKMARK [1][-]{section.5.2}{Testes de desempenho}{chapter.5}% 81
-\BOOKMARK [1][-]{section.5.3}{Estudo de caso 1}{chapter.5}% 82
-\BOOKMARK [2][-]{subsection.5.3.1}{Configura\347\343o do ambiente de teste}{section.5.3}% 83
-\BOOKMARK [2][-]{subsection.5.3.2}{Planejamento do experimento}{section.5.3}% 84
-\BOOKMARK [2][-]{subsection.5.3.3}{An\341lise dos resultados}{section.5.3}% 85
-\BOOKMARK [1][-]{section.5.4}{Estudo de caso 2}{chapter.5}% 86
-\BOOKMARK [2][-]{subsection.5.4.1}{Configura\347\343o do ambiente de teste}{section.5.4}% 87
-\BOOKMARK [2][-]{subsection.5.4.2}{Planejamento do experimento}{section.5.4}% 88
-\BOOKMARK [2][-]{subsection.5.4.3}{An\341lise dos resultados}{section.5.4}% 89
-\BOOKMARK [1][-]{section.5.5}{S\355ntese do cap\355tulo}{chapter.5}% 90
-\BOOKMARK [0][-]{section*.10}{Refer\352ncias}{}% 91
+\BOOKMARK [2][-]{subsection.5.2.1}{Objetivos, Quest\365es e M\351tricas}{section.5.2}% 82
+\BOOKMARK [3][-]{subsubsection.5.2.1.1}{Objetivos }{subsection.5.2.1}% 83
+\BOOKMARK [3][-]{subsubsection.5.2.1.2}{Quest\365es}{subsection.5.2.1}% 84
+\BOOKMARK [3][-]{subsubsection.5.2.1.3}{M\351tricas}{subsection.5.2.1}% 85
+\BOOKMARK [2][-]{subsection.5.2.2}{Configura\347\343o do ambiente de teste}{section.5.2}% 86
+\BOOKMARK [2][-]{subsection.5.2.3}{An\341lise dos resultados}{section.5.2}% 87
+\BOOKMARK [1][-]{section.5.3}{S\355ntese do cap\355tulo}{chapter.5}% 88
+\BOOKMARK [0][-]{chapter.6}{Conclus\343o}{}% 89
+\BOOKMARK [0][-]{section*.8}{Refer\352ncias}{}% 90

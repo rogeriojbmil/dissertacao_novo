@@ -1,24 +1,23 @@
 \begin{thebibliography}{10}
 
 \bibitem{TANENBAUM2007}
-MAARTEN VAN~STEEN ANDREW S.~TANENBAUM.
-\newblock {\em SISTEMAS DISTRIBUÍDOS PRINCIPIOS E PARADIGMAS 2ª EDIÇÃO}.
-\newblock SÃO PAULO, 2007.
+Maarten Van~Steen Andrew S.~Tanenbaum.
+\newblock {\em Sistemas Distribídos Principios e Paradigmas 2ª Edição}.
+\newblock São Paulo, 2007.
+
+\bibitem{gqm}
+Victor~R. Basili, Gianluigi Caldiera, and H.~Dieter Rombach.
+\newblock The goal question metric approach.
+\newblock In {\em Encyclopedia of Software Engineering}. Wiley, 1994.
+
+\bibitem{bernerslee2005uri}
+T.~Berners-Lee, R.~Fielding, and L.~Masinter.
+\newblock Rfc 3986, uniform resource identifier (uri): Generic syntax, 2005.
 
 \bibitem{Bertino2010}
 Elisa Bertino, Lorenzo Martino, Federica Paci, and Anna~Cinzia Squicciarini.
 \newblock {\em Security for Web Services and Service-Oriented Architectures}.
 \newblock Springer, 2010.
-
-\bibitem{Sahba2007}
-Nishchal Bhalla and Sahba Kazerooni.
-\newblock Web services vulnerabilities.
-\newblock {\em Security Compass Inc}, 2007.
-
-\bibitem{Bianco2007}
-Phil Bianco, Rick Kotermanski, and Paulo Merson.
-\newblock Evaluating a service-oriented architecture.
-\newblock Technical report, Carnegie Mellon University, 2007.
 
 \bibitem{Booth2004}
 David Booth, Hugo Haas, Francis McCabe, Eric Newcomer, Mike Champion,
@@ -49,7 +48,7 @@ Marijke Coetzee.
   Reliability and Security}, 0:155--160, 2012.
 
 \bibitem{COYLE}
-F.~P COYLE.
+F.~P Coyle.
 \newblock {\em XML, Web Services, and the Data Revolution}.
 \newblock Boston: Addison-Wesley, 2002.
 
@@ -61,12 +60,6 @@ Stefania DAgostini, Valentina~Di Giacomo, Claudia Pandolfo, and Domenico
 \newblock {\em 2012 Seventh International Conference on Availability,
   Reliability and Security}, 0:525--533, 2012.
 
-\bibitem{sonia2008}
-Sónia Cristina~Santos de~Pinho.
-\newblock Arquitectura de segurança num ambiente soa.
-\newblock Master's thesis, Faculdade de Engenharia da Universidade do Porto,
-  2008.
-
 \bibitem{pattern-driven2008}
 Nelly~A. Delessy and Eduardo.B Fernandez.
 \newblock {\em A pattern-driven process for secure service-oriented
@@ -77,6 +70,14 @@ Nelly~A. Delessy and Eduardo.B Fernandez.
 T.~Erl.
 \newblock {\em Soa Principios De Design De Servi{\c{c}}os}.
 \newblock PRENTICE HALL BRASIL, 2009.
+
+\bibitem{erl2012soa}
+T.~Erl, B.~Carlyle, C.~Pautasso, R.~Balasubramanian, H.~Wilhelmsen, and
+  D.~Booth.
+\newblock {\em SOA with REST: Principles, Patterns \& Constraints for Building
+  Enterprise Solutions with REST}.
+\newblock The Prentice Hall Service Technology Series from Thomas Erl. Pearson
+  Education, 2012.
 
 \bibitem{Fielding2000}
 Roy~Thomas Fielding.
@@ -90,12 +91,10 @@ B.A. Forouzan and F.~Mosharraf.
 \newblock {\em Redes de Computadores: Uma Abordagem Top-Down}.
 \newblock 2013.
 
-\bibitem{Furtado2009}
-Camille Furtado, Vinícios Pereira, Leonardo Azevedo, Fernanda Baião, and
-  Flávia Santoro.
-\newblock Arquitetura orientada a serviço - conceituação.
-\newblock Technical report, Departamento de Informática Aplicada (DIA) –
-  Universidade Federal do Estado do Rio de Janeiro (UNIRIO), 2009.
+\bibitem{goodrich2013}
+M.T. Goodrich and R.~Tamassia.
+\newblock {\em Introdução à Segurança de Computadores}.
+\newblock Bookman, 2013.
 
 \bibitem{oauth210}
 E.~Hammer-Lahav.
@@ -106,6 +105,12 @@ E.~Hammer-Lahav.
 Dick Hardt.
 \newblock The {OA}uth 2.0 authorization framework.
 \newblock RFC 6749, RFC Editor, Fremont, CA, USA, October 2012.
+
+\bibitem{harwood2010security}
+M.~Harwood.
+\newblock {\em Security Strategies in Web Applications and Social Networking}.
+\newblock Information Systems Security \& Assurance. Jones \& Bartlett
+  Learning, 2010.
 
 \bibitem{jain1991art}
 R.~Jain.
@@ -142,6 +147,11 @@ Nicolai~M. Josuttis.
 Ramarao Kanneganti and Prasad Chodavarapu.
 \newblock {\em SOA security}.
 \newblock Manning Publications Co., Greenwich, CT, USA, 2008.
+
+\bibitem{kim2010fundamentals}
+David Kim and Michael~G. Solomon.
+\newblock {\em Fundamentals of Information Systems Security}.
+\newblock Jones \& Bartlett Learning, 2010.
 
 \bibitem{guidelines-2007}
 Barbara Kitchenham and Stuart Charters.
@@ -199,16 +209,17 @@ Ian Molyneaux.
   and Quality Assurance}.
 \newblock O'Reilly Media, Inc., 1st edition, 2009.
 
-\bibitem{Moradian2006}
-Esmiralda Moradian and Anne Håkansson.
-\newblock Possible attacks on xml web services.
-\newblock {\em IJCSNS International Journal of Computer Science and 154 Network
-  Security}, VOL.6 No.1B, 2006.
-
 \bibitem{Nordbotten09}
 Nils~Agne Nordbotten.
 \newblock Xml and web services security standards.
 \newblock {\em IEEE Communications Surveys and Tutorials}, 11(3):4--21, 2009.
+
+\bibitem{Pautasso2008}
+Cesare Pautasso, Olaf Zimmermann, and Frank Leymann.
+\newblock Restful web services vs. "big"' web services: Making the right
+  architectural decision.
+\newblock In {\em Proceedings of the 17th International Conference on World
+  Wide Web}, WWW '08, pages 805--814, New York, NY, USA, 2008. ACM.
 
 \bibitem{Petersen2008}
 Kai Petersen, Robert Feldt, Shahid Mujtaba, and Michael Mattsson.
@@ -233,22 +244,26 @@ Leonard Richardson and Sam Ruby.
 \newblock {\em Restful Web Services}.
 \newblock O'Reilly, first edition, 2007.
 
+\bibitem{rodrigues2011analysis}
+Douglas Rodrigues, Julio~C Estrella, and Kalinka~RLJC Branco.
+\newblock Analysis of security and performance aspects in service-oriented
+  architectures.
+\newblock {\em International Journal of Security and Its Applications}, 2011.
+
 \bibitem{Schneier1995}
 Bruce Schneier.
 \newblock {\em Applied Cryptography (2Nd Ed.): Protocols, Algorithms, and
   Source Code in C}.
 \newblock John Wiley \& Sons, Inc., New York, NY, USA, 1995.
 
-\bibitem{Siddavatam2008}
-Irfan Siddavatam and Jayant Gadge.
-\newblock Comprehensive test mechanism to detect attack on web services.
-\newblock {\em Networks, 2008. ICON 2008. 16 IEEE Conferência Internacional
-  sobre}, pages 1 -- 6, 2008.
-
 \bibitem{stallings2008}
 W.~Stallings.
 \newblock {\em Criptografia e segurança de redes: princípios e práticas}.
 \newblock Pearson Prentice Hall, 2008.
+
+\bibitem{XACML}
+{The OASIS technical commitee}.
+\newblock {XACML: eXtensible Access Control Markup Language}, 2005.
 
 \bibitem{Verissimo2001}
 Paulo Verissimo and Luis Rodrigues.

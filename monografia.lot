@@ -5,11 +5,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o b\IeC {\'a}sica L\IeC {\'o}gica BAN, adapta\IeC {\c c}\IeC {\~a}o de ~\cite {Burrows1990}.}}{43}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Suposi\IeC {\c c}\IeC {\~o}es aplicadas ao protocolo proposto.}}{47}{table.4.2}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Nota\IeC {\c c}\IeC {\~a}o b\IeC {\'a}sica da L\IeC {\'o}gica BAN, adapta\IeC {\c c}\IeC {\~a}o de ~\cite {Burrows1990}.}}{46}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Suposi\IeC {\c c}\IeC {\~o}es aplicadas ao protocolo proposto.}}{50}{table.4.2}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Ambiente de configura\IeC {\c c}\IeC {\~a}o estudo de caso 1}}{57}{table.5.1}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Estat\IeC {\'\i }stica b\IeC {\'a}sica da utiliza\IeC {\c c}\IeC {\~a}o do protocolo de autentica\IeC {\c c}\IeC {\~a}o e autoriza\IeC {\c c}\IeC {\~a}o.}}{59}{table.5.2}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Estat\IeC {\'\i }stica b\IeC {\'a}sica sem a utiliza\IeC {\c c}\IeC {\~a}o do protocolo de autentica\IeC {\c c}\IeC {\~a}o e autoriza\IeC {\c c}\IeC {\~a}o.}}{59}{table.5.3}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Ambiente de configura\IeC {\c c}\IeC {\~a}o estudo de caso 1}}{61}{table.5.4}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Estat\IeC {\'\i }stica b\IeC {\'a}sica com a utiliza\IeC {\c c}\IeC {\~a}o do protocolo de autentica\IeC {\c c}\IeC {\~a}o e autoriza\IeC {\c c}\IeC {\~a}o para 50 usu\IeC {\'a}rios.}}{62}{table.5.5}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Cen\'{a}rios de testes realizados}}{61}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Ambiente utilizado na an\IeC {\'a}lise de desempenho}}{62}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces An\IeC {\'a}lise de desempenho considerando o protocolo de autentica\IeC {\c c}\IeC {\~a}o e autoriza\IeC {\c c}\IeC {\~a}o.}}{64}{table.5.3}
+\contentsline {table}{\numberline {5.4}{\ignorespaces An\'{a}lise de desempenho sem considerar o protocolo de autentica\IeC {\c c}\IeC {\~a}o e autoriza\IeC {\c c}\IeC {\~a}o.}}{64}{table.5.4}
+\contentsline {table}{\numberline {5.5}{\ignorespaces An\IeC {\'a}lise de desempenho de Web Services Seguros~\cite {rodrigues2011analysis}.}}{66}{table.5.5}
+\addvspace {10\p@ }

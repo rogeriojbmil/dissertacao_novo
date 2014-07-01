@@ -425,9 +425,6 @@ O XACML descreve uma linguagem para políticas de controle de acesso e têm pont
 
 Uma dos diferenciais do XACML em relação a outros padrões proprietários é que ele é independente de uma implementação específica o que permite que ele possa ser utilizado tanto para prover controle de acesso a sistemas robustos bem como a um recurso específico. Outro ponto importante e que o XACML pode ser combinado ao SAML e assim possibilitar um a criação de um sistema de autorização completo.
 
-
-
-
 \section{Síntese do capítulo}
 
 Este capítulo apresentou conceitos básicos da arquitetura orientada a serviços. Foram abordados conceitos fundamentais da tecnologia Web Services, REST, sendo apresentadas as definições de sua estrutura. Além disso, foram descritos alguns protocolos de autenticação e autorização. No que tange a segurança em SOA, foram apresentados os conceitos básicos de segurança e elencadas algumas das principais vulnerabilidades que afetam a arquitetura orientada a serviços. No próximo capítulo, será descrito o protocolo de autenticação e autorização proposto e sua análise formal, utilizando para isso a lógica BAN.

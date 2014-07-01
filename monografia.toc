@@ -8,85 +8,82 @@
 \contentsline {subsection}{\numberline {1.3.1}Objetivo Geral}{3}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Objetivos Espec\'ificos}{3}{subsection.1.3.2}
 \contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o do Trabalho}{3}{section.1.4}
-\contentsline {chapter}{\numberline {2}Mapeamento Sistem\IeC {\'a}tico}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introdu\IeC {\c c}\IeC {\~a}o}{4}{section.2.1}
-\contentsline {section}{\numberline {2.2}Mapeamento Sistem\IeC {\'a}tico}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Protocolo de Estudo}{4}{section.2.3}
-\contentsline {section}{\numberline {2.4}Quest\IeC {\~o}es de pesquisa (QP)}{5}{section.2.4}
-\contentsline {section}{\numberline {2.5}Estrat\IeC {\'e}gia de Busca}{5}{section.2.5}
-\contentsline {section}{\numberline {2.6}Crit\IeC {\'e}rios de Inclus\IeC {\~a}o e Exclus\IeC {\~a}o}{6}{section.2.6}
-\contentsline {section}{\numberline {2.7}Coleta, Armazenamento dos Dados e An\IeC {\'a}lise}{7}{section.2.7}
-\contentsline {section}{\numberline {2.8}Resultados}{8}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}QP 1 \discretionary {-}{}{} Quest\IeC {\~a}o de Pesquisa 1}{8}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}QP 2 \discretionary {-}{}{} Quest\IeC {\~a}o de Pesquisa 2}{9}{subsection.2.8.2}
-\contentsline {subsection}{\numberline {2.8.3}QP 3 \discretionary {-}{}{} Quest\IeC {\~a}o de Pesquisa 3}{10}{subsection.2.8.3}
-\contentsline {subsection}{\numberline {2.8.4}QP 4 \discretionary {-}{}{} Quest\IeC {\~a}o de Pesquisa 4}{11}{subsection.2.8.4}
-\contentsline {subsection}{\numberline {2.8.5}Discuss\IeC {\~a}o sobre os resultados}{12}{subsection.2.8.5}
-\contentsline {subsection}{\numberline {2.8.6}S\IeC {\'\i }ntese do cap\IeC {\'\i }tulo}{12}{subsection.2.8.6}
-\contentsline {chapter}{\numberline {3}Revis\IeC {\~a}o de Literatura}{14}{chapter.3}
-\contentsline {section}{\numberline {3.1}Arquitetura orientada a servi\IeC {\c c}os}{14}{section.3.1}
-\contentsline {section}{\numberline {3.2}WEB SERVICES}{15}{section.3.2}
+\contentsline {chapter}{\numberline {2}Mapeamento Sistem\IeC {\'a}tico}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introdu\IeC {\c c}\IeC {\~a}o}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Mapeamento Sistem\IeC {\'a}tico}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Protocolo de Estudo}{5}{section.2.3}
+\contentsline {section}{\numberline {2.4}Quest\IeC {\~o}es de pesquisa (QP)}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}Estrat\IeC {\'e}gia de Busca}{6}{section.2.5}
+\contentsline {section}{\numberline {2.6}Crit\IeC {\'e}rios de Inclus\IeC {\~a}o e Exclus\IeC {\~a}o}{7}{section.2.6}
+\contentsline {section}{\numberline {2.7}Coleta, Armazenamento dos Dados e An\IeC {\'a}lise}{8}{section.2.7}
+\contentsline {section}{\numberline {2.8}Resultados}{9}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}QP 1 \discretionary {-}{}{} Quest\IeC {\~a}o de Pesquisa 1}{9}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}QP 2 \discretionary {-}{}{} Quest\IeC {\~a}o de Pesquisa 2}{10}{subsection.2.8.2}
+\contentsline {subsection}{\numberline {2.8.3}QP 3 \discretionary {-}{}{} Quest\IeC {\~a}o de Pesquisa 3}{11}{subsection.2.8.3}
+\contentsline {subsection}{\numberline {2.8.4}QP 4 \discretionary {-}{}{} Quest\IeC {\~a}o de Pesquisa 4}{12}{subsection.2.8.4}
+\contentsline {subsection}{\numberline {2.8.5}Discuss\IeC {\~a}o sobre os resultados}{13}{subsection.2.8.5}
+\contentsline {subsection}{\numberline {2.8.6}S\IeC {\'\i }ntese do cap\IeC {\'\i }tulo}{14}{subsection.2.8.6}
+\contentsline {chapter}{\numberline {3}Revis\IeC {\~a}o de Literatura}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Arquitetura orientada a servi\IeC {\c c}os}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}Web Services}{16}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Simple Object Accesss Protocol (SOAP)}{17}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Web Services Description Language (WSDL)}{17}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Universal Description, Discovery and Integration (UDDI)}{18}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Representational State Transfer}{19}{section.3.3}
-\contentsline {section}{\numberline {3.4}Seguran\IeC {\c c}a em SOA}{21}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Conceitos b\IeC {\'a}sicos}{21}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Criptografia}{22}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Criptografia de Chave Sim\IeC {\'e}trica}{23}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Criptografia de Chave Assim\IeC {\'e}trica}{23}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Fun\IeC {\c c}\IeC {\~o}es de Hash}{24}{subsection.3.4.5}
-\contentsline {subsection}{\numberline {3.4.6}Assinatura digital}{25}{subsection.3.4.6}
-\contentsline {subsection}{\numberline {3.4.7}Certificados Digitais}{26}{subsection.3.4.7}
-\contentsline {section}{\numberline {3.5}Vulnerabilidades em SOA}{27}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Altera\IeC {\c c}\IeC {\~a}o das mensagens}{27}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Nega\IeC {\c c}\IeC {\~a}o de Servi\IeC {\c c}os}{28}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Ataques de refer\IeC {\^e}ncias externas}{28}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Intercepta\IeC {\c c}\IeC {\~a}o das mensagens}{28}{subsection.3.5.4}
-\contentsline {subsection}{\numberline {3.5.5}Descoberta de informa\IeC {\c c}\IeC {\~a}o}{29}{subsection.3.5.5}
-\contentsline {section}{\numberline {3.6}Protocolos de Autentica\IeC {\c c}\IeC {\~a}o e Autoriza\IeC {\c c}\IeC {\~a}o}{29}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}OpenID}{30}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}SAML}{31}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}OAuth}{31}{subsection.3.6.3}
-\contentsline {subsection}{\numberline {3.6.4}Traust}{33}{subsection.3.6.4}
-\contentsline {subsection}{\numberline {3.6.5}eXtensible Access Control Markup Language}{33}{subsection.3.6.5}
-\contentsline {section}{\numberline {3.7}S\IeC {\'\i }ntese do cap\IeC {\'\i }tulo}{33}{section.3.7}
-\contentsline {chapter}{\numberline {4}Protocolo de Autentica\IeC {\c c}\IeC {\~a}o e Autoriza\IeC {\c c}\IeC {\~a}o proposto}{35}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{35}{section.4.1}
-\contentsline {section}{\numberline {4.2}Requisitos do Protocolo}{35}{section.4.2}
-\contentsline {section}{\numberline {4.3}Arquitetura do Protoloco}{37}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Vis\IeC {\~a}o geral do protocolo de Autentica\IeC {\c c}\IeC {\~a}o e Autoriza\IeC {\c c}\IeC {\~a}o proposto}{38}{subsection.4.3.1}
-\contentsline {subsubsection}{Primeiro cen\IeC {\'a}rio}{39}{section*.8}
-\contentsline {subsubsection}{Segundo cen\IeC {\'a}rio}{42}{section*.9}
-\contentsline {section}{\numberline {4.4}Formaliza\IeC {\c c}\IeC {\~a}o do protocolo}{42}{section.4.4}
-\contentsline {section}{\numberline {4.5}L\IeC {\'o}gica BAN}{42}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Nota\IeC {\c c}\IeC {\~a}o b\IeC {\'a}sica}{43}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Postulados l\IeC {\'o}gicos}{43}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}An\IeC {\'a}lise formal do protocolo proposto}{45}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Idealiza\IeC {\c c}\IeC {\~a}o do protocolo}{45}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Suposi\IeC {\c c}\IeC {\~o}es}{46}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Provas}{47}{subsection.4.6.3}
-\contentsline {subsection}{\numberline {4.6.4}An\IeC {\'a}lise}{50}{subsection.4.6.4}
-\contentsline {section}{\numberline {4.7}Implementa\IeC {\c c}\IeC {\~a}o}{51}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Prot\IeC {\'o}tipo}{51}{subsection.4.7.1}
-\contentsline {section}{\numberline {4.8}An\IeC {\'a}lise de Seguran\IeC {\c c}a}{52}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Seguran\IeC {\c c}a da sess\IeC {\~a}o}{52}{subsection.4.8.1}
-\contentsline {subsection}{\numberline {4.8.2}Responsabiliza\IeC {\c c}\IeC {\~a}o dos usu\IeC {\'a}rios conveniados}{52}{subsection.4.8.2}
-\contentsline {subsection}{\numberline {4.8.3}Ataques de repeti\IeC {\c c}\IeC {\~a}o}{53}{subsection.4.8.3}
-\contentsline {subsection}{\numberline {4.8.4}Ataques de nega\IeC {\c c}\IeC {\~a}o de servi\IeC {\c c}o}{53}{subsection.4.8.4}
-\contentsline {subsection}{\numberline {4.8.5}Roubo de credenciais de autentica\IeC {\c c}\IeC {\~a}o e autoriza\IeC {\c c}\IeC {\~a}o}{54}{subsection.4.8.5}
-\contentsline {subsection}{\numberline {4.8.6}Ponto \IeC {\'u}nico de ataque}{54}{subsection.4.8.6}
-\contentsline {section}{\numberline {4.9}S\IeC {\'\i }ntese do cap\IeC {\'\i }tulo}{55}{section.4.9}
-\contentsline {chapter}{\numberline {5}Avalia\IeC {\c c}\IeC {\~a}o e an\IeC {\'a}lise de desempenho}{56}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introdu\IeC {\c c}\IeC {\~a}o}{56}{section.5.1}
-\contentsline {section}{\numberline {5.2}Testes de desempenho}{56}{section.5.2}
-\contentsline {section}{\numberline {5.3}Estudo de caso 1}{56}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Configura\IeC {\c c}\IeC {\~a}o do ambiente de teste}{57}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Planejamento do experimento}{57}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}An\IeC {\'a}lise dos resultados}{58}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Estudo de caso 2}{59}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}\emph {Configura\IeC {\c c}\IeC {\~a}o do ambiente de teste}}{60}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}\emph {Planejamento do experimento}}{61}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}An\IeC {\'a}lise dos resultados}{61}{subsection.5.4.3}
-\contentsline {section}{\numberline {5.5}S\IeC {\'\i }ntese do cap\IeC {\'\i }tulo}{62}{section.5.5}
-\contentsline {chapter}{Refer\^encias}{63}{section*.10}
+\contentsline {subsection}{\numberline {3.2.2}Web Services Description Language (WSDL)}{18}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Universal Description, Discovery and Integration (UDDI)}{19}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Representational State Transfer}{20}{section.3.3}
+\contentsline {section}{\numberline {3.4}Seguran\IeC {\c c}a em SOA}{22}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Conceitos b\IeC {\'a}sicos}{22}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Criptografia}{23}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Criptografia de Chave Sim\IeC {\'e}trica}{24}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Criptografia de Chave Assim\IeC {\'e}trica}{25}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Fun\IeC {\c c}\IeC {\~o}es de Hash}{25}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.6}Assinatura digital}{26}{subsection.3.4.6}
+\contentsline {subsection}{\numberline {3.4.7}Certificados Digitais}{27}{subsection.3.4.7}
+\contentsline {section}{\numberline {3.5}Vulnerabilidades em SOA}{29}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Altera\IeC {\c c}\IeC {\~a}o das mensagens}{29}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Nega\IeC {\c c}\IeC {\~a}o de Servi\IeC {\c c}os e ataques de nega\IeC {\c c}\IeC {\~a}o de servi\IeC {\c c}o distribu\IeC {\'\i }dos}{30}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Ataques de refer\IeC {\^e}ncias externas}{31}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Intercepta\IeC {\c c}\IeC {\~a}o das mensagens}{31}{subsection.3.5.4}
+\contentsline {section}{\numberline {3.6}Protocolos de Autentica\IeC {\c c}\IeC {\~a}o e Autoriza\IeC {\c c}\IeC {\~a}o}{31}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}OpenID}{32}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}SAML}{33}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}OAuth}{34}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}Traust}{35}{subsection.3.6.4}
+\contentsline {subsection}{\numberline {3.6.5}eXtensible Access Control Markup Language}{35}{subsection.3.6.5}
+\contentsline {section}{\numberline {3.7}S\IeC {\'\i }ntese do cap\IeC {\'\i }tulo}{36}{section.3.7}
+\contentsline {chapter}{\numberline {4}Protocolo de Autentica\IeC {\c c}\IeC {\~a}o e Autoriza\IeC {\c c}\IeC {\~a}o proposto}{37}{chapter.4}
+\contentsline {section}{\numberline {4.1}Requisitos do Protocolo}{37}{section.4.1}
+\contentsline {section}{\numberline {4.2}Arquitetura do Protoloco}{39}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Vis\IeC {\~a}o geral do protocolo de Autentica\IeC {\c c}\IeC {\~a}o e Autoriza\IeC {\c c}\IeC {\~a}o proposto}{41}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Primeiro cen\IeC {\'a}rio}{41}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}Segundo cen\IeC {\'a}rio}{44}{subsubsection.4.2.1.2}
+\contentsline {section}{\numberline {4.3}Formaliza\IeC {\c c}\IeC {\~a}o do protocolo}{45}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}L\IeC {\'o}gica BAN}{46}{subsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.1.1}Nota\IeC {\c c}\IeC {\~a}o b\IeC {\'a}sica}{46}{subsubsection.4.3.1.1}
+\contentsline {subsubsection}{\numberline {4.3.1.2}Postulados l\IeC {\'o}gicos}{47}{subsubsection.4.3.1.2}
+\contentsline {subsection}{\numberline {4.3.2}An\IeC {\'a}lise formal do protocolo proposto}{48}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Idealiza\IeC {\c c}\IeC {\~a}o do protocolo}{48}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}Suposi\IeC {\c c}\IeC {\~o}es}{50}{subsubsection.4.3.2.2}
+\contentsline {subsubsection}{\numberline {4.3.2.3}Provas}{51}{subsubsection.4.3.2.3}
+\contentsline {subsubsection}{\numberline {4.3.2.4}An\IeC {\'a}lise}{53}{subsubsection.4.3.2.4}
+\contentsline {section}{\numberline {4.4}Implementa\IeC {\c c}\IeC {\~a}o}{54}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Prot\IeC {\'o}tipo}{54}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}S\IeC {\'\i }ntese do cap\IeC {\'\i }tulo}{55}{section.4.5}
+\contentsline {chapter}{\numberline {5}An\IeC {\'a}lise de Seguran\IeC {\c c}a e Desempenho}{56}{chapter.5}
+\contentsline {section}{\numberline {5.1}An\IeC {\'a}lise de Seguran\IeC {\c c}a}{56}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Seguran\IeC {\c c}a da sess\IeC {\~a}o}{56}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Responsabiliza\IeC {\c c}\IeC {\~a}o dos usu\IeC {\'a}rios conveniados}{57}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Ataques de repeti\IeC {\c c}\IeC {\~a}o}{57}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Ataques de nega\IeC {\c c}\IeC {\~a}o de servi\IeC {\c c}o}{58}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Roubo de credenciais de autentica\IeC {\c c}\IeC {\~a}o e autoriza\IeC {\c c}\IeC {\~a}o}{58}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}Ponto \IeC {\'u}nico de ataque}{59}{subsection.5.1.6}
+\contentsline {subsection}{\numberline {5.1.7}S\'{i}ntese da an\'{a}lise de seguran\c ca}{59}{subsection.5.1.7}
+\contentsline {section}{\numberline {5.2}Testes de desempenho}{59}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Objetivos, Quest\IeC {\~o}es e M\IeC {\'e}tricas}{60}{subsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.1.1}Objetivos }{60}{subsubsection.5.2.1.1}
+\contentsline {subsubsection}{\numberline {5.2.1.2}Quest\IeC {\~o}es}{60}{subsubsection.5.2.1.2}
+\contentsline {subsubsection}{\numberline {5.2.1.3}M\IeC {\'e}tricas}{61}{subsubsection.5.2.1.3}
+\contentsline {subsection}{\numberline {5.2.2}Configura\IeC {\c c}\IeC {\~a}o do ambiente de teste}{62}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}An\IeC {\'a}lise dos resultados}{63}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}S\IeC {\'\i }ntese do cap\IeC {\'\i }tulo}{67}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{68}{chapter.6}
+\contentsline {chapter}{Refer\^encias}{70}{section*.8}
