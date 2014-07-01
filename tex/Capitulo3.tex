@@ -42,9 +42,15 @@ A abordagem de arquiteturas orientadas a serviço e Web services estão centrada
 \end{itemize}
 
 Segundo~\cite{Bertino2010}, cada organização tem que ter autonomia para exercer um controle independente sobre os seus serviços. Para isso a autonomia do negócio tem que ser correspondente a do Web Service no momento do oferecimento e execução do serviço.
+<<<<<<< HEAD
 
 A plataforma de Web services é definida por vários padrões da indústria suportados por todas as comunidades de fornecedores. Essa plataforma está associada à coleção de padrões e especificações de tecnologias abertas tais como Simple Object Access Protocol (SOAP), Web Services Description Language (WSDL) e  Universal Description and Discovery Information (UDDI). Nas seções a seguir será feito uma descrição de cada uma dessas tecnologias.
 
+=======
+
+A plataforma de Web services é definida por vários padrões da indústria suportados por todas as comunidades de fornecedores. Essa plataforma está associada à coleção de padrões e especificações de tecnologias abertas tais como Simple Object Access Protocol (SOAP), Web Services Description Language (WSDL) e  Universal Description and Discovery Information (UDDI). Nas seções a seguir será feito uma descrição de cada uma dessas tecnologias.
+
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
 
 \subsection{Simple Object Accesss Protocol (SOAP)}
 SOAP é um protocolo de transporte que é responsável pela troca de mensagens entre aplicações em ambientes distribuídos e descentralizados, ele segue um padrão que foi especificado pelas normas da W3C, sendo baseado em XML o que o torna totalmente compatível com qualquer plataforma e com linguagens que tenham suporte para a manipulação de arquivos XML. Seu conteúdo é composto por informações e estruturas de dados~\cite{COYLE}.
@@ -126,6 +132,7 @@ Contudo, uma desvantagem associado a essa característica  está relacionada à 
 \end{itemize}
 
 O protocolo HTTP é o padrão utilizado na arquitetura REST para promover a comunicação entre o cliente e o servidor. Isso se dá pela manipulação dos recursos utilizando os métodos HTTP: GET, POST, PUT, DELETE E e adicionalmente os métodos HEADER e OPTIONS.
+<<<<<<< HEAD
 
 Neste contexto, o método GET é utilizado recuperar uma representação de um recurso. PUT para criar um novo recurso ou modificar um existente, DELETE é utilizado para remover um recurso e POST é comumente utilizado para criação de um novo recurso. HEADER é empregado para recuperar metadados de uma representação, podendo ser usado para empregar melhoria no cache. OPTIONS que retornar uma descrição de serviço ou explicação dos métodos disponíveis de uma determinada URI.
 %verificar
@@ -138,6 +145,20 @@ Neste contexto, o método GET é utilizado recuperar uma representação de um r
 
 Os serviços web que são desenvolvidos baseados na arquitetura REST, ou seja, serviços Web RESTful  são relativamente simples, pois a arquitetura REST segue padrões W3C/IETF3 bem conhecidos tais como (HTTP, XML, URI, MIME). Além disso, a sua adoção não é difícil de ser implantada, pois pode ser implementada em várias linguagens e em diferentes sistemas operacionais~\cite{Pautasso2008}.
 
+=======
+
+Neste contexto, o método GET é utilizado recuperar uma representação de um recurso. PUT para criar um novo recurso ou modificar um existente, DELETE é utilizado para remover um recurso e POST é comumente utilizado para criação de um novo recurso. HEADER é empregado para recuperar metadados de uma representação, podendo ser usado para empregar melhoria no cache. OPTIONS que retornar uma descrição de serviço ou explicação dos métodos disponíveis de uma determinada URI.
+%verificar
+%Os métodos HTTP descritos podem ser classificados quanto a segurança e idempotência. De forma que uma solicitação é considerada segura, quando o método utilizado não altera o estado do recurso. E  idempotente, se o resultado de uma solicitação realizada com sucesso é independente do número de vezes que é executada (RICHARDSON, 2007)
+
+%Os métodos GET, HEAD e OPTIONS são seguros e idempotentes, pois não alteram o estado do recurso.  PUT e Delete não são seguros, mas são idempotentes. O método POST é o único método que não é seguro nem idempotente.  (RICHARDSON, 2007)
+
+
+%
+
+Os serviços web que são desenvolvidos baseados na arquitetura REST, ou seja, serviços Web RESTful  são relativamente simples, pois a arquitetura REST segue padrões W3C/IETF3 bem conhecidos tais como (HTTP, XML, URI, MIME). Além disso, a sua adoção não é difícil de ser implantada, pois pode ser implementada em várias linguagens e em diferentes sistemas operacionais~\cite{Pautasso2008}.
+
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
 Serviços Web RESTful, são escaláveis e oferecem suporte a cache através do protocolo HTTP, \emph{clustering} e balanceamento de carga. Outra vantagem e a possibilidade de otimização de desempenho de web services, uma vez que podem utilizar formatos de mensagem mais leves, como por exemplo, o \emph{JavaSript Objetc Notation}(JSON)~\cite{Pautasso2008}.
 
 
@@ -308,6 +329,7 @@ Neste tipo de ataque, o atacante consegue burlar as proteções criadas, como po
 Neste ataque, as mensagens são interceptadas e alteradas sem que qualquer das partes, emissor ou consumidor de serviço saiba que houve a interceptação. São exemplos deste ataque: \emph{Replay Attacks} e \emph{Man-in-the-middle}.
 
 No ataque \emph{Replay Attacks}, o atacante intercepta uma mensagem  e se faz passar pelo emissor. Dessa forma, ele pode reenviar mensagens que já tinham sido previamente enviadas, ou incluir partes de uma ou mais mensagens previamente enviadas numa nova mensagem (\emph{replay} de partes da mensagem). Com esse ataque, os intrusos podem obter informações sigilosas que permitemo acesso não autorizado a um sistema~\cite{kim2010fundamentals}.
+<<<<<<< HEAD
 
 Já no caso do ataque \emph{Man-in-the-middle}, os dados trocados entre duas partes são de alguma forma interceptados, registrados e possivelmente alterados pelo atacante sem que as vitimas percebam as modificações. Os invasores usam ataques man-in-the-middle para roubar informações, para executar ataques de negação de serviço, para corromper os dados transmitidos, para obter acesso a computadores e recursos de rede interna de uma organização, e introduzir novas informações em sessões de rede~\cite{kim2010fundamentals}.
 
@@ -318,6 +340,18 @@ Já no caso do ataque \emph{Man-in-the-middle}, os dados trocados entre duas par
 
 %No ataque \emph{WSDL Scanning}, realiza-se uma varredura no documento WSDL, com a finalidade de se obter informações sobre os métodos, parâmetros e operações constantes no WSDL. Dessa forma, o atacante busca revelar informações sensíveis e possíveis falhas em um Web Service, o que lhe permite realizar um ataque bem sucedido~\cite{Moradian2006};
 
+=======
+
+Já no caso do ataque \emph{Man-in-the-middle}, os dados trocados entre duas partes são de alguma forma interceptados, registrados e possivelmente alterados pelo atacante sem que as vitimas percebam as modificações. Os invasores usam ataques man-in-the-middle para roubar informações, para executar ataques de negação de serviço, para corromper os dados transmitidos, para obter acesso a computadores e recursos de rede interna de uma organização, e introduzir novas informações em sessões de rede~\cite{kim2010fundamentals}.
+
+
+%\subsection{Descoberta de informação}
+
+%Neste tipo de ataque, as informações sobre os sistemas são descobertas e utilizadas para realizar um ataque, de acordo com o tipo de vulnerabilidade, que mais se adeque aos dados dos sistemas obtidos, tais como: tipo e versões do sistema operacional, localização de cópias de segurança, arquivos temporários, informações sobre os serviços dentre outras. Os principais ataques são:\emph{WSDL Scanning} e Ataques aos UDDI.
+
+%No ataque \emph{WSDL Scanning}, realiza-se uma varredura no documento WSDL, com a finalidade de se obter informações sobre os métodos, parâmetros e operações constantes no WSDL. Dessa forma, o atacante busca revelar informações sensíveis e possíveis falhas em um Web Service, o que lhe permite realizar um ataque bem sucedido~\cite{Moradian2006};
+
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
 %No caso do Ataques aos UDDI, o atacante analisa dados desprotegidos dos registros UDDI, e obtém detalhes relativos às funções disponibilizadas pelos Web Services e como acessá-los. Como, muitas vezes, os WSDL são gerados automaticamente por utilitários criados para exporem toda a informação disponível, relativa a um determinado método, é necessário ter alguma atenção na escolha/utilização desses utilitários de forma a ser possível proteger os Web Services desse tipo de ataque. Através da utilização de UDDI v.3.0.2 já é possível implementar alguma proteção relativa a este tipo de ataque. Essa versão já permite solicitar a identificação, autenticação e autorização das entidades antes de lhes dar acesso aos registos UDDI~\cite{sonia2008}.
 
 \section{Protocolos de Autenticação e Autorização}
@@ -409,6 +443,7 @@ Na maioria dos casos, o papel do servidor de autorização e o servidor de recur
 \end{enumerate}
 
 \subsection{Traust}
+<<<<<<< HEAD
 
 O sistema Traust é um serviço flexível de autorização voltado a sistemas abertos de larga escala. Ele utiliza sistemas de negociação de confiança para permitir que os clientes possam estabelecer uma confiança bilateral com provedores de recursos até então desconhecidos em tempo real, além de negociar o acesso a novos recursos em tempo de execução~\cite{traust08}.
 
@@ -424,6 +459,26 @@ O eXtensible Access Control Markup Language (XACML) foi proposto pelo grupo OASI
 O XACML descreve uma linguagem para políticas de controle de acesso e têm pontos de extensão padrão para definição de novas funções, tipos de dados e combinações lógicas o que o torna flexível e extensível.
 
 Uma dos diferenciais do XACML em relação a outros padrões proprietários é que ele é independente de uma implementação específica o que permite que ele possa ser utilizado tanto para prover controle de acesso a sistemas robustos bem como a um recurso específico. Outro ponto importante e que o XACML pode ser combinado ao SAML e assim possibilitar um a criação de um sistema de autorização completo.
+=======
+
+O sistema Traust é um serviço flexível de autorização voltado a sistemas abertos de larga escala. Ele utiliza sistemas de negociação de confiança para permitir que os clientes possam estabelecer uma confiança bilateral com provedores de recursos até então desconhecidos em tempo real, além de negociar o acesso a novos recursos em tempo de execução~\cite{traust08}.
+
+Traust foi projetado para permitir sua integração direta com novas aplicações de reconhecimento de confiança ou indiretamente com aplicações legadas existentes. Essa flexibilidade abre o caminho para a adoção incremental de tecnologias de negociação de confiança sem a necessidade atualizações de protocolo ou de software~\cite{traust08}.
+
+Em síntese, o Traust atua como um intermediário que fornece tokens de segurança que permitem acesso aos recursos localizados em um determinado domínio de segurança. Os formatos dos tokens utilizados podem variar e ser de qualquer formato, incluindo usuário e senha, bilhetes Kerberos, afirmações SAML e ou certificados X.509~\cite{traust08}.
+
+Dessa forma, ele pode ser integrado diretamente a aplicativos mais novos, que sejam baseados em confiança e que tenham por finalidade  prover a autorização a sistemas abertos.
+
+\subsection{eXtensible Access Control Markup Language}
+O eXtensible Access Control Markup Language (XACML) foi proposto pelo grupo OASIS e atualmente está na versão 3.0~\cite{XACML}. O XACML é um padrão baseado em XML que define linguagens de marcação e possibilita especificar politicas de controle de acesso e um modelo de processamento para avaliar solicitações de autorização de acordo com as politicas definidas que são utilizadas para controlar acesso a conteúdos e informações protegidas.
+
+O XACML descreve uma linguagem para políticas de controle de acesso e têm pontos de extensão padrão para definição de novas funções, tipos de dados e combinações lógicas o que o torna flexível e extensível.
+
+Uma dos diferenciais do XACML em relação a outros padrões proprietários é que ele é independente de uma implementação específica o que permite que ele possa ser utilizado tanto para prover controle de acesso a sistemas robustos bem como a um recurso específico. Outro ponto importante e que o XACML pode ser combinado ao SAML e assim possibilitar um a criação de um sistema de autorização completo.
+
+
+
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
 
 \section{Síntese do capítulo}
 

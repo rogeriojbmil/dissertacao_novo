@@ -21,8 +21,14 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 1\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{41}{figure.4.3}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 2\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{45}{figure.4.4}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama com a idealiza\IeC {\c c}\IeC {\~a}o do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto}}{49}{figure.4.5}
+<<<<<<< HEAD
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Ambiente de teste de desempenho do Protocolo de Autentica\IeC {\c c}\IeC {\~a}o e Autoriza\IeC {\c c}\IeC {\~a}o.}}{63}{figure.5.1}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 1\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{65}{figure.5.2}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 1\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{66}{figure.5.3}
 \addvspace {10\p@ }
+=======
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Ambiente de teste de desempenho do Protocolo de Autentica\IeC {\c c}\IeC {\~a}o e Autoriza\IeC {\c c}\IeC {\~a}o.}}{63}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 1\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{65}{figure.5.2}
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa

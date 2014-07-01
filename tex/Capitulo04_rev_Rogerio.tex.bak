@@ -327,7 +327,12 @@ Dessa forma, temos que as suposições 1, 2 e 3 garantem que as entidades partic
 
 \subsubsection{Provas}
 
+<<<<<<< HEAD
 Como o objetivo final do protocolo é autenticar a entidade ${A}$, de forma que ela obtenha uma credencial de autenticação e autorização temporária e referente a uma requisição de serviço desejado. Nessa seção, será realizada uma análise de cada mensagem do protocolo idealizado, aplicando os postulados lógicos e suposições com o intuito de provar que o protocolo consegue atingir o objetivo proposto.
+=======
+Como o objetivo final do protocolo é autenticar a entidade ${A}$, de forma que ela obtenha uma credencial de autenticação e autorização temporária e referente a uma requisição de serviço desejado. Nessa se\c c\~{a}o, será realizada uma análise de cada mensagem do protocolo idealizado, aplicando os postulados lógicos e suposições com
+o intuito de provar que o protocolo consegue atingir o objetivo proposto.
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
 
 Na primeira mensagem, a entidade ${A}$ envia sua credencial, um \emph{timestamp} e o código do serviço que ele está querendo consumir ao \servidorAA,
 representado pela entidade ${C}$. A mensagem enviada é assinada com a chave privada do participante ${A}$  e cifrada com a chave pública do participante ${C}$.
@@ -345,7 +350,12 @@ $C\mid\equiv$ ${Cred_A,Cod_{Srv_A}}$
 
 Dessa forma, $C$ recebe a fórmula ${\Encrypt{Ts_A,Cred_A,Cod_{Srv_A},H{\Encrypt{Msg_{AC}}{Ka ^{-1}}}}{Kc}}$ e, usando sua chave privada, decifra a fórmula recebida.
 Após decifrar a fórmula, e aplicando a regra do significado da mensagem na suposição 3 e usando a função $H \{Msg_{AC}\}$ confirma a autenticidade e integridade da mensagem.
+<<<<<<< HEAD
 Por fim, aplica a regra de verificação do identificador na suposição 6 usando a fórmula ${Ts_A}$ para obter a credencial da entidade ${A}$ (identificada pela fórmula ${Cred_A}$).
+=======
+Por fim, aplica a regra de verificação do identificador na suposição 6 usando a fórmula ${Ts_A}$ para obter a credencial da entidade ${A}$ (identificada pela
+f\'{o}rmula ${Cred_A}$).
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
 
 Na segunda mensagem, após receber e validar os dados enviados por $A$, a entidade ${C}$ gera um desafio de autenticação, ${N_{CA}}$. O desafio consiste em fazer uma busca aleatória à tabela de credenciais e selecionar um código de credencial que esteja associado \`{a} entidade $A$. Em seguida grava-se o desafio, a data e hora de geração do desafio e a resposta esperada em uma base de dados. Na sequência, uma mensagem \'{e} enviada uma mensagem \'{a} entidade $A$. Tal mensagem, que contem
 o desafio e um \emph{timestamp}, precisa ser assinada com a chave privada da entidade ${C}$ e cifrada com a chave pública da entidade ${A}$.

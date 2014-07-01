@@ -78,12 +78,21 @@
 \contentsline {subsection}{\numberline {5.1.6}Ponto \IeC {\'u}nico de ataque}{59}{subsection.5.1.6}
 \contentsline {subsection}{\numberline {5.1.7}S\'{i}ntese da an\'{a}lise de seguran\c ca}{59}{subsection.5.1.7}
 \contentsline {section}{\numberline {5.2}Testes de desempenho}{59}{section.5.2}
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {5.2.1}Objetivos, Quest\IeC {\~o}es e M\IeC {\'e}tricas}{60}{subsection.5.2.1}
+=======
+\contentsline {subsection}{\numberline {5.2.1}Objetivos,Quest\IeC {\~o}es e M\IeC {\'e}tricas}{60}{subsection.5.2.1}
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
 \contentsline {subsubsection}{\numberline {5.2.1.1}Objetivos }{60}{subsubsection.5.2.1.1}
 \contentsline {subsubsection}{\numberline {5.2.1.2}Quest\IeC {\~o}es}{60}{subsubsection.5.2.1.2}
 \contentsline {subsubsection}{\numberline {5.2.1.3}M\IeC {\'e}tricas}{61}{subsubsection.5.2.1.3}
 \contentsline {subsection}{\numberline {5.2.2}Configura\IeC {\c c}\IeC {\~a}o do ambiente de teste}{62}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}An\IeC {\'a}lise dos resultados}{63}{subsection.5.2.3}
+<<<<<<< HEAD
 \contentsline {section}{\numberline {5.3}S\IeC {\'\i }ntese do cap\IeC {\'\i }tulo}{67}{section.5.3}
 \contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{68}{chapter.6}
 \contentsline {chapter}{Refer\^encias}{70}{section*.8}
+=======
+\contentsline {section}{\numberline {5.3}S\IeC {\'\i }ntese do cap\IeC {\'\i }tulo}{66}{section.5.3}
+\contentsline {chapter}{Refer\^encias}{67}{section*.8}
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa

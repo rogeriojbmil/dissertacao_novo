@@ -236,7 +236,11 @@ Dessa forma, para gerar uma assinatura digital, utilizando a combinação da cri
 
 \subsection{Certificados Digitais}
 
+<<<<<<< HEAD
 Um certificado digital é um documento eletrônico que possui informações que comprovam a identidade do seu emissor. Esse documento eletrônico é gerado e assinado por uma terceira parte confiável, denominada Autoridade Certificadora (CA). Uma CA é responsável por associar uma chave pública a uma entidade(pessoa, processo, servidor etc)~\cite{forouzan2013redes}. Dessa forma, uma das finalidades de um certificado digital é garantir que a chave pública contida no certificado pertence à entidade à qual ele foi emitido, possibilitando assim, a identificação inequívoca das partes envolvidas em uma comunicação.
+=======
+Um certificado digital é um documento eletrônico que possui informações que comprovam a identidade do seu emissor. Esse documento eletrônico é gerado e assinado por uma terceira parte confiável, denominada Autoridade Certificadora (AC). Uma AC é responsável por associar uma chave pública a uma entidade(pessoa, processo, servidor etc)~\cite{forouzan2013redes}. Dessa forma, uma das finalidades de um certificado digital é garantir que a chave pública contida no certificado pertence à entidade à qual ele foi emitido, possibilitando assim, a identificação inequívoca das partes envolvidas em uma comunicação.
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
 
 O padrão inicialmente adotado para os certificados digitais foi esquema X.509 que é uma recomendação do ITU-T(\emph{International Telecommunication Union}) e faz parte da série de recomendações X.500, que definem um serviço de diretório que mantém informações sobre usuários~\cite{stallings2008}.
 
@@ -246,7 +250,11 @@ Um certificado digital X.509 normalmente contém os seguintes campos:
 
 \item Versão: Diferencia entre versões sucessivas do formato de certificado; V1, V2, V3 ou, designando a versão padrão do certificado.
 
+<<<<<<< HEAD
 \item Número de série: Um número único de série emitido por uma CA que identifica o certificado.
+=======
+\item Número de série: Um número único de série emitido por uma AC que identifica o certificado.
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
 \item Identificador do algoritmo de assinatura: O algoritmo usado pela CA para assinar o certificado.
 \item Nome do emissor: Um identificador exclusivo para a autoridade certificadora que emitiu o certificado.
 \item Validade: Início e fim do período de validade do certificado.

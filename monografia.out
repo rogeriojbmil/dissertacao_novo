@@ -79,12 +79,20 @@
 \BOOKMARK [2][-]{subsection.5.1.6}{Ponto \372nico de ataque}{section.5.1}% 79
 \BOOKMARK [2][-]{subsection.5.1.7}{S\355ntese da an\341lise de seguran\347a}{section.5.1}% 80
 \BOOKMARK [1][-]{section.5.2}{Testes de desempenho}{chapter.5}% 81
+<<<<<<< HEAD
 \BOOKMARK [2][-]{subsection.5.2.1}{Objetivos, Quest\365es e M\351tricas}{section.5.2}% 82
+=======
+\BOOKMARK [2][-]{subsection.5.2.1}{Objetivos,Quest\365es e M\351tricas}{section.5.2}% 82
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
 \BOOKMARK [3][-]{subsubsection.5.2.1.1}{Objetivos }{subsection.5.2.1}% 83
 \BOOKMARK [3][-]{subsubsection.5.2.1.2}{Quest\365es}{subsection.5.2.1}% 84
 \BOOKMARK [3][-]{subsubsection.5.2.1.3}{M\351tricas}{subsection.5.2.1}% 85
 \BOOKMARK [2][-]{subsection.5.2.2}{Configura\347\343o do ambiente de teste}{section.5.2}% 86
 \BOOKMARK [2][-]{subsection.5.2.3}{An\341lise dos resultados}{section.5.2}% 87
 \BOOKMARK [1][-]{section.5.3}{S\355ntese do cap\355tulo}{chapter.5}% 88
+<<<<<<< HEAD
 \BOOKMARK [0][-]{chapter.6}{Conclus\343o}{}% 89
 \BOOKMARK [0][-]{section*.8}{Refer\352ncias}{}% 90
+=======
+\BOOKMARK [0][-]{section*.8}{Refer\352ncias}{}% 89
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa

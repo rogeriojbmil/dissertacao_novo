@@ -151,8 +151,12 @@ Agradeço ao Prof. José Ralha, cujos esforços na versão anterior foram bem ``
   \input{tex/Capitulo04_rev_Rogerio}
   %\input{tex/Capitulo5}
   \input{tex/cap5}
+<<<<<<< HEAD
    \input{tex/Capitulo6}
   %\input{tex/Capitulo05_Proposto}
+=======
+  \input{tex/Capitulo05_Proposto}
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
   % inserir demais capítulos
 
 %\clearpage % this is need for add +1 to pageref of bibstart used in 'ficha catalografica'.

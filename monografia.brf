@@ -4,7 +4,10 @@
 \backcite {rfc6749}{{xi}{(document)}{Doc-Start}}
 \backcite {rfc6749}{{xi}{(document)}{Doc-Start}}
 \backcite {Burrows1990}{{xii}{(document)}{Doc-Start}}
+<<<<<<< HEAD
 \backcite {rodrigues2011analysis}{{xii}{(document)}{Doc-Start}}
+=======
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
 \backcite {marks2006}{{5}{2.1}{section.2.1}}
 \backcite {Petersen2008}{{5}{2.2}{section.2.2}}
 \backcite {guidelines-2007}{{6}{2.5}{section.2.5}}
@@ -107,6 +110,7 @@
 \backcite {jain1991art}{{59}{5.2}{section.5.2}}
 \backcite {gqm}{{60}{5.2.1}{subsection.5.2.1}}
 \backcite {gqm}{{60}{5.2.1}{subsection.5.2.1}}
+<<<<<<< HEAD
 \backcite {gqm}{{60}{5.2.1}{subsection.5.2.1}}
 \backcite {Meier2007}{{60}{5.2.1.1}{subsubsection.5.2.1.1}}
 \backcite { Molyneaux2009}{{61}{5.2.1.3}{subsubsection.5.2.1.3}}
@@ -115,3 +119,8 @@
 \backcite {rodrigues2011analysis}{{66}{5.2.3}{figure.5.2}}
 \backcite {rodrigues2011analysis}{{66}{5.5}{table.5.5}}
 \backcite {rodrigues2011analysis}{{66}{5.2.3}{table.5.5}}
+=======
+\backcite {Meier2007}{{60}{5.2.1.1}{subsubsection.5.2.1.1}}
+\backcite { Molyneaux2009}{{61}{5.2.1.3}{subsubsection.5.2.1.3}}
+\backcite { Molyneaux2009}{{61}{5.2.1.3}{subsubsection.5.2.1.3}}
+>>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
