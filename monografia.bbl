@@ -79,6 +79,12 @@ T.~Erl, B.~Carlyle, C.~Pautasso, R.~Balasubramanian, H.~Wilhelmsen, and
 \newblock The Prentice Hall Service Technology Series from Thomas Erl. Pearson
   Education, 2012.
 
+\bibitem{pedromiguel2012}
+Pedro Miguel~Gonçalves Ferreira.
+\newblock Dados abertos ua.
+\newblock Master's thesis, Universidade de Aveiro - Departamento de
+  Electrónica, Telecomunicações e Informática, 2012.
+
 \bibitem{Fielding2000}
 Roy~Thomas Fielding.
 \newblock {\em Architectural Styles and the Design of Network-based Software
@@ -255,6 +261,12 @@ Bruce Schneier.
 \newblock {\em Applied Cryptography (2Nd Ed.): Protocols, Algorithms, and
   Source Code in C}.
 \newblock John Wiley \& Sons, Inc., New York, NY, USA, 1995.
+
+\bibitem{verstichel}
+Gabriel Serme, Anderson~Santana de~Oliveira, Julien Massiera, and Yves Roudier.
+\newblock Enabling message security for restful services.
+\newblock In {\em Web Services (ICWS), 2012 IEEE 19th International Conference
+  on}, pages 114--121. IEEE, June 2012.
 
 \bibitem{stallings2008}
 W.~Stallings.

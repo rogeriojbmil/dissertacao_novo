@@ -3,9 +3,7 @@
 
 Com a definição da arquitetura de referência REST e do Protocolo de Autenticação e Autorização (Capítulo~\ref{cap:Protocolo}), tornou-se necessária a realização de uma análise de segurança e de experimentos que possibilitam a mensuração do impacto da sua utilização no tratamento das requisições realizadas à PCDF.
 
-Este capítulo inicialmente apresenta uma análise dos mecanismos de segurança propostos no protocolo. Essa primeira
-análise segue um procedimento informal, mas está de acordo com trabalhos descritos na literatura~\cite{} {\color{red}citar
-disserta\c c\~{o}es, teses e artigos que fazem uma an\'{a}lise similar.}. Em seguida, este capítulo apresenta uma avaliação empírica que busca analisar o desempenho do Protocolo de Autenticação e Autorização proposto.
+Este capítulo inicialmente apresenta uma análise dos mecanismos de segurança propostos no protocolo. Essa primeira análise segue um procedimento informal, mas está de acordo com trabalhos descritos na literatura~\cite{traust08} e~\cite{Altair2004}. Em seguida, este capítulo apresenta uma avaliação empírica que busca analisar o desempenho do Protocolo de Autenticação e Autorização proposto.
 
 \section{Análise de Segurança}
 
@@ -13,9 +11,7 @@ Nesta seção serão discutidas as propriedades de segurança do Protocolo de Au
 
 \subsection{Segurança da sessão}
 
-O protocolo de Autenticação e Autorização proposto utiliza para segurança de sessão e camada de transporte o protocolo TLS/SSL. A utilização desse protocolo tem por objetivo evitar o ataque \emph{man-in-the-middle}. Para isso, é exigido, tanto para o órgão conveniado quanto para a própria PCDF, a utilização de certificados digitais padrão X.509, emitidos e garantidos por uma CA que esteja subordinada à hierarquia da ICP-Brasil.
-
-Ambas as partes envolvidas no processo de comunicação podem estabelecer um processo de confiança mútua no nível de transporte. Todo o tráfego que flui sobre uma sessão bilateral certificada tem uma fonte confiável permitindo que implementações de serviços possam autorizar ou desautorizar interações com base na fonte bem conhecida de uma solicitação HTTP.
+O protocolo de Autenticação e Autorização proposto utiliza para segurança de sessão e camada de transporte o protocolo TLS/SSL. A utilização desse protocolo tem por objetivo evitar o ataque \emph{man-in-the-middle}. Para isso, é exigido, tanto para o órgão conveniado quanto para a própria PCDF, a utilização de certificados digitais padrão X.509, emitidos e garantidos por uma CA que esteja subordinada à hierarquia da ICP-Brasil. Ambas as partes envolvidas no processo de comunicação podem estabelecer um processo de confiança mútua no nível de transporte. Todo o tráfego que flui sobre uma sessão bilateral certificada tem uma fonte confiável permitindo que implementações de serviços possam autorizar ou desautorizar interações com base na fonte bem conhecida de uma solicitação HTTP.
 
 Além da segurança oferecida pela utilização da segurança na camada de transporte, com utilização do TLS/SSL, o protocolo utiliza mecanismos de segurança tais como criptografia assimétrica e assinatura digital. Isso permite que outras partes mal intencionadas não consigam ter acesso ao conteúdo das mensagens trocadas pelo protocolo no processo de comunicação.
 
@@ -23,7 +19,9 @@ Diferentemente do sistema Traust~\cite{traust08}, o Protocolo de Autenticação 
 
 \subsection{Responsabilização dos usuários conveniados}
 
-Uma das ameaças verificadas diz respeito a possibilidade do uso indevido, por parte dos órgãos conveniados, das informações disponibilizadas nos serviços ofertados pela PCDF. Tal fato decorre porque as informações disponibilizadas s\~{a}o sensíveis e possuem caráter sigiloso. Dessa forma, para evitar esse problema é exigido dos órgãos conveniados que assinem um contrato para o consumo do serviço. No momento da assinatura do contrato as institui\c c\~{o}es recebem uma tabela contendo várias credenciais que servem como identidade e que deverão ser utilizadas no processo de autenticação, conforme descrito no seção~\ref{sec:reqprotocolo}. Isso possibilita que ocorra uma autenticação mútua entre a PCDF e os consumidores dos serviços. Além disso, com a utilização do protocolo de autenticação e autorização proposto, são empregados mecanismos de criptografia e assinaturas digitais que são geradas a partir de certificados digitais padrão X.509 vinculados aos órgãos e garantidos por uma CA. Deste modo, busca-se evitar o não-repúdio por parte das instituições conveniadas, atribuindo-lhes responsabilidades em caso do mau uso dos serviços ofertados pela PCDF. Logo, uma vez detectado algum tipo de vazamento de dados proveniente dos serviços ofertados o órgão poderá ser identificado e após uma apuração minuciosa, responsabilizado pelos danos causados à PCDF.
+Uma das ameaças verificadas diz respeito a possibilidade do uso indevido, por parte dos órgãos conveniados, das informações disponibilizadas nos serviços ofertados pela PCDF. Tal fato decorre porque as informações disponibilizadas s\~{a}o sensíveis e possuem caráter sigiloso. Dessa forma, para evitar esse problema é exigido dos órgãos conveniados que assinem um contrato para o consumo do serviço. No momento da assinatura do contrato as institui\c c\~{o}es recebem uma tabela contendo várias credenciais que servem como identidade e que deverão ser utilizadas no processo de autenticação, conforme descrito no seção~\ref{sec:reqprotocolo}. Isso possibilita que ocorra uma autenticação mútua entre a PCDF e os consumidores dos serviços.
+
+Além disso, com a utilização do Protocolo de Autenticação e Autorização proposto, são empregados mecanismos de criptografia e assinaturas digitais que são geradas a partir de certificados digitais padrão X.509 vinculados aos órgãos e garantidos por uma CA. Deste modo, busca-se evitar o não-repúdio por parte das instituições conveniadas, atribuindo-lhes responsabilidades em caso do mau uso dos serviços ofertados pela PCDF. Logo, uma vez detectado algum tipo de vazamento de dados proveniente dos serviços ofertados o órgão poderá ser identificado e após uma apuração minuciosa, responsabilizado pelos danos causados à PCDF.
 
 \subsection{Ataques de repetição}
 
@@ -31,7 +29,11 @@ Esta ameaça, conforme descrita na Seção~\ref{sec:vulnerabilidadessoa}, se emp
 
 \subsection{Ataques de negação de serviço}
 
-Esta ameaça é muito difícil de ser evitada, uma vez que pode ser fruto de ataques via rede, do consumo excessivo de recursos da máquina  ou ainda, ser resultante da exploração de qualquer tipo de vulnerabilidade que implique na indisponibilidade do serviço ou de um recurso. O Protocolo de Autenticação e Autorização proposto é baseado no esquema de desafio-resposta. Os desafios são gerados de forma aleatória a partir das credenciais que identificam unicamente os consumidores dos serviços, o que possibilita uma autenticação mútua. Além disso, também são empregados outros mecanismos de segurança como utilização da segurança na camada de transporte e mecanismos de criptografia e assinaturas digitais. Isso minimiza a ameaça de ataques de negação de serviço. Assim como o protocolo Traust~\cite{traust08}, o servidor de autenticação e autorização proposto pode ser replicado para outros servidores, o que possibilita um balanceamento de carga e minimiza a criação de gargalos, permitindo que o servidor de autenticação seja escalável e esteja disponível em situações críticas, como no caso dos ataques de negação de serviço.
+Esta ameaça é muito difícil de ser evitada, uma vez que pode ser fruto de ataques via rede, do consumo excessivo de recursos da máquina  ou ainda, ser resultante da exploração de qualquer tipo de vulnerabilidade que implique na indisponibilidade do serviço ou de um recurso.
+ 
+O Protocolo de Autenticação e Autorização proposto é baseado no esquema de desafio-resposta. Os desafios são gerados de forma aleatória a partir das credenciais que identificam unicamente os consumidores dos serviços, o que possibilita uma autenticação mútua. Além disso, também são empregados outros mecanismos de segurança como utilização da segurança na camada de transporte e mecanismos de criptografia e assinaturas digitais. Isso minimiza a ameaça de ataques de negação de serviço.
+ 
+Assim como o protocolo Traust~\cite{traust08}, o servidor de autenticação e autorização proposto pode ser replicado para outros servidores, o que possibilita um balanceamento de carga e minimiza a criação de gargalos, permitindo que o servidor de autenticação seja escalável e esteja disponível em situações críticas, como no caso dos ataques de negação de serviço.
 
 
 \subsection{Roubo de credenciais de autenticação e autorização}\label{subsec:RouboCred}
@@ -39,9 +41,7 @@ Esta ameaça é muito difícil de ser evitada, uma vez que pode ser fruto de ata
 O Protocolo de Autenticação e Autorização proposto, após executado corretamente, emite um token de segurança que será utilizado para a obtenção do serviço desejado, conforme apresentado na seção~\ref{sec:ArqProtocolo}. Cabe ressaltar que se um atacante conseguir burlar os mecanismos de segurança utilizados pelo protocolo e conseguir acesso a essa credencial de autenticação e autorização, o atacante terá acesso apenas a um serviço, pois o protocolo emite credenciais para um único serviço por vez e com tempo de expiração determinado no momento de sua geração. Essa é uma situação muito difícil de ser verificada, porém caso o extravio de credenciais ocorra, buscamos minimizar o problema com o isolamento de uma credencial por serviço requisitado, diminuindo o impacto que pode ocorrer.
 
 Outro problema que pode ocorrer é o roubo de credenciais de autenticação, que são as credenciais que o órgão conveniado recebe no momento da assinatura do contrato de oferecimento do serviço. Essas credenciais são utilizadas para responder aos desafios que serão realizados pelo Protocolo de Autenticação e Autorização proposto. Caso o extravio ocorra e seja identificado a PCDF pode, de forma flexível e transparente, desativar as credenciais que julga terem sido comprometidas sem que o usuário seja prejudicado.
-Em um caso mais extremo, outras credenciais podem ser geradas e redistribuídas \`{a}s institui\c c\~{o}es conveniadas.
-
-Porém, cabe ressaltar que, caso ocorra o extravio de credenciais, o órgão que teve o problema será investigado e poderá ser responsabilizado, caso seja detectada uma má gestão na guarda das credenciais, conforme descrito na subseção~\ref{subsec:RouboCred}
+Em um caso mais extremo, outras credenciais podem ser geradas e redistribuídas \`{a}s institui\c c\~{o}es conveniadas. Porém, cabe ressaltar que, caso ocorra o extravio de credenciais, o órgão que teve o problema será investigado e poderá ser responsabilizado, caso seja detectada uma má gestão na guarda das credenciais, conforme descrito na subseção~\ref{subsec:RouboCred}
 
 
 \subsection{Ponto único de ataque}
@@ -49,12 +49,9 @@ Porém, cabe ressaltar que, caso ocorra o extravio de credenciais, o órgão que
 Uma das possibilidades verificadas é que, ocorrendo um ataque, o alvo possa não ser Protocolo de Autenticação e Autorização proposto e sim o próprio \servidorAA.
 Neste caso, se o atacante for bem sucedido o servidor pode ficar vulnerável. Esse servidor é responsável pela geração dos desafios de autenticação e pela geração das credenciais de autenticação e autorização. Porém, apesar de realizar estas atividades, ele armazena e consulta os dados gerados no processo de autenticação e autorização em outra máquina, que é um servidor de banco de dados. Em outras palavras, o \servidorAA está em uma máquina diferente do servidor de banco de dados, o que minimiza os problemas relacionados a esse tipo de ataque, pois o servidor pode ser replicado para outra máquina e o que estiver com problemas pode ser facilmente substituído.
 
-\subsection{S\'{i}ntese da an\'{a}lise de seguran\c ca}
+\subsection{S\'{i}ntese da An\'{a}lise de Seguran\c ca}
 
-\begin{itemize}
-\item descrever os pontos positivos
-\item descrever os pontos que requerem mais aten\c c\~{a}o
-\end{itemize}
+O Protocolo de Autenticação e Autorização proposto busca atender os atributos básicos de segurança, tais como: confidencialidade, integridade e autenticidade. O Protocolo incorpora mecanismos de segurança tais como: criptografia, assinatura digital e uso de certificados digitais, além da utilização do SSL/ TLS para prover segurança na camada de transporte. Ele se mostra eficiente contra vários tipos de ataques, como por exemplo: \emph{man-in-the-middle} e ataques de repetição. Contudo, alguns pontos requerem mais atenção, como por exemplo: preocupações com ataques do lado do cliente, uma vez que esses ataques são cada vez mais comuns.
 
 \section{Testes de desempenho}
 
@@ -168,7 +165,7 @@ A Figura~\ref{fig:ambiente_teste} descreve os ambientes de configuração utiliz
 \label{fig:ambiente_teste}
 \end{figure}
 
-\subsection{Análise dos resultados}
+\subsection{Análise dos resultados}\label{sec:analise_resultados}
 
 Os testes objetivam: (a) verificar o impacto no tempo de resposta às requisições com o uso do protocolo e (b) avaliar se um protocolo funcional, sem foco em otimização, suportaria a demanda de requisi\c c\~{o}es prevista para a PCDF. Para atender aos objetivos supracitados, foram realizados testes considerando requisi\c c\~{o}es diretas, sem o uso do protocolo de autentica\c c\~{a}o e autoriza\c c\~{a}o; e requisi\c c\~{o}es seguras e que seguem as trocas de mensagens definidas no protocolo. Conforme discutido nas se\c c\~{o}es anteriores, as an\'{a}lises resultaram em um universo de amostras com 1000, 2000, 3000, 4000 e 5000 requisi\c c\~{o}es, correspondendo respectivamente a grupos de 10, 20, 30, 40 e 50 usuários.
 Os dados coletados foram analisados, e resultados estatísticos são apresentados nas  tabelas~\ref{tb:estatistica_com_cripto} e ~\ref{tb:estatistica_sem_cripto}.
@@ -180,7 +177,7 @@ Pode-se observar que, com a utilização do protocolo para 10 usuários simultâ
 Por outro lado, quando comparado ao acesso ao serviço sem a utilização do protocolo, o tempo médio de resposta às requisições é de 42,26 milissegundos.
 Estas comparações estendem-se aos demais cen\'{a}rios de testes, para 20, 30, 40 e 50 usuários. Em todos casos o impacto é significativo quando comparado aos resultados obtidos sem a utilização do Protocolo de Autenticação e Autorização. Porém, essa variação era de certa forma esperada, pois o protocolo proposto incorpora mecanismos de segurança que requerem algoritmos de criptografia e assinatura digital e segurança na camada de transporte com a utilização do SSL/TLS. Além disso, a implementação do protocolo será ainda alvo de otimizações.
 
-De outra forma, ao analisar o tempo médio dos experimentos que utilizaram o protocolo, nota-se que este tempo é aceitável, pois com 10 usuários ele fica abaixo de 1 segundo, com 20 o tempo médio é 1,5 segundos, com 30 usuários esse tempo sobe para aproximadamente 2,5 segundos, aumentado de forma aceitável até 50 usuários em que o tempo médio verificado foi de aproximadamente 4,5 segundos, conforme apresentado nas tabelas ~\ref{tb:estatistica_com_cripto} e ~\ref{tb:estatistica_sem_cripto} e no gráfico ~\ref{fig:grafico_teste_desempenho}. De forma que esses resultados estão dentro do esperado para utilização. Atualmente o número de convênios na PCDF não supera 10 usuários, estima-se que com a utilização do protocolo esse número suba para no máximo 30 órgãos conveniados. Logo, com a análise dos resultados percebe-se que, apesar do impacto da utilização do protocolo de autenticação e autorização, o tempo médio de resposta não configura como um limitador para sua utilização. %{\color{red}Relaciona com os estudos que avaliam o impacto no tempo de resposta com a ado\c c\~{a}o de WS-Security, WS-*.}
+De outra forma, ao analisar o tempo médio dos experimentos que utilizaram o protocolo, nota-se que este tempo é aceitável, pois com 10 usuários ele fica abaixo de 1 segundo, com 20 o tempo médio é 1,5 segundos, com 30 usuários esse tempo sobe para aproximadamente 2,5 segundos, aumentado de forma aceitável até 50 usuários em que o tempo médio verificado foi de aproximadamente 4,5 segundos, conforme apresentado nas tabelas ~\ref{tb:estatistica_com_cripto} e~\ref{tb:estatistica_sem_cripto} e no gráfico~\ref{fig:grafico_teste_desempenho}. De forma que esses resultados estão dentro do esperado para utilização. Atualmente o número de convênios na PCDF não supera 10 usuários, estima-se que com a utilização do protocolo esse número suba para no máximo 30 órgãos conveniados. Logo, com a análise dos resultados percebe-se que, apesar do impacto da utilização do protocolo de autenticação e autorização, o tempo médio de resposta não configura como um limitador para sua utilização. %{\color{red}Relaciona com os estudos que avaliam o impacto no tempo de resposta com a ado\c c\~{a}o de WS-Security, WS-*.}
 
 
 \begin{table}[h]
@@ -219,19 +216,31 @@ Al\'{e}m disso, a quantidade de usuários simultâneos tem impacto no desempenho
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=1.0\textwidth]{grafico_teste_desempenho.png}
-    \caption{Fluxo do protocolo de autenticação/autorização proposto, 1º cenário.}
+    \includegraphics[width=0.8\textwidth]{grafico_teste_desempenho2.png}
+    \caption{Comparativo de utilização do Protocolo de Autenticação e Autorização.}
     \label{fig:grafico_teste_desempenho}
 \end{figure}
 %análise comparativa com WS-Security%
 
-Outra análise que foi realizada, diz respeito à comparação do protocolo desenvolvido com outro trabalho similar que utiliza WS-Security para prover segurança à serviços que utilizam a tecnologia SOAP. A comparação foi realizada a partir do trabalho proposto por Douglas Rodrigues, Julio C Estrella e Kalinka RLJC Branco~\cite{rodrigues2011analysis}.
+%///////////////////
 
-Nesse trabalho é realizado um estudo sobre segurança aplicada a arquiteturas orientadas a serviço. Sendo desenvolvida uma análise de desempenho de Web Services seguros utilizando o padrão WS-Security, que é um padrão utilizado para prover segurança a Web Services. No referido trabalho foram implementados quatro serviços que executam uma mesma operação. O que diferencia um serviço do outro e a política de segurança estabelecida. A política de segurança utilizada nesses serviços foi a do uso de algoritmos criptográficos. Dessa forma, os serviços disponibilizados para a análise de desempenho ficaram configurados da seguinte maneira: serviço sem política de segurança, serviço com política de segurança voltado apenas para criptografia, serviço com política de segurança  voltado apenas ao uso da assinatura digital e um serviço com política de segurança que utiliza criptografia e assinatura digital.
 
-Sendo assim, foram realizados oito experimentos que verificaram o uso ou não de criptografia, o uso ou não da assinatura digital e o número de clientes  5 e 10 clientes acessando o serviço de forma concorrente. A tabela~\ref{tb:expWSSecurity} representa os experimentos realizados no trabalho~\cite{rodrigues2011analysis}. A variável de resposta dos experimentos foi o tempo de resposta.
+Para responder a segunda questão relacionada \`{a} an\'{a}lise de desemepenho (\emph{Um protótipo funcional, sem foco em otimização, consegue suportar a demanda prevista?}), novamente foram realizadas análises dos dados coletados nos testes realizados. A análise dos resultados obtidos com a execução do experimento ocorreu com a observação do tempo médio de resposta e com a verificação da vazão, ou seja, o número de requisições atendidas por segundo, que foi coletado ao final da execução do Teste 10, aplicado a um grupo de 50 usuários, conforme apresentado na Tabela~\ref{tb:tb_testes}. Dessa forma, foram coletadas 5000 amostras que utilizaram o Protocolo de Autenticação e Autorização proposto. Os resultados estatísticos são apresentados na tabela~\ref{tb:estatistica_com_cripto}, descrita anteriormente.
+
+Observa-se que a PCDF, em um cenário extremo, pode ter que responder a uma média de 1200 requisições de um serviço que fornece informações sobre ocorrências policiais em um período de uma hora, ou seja, duas requisições por segundo. Neste caso, os resultados obtidos com o experimento realizado com os 50 usuários, demonstrou que o tempo médio de resposta foi de 4677 milissegundos (ou aproximadamente 4,677 segundos) e que a vazão média, que é o número de requisições atendidas por segundo, foi de 8,62 requisições por segundo. Ao se realizar a comparação deste cenário com o cenário extremo vivenciado pela PCDF, verificou-se que a arquitetura, do ponto de vista de vazão, atende ao cen\'{a}rio mais cr\'{i}tico, que é de 2 duas requisições por segundo. O que garante a qualidade do serviço ofertado pelo protocolo de autenticação e autorização proposto.
+
+\subsection{Impacto de Mecanismos de Segurança no Tempo de Resposta}
+
+Conforme os resultados apresentados na seção~\ref{sec:analise_resultados} o uso do Protocolo proposto com 10 usuários leva a um acréscimo no tempo resposta de uma ordem de magnitude, e para 50 usuários esse impacto é de duas ordens de magnitude. Outros estudos avaliam o impacto da introdução de mecanismos de segurança e são descritos a seguir.
+
+O primeiro estudo verificado, é um trabalho que utiliza WS-Security para prover segurança à serviços que utilizam a tecnologia SOAP. O trabalho foi desenvolvido por Douglas Rodrigues, Julio C Estrella e Kalinka RLJC Branco~\cite{rodrigues2011analysis}. Nesse trabalho é realizado um estudo sobre segurança aplicada a arquiteturas orientadas a serviço, sendo desenvolvida uma análise de desempenho de Web Services seguros utilizando o padrão WS-Security, que é um padrão utilizado para prover segurança a Web Services.
+
+No referido trabalho foram implementados quatro serviços que executam uma mesma operação. O que diferencia um serviço do outro é a política de segurança estabelecida. A política de segurança utilizada nesses serviços foi a do uso de algoritmos criptográficos. Os serviços disponibilizados para a análise de desempenho ficaram configurados da seguinte maneira: serviço sem política de segurança, serviço com política de segurança voltado apenas para criptografia, serviço com política de segurança voltado apenas ao uso da assinatura digital e um serviço com política de segurança que utiliza criptografia e assinatura digital.
+
+Dessa forma, foram realizados oito experimentos que verificaram o uso ou não de criptografia, o uso ou não da assinatura digital e o número de clientes, 5 e 10 clientes, acessando o serviço de forma concorrente. A tabela~\ref{tb:expWSSecurity} representa os experimentos realizados no trabalho~\cite{rodrigues2011analysis}. A variável de resposta dos experimentos foi o tempo de resposta.
 
 \begin{table}[h]
+\begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
 \textbf{Experimento} & \textbf{Política de segurança}     & \textbf{Numero de Clientes} \\ \hline
@@ -244,22 +253,45 @@ Sendo assim, foram realizados oito experimentos que verificaram o uso ou não de
 7                    & Assinatura digital                 & 10                           \\ \hline
 8                    & Assinatura digital e Criptografia  & 10                          \\ \hline
 \end{tabular}\caption {Análise de desempenho de Web Services Seguros~\cite{rodrigues2011analysis}.}\label{tb:expWSSecurity}
+\end{center}
 \end{table}
 
-Para efeito de análise foram considerados apenas os experimentos que se assemelharam a análise de desempenho proposta nesta dissertação, ou seja , os experimentos que utilizam a assinatura digital e criptografia. Sendo assim, o tempo de resposta  que referem-se aos resultados obtidos a partir do trabalho~\cite{rodrigues2011analysis} para  5 e 10 clientes, são respectivamente: 3094,20 e 6038,10 milissegundos. Esse valores são superiores aos obtidos com a análise de desempenho do Protocolo de Autenticação e Autorização proposto. Uma vez que, o tempo médio para 10 clientes foi de 683,84 milissegundos, conforme apresentado na figura~\ref{fig:comparativowssecurity}. Essa análise denota que os resultados obtidos com a análise de desempenho realizadas neste trabalho quando comparado com outros, estão dentro de um padrão aceitável de tempo.
+Para efeito de análise foram considerados apenas os experimentos que se assemelharam a análise de desempenho proposta nesta dissertação, ou seja , os experimentos que utilizam a assinatura digital e criptografia.  Sendo assim, o tempo de resposta  que referem-se aos resultados obtidos a partir do trabalho~\cite{rodrigues2011analysis} para  5 e 10 clientes, são respectivamente: 3094,20 e 6038,10 milissegundos. Esses valores quando comparados com os experimentos que não utilizaram segurança cujo tempo médio de resposta foi de 283,68 e  482,59,  para 5 e 10 usuários respectivamente, conforme apresentado na figura~\ref{fig:comparativowssecurity}. Os resultados  evidenciam que o impacto do uso do WS-Security é significativo e demonstra uma queda no desempenho dos Web services que utilizam mecanismos de segurança.
+
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=0.9\textwidth]{comparativowssecurity.png}
-    \caption{Tempo médio para 10 usuários.}
+    \caption{Tempo médio para 5 e 10 usuários.}
     \label{fig:comparativowssecurity}
 \end{figure}
-%///////////////////
+
+Outro estudo analisado é um artigo que apresenta uma nova abordagem para fornecer segurança para serviços RESTful equivalente ao padrão WSSecurity~\cite{verstichel}. Nesse trabalho foi realizada uma avaliação de desempenho, considerando vários cenários, com a finalidade de analisar o impacto da proteção de mensagem para o desempenho de Web Services~\cite{verstichel}.
+
+Dessa forma, foram executados diversos testes de desempenho que compararam  serviços, com mecanismos de segurança, baseados na arquitetura REST e os  Web services SOAP que utilizam o padrão WS-Security para prover segurança. Os experimentos foram realizados em um ambiente com a mesma configuração. Na análise de desempenho abordada no trabalho~\cite{verstichel}, são definidos e implementados três cenários. No primeiro cenário é realizado um consulta simples (Get) tanto para Web services RESTFul quanto Web services SOAP. No segundo cenário  segue-se a mesma abordagem, só que neste caso é realizado uma  modificação (Post) de uma mensagem e por fim, o terceiro cenário (Large), aborda o envio de uma grande quantidade de dados entre o cliente e o servidor. Para realizar a medição do experimento foram utilizadas as seguintes métricas: não uso de mecanismos de segurança(Plain),  uso da criptografia (Enc), uso da assinatura (Sign) e uso da criptografia e assinatura( Sign\&Enc). Logo, a análise compreendeu o estudo de cenários heterogêneos a fim de comparar os diferentes mecanismos de segurança~\cite{verstichel}. Os resultados são sintetizados e apresentados na figura~\ref{fig:comparativoSOAP_REST}.
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=1.0\textwidth]{analise_desempenho_estudo2.png}
+    \caption{Comparação de tamanho de Payload e Header e Tempo Médio de processamento de mensagens SOAP e REST~\cite{verstichel}.}
+    \label{fig:comparativoSOAP_REST}
+\end{figure}
+
+Sendo assim, ao analisar o tempo de resposta dos experimentos realizados, pode-se verificar que há um impacto significativo com a adoção dos mecanismos de segurança. Sejam eles voltados a Web services RESTful ou Web services SOAP, neste caso, utilizando o WS-Security. Isso fica evidenciado em todos os cenários verificados. Exemplificando, no cenário de consulta simples (Get), no caso em que é utilizado a assinatura e criptografia (Sing\&Enc) o tempo médio para Web services SOAP (que utilizam o padrão WS-Security) e Web services REST (com mecanismos de segurança) é de 6.244 e 3.156 milissegundos, aproximadamente 6,25 e 3,2 segundos. Ao realizar a comparação com o caso da não utilização de segurança (Plain) o tempo é reduzido significativamente para menos de 1 segundo.
+
+Por fim, o último estudo analisado, foi o desenvolvido por  Pedro Miguel Gonçalves Ferreira~\cite{pedromiguel2012}, neste trabalho buscou-se identificar e caracterizar as diferentes fontes de informação da Universidade de Aveiro (UA) sendo necessário  construir APIs ou serviços web de acesso à informação. Dessa forma, entre os projetos desenvolvidos, foi implementação um projeto  denominado myPersonas, que é sistema que permite a gestão por parte utilizador de várias identidade num cenário de multi-provedores de serviços~\cite{pedromiguel2012}. Neste caso, foi utilizado o padrão WS-Security para prover segurança aos serviços ofertados pelo projeto.
+
+Sendo assim, após desenvolver o projeto e com a finalidade de avaliar a desempenho da solução implementada, foram executados 4 (quatro) testes. No primeiro teste, o serviço web descrito foi executado sem qualquer tipo de mecanismo de segurança. No segundo teste foi implementado apenas assinatura do XML. No terceiro teste foi implementada apenas a criptografia das mensagens SOAP. No quarto e último teste foram implementadas tanto criptografia como a assinatura da mensagem SOAP. Nos experimentos que utilizaram mecanismos de segurança o padrão adotado para prover segurança ao Web service foi o WS-Security. Para todos os experimentos foi utilizado um Web service SOAP simples, que efetua a soma entre dois números. O resultados dos experimentos são apresentados no gráfico~\ref{fig:tempowssecurity}.
 
 
-Para responder a segunda questão relacionada \`{a} an\'{a}lise de desemepenho (\emph{Um protótipo funcional, sem foco em otimização, consegue suportar a demanda prevista?}), novamente foram realizadas análises dos dados coletados nos testes realizados. A análise dos resultados obtidos com a execução do experimento ocorreu com a observação do tempo médio de resposta e com a verificação da vazão, ou seja, o número de requisições atendidas por segundo, que foi coletado ao final da execução do Teste 10, aplicado a um grupo de 50 usuários, conforme apresentado na Tabela~\ref{tb:tb_testes}. Dessa forma, foram coletadas 5000 amostras que utilizaram o Protocolo de Autenticação e Autorização proposto. Os resultados estatísticos são apresentados na tabela~\ref{tb:estatistica_com_cripto}, descrita anteriormente.
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{tempo_ws_security.png}
+    \caption{Tempos de execução dos testes de desempenho com e sem a utilização do WS-Security, adaptado de~\cite{pedromiguel2012}.}
+    \label{fig:tempowssecurity}
+\end{figure}
 
-Observa-se que a PCDF, em um cenário extremo, pode ter que responder a uma média de 1200 requisições de um serviço que fornece informações sobre ocorrências policiais em um período de uma hora, ou seja, duas requisições por segundo. Neste caso, os resultados obtidos com o experimento realizado com os 50 usuários, demonstrou que o tempo médio de resposta foi de 4677 milissegundos (ou aproximadamente 4,677 segundos) e que a vazão média, que é o número de requisições atendidas por segundo, foi de 8,62 requisições por segundo. Ao se realizar a comparação deste cenário com o cenário extremo vivenciado pela PCDF, verificou-se que a arquitetura, do ponto de vista de vazão, atende ao cen\'{a}rio mais cr\'{i}tico, que é de 2 duas requisições por segundo. O que garante a qualidade do serviço ofertado pelo protocolo de autenticação e autorização proposto.
+Ao analisar os dados dos experimentos realizados, mais uma vez observa-se que há um impacto significativo no desempenho do serviço quando se utiliza mecanismos de segurança. Um exemplo que pode ser verificado é o da comparação do Web service que não usa mecanismos de segurança, e cujo tempo médio é de 2,22 milissegundos, com o Web service que faz o uso do WS-Security, para assinatura e criptografia, cujo tempo médio é de 395,17 milissegundos. Ou seja, o que usa os mecanismos de segurança é aproximadamente 178 vezes mais lento.
 
 %{\color{red}essa tabela est\'{a} muito ruim. sugiro remover}
 
@@ -281,6 +313,8 @@ Observa-se que a PCDF, em um cenário extremo, pode ter que responder a uma méd
 %5\caption {Estatística básica com a utilização do protocolo de autenticação e autorização para 50 usuários.}\label{tb:estatistica_com_cripto_50}
 %\end{table}
 
-\section{Síntese do capítulo}
+Ao analisar os resultados dos estudos relatados nesta seção e compará-los aos resultados obtidos com a análise de desempenho do Protocolo de Autenticação e Autorização proposto, percebe-se que os tempos médios de resposta do Protocolo estão dentro de um padrão aceitável, apesar do impacto da incorporação dos mecanismos de segurança.
+
+\subsection{S\'{i}ntese da An\'{a}lise de Desempenho}
 
 Neste cap\'{i}tulo foi realizada uma análise de desempenho, onde ficou evidente que o impacto no desempenho é significativo quando comparado com a não utilização da proposta. Porém os tempos médios obtidos estão dentro de um tempo médio esperado, que é abaixo de 5 segundos. Observou-se ainda, que em um cenário extremo de utilização, onde a PCDF tenha que atender a uma média de 2 duas requisições por segundo, e um período de 1 uma hora, ou seja 1200 requisições, a arquitetura proposta atende perfeitamente, pois consegue atender a 8,62 requisições por segundo em um cenário extremo onde foram realizados 5000 requisições.

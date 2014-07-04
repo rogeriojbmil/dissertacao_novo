@@ -1,5 +1,5 @@
 %---------- Primeiro Capitulo ----------
-\chapter{Introdução}
+\chapter{Introdução}\label{sec:introducao}
 %\section{Apresentação}
 As atribuições da Polícia Civil do Distrito Federal, no que diz respeito à sua competência de Polícia Judiciária, tangenciam em vários pontos as atribuições do Ministério Público do Distrito Federal e Territórios, do Tribunal de Justiça do Distrito Federal e Territórios e da Defensoria Pública do Distrito Federal. De forma que a competência de cada um desses Órgãos, por apresentarem pontos que se complementam, demanda intensa troca de informações.
 
@@ -46,7 +46,7 @@ Avaliar e aplicar o uso de técnicas, ferramentas  e procedimentos que garantam 
 
 	\item Estudar as especificações de Web Services relacionados a segurança e selecionar padrões e ferramentas para garantir confidencialidade, autenticidade e integridade nas integrações da arquitetura orientada a serviços. Essa seleção deve considerar o impacto na disponibilidade e no tempo de resposta dos serviços;
 
-    \item Estabelecer uma arquitetura de referência na construção de software seguro em  SOA que possam ser empregados pela Divisão de Tecnologia da Polícia Civil do Distrito Federal para realizar efetivamente a integração de seus sistemas com os sistemas dos órgãos parceiros.
+    \item Estabelecer uma arquitetura de referência na construção de software seguro em  SOA, por meio de um protocolo de autenticação e autorização, que possa ser empregado pela Divisão de Tecnologia da Polícia Civil do Distrito Federal para realizar efetivamente a integração de seus sistemas com os sistemas dos órgãos parceiros.
 
 \end{enumerate}
 

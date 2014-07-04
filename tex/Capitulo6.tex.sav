@@ -1,37 +1,16 @@
 \chapter{Conclusão}%
-Este documento serve de exemplo da utilização da classe \unbcic\ para escrever um texto cujo objetivo é apresentar os resultados de um trabalho. A sequência de ideias apresentada deve fluir claramente, de modo que o leitor consiga compreender os principais conceitos e resultados apresentados, bem como encontrar informações sobre conceitos secundários.
 
-\url{http://www.escritacientifica.com/}
+A Polícia Civil do Distrito Federal tem a necessidade de integrar e compartilhar informações sensíveis com órgãos conveniados. Devido à criticidade dessas informações, preocupações relacionadas à segurança foram levantadas e devem ser tratadas sob uma perspectiva arquitetural.
 
-\section{Metologia Científica}
-O método científico é um conjunto de regras básicas de como proceder para produzir conhecimento, criando algo novo ou corrigindo/incrementando conhecimentos pré-existentes. Consiste em juntar evidências empíricas verificáveis baseadas na observação sistemática e controlada, geralmente resultantes de experiências ou pesquisa de campo, e analisá-las logicamente.
+Nesse sentido, este trabalho teve como objetivo propor um Protocolo de Autenticação e Autorização seguro, baseado no modelo desafio-resposta, que possibilitasse a integração segura das informações disponibilizadas por meio de uma arquitetura orientada a serviços. O protocolo foi desenvolvido aderente à arquitetura REST e incorpora mecanismos de segurança tais como: criptografia, assinatura digital e uso de certificados digitais. Dessa forma, ele atende aos requisitos básicos de segurança: autenticidade, integridade, confidencialidade e disponibilidade.
 
-\subsection{Fontes de Informação Digital}
-\begin{itemize}
-	\item\href{http://scholar.google.com.br/}{Google Acadêmico}
-	\item\href{http://dl.acm.org/}{ACM Digital Library}
-	\item\href{http://www.periodicos.capes.gov.br/}{Portal CAPES}
-	\item\href{http://ieeexplore.ieee.org/Xplore/home.jsp}{IEEE Xplore}
-	\item\href{http://www.sciencedirect.com/}{ScienceDirect}
-	\item\href{http://link.springer.com/}{Springer Link}
-\end{itemize}
+Um ponto importante no desenvolvimento do trabalho foi a utilização da lógica BAN, para analisar formalmente o protocolo proposto, haja vista que ela é uma lógica pioneira utilizada para analisar protocolos criptográficos. Com a realização do trabalho foi possível ampliar os conhecimentos sobre SOA, mecanismos de segurança, integração utilizando web services e serviços baseados na arquitetura REST. Além disso, também foi possível realizar análises de desempenho e de segurança do protocolo e em ambos os casos o protocolo se mostrou confiável e viável.
 
-\section{\LaTeX}
-Eis alguns links interessantes para familiarização com \LaTeX:
-\begin{itemize}
-	\item \href{http://www.latex-project.org/}{\LaTeX}
-	\item \href{http://latexbr.blogspot.com.br/2010/04/introducao-ao-latex.html}{Introdução ao LaTeX}
-	\item \href{https://bitbucket.org/rg3915/latex/downloads/aprendendo_latex_em_5_min.pdf}{Aprendendo \LaTeX\ em 5 minutos}
-	\item \href{http://en.wikibooks.org/wiki/LaTeX}{\LaTeX\ Wikibook}
-	\item \href{http://tex.stackexchange.com/}{\TeX\ - \LaTeX\ Stack Exchange}
-\end{itemize}
+A utilização do Protocolo de Autenticação e Autorização proposto, por parte da PCDF, possibilitará que as informações críticas que antes não eram compartilhadas por não haver formas seguras de compartilhamento das informações dentro da Instituição, possam agora ser compartilhadas e efetivamente integradas de forma eficiente e principalmente segura com os órgãos parceiros. A solução proposta neste trabalho vai ao encontro ao que a PCDF almejava. Além disso, a solução proposta pode ser utilizada por qualquer órgão de segurança, que da mesma forma, tenha a necessidade de compartilhar e integrar informações sensíveis.
 
+\subsection{Contribuições}
 
-A rede CTAN (\url{http://www.ctan.org/}), idealizada em \cite{greenwade93}, oferece
-acesso milhares de contribuições do sistema.%
+\subsection{Trabalhos Futuros}
 
-\section{Normas?}
-\href{http://monografias.cic.unb.br/dspace/normasGerais.pdf}{Política de Publicação de Monografias e Dissertações no Repositório Digital do CIC}%
-\href{http://monografias.cic.unb.br/dspace/}{Repositório do Departamento de Ciência da Computação da UnB}
+Quanto a trabalhos futuros, vislumbramos a possibilidade de se implementar otimizações ao Protocolo de Autenticação e Autorização proposto, de forma que ele possa ser melhorado sob o aspecto de desempenho. Outros pontos que também serão realizados, são estudos mais aprofundados sobre possíveis vulnerabilidades tanto do lado do cliente, consumidor do serviço,  quanto do lado da PCDF, provedora dos serviços.
 
-\href{http://bdm.bce.unb.br/}{Biblioteca Digital de Monografias de Graduação e Especialização} 

@@ -56,9 +56,9 @@
 \usepackage[final]{pdfpages} % adicao da ata
 \setcounter{tocdepth}{3}
 \renewcommand{\baselinestretch}{1.5} % espaçamento entre linha
-\newcommand{\servidorRest}{servidor de fachada REST}
-\newcommand{\servidorAA}{servidor de Autenticação e Autorização}
-\newcommand{\servidorBD}{servidor de Banco de Dados}
+\newcommand{\servidorRest}{Servidor de fachada REST}
+\newcommand{\servidorAA}{Servidor de Autenticação e Autorização}
+\newcommand{\servidorBD}{Servidor de Banco de Dados}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -83,12 +83,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Informações sobre a monografia
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Proposta de Protocolo de Autenticação e Autorização seguro para aplicações SOA}%
+\title{Proposta de Protocolo de Autenticação e Autorização Seguro para Aplicações SOA}%
 
 \orientador{\prof \dr Rodrigo Bonifácio de Almeida}{CIC/UnB}
 \coorientador[a]{\prof[a] \dr[a] Edna Dias Canedo}{CIC/UnB}
-\coordenador[a]{\prof \dr Marcelo Ladeira}{CIC/UnB}
-\diamesano{24}{dezembro}{2014}%
+\coordenador{\prof \dr Marcelo Ladeira}{CIC/UnB}
+\diamesano{30}{junho}{2014}%
 
 \membrobanca{\prof[a] \dr[a] Membra da Banca}{MEC}
 \membrobanca{\prof \dr Membro do Banco}{CIC/UnB}
@@ -96,7 +96,7 @@
 \autor{Rogério Alves da}{Conceição}
 \CDU{004.4}
 
-\palavraschave{Interoperabilidade, Segurança em arquiteturas orientadas a serviço, Web Services, Arquitetura de referência em SOA} % palavras-chave do trabalho
+\palavraschave{Interoperabilidade, Segurança em Arquiteturas Orientadas a Serviço, Web Services, Arquitetura de Referência em SOA} % palavras-chave do trabalho
 \keywords{Interoperability, Security in service-oriented architectures, Web Services, SOA Reference Architecture} % palavras-chave do trabalho em ingles
 
 
@@ -150,13 +150,9 @@ Agradeço ao Prof. José Ralha, cujos esforços na versão anterior foram bem ``
   %\input{tex/Capitulo4}
   \input{tex/Capitulo04_rev_Rogerio}
   %\input{tex/Capitulo5}
-  \input{tex/cap5}
-<<<<<<< HEAD
+  %\input{tex/cap5}
    \input{tex/Capitulo6}
   %\input{tex/Capitulo05_Proposto}
-=======
-  \input{tex/Capitulo05_Proposto}
->>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
   % inserir demais capítulos
 
 %\clearpage % this is need for add +1 to pageref of bibstart used in 'ficha catalografica'.

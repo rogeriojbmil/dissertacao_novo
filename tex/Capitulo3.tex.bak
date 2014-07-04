@@ -1,12 +1,12 @@
 %---------- Terceiro Capitulo ----------
 \chapter{Revisão de Literatura}\label{cap:revisaolit}
-Este capítulo apresenta uma revisão dos principais conceitos relacionados ao tema deste trabalho, envolvendo Arquitetura Orientada a Serviço, web service, REST, segurança aplicada a SOA, vulnerabilidades em SOA e protocolos de autenticação e autorização.
+Este capítulo apresenta uma revisão dos principais conceitos relacionados ao tema deste trabalho, envolvendo Arquitetura Orientada a Serviço, Web Service, REST, Segurança Aplicada a SOA, Vulnerabilidades em SOA e Protocolos de Autenticação e Autorização.
 
-\section{Arquitetura orientada a serviços}
+\section{Arquitetura Orientada a Serviços}
 
 %%A Arquitetura Orientada a Serviços (SOA) estabelece um modelo arquitetônico que visa aprimorar a eficiência, agilidade e a produtividade de uma empresa, posicionando os serviços como os principais meios para que a solução lógica seja representada no suporte à realização dos objetivos estratégicos associados à computação orientada a serviços \cite{ERL09}.
 
-A Arquitetura Orientada a Serviços (SOA) , consiste em uma coleção de componentes distribuídos que fornecem e ou consomem serviços~\cite{Clements2010}, tem sido amplamente utilizada por um grande número de empresas.
+A Arquitetura Orientada a Serviços (SOA), consiste em uma coleção de componentes distribuídos que fornecem e ou consomem serviços~\cite{Clements2010}, tem sido amplamente utilizada por um grande número de empresas.
 
 %Serviços correspondem a recursos de software bem definidos através de uma linguagem padrão, são auto-contidos,  proveem funcionalidades padrões do negócio, independentes do estado ou contexto de outros serviços~\cite{Furtado2009}.
 
@@ -20,7 +20,7 @@ A interoperabilidade visa à integração entre esses sistemas e representa um o
 
 O baixo acoplamento ou acoplamento fraco é um conceito vital para o funcionamento de um sistema distribuído, uma vez que ele determina que diferentes partes e funcionalidades de um sistema sejam independentes umas das outras, dessa maneira, alterações ou problemas em uma determinada parte do sistema não trará consequências para o resto do sistema, trazendo benefícios como escalabilidade, flexibilidade e tolerância a falhas. Acoplamento fraco refere-se a uma abordagem em que as interfaces podem ser desenvolvidas com o mínimo de suposições mútuas entre o emissor e os destinatários, reduzindo assim o risco de que uma mudança em um aplicativo ou módulo force uma mudança em outra aplicação ou módulo.
 
-SOA é um estilo arquitetural e representa propositadamente uma tecnológica neutra. Para implementá-la podem ser usadas diversas tecnologias, como por exemplo: Web services, serviços REST-\emph{(Representational State Transfer)} e componentes distribuídos~\cite{erl2012soa}. Porém, atualmente as tecnologias mais empregadas para implementar SOA são os web services e os serviços REST que são descritos nas seções~\ref{sec:webservice} e~\ref{sec:rest} respectivamente.
+SOA é um estilo arquitetural e representa propositadamente uma tecnológica neutra. Para implementá-la podem ser usadas diversas tecnologias, como por exemplo: Web services, serviços REST-\emph{(Representational State Transfer)} e componentes distribuídos~\cite{erl2012soa}. Porém, atualmente as tecnologias mais empregadas para implementar SOA são os web services e os serviços REST, que são descritos nas seções~\ref{sec:webservice} e~\ref{sec:rest}, respectivamente.
 
 \section{Web Services}\label{sec:webservice}
 
@@ -37,7 +37,7 @@ A abordagem de arquiteturas orientadas a serviço e Web services estão centrada
 
     \item Baixo acoplamento: Acoplamento refere-se a uma conexão do relacionamento entre dois elementos. Uma medida de acoplamento se compara a um nível de dependência~\cite{ERL09}. De outra forma pode dizer que o baixo acoplamento refere-se a uma abordagem em que as interfaces podem ser desenvolvidas com a mínima dependência uma das outras o que reduz o risco  de uma mudança e qualquer uma das partes forçar a mudança na outra parte não modificada.
 
-    \item Contrato formal: O contrato informa o que o Serviço faz e como ele se comunica (o que deve receber e o que deve entregar). Em outras palavras Contratos são documentos textuais que descrevem o que o serviço faz e eles são o foco do design de serviço, porque regem praticamente tudo que é feito pelos serviços~\cite{ERL09}. Logo, todo serviço possui um contrato entre o requisitante e o provedor deste serviço.
+    \item Contrato formal: O contrato informa o que o Serviço faz e como ele se comunica (o que deve receber e o que deve entregar). Em outras palavras, Contratos são documentos textuais que descrevem o que o serviço faz e eles são o foco do design de serviço, porque regem praticamente tudo que é feito pelos serviços~\cite{ERL09}. Logo, todo serviço possui um contrato entre o requisitante e o provedor deste serviço.
 
 \end{itemize}
 
@@ -65,11 +65,11 @@ A estrutura de uma mensagem SOAP é definida em um documento XML, sua estrutura 
 
 \subsection{Web Services Description Language (WSDL)}
 
-Web Services Description Language (WSDL) é uma linguagem para descrição de serviços escrita em XML. Nela são descritos os serviços externos, ou interfaces que são oferecidos por uma determinada aplicação, independente de sua plataforma ou linguagem de programação. Além disso, ela contém as especificações de localização das operações (métodos ou serviços) que fazem parte dos Web Services. Atualmente, ela encontra-se na versão 2.0.
+Web Services Description Language (WSDL) é uma linguagem para descrição de serviços escrita em XML. São descritos os serviços externos, ou interfaces que são oferecidos por uma determinada aplicação, independente de sua plataforma ou linguagem de programação. Além disso, contém as especificações de localização das operações (métodos ou serviços) que fazem parte dos Web Services. Atualmente, encontra-se na versão 2.0.
 
-WSDL podem ser mapeados para qualquer linguagem de implementação, plataforma, modelo de objeto e ou sistema de mensagens~\cite{Bertino2010}. Ele é caracterizado por uma parte abstrata, onde é descrita a interface do serviço e outra concreta local onde são definidos os protocolos de conexão e outras informações, conforme Figura~\ref{fig:composicao_WSDL}.
+WSDL podem ser mapeados para qualquer linguagem de implementação, plataforma, modelo de objeto e ou sistema de mensagens~\cite{Bertino2010}. É caracterizado por uma parte abstrata, onde é descrita a interface do serviço e outra concreta local onde são definidos os protocolos de conexão e outras informações, conforme Figura~\ref{fig:composicao_WSDL}.
 
-A parte abstrata é constituída pelos seguintes elementos: Tipos, que são elementos que definem os tipos de dados usados pelos Web Services, neles são especificados os tipos que serão trocados nas mensagens de entrada e saída do serviço; Mensagem, que é um elemento que permite descrever de forma abstrata os dados que serão transmitidos entre o serviço e o consumidor do serviço; Operações, que é um elemento que é semelhante à definição de um método, no entanto, ele só permite que você defina a entrada, saída e mensagens de erro que estão associados com uma operação e PortType, que são conjuntos de operações abstratas, que são suportadas por um serviço, cada um contendo mensagens de entrada e saída.
+A parte abstrata é constituída pelos seguintes elementos: Tipos, que são elementos que definem os tipos de dados usados pelos Web Services, neles são especificados os tipos que serão trocados nas mensagens de entrada e saída do serviço; Mensagem, que é um elemento que permite descrever de forma abstrata os dados que serão transmitidos entre o serviço e o consumidor do serviço; Operações, que é um elemento que é semelhante à definição de um método, no entanto, só permite que seja definido a entrada, saída e mensagens de erro que estão associados com uma operação e PortType, que são conjuntos de operações abstratas, que são suportadas por um serviço, cada um contendo mensagens de entrada e saída.
 
 A parte concreta do WSDL, local de definição do protocolo e do endereço onde o serviço estará disponibilizado, compõe-se pelos seguintes elementos: O binding (ligação), que é o elemento que é responsável por ligar os elementos abstratos e concretos em um documento WSDL e de fornecer detalhes de como as mensagens serão transmitidas. E os Serviços e Portas, que são elementos que especificam a localização (endereço URL ou e-mail), neste caso, o elemento de serviço atribui um nome para o serviço e o associa a uma interface abstrata e descrevendo o local onde o serviço será acessado.
 
@@ -236,11 +236,7 @@ Dessa forma, para gerar uma assinatura digital, utilizando a combinação da cri
 
 \subsection{Certificados Digitais}
 
-<<<<<<< HEAD
 Um certificado digital é um documento eletrônico que possui informações que comprovam a identidade do seu emissor. Esse documento eletrônico é gerado e assinado por uma terceira parte confiável, denominada Autoridade Certificadora (CA). Uma CA é responsável por associar uma chave pública a uma entidade(pessoa, processo, servidor etc)~\cite{forouzan2013redes}. Dessa forma, uma das finalidades de um certificado digital é garantir que a chave pública contida no certificado pertence à entidade à qual ele foi emitido, possibilitando assim, a identificação inequívoca das partes envolvidas em uma comunicação.
-=======
-Um certificado digital é um documento eletrônico que possui informações que comprovam a identidade do seu emissor. Esse documento eletrônico é gerado e assinado por uma terceira parte confiável, denominada Autoridade Certificadora (AC). Uma AC é responsável por associar uma chave pública a uma entidade(pessoa, processo, servidor etc)~\cite{forouzan2013redes}. Dessa forma, uma das finalidades de um certificado digital é garantir que a chave pública contida no certificado pertence à entidade à qual ele foi emitido, possibilitando assim, a identificação inequívoca das partes envolvidas em uma comunicação.
->>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
 
 O padrão inicialmente adotado para os certificados digitais foi esquema X.509 que é uma recomendação do ITU-T(\emph{International Telecommunication Union}) e faz parte da série de recomendações X.500, que definem um serviço de diretório que mantém informações sobre usuários~\cite{stallings2008}.
 
@@ -250,11 +246,7 @@ Um certificado digital X.509 normalmente contém os seguintes campos:
 
 \item Versão: Diferencia entre versões sucessivas do formato de certificado; V1, V2, V3 ou, designando a versão padrão do certificado.
 
-<<<<<<< HEAD
 \item Número de série: Um número único de série emitido por uma CA que identifica o certificado.
-=======
-\item Número de série: Um número único de série emitido por uma AC que identifica o certificado.
->>>>>>> b43ca022df93c1576d946e9075db6d73469591fa
 \item Identificador do algoritmo de assinatura: O algoritmo usado pela CA para assinar o certificado.
 \item Nome do emissor: Um identificador exclusivo para a autoridade certificadora que emitiu o certificado.
 \item Validade: Início e fim do período de validade do certificado.
@@ -432,9 +424,6 @@ O eXtensible Access Control Markup Language (XACML) foi proposto pelo grupo OASI
 O XACML descreve uma linguagem para políticas de controle de acesso e têm pontos de extensão padrão para definição de novas funções, tipos de dados e combinações lógicas o que o torna flexível e extensível.
 
 Uma dos diferenciais do XACML em relação a outros padrões proprietários é que ele é independente de uma implementação específica o que permite que ele possa ser utilizado tanto para prover controle de acesso a sistemas robustos bem como a um recurso específico. Outro ponto importante e que o XACML pode ser combinado ao SAML e assim possibilitar um a criação de um sistema de autorização completo.
-
-
-
 
 \section{Síntese do capítulo}
 

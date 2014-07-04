@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.13)  4 JUL 2014 15:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.13)  4 JUL 2014 14:45
 entering extended mode
-**F:/monografia*(2)/tex/Capitulo5.tex
-("F:/monografia (2)/tex/Capitulo5.tex"
+**F:/monografia*(2)/tex/Capitulo6.tex
+("F:/monografia (2)/tex/Capitulo6.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -14,12 +14,12 @@ ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
 ! Undefined control sequence.
-l.2 \chapter
-            {Análise de Segurança e Desempenho}
+l.1 \chapter
+            {Conclusão}%
 ? 
 ! Emergency stop.
-l.2 \chapter
-            {Análise de Segurança e Desempenho}
+l.1 \chapter
+            {Conclusão}%
 End of file on the terminal!
 
  
@@ -30,5 +30,5 @@ Here is how much of TeX's memory you used:
  3400 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 5i,0n,1p,84b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 5i,0n,1p,60b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

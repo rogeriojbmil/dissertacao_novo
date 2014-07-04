@@ -56,9 +56,9 @@
 \usepackage[final]{pdfpages} % adicao da ata
 \setcounter{tocdepth}{3}
 \renewcommand{\baselinestretch}{1.5} % espaçamento entre linha
-\newcommand{\servidorRest}{Servidor de fachada REST}
-\newcommand{\servidorAA}{Servidor de Autenticação e Autorização}
-\newcommand{\servidorBD}{Servidor de Banco de Dados}
+\newcommand{\servidorRest}{servidor de fachada REST}
+\newcommand{\servidorAA}{servidor de Autenticação e Autorização}
+\newcommand{\servidorBD}{servidor de Banco de Dados}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -88,7 +88,7 @@
 \orientador{\prof \dr Rodrigo Bonifácio de Almeida}{CIC/UnB}
 \coorientador[a]{\prof[a] \dr[a] Edna Dias Canedo}{CIC/UnB}
 \coordenador{\prof \dr Marcelo Ladeira}{CIC/UnB}
-\diamesano{30}{junho}{2014}%
+\diamesano{24}{dezembro}{2014}%
 
 \membrobanca{\prof[a] \dr[a] Membra da Banca}{MEC}
 \membrobanca{\prof \dr Membro do Banco}{CIC/UnB}
