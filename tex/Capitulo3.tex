@@ -97,10 +97,10 @@ O UDDI provê um método padronizado para a publicação e descoberta de informa
 \end{enumerate}
 
 \section{Representational State Transfer}\label{sec:rest}
-A arquitetura \emph{Representational State Transfer (REST)}, foi proposta por Roy Fielding em
-2000 em sua tese de doutorado e pode ser descrita como um conjunto de princípios arquiteturais que podem ser utilizados para o desenvolvimento de serviços web e que utilizam o protocolo HTTP para realizar as trocas de mensagens ~\cite{ Fielding2000}.
+A arquitetura \emph{Representational State Transfer} (REST), foi proposta por Roy Fielding em
+2000 em sua tese de doutorado e pode ser descrita como um conjunto de princípios arquiteturais que podem ser utilizados para o desenvolvimento de serviços web e que utilizam o protocolo HTTP para realizar as trocas de mensagens~\cite{ Fielding2000}.
 
-Dessa forma, para que os princípios arquiteturais que permeiam \emph{REST} sejam seguidos, um conjunto de restrições deve ser implementado~\cite{ Fielding2000}. Uma aplicação que esteja em conformidade com essas restrições, a seguir descritas, são classificadas com RESTful~\cite{Richardson2007}.
+Dessa forma, para que os princípios arquiteturais que permeiam REST sejam seguidos, um conjunto de restrições deve ser implementado~\cite{ Fielding2000}. Uma aplicação que esteja em conformidade com essas restrições, a seguir descritas, são classificadas com RESTful~\cite{Richardson2007}.
 
 \textbf{Cliente-Servidor:} Essa restrição está associada a separação de interesses, que é o princípio por trás das restrições da arquitetura cliente-servidor. Procura-se separar as preocupações relacionadas à interface do usuário das preocupações de armazenamento de dados. Isso permite que os componentes possam evoluir de forma independente melhorando a portabilidade e a escalabilidade das aplicações.
 
@@ -361,9 +361,9 @@ OpenID é atraente por causa de sua simplicidade. Com apenas algumas interaçõe
 
 \subsection{SAML}
 
-O \emph{Security Assertion Markup Language} - SAML é uma especificação padrão para troca de credenciais,\emph{tokens} de segurança, que contém informações de autenticação e autorização, baseadas em \emph{XML}, que visam garantir a interoperabilidade entre diferentes sistemas. Foi desenvolvido em 2005 pela OASIS (OASIS,2005b; OASIS, 2005c). Ele está dividido no seguintes componentes: asserções, protocolos, ligações e perfis, que são descritos a seguir~\cite{Madsen2005}
+O \emph{Security Assertion Markup Language} - SAML é uma especificação padrão para troca de credenciais,\emph{tokens} de segurança, que contém informações de autenticação e autorização, baseadas em XML, que visam garantir a interoperabilidade entre diferentes sistemas. Foi desenvolvido em 2005 pela OASIS (OASIS,2005b; OASIS, 2005c). Ele está dividido no seguintes componentes: asserções, protocolos, ligações e perfis, que são descritos a seguir~\cite{Madsen2005}
 
-Uma Asserção é um conjunto de informações que fornece uma ou mais informações feitas por uma autoridade \emph{SAML}. Ela é dividida em três tipos diferentes:  autenticação, atributo e decisão de autorização~\cite{Madsen2005,Nordbotten09,Bertino2010}. Uma asserção de autenticação, é aquela que afirma que determinada informação foi autenticada por um meio qualquer em determinado momento. Este tipo de asserção é geralmente emitido por uma autoridade SAML denominada de fornecedor de entidades. A sua responsabilidade é a de autenticar consumidor do serviço e manter registros dos dados relacionados com a sua sessão, enquanto esta for válida. O atributo é a asserção que contém informações específicas de um determinado cliente. E finalmente a decisão de autorização, que são as informação sobre a decisão de permitir, ou não, o acesso a um determinado recurso por parte do consumidor do serviço.
+Uma Asserção é um conjunto de informações que fornece uma ou mais informações feitas por uma autoridade SAML. Ela é dividida em três tipos diferentes: autenticação, atributo e decisão de autorização~\cite{Madsen2005,Nordbotten09,Bertino2010}. Uma asserção de autenticação, é aquela que afirma que determinada informação foi autenticada por um meio qualquer em determinado momento. Este tipo de asserção é geralmente emitido por uma autoridade SAML denominada de fornecedor de entidades. A sua responsabilidade é a de autenticar consumidor do serviço e manter registros dos dados relacionados com a sua sessão, enquanto esta for válida. O atributo é a asserção que contém informações específicas de um determinado cliente. E finalmente a decisão de autorização, que são as informação sobre a decisão de permitir, ou não, o acesso a um determinado recurso por parte do consumidor do serviço.
 
 Os protocolos, nesse contexto são uma série de mensagens protocolares do tipo pedido/resposta que permitem um provedor de serviços, dentre outras coisas, solicitar a uma autoridade SAML, uma ou mais asserções, pedir a autenticação de um usuário a um provedor de identidades e obter as asserções correspondentes.
 
@@ -375,7 +375,7 @@ Na versão 2.0 do SAML, foram adicionadas uma série de novos recursos tais como
 
 \subsection{OAuth}
 
-O \emph{Open Authorization Protocol - OAuth} é um protocolo desenvolvido com o objetivo de solucionar os problemas relacionados com a gestão de identidades entre provedores de serviços. A primeira versão 1.0 foi lançada em 2007, e sua última revisão foi publicada em 2010, sendo especificada no Request For Comments (RFC)5849~\cite{oauth210}. Em 2012, a versão 2.0 do protocolo, \emph{OAuth 2.0}, foi lançada com objetivo de resolver problemas encontrados na versão 1.0, tais como escalabilidade e complexidade~\cite{rfc6749}.
+O \emph{Open Authorization Protocol - OAuth} é um protocolo desenvolvido com o objetivo de solucionar os problemas relacionados com a gestão de identidades entre provedores de serviços. A primeira versão 1.0 foi lançada em 2007, e sua última revisão foi publicada em 2010, sendo especificada no Request For Comments (RFC)5849~\cite{oauth210}. Em 2012, a versão 2.0 do protocolo, OAuth 2.0, foi lançada com objetivo de resolver problemas encontrados na versão 1.0, tais como escalabilidade e complexidade~\cite{rfc6749}.
 
 Na última versão, 2.0, quatro papéis básicos são definidos e necessários para compreensão do fluxo de execução do protocolo, são eles: proprietário do recurso, que é a entidade que tem o poder de conceder a permissão de acesso, aos seus recursos, às outras entidades; O servidor de recursos, que é o responsável por hospedar e responder às solicitações de acesso a recursos protegidos, usando \emph{tokens} de acesso; Cliente, que é uma aplicação, que realiza solicitações de acesso de recursos protegidos, ao servidor de recursos, em nome do proprietário, dono do recurso, após a obtenção de sua autorização; E o servidor de autorização, que é responsável por emitir \emph{tokens} de acesso aos clientes, após autenticar e obter autorização do proprietário de recursos~\cite{rfc6749}.
 
@@ -419,7 +419,7 @@ Em síntese, o Traust atua como um intermediário que fornece tokens de seguran�
 Dessa forma, ele pode ser integrado diretamente a aplicativos mais novos, que sejam baseados em confiança e que tenham por finalidade  prover a autorização a sistemas abertos.
 
 \subsection{eXtensible Access Control Markup Language}
-O eXtensible Access Control Markup Language (XACML) foi proposto pelo grupo OASIS e atualmente está na versão 3.0~\cite{XACML}. O XACML é um padrão baseado em XML que define linguagens de marcação e possibilita especificar políticas de controle de acesso e um modelo de processamento para avaliar solicitações de autorização de acordo com as políticas definidas que são utilizadas para controlar acesso a conteúdos e informações protegidas.
+O \emph{eXtensible Access Control Markup Language} (XACML) foi proposto pelo grupo OASIS e atualmente está na versão 3.0~\cite{XACML}. O XACML é um padrão baseado em XML que define linguagens de marcação e possibilita especificar políticas de controle de acesso e um modelo de processamento para avaliar solicitações de autorização de acordo com as políticas definidas que são utilizadas para controlar acesso a conteúdos e informações protegidas.
 
 O XACML descreve uma linguagem para políticas de controle de acesso e têm pontos de extensão padrão para definição de novas funções, tipos de dados e combinações lógicas o que o torna flexível e extensível.
 

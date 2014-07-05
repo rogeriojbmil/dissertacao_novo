@@ -1,10 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{TANENBAUM2007}
-Maarten Van~Steen Andrew S.~Tanenbaum.
-\newblock {\em Sistemas Distribídos Principios e Paradigmas 2ª Edição}.
-\newblock São Paulo, 2007.
-
 \bibitem{gqm}
 Victor~R. Basili, Gianluigi Caldiera, and H.~Dieter Rombach.
 \newblock The goal question metric approach.
@@ -256,6 +251,15 @@ Douglas Rodrigues, Julio~C Estrella, and Kalinka~RLJC Branco.
   architectures.
 \newblock {\em International Journal of Security and Its Applications}, 2011.
 
+\bibitem{Altair2004}
+Altair~Olivo Santin.
+\newblock {\em Teias de Federa{\c{c}}{\~o}es: Uma abordagem Baseada em Cadeias
+  de Confian{\c{c}}a para Autentica{\c{c}}{\~a}o, Autoriza{\c{c}}{\~a}o e
+  Navega{\c{c}}{\~a}o em Sistemas de Larga Escala}.
+\newblock PhD thesis, Universidade Federal de Santa Catarina, Centro de
+  Tecnol{\'o}gico. Programa de P{\'o}s-Gradua{\c{c}}{\~a}o em Engenharia
+  El{\'e}trica., 2004.
+
 \bibitem{Schneier1995}
 Bruce Schneier.
 \newblock {\em Applied Cryptography (2Nd Ed.): Protocols, Algorithms, and
@@ -272,6 +276,11 @@ Gabriel Serme, Anderson~Santana de~Oliveira, Julien Massiera, and Yves Roudier.
 W.~Stallings.
 \newblock {\em Criptografia e segurança de redes: princípios e práticas}.
 \newblock Pearson Prentice Hall, 2008.
+
+\bibitem{TANENBAUM2007}
+Andrew~S. Tanenbaum and Maarten Van~Steen.
+\newblock {\em Sistemas Distribídos Principios e Paradigmas 2ª Edição}.
+\newblock São Paulo, 2007.
 
 \bibitem{XACML}
 {The OASIS technical commitee}.

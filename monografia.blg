@@ -3,13 +3,12 @@ The style file: plain.bst
 Database file #1: reflatex.bib
 A bad cross reference---entry "JensenGHL2007"
 refers to entry "conf/ecows/2007", which doesn't exist
-Warning--I didn't find a database entry for "Altair2004"
 Warning--I didn't find a database entry for "conf/ecows/2007"
-Warning--can't use both author and editor fields in TANENBAUM2007
 Warning--can't use both author and editor fields in Cerami2002
 Warning--empty school in pattern-driven2008
 Warning--empty school in Fielding2000
 Warning--empty publisher in forouzan2013redes
 Warning--empty institution in Madsen2005
 Warning--empty booktitle in Meadows95
+Warning--can't use both author and editor fields in TANENBAUM2007
 (There was 1 error message)

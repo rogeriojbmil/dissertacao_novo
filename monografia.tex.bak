@@ -33,7 +33,9 @@
 %\usepackage{natbib}
 %\usepackage[num,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite} %configuracao correta das referencias bibliograficas.
 \usepackage{xcolor,graphicx,url}
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
+ \usepackage[T1]{fontenc} 
+ \usepackage[utf8x]{inputenc} 
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{footnote}
 %\usepackage{minipage}
@@ -149,7 +151,7 @@ Agradeço ao Prof. José Ralha, cujos esforços na versão anterior foram bem ``
   \input{tex/Capitulo3}
   %\input{tex/Capitulo4}
   \input{tex/Capitulo04_rev_Rogerio}
-  %\input{tex/Capitulo5}
+  \input{tex/Capitulo5}
   %\input{tex/cap5}
    \input{tex/Capitulo6}
   %\input{tex/Capitulo05_Proposto}

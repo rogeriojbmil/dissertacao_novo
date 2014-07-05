@@ -11,9 +11,7 @@ Nesta seção serão discutidas as propriedades de segurança do Protocolo de Au
 
 \subsection{Segurança da sessão}
 
-O protocolo de Autenticação e Autorização proposto utiliza para segurança de sessão e camada de transporte o protocolo TLS/SSL. A utilização desse protocolo tem por objetivo evitar o ataque \emph{man-in-the-middle}. Para isso, é exigido, tanto para o órgão conveniado quanto para a própria PCDF, a utilização de certificados digitais padrão X.509, emitidos e garantidos por uma CA que esteja subordinada à hierarquia da ICP-Brasil.
-
-Ambas as partes envolvidas no processo de comunicação podem estabelecer um processo de confiança mútua no nível de transporte. Todo o tráfego que flui sobre uma sessão bilateral certificada tem uma fonte confiável permitindo que implementações de serviços possam autorizar ou desautorizar interações com base na fonte bem conhecida de uma solicitação HTTP.
+O protocolo de Autenticação e Autorização proposto utiliza para segurança de sessão e camada de transporte o protocolo TLS/SSL. A utilização desse protocolo tem por objetivo evitar o ataque \emph{man-in-the-middle}. Para isso, é exigido, tanto para o órgão conveniado quanto para a própria PCDF, a utilização de certificados digitais padrão X.509, emitidos e garantidos por uma CA que esteja subordinada à hierarquia da ICP-Brasil. Ambas as partes envolvidas no processo de comunicação podem estabelecer um processo de confiança mútua no nível de transporte. Todo o tráfego que flui sobre uma sessão bilateral certificada tem uma fonte confiável permitindo que implementações de serviços possam autorizar ou desautorizar interações com base na fonte bem conhecida de uma solicitação HTTP.
 
 Além da segurança oferecida pela utilização da segurança na camada de transporte, com utilização do TLS/SSL, o protocolo utiliza mecanismos de segurança tais como criptografia assimétrica e assinatura digital. Isso permite que outras partes mal intencionadas não consigam ter acesso ao conteúdo das mensagens trocadas pelo protocolo no processo de comunicação.
 
@@ -21,9 +19,9 @@ Diferentemente do sistema Traust~\cite{traust08}, o Protocolo de Autenticação 
 
 \subsection{Responsabilização dos usuários conveniados}
 
-Uma das ameaças verificadas diz respeito a possibilidade do uso indevido, por parte dos órgãos conveniados, das informações disponibilizadas nos serviços ofertados pela PCDF. Tal fato decorre porque as informações disponibilizadas s\~{a}o sensíveis e possuem caráter sigiloso. 
+Uma das ameaças verificadas diz respeito a possibilidade do uso indevido, por parte dos órgãos conveniados, das informações disponibilizadas nos serviços ofertados pela PCDF. Tal fato decorre porque as informações disponibilizadas s\~{a}o sensíveis e possuem caráter sigiloso. Dessa forma, para evitar esse problema é exigido dos órgãos conveniados que assinem um contrato para o consumo do serviço. No momento da assinatura do contrato as institui\c c\~{o}es recebem uma tabela contendo várias credenciais que servem como identidade e que deverão ser utilizadas no processo de autenticação, conforme descrito no seção~\ref{sec:reqprotocolo}. Isso possibilita que ocorra uma autenticação mútua entre a PCDF e os consumidores dos serviços.
 
-Dessa forma, para evitar esse problema é exigido dos órgãos conveniados que assinem um contrato para o consumo do serviço. No momento da assinatura do contrato as institui\c c\~{o}es recebem uma tabela contendo várias credenciais que servem como identidade e que deverão ser utilizadas no processo de autenticação, conforme descrito no seção~\ref{sec:reqprotocolo}. Isso possibilita que ocorra uma autenticação mútua entre a PCDF e os consumidores dos serviços. Além disso, com a utilização do Protocolo de Autenticação e Autorização proposto, são empregados mecanismos de criptografia e assinaturas digitais que são geradas a partir de certificados digitais padrão X.509 vinculados aos órgãos e garantidos por uma CA. Deste modo, busca-se evitar o não-repúdio por parte das instituições conveniadas, atribuindo-lhes responsabilidades em caso do mau uso dos serviços ofertados pela PCDF. Logo, uma vez detectado algum tipo de vazamento de dados proveniente dos serviços ofertados o órgão poderá ser identificado e após uma apuração minuciosa, responsabilizado pelos danos causados à PCDF.
+Além disso, com a utilização do Protocolo de Autenticação e Autorização proposto, são empregados mecanismos de criptografia e assinaturas digitais que são geradas a partir de certificados digitais padrão X.509 vinculados aos órgãos e garantidos por uma CA. Deste modo, busca-se evitar o não-repúdio por parte das instituições conveniadas, atribuindo-lhes responsabilidades em caso do mau uso dos serviços ofertados pela PCDF. Logo, uma vez detectado algum tipo de vazamento de dados proveniente dos serviços ofertados o órgão poderá ser identificado e após uma apuração minuciosa, responsabilizado pelos danos causados à PCDF.
 
 \subsection{Ataques de repetição}
 
@@ -32,9 +30,9 @@ Esta ameaça, conforme descrita na Seção~\ref{sec:vulnerabilidadessoa}, se emp
 \subsection{Ataques de negação de serviço}
 
 Esta ameaça é muito difícil de ser evitada, uma vez que pode ser fruto de ataques via rede, do consumo excessivo de recursos da máquina  ou ainda, ser resultante da exploração de qualquer tipo de vulnerabilidade que implique na indisponibilidade do serviço ou de um recurso.
- 
+
 O Protocolo de Autenticação e Autorização proposto é baseado no esquema de desafio-resposta. Os desafios são gerados de forma aleatória a partir das credenciais que identificam unicamente os consumidores dos serviços, o que possibilita uma autenticação mútua. Além disso, também são empregados outros mecanismos de segurança como utilização da segurança na camada de transporte e mecanismos de criptografia e assinaturas digitais. Isso minimiza a ameaça de ataques de negação de serviço.
- 
+
 Assim como o protocolo Traust~\cite{traust08}, o servidor de autenticação e autorização proposto pode ser replicado para outros servidores, o que possibilita um balanceamento de carga e minimiza a criação de gargalos, permitindo que o servidor de autenticação seja escalável e esteja disponível em situações críticas, como no caso dos ataques de negação de serviço.
 
 
@@ -43,9 +41,7 @@ Assim como o protocolo Traust~\cite{traust08}, o servidor de autenticação e au
 O Protocolo de Autenticação e Autorização proposto, após executado corretamente, emite um token de segurança que será utilizado para a obtenção do serviço desejado, conforme apresentado na seção~\ref{sec:ArqProtocolo}. Cabe ressaltar que se um atacante conseguir burlar os mecanismos de segurança utilizados pelo protocolo e conseguir acesso a essa credencial de autenticação e autorização, o atacante terá acesso apenas a um serviço, pois o protocolo emite credenciais para um único serviço por vez e com tempo de expiração determinado no momento de sua geração. Essa é uma situação muito difícil de ser verificada, porém caso o extravio de credenciais ocorra, buscamos minimizar o problema com o isolamento de uma credencial por serviço requisitado, diminuindo o impacto que pode ocorrer.
 
 Outro problema que pode ocorrer é o roubo de credenciais de autenticação, que são as credenciais que o órgão conveniado recebe no momento da assinatura do contrato de oferecimento do serviço. Essas credenciais são utilizadas para responder aos desafios que serão realizados pelo Protocolo de Autenticação e Autorização proposto. Caso o extravio ocorra e seja identificado a PCDF pode, de forma flexível e transparente, desativar as credenciais que julga terem sido comprometidas sem que o usuário seja prejudicado.
-Em um caso mais extremo, outras credenciais podem ser geradas e redistribuídas \`{a}s institui\c c\~{o}es conveniadas.
-
-Porém, cabe ressaltar que, caso ocorra o extravio de credenciais, o órgão que teve o problema será investigado e poderá ser responsabilizado, caso seja detectada uma má gestão na guarda das credenciais, conforme descrito na subseção~\ref{subsec:RouboCred}
+Em um caso mais extremo, outras credenciais podem ser geradas e redistribuídas \`{a}s institui\c c\~{o}es conveniadas. Porém, cabe ressaltar que, caso ocorra o extravio de credenciais, o órgão que teve o problema será investigado e poderá ser responsabilizado, caso seja detectada uma má gestão na guarda das credenciais, conforme descrito na subseção~\ref{subsec:RouboCred}
 
 
 \subsection{Ponto único de ataque}
@@ -285,7 +281,7 @@ Sendo assim, ao analisar o tempo de resposta dos experimentos realizados, pode-s
 
 Por fim, o último estudo analisado, foi o desenvolvido por  Pedro Miguel Gonçalves Ferreira~\cite{pedromiguel2012}, neste trabalho buscou-se identificar e caracterizar as diferentes fontes de informação da Universidade de Aveiro (UA) sendo necessário  construir APIs ou serviços web de acesso à informação. Dessa forma, entre os projetos desenvolvidos, foi implementação um projeto  denominado myPersonas, que é sistema que permite a gestão por parte utilizador de várias identidade num cenário de multi-provedores de serviços~\cite{pedromiguel2012}. Neste caso, foi utilizado o padrão WS-Security para prover segurança aos serviços ofertados pelo projeto.
 
-Sendo assim, após desenvolver o projeto e com a finalidade de avaliar a desempenho da solução implementada, foram executados 4 (quatro) testes. No primeiro teste, o serviço web descrito foi executado sem qualquer tipo de mecanismo de segurança. No segundo teste foi implementado apenas assinatura do XML. No terceiro teste foi implementada apenas a criptografia das mensagens SOAP. No quarto e último teste foram implementadas tanto criptografia como a assinatura da mensagem SOAP. Nos experimentos que utilizaram mecanismos de segurança o padrão adotado para prover segurança ao Web service foi o WS-Security. Para todos os experimentos foi utilizado um Web service SOAP simples, que efetua a soma entre dois números. O resultados dos experimentos são apresentados no gráfico~\ref{fig:tempowssecurity}.
+Logo, após desenvolver o projeto e com a finalidade de avaliar a desempenho da solução implementada, foram executados 4 (quatro) testes. No primeiro teste, o serviço web descrito foi executado sem qualquer tipo de mecanismo de segurança. No segundo teste foi implementado apenas assinatura do XML. No terceiro teste foi implementada apenas a criptografia das mensagens SOAP. No quarto e último teste foram implementadas tanto criptografia como a assinatura da mensagem SOAP. Nos experimentos que utilizaram mecanismos de segurança o padrão adotado para prover segurança ao Web service foi o WS-Security. Para todos os experimentos foi utilizado um Web service SOAP simples, que efetua a soma entre dois números. O resultados dos experimentos são apresentados no gráfico~\ref{fig:tempowssecurity}.
 
 
 \begin{figure}[!htb]

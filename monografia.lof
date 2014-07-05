@@ -17,8 +17,8 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Fluxo do protocolo OAuth 2.0 adaptado de~\cite {rfc6749}.}}{34}{figure.3.7}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama de relacionamento entre contrato, credenciais e usu\IeC {\'a}rios}}{39}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 1\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{40}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 1\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{41}{figure.4.3}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Arquitetura do Protocolo de Autentica\IeC {\c c}\IeC {\~a}o e Autoriza\IeC {\c c}\IeC {\~a}o proposto.}}{40}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Fluxo do Protocolo de Autentica\IeC {\c c}\IeC {\~a}o e Autoriza\IeC {\c c}\IeC {\~a}o proposto, 1\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{41}{figure.4.3}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Fluxo do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto, 2\IeC {\textordmasculine } cen\IeC {\'a}rio.}}{45}{figure.4.4}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama com a idealiza\IeC {\c c}\IeC {\~a}o do protocolo de autentica\IeC {\c c}\IeC {\~a}o/autoriza\IeC {\c c}\IeC {\~a}o proposto}}{49}{figure.4.5}
 \addvspace {10\p@ }

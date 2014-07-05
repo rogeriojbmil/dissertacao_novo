@@ -10,7 +10,7 @@
 \backcite {marks2006}{{5}{2.1}{section.2.1}}
 \backcite {Petersen2008}{{5}{2.2}{section.2.2}}
 \backcite {guidelines-2007}{{6}{2.5}{section.2.5}}
-\backcite {guidelines-2007}{{7}{2.5}{Item.18}}
+\backcite {guidelines-2007}{{7}{2.5}{Item.20}}
 \backcite {Delegation_Solution2011}{{10}{2.8.2}{subsection.2.8.2}}
 \backcite {Vulnerability_Analysis2011}{{10}{2.8.2}{subsection.2.8.2}}
 \backcite {Vulnerability_Analysis2011}{{10}{2.8.2}{subsection.2.8.2}}
@@ -20,9 +20,9 @@
 \backcite { CrossRealmSOA2012}{{11}{2.8.2}{subsection.2.8.2}}
 \backcite {pattern-driven2008}{{12}{2.8.3}{subsection.2.8.3}}
 \backcite {CrossRealmSOA2012}{{12}{2.8.4}{subsection.2.8.4}}
-\backcite { WeberAM07}{{14}{2.8.6}{subsection.2.8.6}}
-\backcite {pattern-driven2008}{{14}{2.8.6}{subsection.2.8.6}}
-\backcite {Coetzee2012}{{14}{2.8.6}{subsection.2.8.6}}
+\backcite { WeberAM07}{{14}{2.9}{section.2.9}}
+\backcite {pattern-driven2008}{{14}{2.9}{section.2.9}}
+\backcite {Coetzee2012}{{14}{2.9}{section.2.9}}
 \backcite {Clements2010}{{15}{3.1}{section.3.1}}
 \backcite {Josuttis07}{{15}{3.1}{section.3.1}}
 \backcite {ERL09}{{15}{3.1}{section.3.1}}
