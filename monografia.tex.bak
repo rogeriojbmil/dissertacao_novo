@@ -30,12 +30,13 @@
 
 
 %\usepackage[num,abnt-full-initials=yes]{abntex2cite}
-%\usepackage{natbib}
+\usepackage{natbib}
 %\usepackage[num,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite} %configuracao correta das referencias bibliograficas.
 \usepackage{xcolor,graphicx,url}
-%\usepackage[utf8]{inputenc}
- \usepackage[T1]{fontenc} 
- \usepackage[utf8x]{inputenc} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+ %\usepackage[utf8x]{inputenc}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{footnote}
 %\usepackage{minipage}
@@ -85,15 +86,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Informações sobre a monografia
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Proposta de Protocolo de Autenticação e Autorização Seguro para Aplicações SOA}%
+\title{Protocolo de Autenticação e Autorização Seguro para Arquiteturas Orientadas a Serviços}%
 
 \orientador{\prof \dr Rodrigo Bonifácio de Almeida}{CIC/UnB}
 \coorientador[a]{\prof[a] \dr[a] Edna Dias Canedo}{CIC/UnB}
 \coordenador{\prof \dr Marcelo Ladeira}{CIC/UnB}
 \diamesano{30}{junho}{2014}%
 
-\membrobanca{\prof[a] \dr[a] Membra da Banca}{MEC}
-\membrobanca{\prof \dr Membro do Banco}{CIC/UnB}
+\membrobanca{\prof \dr  Laerte Peotta de Melo}{Banco do Brasil}
+\membrobanca{\prof \dr  Rafael Timóteo de Sousa Júnior}{FT/UnB}
 
 \autor{Rogério Alves da}{Conceição}
 \CDU{004.4}
@@ -114,11 +115,22 @@
   \maketitle
 
   \begin{dedicatoria}
-Citando o poeta: ``Eu dedico essa música a primeira garota que tá sentada ali na fila. Brigado!''
+  Dedico este trabalho à minha família, pelo apoio, incentivo e compreensão. Sem eles não teria conseguido conluir essa jornada.
+     
   \end{dedicatoria}
 
   \begin{agradecimentos}
-Agradeço ao Prof. José Ralha, cujos esforços na versão anterior foram bem ``adaptados'' a este trabalho.
+   Agradeço primeiramente a Deus que iluminou e guiou meus passos durante essa tragetória, me dando saúde e forças necessárias para superar as dificuldades ao longo do caminho.
+   
+   Aos meus orientadores, Prof. Dr. Rodrigo Bonifacio de Almeida e Profª. Drª. Edna Dias Canedo, pela orientação, apoio e confiança nesse período de amadurecimento e enriquencimento pessoal e intelectual. Serei eternamente grato por suas valiosas contribuições para a elaboração desta dissertação.
+   
+   Ao aluno Alexandre Lucchesi, do curso de Engenharia da Computação da UNB, pela contribuição valiosa dada a esta dissertação.
+   
+   Aos demais professores do Mestrado Profissional em Computação Aplicada, da Universidade de Brasília, pela competência com que transmitiram os conteúdos e ensinamentos.
+   
+   Aos companheiros de trabalho da Divisão de Tecnologia da Polícia Civil do Distrito Federal, que mesmo diante das correrias e obstáculos encontrados, sempre se dispuseram a me prestar o auxílio necessário.
+   
+  
   \end{agradecimentos}
 
 \hyphenation{au-xi-li-ar}
@@ -166,7 +178,8 @@ Agradeço ao Prof. José Ralha, cujos esforços na versão anterior foram bem ``
  \bibliographystyle{plain}
   %\bibliography{bibliografia}
   %\bibliography{bibliografia2}
-  \bibliography{reflatex}
+ % \bibliography{reflatex}
+   \bibliography{BibliografiaMPCA}
 %\appendix
 %  \input{tex/Anexo1}
 

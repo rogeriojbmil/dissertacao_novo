@@ -1,0 +1,653 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF8
+
+
+@InCollection{gqm,
+  Title                    = {The Goal Question Metric Approach},
+  Author                   = {Victor R. Basili and Gianluigi Caldiera and H. Dieter Rombach},
+  Booktitle                = {Encyclopedia of Software Engineering},
+  Publisher                = {Wiley},
+  Year                     = {1994}
+}
+
+@Misc{bernerslee2005uri,
+  Title                    = {RFC 3986, Uniform Resource Identifier (URI): Generic Syntax},
+
+  Author                   = {Berners-Lee, T. and Fielding, R. and Masinter, L.},
+  Year                     = {2005},
+
+  Added-at                 = {2007-03-15T21:48:10.000+0100},
+  Keywords                 = {rfc uri},
+  Timestamp                = {2007-03-15T21:48:10.000+0100},
+  Url                      = {http://rfc.net/rfc3986.html}
+}
+
+@Book{Bertino2010,
+  Title                    = {Security for Web Services and Service-Oriented Architectures},
+  Author                   = {Bertino, Elisa and Martino, Lorenzo and Paci, Federica and Squicciarini, Anna},
+  Publisher                = {Springer Publishing Company, Incorporated},
+  Year                     = {2009},
+
+  ISBN                     = {9783540877417}
+}
+
+@Misc{Booth2004,
+  Title                    = {Web Services Architecture},
+
+  Author                   = {Booth, David and Haas, Hugo and McCabe, Francis and Newcomer, Eric and Champion, Mike and Ferris, Christopher and Orchard, David},
+  HowPublished             = {World Wide Web Consortium, Note NOTE-ws-arch-20040211},
+  Month                    = {February},
+  Year                     = {2004}
+}
+
+@Article{Burrows1990,
+  Title                    = {A Logic of Authentication},
+  Author                   = {Burrows, Michael and Abadi, Martin and Needham, Roger},
+  Journal                  = {ACM Trans. Comput. Syst.},
+  Year                     = {1990},
+
+  Month                    = feb,
+  Number                   = {1},
+  Pages                    = {18--36},
+  Volume                   = {8},
+
+  Acmid                    = {77649},
+  Address                  = {New York, NY, USA},
+  Doi                      = {10.1145/77648.77649},
+  ISSN                     = {0734-2071},
+  Issue_date               = {Feb. 1990},
+  Numpages                 = {19},
+  Publisher                = {ACM},
+  Url                      = {http://doi.acm.org/10.1145/77648.77649}
+}
+
+@Book{Cerami2002,
+  Title                    = {Web Services Essentials},
+  Author                   = {Cerami, Ethan},
+  Editor                   = {St.Laurent, Simon},
+  Publisher                = {O'Reilly \& Associates, Inc.},
+  Year                     = {2002},
+
+  Address                  = {Sebastopol, CA, USA},
+  Edition                  = {1st},
+
+  ISBN                     = {0596002246}
+}
+
+@Book{Clements2010,
+  Title                    = {Documenting Software Architectures: Views and Beyond},
+  Author                   = {Clements, Paul and Garlan, David and Bachmann, Felix and Ivers, James and Stafford, Judith and Bass, Len and Merson, Paulo},
+  Publisher                = {Addison-Wesley Professional},
+  Year                     = {2010},
+  Edition                  = {2nd},
+
+  ISBN                     = {0321552687, 9780321552686}
+}
+
+@Article{Coetzee2012,
+  Title                    = {Towards a Holistic Information Security Governance Framework for SOA},
+  Author                   = {Coetzee, Marijke},
+  Journal                  = {2012 Seventh International Conference on Availability, Reliability and Security},
+  Year                     = {2012},
+  Pages                    = {155-160},
+  Volume                   = {0},
+
+  Address                  = {Los Alamitos, CA, USA},
+  Doi                      = {http://doi.ieeecomputersociety.org/10.1109/ARES.2012.62},
+  ISBN                     = {978-1-4673-2244-7},
+  Publisher                = {IEEE Computer Society}
+}
+
+@Book{COYLE,
+  Title                    = {XML, Web Services, and the Data Revolution},
+  Author                   = {Coyle, F. P},
+  Publisher                = {Boston: Addison-Wesley},
+  Year                     = {2002},
+
+  Owner                    = {Rogerio},
+  Timestamp                = {2013.08.20}
+}
+
+@Article{Ontology2012,
+  Title                    = {An Ontology for Run-Time Verification of Security Certificates for SOA},
+  Author                   = {D'Agostini, Stefania and Giacomo, Valentina Di and Pandolfo, Claudia and Presenza, Domenico},
+  Journal                  = {2012 Seventh International Conference on Availability, Reliability and Security},
+  Year                     = {2012},
+  Pages                    = {525-533},
+  Volume                   = {0},
+
+  Address                  = {Los Alamitos, CA, USA},
+  Doi                      = {http://doi.ieeecomputersociety.org/10.1109/ARES.2012.49},
+  ISBN                     = {978-1-4673-2244-7},
+  Publisher                = {IEEE Computer Society}
+}
+
+@PhdThesis{pattern-driven2008,
+  Title                    = {A pattern-driven process for secure service-oriented applications},
+  Author                   = {Delessy, Nelly A. and Fernandez, Eduardo.B},
+  Year                     = {2008},
+
+  Address                  = {Boca Raton, FL, USA},
+
+  Publisher                = {Florida Atlantic University}
+}
+
+@Book{ERL09,
+  Title                    = {Soa Principios De Design De Servi{\c{c}}os},
+  Author                   = {Erl, T.},
+  Publisher                = {Prentice Hall Brasil},
+  Year                     = {2009},
+
+  ISBN                     = {9788576051893}
+}
+
+@Book{erl2012soa,
+  Title                    = {SOA with REST: Principles, Patterns \& Constraints for Building Enterprise Solutions with REST},
+  Author                   = {Erl, T. and Carlyle, B. and Pautasso, C. and Balasubramanian, R. and Wilhelmsen, H. and Booth, D.},
+  Publisher                = {Pearson Education},
+  Year                     = {2012},
+  Series                   = {The Prentice Hall Service Technology Series from Thomas Erl},
+
+  ISBN                     = {9780132869911}
+}
+
+@MastersThesis{pedromiguel2012,
+  Title                    = {DADOS ABERTOS UA},
+  Author                   = {Pedro Miguel Gonçalves Ferreira},
+  School                   = {Universidade de Aveiro - Departamento de Electrónica, Telecomunicações e Informática},
+  Year                     = {2012},
+
+  Owner                    = {774081},
+  Timestamp                = {2014.07.03}
+}
+
+@PhdThesis{Fielding2000,
+  Title                    = {Architectural Styles and the Design of Network-based Software Architectures},
+  Author                   = {Fielding, Roy Thomas},
+  Year                     = {2000},
+  Note                     = {AAI9980887},
+
+  ISBN                     = {0-599-87118-0},
+  Publisher                = {University of California, Irvine}
+}
+
+@Book{forouzan2013redes,
+  Title                    = {Redes de Computadores: Uma Abordagem Top-Down},
+  Author                   = {Forouzan, B.A. and Mosharraf, F.},
+  Editor                   = {AMGH},
+  Year                     = {2013},
+
+  ISBN                     = {9788580551693}
+}
+
+@Book{goodrich2013,
+  Title                    = {Introdução à Segurança de Computadores},
+  Author                   = {Goodrich, M.T. and Tamassia, R.},
+  Publisher                = {Bookman},
+  Year                     = {2013},
+
+  ISBN                     = {9788540701939}
+}
+
+@TechReport{oauth210,
+  Title                    = {{The OAuth 1.0 Protocol}},
+  Author                   = {E. Hammer-Lahav},
+  Institution              = {RFC Editor},
+  Year                     = {2010},
+
+  Address                  = {Fremont, CA, USA},
+  Month                    = apr,
+  Number                   = {5849}
+}
+
+@TechReport{rfc6749,
+  Title                    = {The {OA}uth 2.0 Authorization Framework},
+  Author                   = {Hardt, Dick},
+  Institution              = {RFC Editor},
+  Year                     = {2012},
+
+  Address                  = {Fremont, CA, USA},
+  Month                    = oct,
+  Number                   = {6749},
+  Type                     = {RFC},
+
+  Editor                   = {Hardt, Dick},
+  HowPublished             = {Internet Requests for Comment},
+  ISSN                     = {2070-1721},
+  Keywords                 = {authentication, oauth, token, web},
+  Posted-at                = {2012-12-10 00:34:24},
+  Publisher                = {RFC Editor},
+  Url                      = {http://www.rfc-editor.org/rfc/rfc6749.txt}
+}
+
+@Book{harwood2010security,
+  Title                    = {Security Strategies in Web Applications and Social Networking},
+  Author                   = {Harwood, M.},
+  Publisher                = {Jones \& Bartlett Learning},
+  Year                     = {2010},
+  Series                   = {Information Systems Security \& Assurance},
+
+  ISBN                     = {9780763791957},
+  Lccn                     = {2011410053}
+}
+
+@Book{jain1991art,
+  Title                    = {The Art of Computer Systems Performance Analysis: Techniques for Experimental Design, Measurement, Simulation, and Modeling},
+  Author                   = {Jain, R.},
+  Publisher                = {Wiley},
+  Year                     = {1991},
+  Series                   = {Wiley Professional Computing},
+
+  ISBN                     = {9780471503361},
+  Lccn                     = {lc90045479}
+}
+
+@InProceedings{JensenGHL2007,
+  Title                    = {SOA and Web Services: New Technologies, New Standards - New Attacks.},
+  Author                   = {Jensen, Meiko and Gruschka, Nils and Herkenhöner, Ralph and Luttenberger, Norbert},
+  Booktitle                = {ECOWS},
+  Year                     = {2007},
+  Pages                    = {35-44},
+  Publisher                = {IEEE Computer Society}
+}
+
+@TechReport{jwt2014,
+  Title                    = {{JSON Web Token (JWT)}},
+  Author                   = {M. Jones and D. Balfanz and J. Bradley and Y. YaronGoland and J. Panzer and N. Sakimura and P. Tarjan},
+  Institution              = {Internet Engineering Task Force},
+  Year                     = {2014},
+  Month                    = apr,
+  Note                     = {Work in progress},
+  Number                   = {draft-jones-json-web-token-20.txt,},
+  Type                     = {Internet-Draft}
+}
+
+@TechReport{ietfjws,
+  Title                    = {{JSON Web Signature (JWS)}},
+  Author                   = {Jones, M. and Bradley, J. and Sakimura, N.},
+  Institution              = {Internet Engineering Task Force},
+  Year                     = {2014},
+  Month                    = mar,
+  Note                     = {Work in progress},
+  Number                   = {draft-ietf-jose-json-web-signature-23},
+  Type                     = {Internet-Draft}
+}
+
+@Book{Josuttis07,
+  Title                    = {SOA in Practice: The Art of Distributed System Design},
+  Author                   = {Josuttis, Nicolai M.},
+  Publisher                = {O'Reilly Media, Inc.},
+  Year                     = {2007},
+
+  Address                  = {Beijing},
+
+  ISBN                     = {978-0-596-52955-0}
+}
+
+@Book{SOASecurity2008,
+  Title                    = {SOA security},
+  Author                   = {Kanneganti, Ramarao and Chodavarapu, Prasad},
+  Publisher                = {Manning Publications Co.},
+  Year                     = {2008},
+
+  Address                  = {Greenwich, CT, USA},
+
+  ISBN                     = {9781932394689}
+}
+
+@Book{kim2010fundamentals,
+  Title                    = {Fundamentals of Information Systems Security},
+  Author                   = {Kim, David and Solomon, Michael G.},
+  Publisher                = {Jones \& Bartlett Learning},
+  Year                     = {2010},
+
+  ISBN                     = {9781449629465}
+}
+
+@TechReport{guidelines-2007,
+  Title                    = {Guidelines for performing systematic literature reviews in software engineering},
+  Author                   = {Kitchenham, Barbara and Charters, Stuart},
+  Institution              = {Keele University and Durham University Joint Report},
+  Year                     = {2007},
+  Number                   = {EBSE 2007-001}
+}
+
+@Book{lakshmiraghavan2013pro,
+  Title                    = {Pro ASP.NET Web API Security: Securing ASP.NET Web API},
+  Author                   = {Lakshmiraghavan, Badrinarayanan},
+  Publisher                = {Apress},
+  Year                     = {2013},
+
+  Address                  = {Berkely, CA, USA},
+  Edition                  = {1st},
+
+  ISBN                     = {1430257822, 9781430257820}
+}
+
+@Article{traust08,
+  Title                    = {The Traust Authorization Service.},
+  Author                   = {Lee, Adam J. and Winslett, Marianne and Basney, Jim and Welch, Von},
+  Journal                  = {ACM Trans. Inf. Syst. Secur.},
+  Year                     = {2008},
+  Number                   = {1},
+  Volume                   = {11},
+
+  Added-at                 = {2008-02-05T00:00:00.000+0100},
+  Date                     = {2008-02-05},
+  Description              = {dblp},
+  Ee                       = {http://doi.acm.org/10.1145/1330295.1330297},
+  Interhash                = {435b774ae7aea046ff2739955fb1625a},
+  Intrahash                = {2084cc1f3e3b84ce37d96f1c9cfca93e},
+  Keywords                 = {dblp},
+  Timestamp                = {2008-02-05T00:00:00.000+0100}
+}
+
+@Article{Vulnerability_Analysis2011,
+  Title                    = {Vulnerability Analysis in SOA-Based Business Processes},
+  Author                   = {Lutz Lowis and Rafael Accorsi},
+  Journal                  = {IEEE Transactions on Services Computing},
+  Year                     = {2011},
+  Number                   = {3},
+  Pages                    = {230-242},
+  Volume                   = {4},
+
+  Address                  = {Los Alamitos, CA, USA},
+  Doi                      = {http://doi.ieeecomputersociety.org/10.1109/TSC.2010.37},
+  ISSN                     = {1939-1374},
+  Publisher                = {IEEE Computer Society}
+}
+
+@TechReport{Madsen2005,
+  Title                    = {SAML V2.0 Executive Overview},
+  Author                   = {Madsen,Paul and Maler,Eve and Wisniewski, Thomas and Nadalin, Tony and Cantor, Scott and Hodges, Jeff and Mishra, Prateek},
+  Year                     = {2005},
+  Month                    = apr,
+
+  Citeulike-article-id     = {6948487},
+  Citeulike-linkout-0      = {http://www.oasis-open.org/committees/download.php/13525/sstc-saml-exec-overview-2.0-cd-01-2col.pdf},
+  Day                      = {12},
+  Editor                   = {Madsen, Paul and Maler, Eve},
+  Keywords                 = {saml},
+  Posted-at                = {2010-04-04 12:25:05},
+  Url                      = {http://www.oasis-open.org/committees/download.php/13525/sstc-saml-exec-overview-2.0-cd-01-2col.pdf}
+}
+
+@Book{marks2006,
+  Title                    = {Service Oriented Architecture (SOA): A Planning and Implementation Guide for Business and Technology},
+  Author                   = {Marks, E.A. and Bell, M.},
+  Publisher                = {Wiley},
+  Year                     = {2006},
+  Series                   = {Gu{\'\i}as de Espa{\~n}a},
+
+  ISBN                     = {9780471768944},
+  Lccn                     = {2005034273}
+}
+
+@InProceedings{Meadows95,
+  Title                    = {Formal Verification of Cryptographic Protocols: A Survey},
+  Author                   = {Catherine A. Meadows},
+  Year                     = {1995},
+  Pages                    = {133--150},
+  Publisher                = {Springer-Verlag}
+}
+
+@Book{Meier2007,
+  Title                    = {Performance testing guidance for web applications: patterns \& practices},
+  Author                   = {Meier, J. and Farre, Carlos and Bansode, Prashant and Barber, Scott and Rea, Dennis},
+  Publisher                = {Microsoft Press},
+  Year                     = {2007},
+
+  Address                  = {Redmond, WA, USA},
+
+  ISBN                     = {9780735625709}
+}
+
+@Book{Menezes1996,
+  Title                    = {Handbook of Applied Cryptography},
+  Author                   = {Menezes, Alfred J. and Vanstone, Scott A. and Oorschot, Paul C. Van},
+  Publisher                = {CRC Press, Inc.},
+  Year                     = {1996},
+
+  Address                  = {Boca Raton, FL, USA},
+  Edition                  = {1st},
+
+  ISBN                     = {0849385237}
+}
+
+@Book{Molyneaux2009,
+  Title                    = {The Art of Application Performance Testing: Help for Programmers and Quality Assurance},
+  Author                   = {Molyneaux, Ian},
+  Publisher                = {O'Reilly Media, Inc.},
+  Year                     = {2009},
+  Edition                  = {1st},
+
+  ISBN                     = {0596520662, 9780596520663}
+}
+
+@Article{Nordbotten09,
+  Title                    = {XML and Web Services Security Standards.},
+  Author                   = {Nordbotten, Nils Agne},
+  Journal                  = {IEEE Communications Surveys and Tutorials},
+  Year                     = {2009},
+  Number                   = {3},
+  Pages                    = {4-21},
+  Volume                   = {11}
+}
+
+@InProceedings{Pautasso2008,
+  Title                    = {Restful Web Services vs. "Big"' Web Services: Making the Right Architectural Decision},
+  Author                   = {Pautasso, Cesare and Zimmermann, Olaf and Leymann, Frank},
+  Booktitle                = {Proceedings of the 17th International Conference on World Wide Web},
+  Year                     = {2008},
+
+  Address                  = {New York, NY, USA},
+  Pages                    = {805--814},
+  Publisher                = {ACM},
+  Series                   = {WWW '08},
+
+  Acmid                    = {1367606},
+  Doi                      = {10.1145/1367497.1367606},
+  ISBN                     = {978-1-60558-085-2},
+  Location                 = {Beijing, China},
+  Numpages                 = {10},
+  Url                      = {http://doi.acm.org/10.1145/1367497.1367606}
+}
+
+@InProceedings{Petersen2008,
+  Title                    = {Systematic mapping studies in software engineering},
+  Author                   = {Petersen, Kai and Feldt, Robert and Mujtaba, Shahid and Mattsson, Michael},
+  Booktitle                = {Proceedings of the 12th international conference on Evaluation and Assessment in Software Engineering},
+  Year                     = {2008},
+
+  Address                  = {Swinton, UK, UK},
+  Pages                    = {68--77},
+  Publisher                = {British Computer Society},
+  Series                   = {EASE'08},
+
+  Acmid                    = {2227123},
+  Keywords                 = {evidence based software engineering, systematic mapping studies, systematic reviews},
+  Location                 = {Italy},
+  Numpages                 = {10},
+  Url                      = {http://dl.acm.org/citation.cfm?id=2227115.2227123}
+}
+
+@Book{Pulier2005,
+  Title                    = {Understanding enterprise SOA},
+  Author                   = {Pulier, E. and Taylor, H.},
+  Publisher                = {Manning},
+  Year                     = {2005},
+  Series                   = {Manning Pubs Co Series},
+
+  ISBN                     = {9781932394597},
+  Lccn                     = {2006272960}
+}
+
+@InProceedings{Recordon2006,
+  Title                    = {OpenID 2.0: A Platform for User-centric Identity Management},
+  Author                   = {Recordon, David and Reed, Drummond},
+  Booktitle                = {Proceedings of the Second ACM Workshop on Digital Identity Management},
+  Year                     = {2006},
+
+  Address                  = {New York, NY, USA},
+  Pages                    = {11--16},
+  Publisher                = {ACM},
+  Series                   = {DIM '06},
+
+  Acmid                    = {1179532},
+  Doi                      = {10.1145/1179529.1179532},
+  ISBN                     = {1-59593-547-9},
+  Keywords                 = {authentication, authorization, identity, open source, open standard, user-centric},
+  Location                 = {Alexandria, Virginia, USA},
+  Numpages                 = {6},
+  Url                      = {http://doi.acm.org/10.1145/1179529.1179532}
+}
+
+@Book{Richardson2007,
+  Title                    = {Restful Web Services},
+  Author                   = {Richardson, Leonard and Ruby, Sam},
+  Publisher                = {O'Reilly},
+  Year                     = {2007},
+  Edition                  = {First},
+
+  ISBN                     = {9780596529260}
+}
+
+@Article{rodrigues2011analysis,
+  Title                    = {Analysis of security and performance aspects in service-oriented architectures},
+  Author                   = {Rodrigues, Douglas and Estrella, Julio C and Branco, Kalinka RLJC},
+  Journal                  = {International Journal of Security and Its Applications},
+  Year                     = {2011},
+
+  Owner                    = {Rogerio},
+  Timestamp                = {2014.06.30}
+}
+
+@PhdThesis{Altair2004,
+  Title                    = {Teias de Federa{\c{c}}{\~o}es: Uma abordagem Baseada em Cadeias de Confian{\c{c}}a para Autentica{\c{c}}{\~a}o, Autoriza{\c{c}}{\~a}o e Navega{\c{c}}{\~a}o em Sistemas de Larga Escala},
+  Author                   = {Santin, Altair Olivo},
+  School                   = {Universidade Federal de Santa Catarina, Centro de Tecnol{\'o}gico. Programa de P{\'o}s-Gradua{\c{c}}{\~a}o em Engenharia El{\'e}trica.},
+  Year                     = {2004},
+
+  Owner                    = {Rogerio},
+  Timestamp                = {2014.07.04}
+}
+
+@Book{Schneier1995,
+  Title                    = {Applied Cryptography (2Nd Ed.): Protocols, Algorithms, and Source Code in C},
+  Author                   = {Schneier, Bruce},
+  Publisher                = {John Wiley \& Sons, Inc.},
+  Year                     = {1995},
+
+  Address                  = {New York, NY, USA},
+
+  ISBN                     = {0-471-11709-9}
+}
+
+@InProceedings{verstichel,
+  Title                    = {Enabling Message Security for RESTful Services},
+  Author                   = {Serme, Gabriel and de Oliveira, Anderson Santana and Massiera, Julien and Roudier, Yves},
+  Booktitle                = {Web Services (ICWS), 2012 IEEE 19th International Conference on},
+  Year                     = {2012},
+  Month                    = jun,
+  Pages                    = {114--121},
+  Publisher                = {IEEE},
+
+  Citeulike-article-id     = {11290578},
+  Citeulike-linkout-0      = {http://dx.doi.org/10.1109/icws.2012.94},
+  Citeulike-linkout-1      = {http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber=6257797},
+  Doi                      = {10.1109/icws.2012.94},
+  Institution              = {SAP Labs. France, France},
+  ISBN                     = {978-1-4673-2131-0},
+  Posted-at                = {2012-09-22 22:08:13},
+  Priority                 = {2},
+  Url                      = {http://dx.doi.org/10.1109/icws.2012.94}
+}
+
+@Book{stallings2008,
+  Title                    = {Criptografia e segurança de redes: princípios e práticas},
+  Author                   = {Stallings, W.},
+  Publisher                = {Pearson Prentice Hall},
+  Year                     = {2008},
+
+  ISBN                     = {9788576051190}
+}
+
+@Book{TANENBAUM2007,
+  Title                    = {Sistemas Distribídos Principios e Paradigmas 2ª Edição},
+  Author                   = {Tanenbaum, Andrew S. and Van Steen, Maarten},
+  Editor                   = {PEARSON PRENTICE HALL},
+  Publisher                = {São Paulo},
+  Year                     = {2007},
+
+  Owner                    = {Rogerio},
+  Timestamp                = {2013.08.20}
+}
+
+@Misc{XACML,
+  Title                    = {{XACML: eXtensible Access Control Markup Language}},
+
+  Author                   = {{The OASIS technical commitee}},
+  Year                     = {2005},
+
+  Annote                   = {$\backslash$url\{http://www.oasisopen.org/committees/xacml/repository/\}}
+}
+
+@Book{Verissimo2001,
+  Title                    = {Distributed Systems for System Architects},
+  Author                   = {Verissimo, Paulo and Rodrigues, Luis},
+  Publisher                = {Kluwer Academic Publishers},
+  Year                     = {2001},
+
+  Address                  = {Norwell, MA, USA},
+
+  ISBN                     = {0792372662}
+}
+
+@Book{Webber10,
+  Title                    = {REST in Practice: Hypermedia and Systems Architecture},
+  Author                   = {Webber, J and Robinson, I and Parastatidis, S},
+  Publisher                = {O'Reilly},
+  Year                     = {2010},
+
+  ISBN                     = {978-0-596-80582-1}
+}
+
+@InProceedings{WeberAM07,
+  Title                    = {A Framework for Multi-Platform SOA Security Analyses.},
+  Author                   = {Weber, Sam and Austel, Paula and McIntosh, Michael},
+  Booktitle                = {2007 IEEE International Conference on Web Services (ICWS 2007), July 9-13, 2007, Salt Lake City, Utah, USA},
+  Year                     = {2007},
+  Pages                    = {102-109},
+  Publisher                = {IEEE Computer Society}
+}
+
+@Article{CrossRealmSOA2012,
+  Title                    = {Dynamic Authentication for Cross-Realm SOA-Based Business Processes},
+  Author                   = {Xu, Jie and Zhang, Dacheng and Liu, Lu and Li, Xianxian},
+  Journal                  = {IEEE Transactions on Services Computing},
+  Year                     = {2012},
+  Number                   = {1},
+  Pages                    = {20-32},
+  Volume                   = {5},
+
+  Address                  = {Los Alamitos, CA, USA},
+  Doi                      = {http://doi.ieeecomputersociety.org/10.1109/TSC.2010.33},
+  ISSN                     = {1939-1374},
+  Publisher                = {IEEE Computer Society}
+}
+
+@Article{Delegation_Solution2011,
+  Title                    = {A Delegation Solution for Universal Identity Management in SOA},
+  Author                   = {Yang Zhang and Jun-Liang Chen},
+  Journal                  = {IEEE Transactions on Services Computing},
+  Year                     = {2011},
+  Number                   = {1},
+  Pages                    = {70-81},
+  Volume                   = {4},
+
+  Address                  = {Los Alamitos, CA, USA},
+  Doi                      = {http://doi.ieeecomputersociety.org/10.1109/TSC.2010.9},
+  ISSN                     = {1939-1374},
+  Publisher                = {IEEE Computer Society}
+}
+

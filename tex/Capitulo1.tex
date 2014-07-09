@@ -3,40 +3,41 @@
 %\section{Apresentação}
 As atribuições da Polícia Civil do Distrito Federal, no que diz respeito à sua competência de Polícia Judiciária, tangenciam em vários pontos as atribuições do Ministério Público do Distrito Federal e Territórios, do Tribunal de Justiça do Distrito Federal e Territórios e da Defensoria Pública do Distrito Federal. De forma que a competência de cada um desses Órgãos, por apresentarem pontos que se complementam, demanda intensa troca de informações.
 
-A Polícia Civil do Distrito Federal, por meio de sua Divisão de Tecnologia, tem como propósito desenvolver seus próprios softwares. Esta atividade permite uma vantagem estratégica para a instituição, uma vez que a torna detentora dos softwares desenvolvidos evitando dessa forma a dependência tecnológica e administrativa de empresas privadas.
+A Polícia Civil do Distrito Federal, por meio de sua Divisão de Tecnologia, tem como propósito desenvolver seus próprios softwares. Esta atividade permite uma vantagem estratégica para a instituição, uma vez que a torna detentora dos softwares desenvolvidos, evitando dessa forma a dependência tecnológica e administrativa de empresas privadas.
 
-Nesse sentido, tem-se buscado estudar técnicas de desenvolvimento de software que promovam de forma efetiva a integração dos sistemas internos com os sistemas de Órgãos parceiros e que necessitem consumir de forma segura os dados e informações oriundos dos sistemas legados da Polícia Civil do Distrito Federal.
+Nesse sentido, tem-se buscado estudar técnicas de desenvolvimento de software que promovam de forma efetiva a integração dos sistemas internos com os sistemas de órgãos parceiros e que necessitem consumir de forma segura os dados e informações oriundos dos sistemas legados da Polícia Civil do Distrito Federal.
 
 \section{Problema da pesquisa}
 
 Nesse contexto, um dos principais desafios encontrados na DITEC refere-se à necessidade de integração e compartilhamento de informações de maneira segura, observando que as aplicações foram desenvolvidas em diferentes linguagens de programação e a integração ocorre com diferentes órgãos conveniados, tais como: Tribunal de Justiça do Distrito Federal e Território (TJDFT), Ministério Público da União (MPU), Departamento de Trânsito do DF (DETRAN-DF), Secretária de Segurança Pública do Distrito Federal (SSP-DF), Secretárias de Justiça do DF e Estados.
 
-A ocorrência de uma vulnerabilidade de confidencialidade, por exemplo, ocorrendo o vazamento de informações sensíveis, criminosos poderiam utilizar essas informações e comprometer de forma significativa uma investigação policial.
-
+%A ocorrência de uma vulnerabilidade de confidencialidade, por exemplo, ocorrendo o vazamento de informações sensíveis, criminosos poderiam utilizar essas informações e comprometer de forma significativa uma investigação policial.
+O comprometimento da confidencialidade, como a exposição de informações sensíveis, poderia comprometer investigações policiais.
 Outra preocupação está relacionada à autenticidade, uma vez que todos os acessos a informações no âmbito da Polícia Civil do Distrito Federal devem ser realizados somente por pessoal autorizado. Caso isso não seja observado, pessoas podem se valer do anonimato e divulgar dados sigilosos de forma criminosa, o que também acarretaria inúmeros problemas de ordem jurídica para a instituição.
 
 Dessa forma, devido à importância dessas informações, elas devem ter um tratamento diferenciado com relação a segurança nos aspectos de confidencialidade, autenticidade, integralidade e disponibilidade.
 
-Por outro lado, na maioria das vezes, são disponibilizadas técnicas não seguras de integração, como a replicação ou o acesso direto a base de dados, apesar de existirem algumas iniciativas de integração baseadas em \emph{Web Services}.
+Por outro lado, na maioria das vezes, a DITEC utiliza técnicas não seguras de integração, como a replicação ou o acesso direto a base de dados, apesar de existirem algumas iniciativas de integração baseadas em serviços Web.
 
 No intuito de possibilitar que os sistemas possam ser integrados de forma eficiente e principalmente segura com outros sistemas, a Divisão de Tecnologia busca desenvolver uma metodologia própria que possa melhorar o processo integração de software no âmbito da Polícia Civil do Distrito Federal.
-Para isso, optou-se pela utilização da Arquitetura Orientada a Serviços (SOA), que é um modelo arquitetural que propõem o uso de um conjunto de padrões para disponibilizar, descrever, publicar e invocar serviços. Neste cenário, este trabalho inicialmente propõe-se a investigar as seguintes questões de pesquisa:
+Para isso, optou-se pela utilização de uma arquitetura orientada a serviços, que é um modelo arquitetural que propõem o uso de um conjunto de padrões para disponibilizar, descrever, publicar e invocar serviços. Neste cenário, este trabalho inicialmente investigou as seguintes questões de pesquisa:
 
 \begin{enumerate}
-	\item Quais são os principais problemas de segurança encontrados na adoção da Arquitetura Orientada a Serviços \-(SOA)? Essa questão de pesquisa é respondida nos capítulos 2 e 3 com o Mapeamento Sistemático e com a Revisão de Literatura.
-	\item Quais padrões para construção de software seguro em arquiteturas SOA podem ser empregados pela Divisão de Tecnologia da Polícia Civil do Distrito Federal para realizar efetivamente a integração de seus sistemas com os sistemas dos órgãos parceiros? Neste caso, a resposta para essa questão é obtida no capítulo 3 com a Revisão de Literatura.
+	\item Quais são os principais problemas de segurança encontrados na adoção da Arquitetura Orientada a Serviços \-(SOA)? Essa questão de pesquisa é respondida nos capítulos 2 e 3 com um mapeamento sistemático e com a revisão de literatura.
+	\item Quais padrões para construção de software seguro em SOA podem ser empregados pela Divisão de Tecnologia da Polícia Civil do Distrito Federal para realizar efetivamente a integração de seus sistemas com os sistemas dos órgãos parceiros? Neste caso, a resposta para essa questão é apresentada no capítulo 3 com a revisão de literatura.
 \end{enumerate}
 
-Porém, posteriormente, após a proposição e o desenvolvimento do Protocolo de Autenticação e Autorização proposto, outras questões de pesquisa foram levantadas e investigadas. As questões são descritas a seguir:
+As respostas a essas questões de pesquisa possibilitaram a proposição de um protocolo de autenticação e autorização, que foi avaliado utilizando outras questões de pesquisa:
 
 \begin{enumerate}
 \setcounter{enumi}{2}
+  \item O protocolo proposto possui segurança adequada para garantir confidencialidade, autenticidade e integridade no processo de trocas de mensagens?
   \item Qual o impacto observado no tempo de resposta às requisições com o uso do protocolo?
   \item Um protótipo funcional, sem foco em otimização, consegue suportar a demanda prevista?
-\end{enumerate}  
-  
-Essas perguntas são respondidas no capítulo 5, com a realização de uma análise de desempenho do Protocolo de Autenticação e Autorização proposto.
 
+\end{enumerate}
+
+Essas perguntas são respondidas no capítulo 5, com a realização de uma análise de desempenho do Protocolo de Autenticação e Autorização proposto.
 
 
 \section{Justificativa}
@@ -44,23 +45,19 @@ Essas perguntas são respondidas no capítulo 5, com a realização de uma anál
 Uma vez que a Polícia Civil do Distrito Federal desenvolva produtos de software mais seguros, que auxiliem no trabalho investigativo, ela realizará seu trabalho de uma forma mais efetiva, influenciando diretamente no combate da criminalidade e beneficiando a comunidade em geral e todos os órgãos distritais e federais tais como: Secretaria de Segurança Pública do Distrito Federal, Tribunal de Justiça do Distrito Federal, Ministério da Justiça, Secretarias de Governo Distritais, dentre outros órgãos, que necessitem das informações da instituição para realizar qualquer tipo de integração de software.
 
 \section{Objetivos}\label{sec:Obj}
-\subsection{Objetivo Geral}
-
-Avaliar e aplicar o uso de técnicas, ferramentas  e procedimentos que garantam os requisitos de segurança em uma arquitetura orientada a serviços a ser usada para integrar os sistemas e automatizar os processos entre órgão parceiros (TJDFT, MPU, DETRAN, SSP).
-
-\subsection{Objetivos Espec\'ificos}
+O objetivo geral dessa dissertação é avaliar e aplicar o uso de técnicas, ferramentas  e procedimentos que garantam os requisitos de segurança em uma arquitetura orientada a serviços a ser usada para integrar os sistemas e automatizar os processos entre órgão parceiros (TJDFT, MPU, DETRAN, SSP). Mais especificamente, os seguintes objetivos foram delineados:
 
 \begin{enumerate}[a )]
 	\item Realizar um mapeamento sistemático da literatura para compreender o estado da arte e da prática de segurança em SOA;
 
-	\item Identificar e avaliar quais são os principais problemas de segurança encontrados na adoção da Arquitetura Orientada a Serviços (SOA);
+	\item Identificar e avaliar quais são os principais problemas de segurança encontrados na adoção de SOA;
 
-	\item Estudar as especificações de Web Services relacionados a segurança e selecionar padrões e ferramentas para garantir confidencialidade, autenticidade e integridade nas integrações da arquitetura orientada a serviços. Essa seleção deve considerar o impacto na disponibilidade e no tempo de resposta dos serviços;
+	\item Estudar as especificações de serviços Web relacionados a segurança e selecionar padrões e ferramentas para garantir confidencialidade, autenticidade e integridade nas integrações da arquitetura orientada a serviços. Essa seleção deve considerar o impacto na disponibilidade e no tempo de resposta dos serviços;
 
-    \item Estabelecer uma arquitetura de referência na construção de software seguro em  SOA, por meio de um protocolo de autenticação e autorização, que possa ser empregado pela Divisão de Tecnologia da Polícia Civil do Distrito Federal para realizar efetivamente a integração de seus sistemas com os sistemas dos órgãos parceiros.
+    \item Estabelecer uma arquitetura de referência na construção de software seguro em SOA, por meio de um protocolo de autenticação e autorização, aderente a arquitetura \emph{Representational State Transfer} (REST), que possa ser empregado pela Divisão de Tecnologia da Polícia Civil do Distrito Federal para realizar efetivamente a integração de seus sistemas com os sistemas dos órgãos parceiros.
 
 \end{enumerate}
 
 \section{Organização do Trabalho}
 
-Este trabalho está organizado em seis capítulos. No capítulo 2 é apresentado um mapeamento sistemático e os resultados obtidos com a sua realização. No capítulo 3 é realizada uma revisão da literatura onde são abordados os conceitos gerais sobre Arquitetura Orientada a Serviços (SOA), Web Services, REST, segurança e vulnerabilidades em SOA. Além disso, também são apresentados alguns protocolos de autenticação e autorização. No capítulo 4 é apresentado o protocolo de autenticação e autorização proposto e objeto deste trabalho. Neste capítulo são descritos os requisitos e a arquitetura do protocolo. É realizada uma análise formal do protocolo utilizando-se a lógica BAN. Neste capítulo também e descrita a implementação de um protótipo do protocolo proposto bem como uma análise de segurança. No capítulo 5 é realizada uma avaliação e análise de desempenho e são apresentados os resultados dos experimentos realizados. No capítulo 6 são apresentadas as conclusões do trabalho, bem como trabalhos futuros. 
+Este trabalho está organizado em seis capítulos. No capítulo 2 é apresentado um mapeamento sistemático e os resultados obtidos com a sua realização. No capítulo 3 é realizada uma revisão da literatura onde são abordados os conceitos gerais sobre Arquitetura Orientada a Serviços (SOA), Web Services, REST, segurança e vulnerabilidades em SOA. Além disso, também são apresentados alguns protocolos de autenticação e autorização. No capítulo 4 é apresentado o protocolo de autenticação e autorização proposto e objeto deste trabalho. Neste capítulo são descritos os requisitos e a arquitetura do protocolo e realizada uma análise formal do protocolo utilizando-se a lógica BAN. Neste capítulo também é descrita à implementação de um protótipo do protocolo proposto. No capítulo 5 é realizada uma análise de segurança e desempenho, sendo apresentados os resultados dos experimentos realizados. No capítulo 6 são apresentadas as conclusões do trabalho, bem como trabalhos futuros. 

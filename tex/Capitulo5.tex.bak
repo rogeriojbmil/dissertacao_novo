@@ -96,10 +96,10 @@ O desempenho é descrito quantitativamente por meio de métricas. Uma métrica p
 \item utilização do protocolo: vari\'{a}vel de controle que indica a utiliza\c c\~{a}o ou n\~{a}o do protocolo proposto na disserta\c c\~{a}o. Ela é definida em dois níveis, SIM ou  NÃO.
 
 \item tempo médio de resposta: vari\'{a}vel de resposta que consiste no tempo entre a solicitação de um serviço por um usuário até o momento em que ele recebe uma resposta
-completa~\cite{ Molyneaux2009}. Para a análise de desempenho do protocolo proposto o tempo médio será dado em milissegundos.
+completa~\cite{Molyneaux2009}. Para a análise de desempenho do protocolo proposto o tempo médio será dado em milissegundos.
 
 \item Vazão (\emph{throughput}): vari\'{a}vel de resposta que corresponde ao número de operações que podem ser tratadas pelo protocolo em um
-determinado período de tempo~\cite{ Molyneaux2009}.
+determinado período de tempo~\cite{Molyneaux2009}.
 
 \end{itemize}
 
@@ -229,15 +229,15 @@ Para responder a segunda questão relacionada \`{a} an\'{a}lise de desemepenho (
 
 Observa-se que a PCDF, em um cenário extremo, pode ter que responder a uma média de 1200 requisições de um serviço que fornece informações sobre ocorrências policiais em um período de uma hora, ou seja, duas requisições por segundo. Neste caso, os resultados obtidos com o experimento realizado com os 50 usuários, demonstrou que o tempo médio de resposta foi de 4677 milissegundos (ou aproximadamente 4,677 segundos) e que a vazão média, que é o número de requisições atendidas por segundo, foi de 8,62 requisições por segundo. Ao se realizar a comparação deste cenário com o cenário extremo vivenciado pela PCDF, verificou-se que a arquitetura, do ponto de vista de vazão, atende ao cen\'{a}rio mais cr\'{i}tico, que é de 2 duas requisições por segundo. O que garante a qualidade do serviço ofertado pelo protocolo de autenticação e autorização proposto.
 
-\subsection{Impacto de Mecanismos de Segurança no Tempo de Resposta}
+\subsection{Estudos Correlatos}
 
-Conforme os resultados apresentados na seção~\ref{sec:analise_resultados} o uso do Protocolo proposto com 10 usuários leva a um acréscimo no tempo resposta de uma ordem de magnitude, e para 50 usuários esse impacto é de duas ordens de magnitude. Outros estudos avaliam o impacto da introdução de mecanismos de segurança e são descritos a seguir.
+Conforme os resultados apresentados na Seção~\ref{sec:analise_resultados} o uso do Protocolo proposto com 10 usuários leva a um acréscimo no tempo de resposta de uma ordem de magnitude, e para 50 usuários esse impacto é de duas ordens de magnitude. Alguns outros trabalhos avaliam o impacto da introdução de mecanismos de segurança, conforme descrito nessa seção.
 
-O primeiro estudo verificado, é um trabalho que utiliza WS-Security para prover segurança à serviços que utilizam a tecnologia SOAP. O trabalho foi desenvolvido por Douglas Rodrigues, Julio C Estrella e Kalinka RLJC Branco~\cite{rodrigues2011analysis}. Nesse trabalho é realizado um estudo sobre segurança aplicada a arquiteturas orientadas a serviço, sendo desenvolvida uma análise de desempenho de Web Services seguros utilizando o padrão WS-Security, que é um padrão utilizado para prover segurança a Web Services.
+Rodrigues et al. realiza um estudo sobre segurança aplicada a arquiteturas orientadas a serviço, sendo desenvolvida uma análise de desempenho de Web Services seguros utilizando o padrão WS-Security, que é um padrão utilizado para prover segurança a Web Services~\cite{rodrigues2011analysis}.
 
 No referido trabalho foram implementados quatro serviços que executam uma mesma operação. O que diferencia um serviço do outro é a política de segurança estabelecida. A política de segurança utilizada nesses serviços foi a do uso de algoritmos criptográficos. Os serviços disponibilizados para a análise de desempenho ficaram configurados da seguinte maneira: serviço sem política de segurança, serviço com política de segurança voltado apenas para criptografia, serviço com política de segurança voltado apenas ao uso da assinatura digital e um serviço com política de segurança que utiliza criptografia e assinatura digital.
 
-Dessa forma, foram realizados oito experimentos que verificaram o uso ou não de criptografia, o uso ou não da assinatura digital e o número de clientes, 5 e 10 clientes, acessando o serviço de forma concorrente. A tabela~\ref{tb:expWSSecurity} representa os experimentos realizados no trabalho~\cite{rodrigues2011analysis}. A variável de resposta dos experimentos foi o tempo de resposta.
+Dessa forma, foram realizados oito experimentos que verificaram o uso ou não de criptografia, o uso ou não da assinatura digital sendo realizados testes considerando 5 e 10 clientes, acessando o serviço de forma concorrente. A Tabela~\ref{tb:expWSSecurity} representa os experimentos realizados no trabalho~\cite{rodrigues2011analysis}. A variável de resposta dos experimentos foi o tempo de resposta.
 
 \begin{table}[h]
 \begin{center}
@@ -256,7 +256,7 @@ Dessa forma, foram realizados oito experimentos que verificaram o uso ou não de
 \end{center}
 \end{table}
 
-Para efeito de análise foram considerados apenas os experimentos que se assemelharam a análise de desempenho proposta nesta dissertação, ou seja , os experimentos que utilizam a assinatura digital e criptografia.  Sendo assim, o tempo de resposta  que referem-se aos resultados obtidos a partir do trabalho~\cite{rodrigues2011analysis} para  5 e 10 clientes, são respectivamente: 3094,20 e 6038,10 milissegundos. Esses valores quando comparados com os experimentos que não utilizaram segurança cujo tempo médio de resposta foi de 283,68 e  482,59,  para 5 e 10 usuários respectivamente, conforme apresentado na figura~\ref{fig:comparativowssecurity}. Os resultados  evidenciam que o impacto do uso do WS-Security é significativo e demonstra uma queda no desempenho dos Web services que utilizam mecanismos de segurança.
+Para efeito de análise foram considerados apenas os experimentos que se assemelharam a análise de desempenho proposta nesta dissertação, ou seja, os experimentos que utilizam a assinatura digital e criptografia.  Sendo assim, o tempo de resposta  que referem-se aos resultados obtidos a partir do trabalho~\cite{rodrigues2011analysis} para  5 e 10 clientes, são respectivamente: 3094,20 e 6038,10 milissegundos. Esses valores quando comparados com os experimentos que não utilizaram segurança cujo tempo médio de resposta foi de 283,68 e  482,59,  para 5 e 10 usuários respectivamente, conforme apresentado na Figura~\ref{fig:comparativowssecurity}. Os resultados  evidenciam que o impacto do uso do WS-Security é significativo e demonstra uma queda no desempenho dos Web services que utilizam mecanismos de segurança.
 
 
 \begin{figure}[!htb]
@@ -279,9 +279,9 @@ Dessa forma, foram executados diversos testes de desempenho que compararam  serv
 
 Sendo assim, ao analisar o tempo de resposta dos experimentos realizados, pode-se verificar que há um impacto significativo com a adoção dos mecanismos de segurança. Sejam eles voltados a Web services RESTful ou Web services SOAP, neste caso, utilizando o WS-Security. Isso fica evidenciado em todos os cenários verificados. Exemplificando, no cenário de consulta simples (Get), no caso em que é utilizado a assinatura e criptografia (Sing\&Enc) o tempo médio para Web services SOAP (que utilizam o padrão WS-Security) e Web services REST (com mecanismos de segurança) é de 6.244 e 3.156 milissegundos, aproximadamente 6,25 e 3,2 segundos. Ao realizar a comparação com o caso da não utilização de segurança (Plain) o tempo é reduzido significativamente para menos de 1 segundo.
 
-Por fim, o último estudo analisado, foi o desenvolvido por  Pedro Miguel Gonçalves Ferreira~\cite{pedromiguel2012}, neste trabalho buscou-se identificar e caracterizar as diferentes fontes de informação da Universidade de Aveiro (UA) sendo necessário  construir APIs ou serviços web de acesso à informação. Dessa forma, entre os projetos desenvolvidos, foi implementação um projeto  denominado myPersonas, que é sistema que permite a gestão por parte utilizador de várias identidade num cenário de multi-provedores de serviços~\cite{pedromiguel2012}. Neste caso, foi utilizado o padrão WS-Security para prover segurança aos serviços ofertados pelo projeto.
+Por fim, o último estudo analisado, foi o desenvolvido por  Pedro Miguel Gonçalves Ferreira~\cite{pedromiguel2012}, neste trabalho buscou-se identificar e caracterizar as diferentes fontes de informação da Universidade de Aveiro (UA) sendo necessário  construir APIs ou serviços web de acesso à informação. Dessa forma, entre os projetos desenvolvidos, foi implementado um projeto denominado myPersonas, que é um sistema que permite a gestão por parte do utilizador, de várias identidades num cenário de multi-provedores de serviços~\cite{pedromiguel2012}. Neste caso, foi utilizado o padrão WS-Security para prover segurança aos serviços ofertados pelo projeto.
 
-Logo, após desenvolver o projeto e com a finalidade de avaliar a desempenho da solução implementada, foram executados 4 (quatro) testes. No primeiro teste, o serviço web descrito foi executado sem qualquer tipo de mecanismo de segurança. No segundo teste foi implementado apenas assinatura do XML. No terceiro teste foi implementada apenas a criptografia das mensagens SOAP. No quarto e último teste foram implementadas tanto criptografia como a assinatura da mensagem SOAP. Nos experimentos que utilizaram mecanismos de segurança o padrão adotado para prover segurança ao Web service foi o WS-Security. Para todos os experimentos foi utilizado um Web service SOAP simples, que efetua a soma entre dois números. O resultados dos experimentos são apresentados no gráfico~\ref{fig:tempowssecurity}.
+Logo, após desenvolver o projeto e com a finalidade de avaliar o desempenho da solução implementada, foram executados 4 (quatro) testes. No primeiro teste, o serviço web descrito foi executado sem qualquer tipo de mecanismo de segurança. No segundo teste foi implementado apenas a assinatura do XML. No terceiro teste foi implementada apenas a criptografia das mensagens SOAP. No quarto e último teste foram implementadas tanto criptografia como a assinatura da mensagem SOAP. Nos experimentos que utilizaram mecanismos de segurança o padrão adotado para prover segurança ao Web service foi o WS-Security. Para todos os experimentos foi utilizado um Web service SOAP simples, que efetua a soma entre dois números. Os resultados dos experimentos são apresentados no gráfico~\ref{fig:tempowssecurity}.
 
 
 \begin{figure}[!htb]

@@ -8,9 +8,26 @@ Um ponto importante no desenvolvimento do trabalho foi a utilização da lógica
 
 A utilização do Protocolo de Autenticação e Autorização proposto, por parte da PCDF, possibilitará que as informações críticas que antes não eram compartilhadas por não haver formas seguras de compartilhamento das informações dentro da Instituição, possam agora ser compartilhadas e efetivamente integradas de forma eficiente e principalmente segura com os órgãos parceiros. A solução proposta neste trabalho vai ao encontro ao que a PCDF almejava. Além disso, a solução proposta pode ser utilizada por qualquer órgão de segurança, que da mesma forma, tenha a necessidade de compartilhar e integrar informações sensíveis.
 
-\subsection{Contribuições}
+\section{Contribuições}
+A principal contribuição deste trabalho é a definição de um protocolo de autenticação e autorização seguro, desenvolvido para permitir a integração e compartilhamento de informações sigilosas. O protocolo proposto é aderente à arquitetura REST, incorpora boas prática de segurança, possibilitando a autenticação e autorização de usuários de forma segura. Dessa forma, no contexto da sua utilização no âmbito da PCDF, ele permitirá que os serviços disponibilizados pela instituição possam ser ofertados e efetivamente integrados aos sistemas de órgãos parceiros. Além disso, foi possível avaliar a importância da utilização de métodos formais no planejamento e verificação de protocolos criptográficos. %Uma vez que com a formalização do protocolo, uma avaliação mais detalhada possibilita identificar se os objetivos de segurança propostos são obtidos.
 
-\subsection{Trabalhos Futuros}
+Outra contribuição, foi a implementação de um protótipo, desenvolvido utilizando a linguagem de programação funcional, Haskell, que pode ser utilizado por qualquer órgão que deseje utilizá-lo no processo de integração. O desenvolvimento do protótipo contou com a contribuição direta de um trabalho de conclusão de curso, do aluno Alexandre Lucchesi, o que serviu para estabelecer uma colaboração entre o Mestrado Profissional em Computação Aplicada com alunos da Engenharia da Computação.
 
-Quanto a trabalhos futuros, vislumbramos a possibilidade de se implementar otimizações ao Protocolo de Autenticação e Autorização proposto, de forma que ele possa ser melhorado sob o aspecto de desempenho. Outros pontos que também serão realizados, são estudos mais aprofundados sobre possíveis vulnerabilidades tanto do lado do cliente, consumidor do serviço,  quanto do lado da PCDF, provedora dos serviços.
+Após o desenvolvimento, uma avaliação de desempenho, que foi realizada a partir do protótipo implementado, onde ficou evidenciado que apesar de existir o impacto na utilização do protocolo proposto o protocolo está dentro de padrões aceitáveis, uma vez que incorpora mecanismos de segurança que requerem algoritmos de criptografia e assinatura digital. Com isso, podemos verificar qual impacto que a utilização de mecanismos de segurança podem ter em arquiteturas orientadas a serviço.
+
+A revisão da literatura apresentada nos Capítulos 3, sintetiza os principais conceitos relacionados SOA. De forma que foi possível verificar quais padrões para construção de software seguro em arquiteturas SOA.
+
+Outra contribuição verificada foi à realização de um mapeamento sistemático, apresentado no capítulo 2, que possibilitou aprofundamento dos conhecimentos referentes à segurança em SOA.
+
+
+\section{Trabalhos Futuros}
+
+Quanto a trabalhos futuros, vislumbramos a possibilidade de se implementar otimizações ao Protocolo de Autenticação e Autorização proposto, de forma que ele possa ser melhorado sob o aspecto de desempenho e segurança.
+
+Além disso, também seria importante a realização de estudos mais aprofundados sobre possíveis vulnerabilidades tanto do lado do cliente, consumidor do serviço, quanto do lado da PCDF, provedora dos serviços.
+
+Outro ponto que também pode ser proposto como trabalhos futuros seria a realização de mais experimentos de avalização de desempenho que visem comparar o desempenho do protocolo com a utilização  de diferentes algoritmos de criptografia.
+
+
+
 

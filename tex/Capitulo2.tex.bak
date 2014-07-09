@@ -212,7 +212,7 @@ No contexto das contribuições referentes aos atributos de segurança que foram
 
 %As possíveis ameaças aos resultados dessa pesquisa são caracterizados a seguir e seguem  a classificação proposta por \cite{ leedy1980practical} e que foram estruturadas no artigo \cite{sbcars2013}.
 
-\subsection{Síntese do Capítulo}
+\section{Síntese do Capítulo}
 
 O mapeamento sistemático realizado, possibilitou aprofundar os conhecimentos referentes à segurança em SOA. Sendo possível verificar quais são os principais veículos que publicam artigos nesta área, o que ajuda a direcionar os estudos. Também foi possível identificar e analisar quais são os tipos de contribuições que mais são propostas nas pesquisas envolvendo esta temática. Além disso, verificou-se dentre as contribuições propostas como solução, quais delas envolviam atributos de segurança e que tratavam de integridade, autenticidade, disponibilidade e confidencialidade. E por fim, nas contribuições classificadas como solução, foi possível identificar e quantificar quais tipos de solução (método, técnica e ferramentas/arquitetura) foram as mais propostas.
 

@@ -10,9 +10,9 @@ T.~Berners-Lee, R.~Fielding, and L.~Masinter.
 \newblock Rfc 3986, uniform resource identifier (uri): Generic syntax, 2005.
 
 \bibitem{Bertino2010}
-Elisa Bertino, Lorenzo Martino, Federica Paci, and Anna~Cinzia Squicciarini.
+Elisa Bertino, Lorenzo Martino, Federica Paci, and Anna Squicciarini.
 \newblock {\em Security for Web Services and Service-Oriented Architectures}.
-\newblock Springer, 2010.
+\newblock Springer Publishing Company, Incorporated, 2009.
 
 \bibitem{Booth2004}
 David Booth, Hugo Haas, Francis McCabe, Eric Newcomer, Mike Champion,
@@ -48,7 +48,7 @@ F.~P Coyle.
 \newblock Boston: Addison-Wesley, 2002.
 
 \bibitem{Ontology2012}
-Stefania DAgostini, Valentina~Di Giacomo, Claudia Pandolfo, and Domenico
+Stefania D'Agostini, Valentina~Di Giacomo, Claudia Pandolfo, and Domenico
   Presenza.
 \newblock An ontology for run-time verification of security certificates for
   soa.
@@ -64,7 +64,7 @@ Nelly~A. Delessy and Eduardo.B Fernandez.
 \bibitem{ERL09}
 T.~Erl.
 \newblock {\em Soa Principios De Design De Servi{\c{c}}os}.
-\newblock PRENTICE HALL BRASIL, 2009.
+\newblock Prentice Hall Brasil, 2009.
 
 \bibitem{erl2012soa}
 T.~Erl, B.~Carlyle, C.~Pautasso, R.~Balasubramanian, H.~Wilhelmsen, and
@@ -230,9 +230,9 @@ Kai Petersen, Robert Feldt, Shahid Mujtaba, and Michael Mattsson.
   Swinton, UK, UK, 2008. British Computer Society.
 
 \bibitem{Pulier2005}
-Eric Pulier and Hugh Taylor.
-\newblock {\em {Understanding Enterprise SOA}}.
-\newblock {Manning Publications}, 2005.
+E.~Pulier and H.~Taylor.
+\newblock {\em Understanding enterprise SOA}.
+\newblock Manning Pubs Co Series. Manning, 2005.
 
 \bibitem{Recordon2006}
 David Recordon and Drummond Reed.
