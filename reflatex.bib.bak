@@ -1142,7 +1142,7 @@
 
 @Book{TANENBAUM2007,
   Title                    = {Sistemas Distribídos Principios e Paradigmas 2ª Edição},
-  Author                   = {Tanenbaum, Andrew S. and  Van Steen, Maarten},
+  Author                   = {Tanenbaum, Andrew S. and Van Steen, Maarten},
   Editor                   = {PEARSON PRENTICE HALL},
   Publisher                = {São Paulo},
   Year                     = {2007},
@@ -1280,25 +1280,6 @@
   Publisher                = {IEEE Computer Society}
 }
 
-@Article{Zhang2011,
-  Title                    = {A Delegation Solution for Universal Identity Management in SOA.},
-  Author                   = {Zhang, Yang and Chen, Junliang},
-  Journal                  = {IEEE T. Services Computing},
-  Year                     = {2011},
-  Number                   = {1},
-  Pages                    = {70-81},
-  Volume                   = {4},
-
-  Added-at                 = {2011-11-07T00:00:00.000+0100},
-  Biburl                   = {http://www.bibsonomy.org/bibtex/274b56f08b6b5e84a003161402336fbf2/dblp},
-  Ee                       = {http://doi.ieeecomputersociety.org/10.1109/TSC.2010.9},
-  Interhash                = {c412096a9c79162970aa64df37d4efda},
-  Intrahash                = {74b56f08b6b5e84a003161402336fbf2},
-  Keywords                 = {dblp},
-  Timestamp                = {2011-11-07T00:00:00.000+0100},
-  Url                      = {http://dblp.uni-trier.de/db/journals/tsc/tsc4.html#ZhangC11}
-}
-
 @Article{Delegation_Solution2011,
   Title                    = {A Delegation Solution for Universal Identity Management in SOA},
   Author                   = {Yang Zhang and Jun-Liang Chen},
@@ -1312,15 +1293,5 @@
   Doi                      = {http://doi.ieeecomputersociety.org/10.1109/TSC.2010.9},
   ISSN                     = {1939-1374},
   Publisher                = {IEEE Computer Society}
-}
-
-@Book{,
-  Owner                    = {Rogerio},
-  Timestamp                = {2014.06.26}
-}
-
-@Misc{,
-  Owner                    = {Rogerio},
-  Timestamp                = {2013.09.05}
 }
 

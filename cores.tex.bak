@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Cores do estilo Tango
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\definecolor{black}{rgb}{0.0, 0.0, 0.0}
+
 \definecolor{LightButter}{rgb}{0.98,0.91,0.31}
 \definecolor{LightOrange}{rgb}{0.98,0.68,0.24}
 \definecolor{LightChocolate}{rgb}{0.91,0.72,0.43}
@@ -29,4 +29,3 @@
 \definecolor{Aluminium4}{rgb}{0.53,0.54,0.52}
 \definecolor{Aluminium5}{rgb}{0.33,0.34,0.32}
 \definecolor{Aluminium6}{rgb}{0.18,0.20,0.21}
-

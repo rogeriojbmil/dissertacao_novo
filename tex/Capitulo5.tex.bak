@@ -53,9 +53,9 @@ Neste caso, se o atacante for bem sucedido o servidor pode ficar vulnerável. Es
 
 O Protocolo de Autenticação e Autorização proposto busca atender os atributos básicos de segurança, tais como: confidencialidade, integridade e autenticidade. O Protocolo incorpora mecanismos de segurança tais como: criptografia, assinatura digital e uso de certificados digitais, além da utilização do SSL/ TLS para prover segurança na camada de transporte. Ele se mostra eficiente contra vários tipos de ataques, como por exemplo: \emph{man-in-the-middle} e ataques de repetição. Contudo, alguns pontos requerem mais atenção, como por exemplo: preocupações com ataques do lado do cliente, uma vez que esses ataques são cada vez mais comuns.
 
-\section{Testes de desempenho}
+\section{Análise de Desempenho}
 
-Testes de desempenho são definidos como investiga\c c\~{o}es técnicas realizadas para determinar a capacidade de resposta, a confiabilidade ou escalabilidade de um sistema, sob uma determinada carga de trabalho~\cite{Meier2007}.
+Análises de desempenho são definidas como investiga\c c\~{o}es técnicas realizadas para determinar a capacidade de resposta, a confiabilidade ou escalabilidade de um sistema, sob uma determinada carga de trabalho~\cite{Meier2007}.
 A análise de desempenho possibilita identificar problemas que geralmente são encontrados em sistemas computacionais.
 Esses problemas podem ser agrupados em termos de comparação e configuração de sistemas, identificação de gargalos, caracterização de cargas de trabalho e a previsão de desempenho~\cite{jain1991art}. Dessa forma, foram conduzidos experimentos com o objetivo de analisar o desempenho do Protocolo de Autenticação e Autorização proposto. O restante dessa se\c c\~{a}o descreve os procedimentos e os resultados obtidos com a an\'{a}lise de desempenho.
 
@@ -109,7 +109,7 @@ como as vari\'{a}veis de resposta serão mensuradas e quais procedimentos ser\~{
 Logo, o primeiro passo foi a criação de um serviço REST, que retorna informações sobre ocorrências policiais, tais como:
 quais tipos de ocorrências criminais estão registradas, dados gerais da vítima, autor, dentre outras informações.
 Esse serviço é consumido  no momento da execução dos testes de desempenho da solução proposta.
-Foram realizados 10 cen\'{a}rios de testes, conforme representado na Tabela~\ref{tb:tb_testes}.
+Foram realizados 10 testes, conforme cenários apresentados na Tabela~\ref{tb:tb_testes}.
 
 \begin{table}[h]
 \begin{center}
@@ -268,7 +268,7 @@ Para efeito de análise foram considerados apenas os experimentos que se assemel
 
 Outro estudo analisado é um artigo que apresenta uma nova abordagem para fornecer segurança para serviços RESTful equivalente ao padrão WSSecurity~\cite{verstichel}. Nesse trabalho foi realizada uma avaliação de desempenho, considerando vários cenários, com a finalidade de analisar o impacto da proteção de mensagem para o desempenho de Web Services~\cite{verstichel}.
 
-Dessa forma, foram executados diversos testes de desempenho que compararam  serviços, com mecanismos de segurança, baseados na arquitetura REST e os  Web services SOAP que utilizam o padrão WS-Security para prover segurança. Os experimentos foram realizados em um ambiente com a mesma configuração. Na análise de desempenho abordada no trabalho~\cite{verstichel}, são definidos e implementados três cenários. No primeiro cenário é realizado um consulta simples (Get) tanto para Web services RESTFul quanto Web services SOAP. No segundo cenário  segue-se a mesma abordagem, só que neste caso é realizado uma  modificação (Post) de uma mensagem e por fim, o terceiro cenário (Large), aborda o envio de uma grande quantidade de dados entre o cliente e o servidor. Para realizar a medição do experimento foram utilizadas as seguintes métricas: não uso de mecanismos de segurança(Plain),  uso da criptografia (Enc), uso da assinatura (Sign) e uso da criptografia e assinatura( Sign\&Enc). Logo, a análise compreendeu o estudo de cenários heterogêneos a fim de comparar os diferentes mecanismos de segurança~\cite{verstichel}. Os resultados são sintetizados e apresentados na figura~\ref{fig:comparativoSOAP_REST}.
+Dessa forma, foram executados diversos testes de desempenho que compararam  serviços, com mecanismos de segurança, baseados na arquitetura REST e nos  Web services SOAP que utilizam o padrão WS-Security para prover segurança. Os experimentos foram realizados em um ambiente com a mesma configuração. Na análise de desempenho abordada no trabalho~\cite{verstichel}, são definidos e implementados três cenários. No primeiro cenário é realizado um consulta simples (GET) tanto para Web services RESTFul quanto Web services SOAP. No segundo cenário  segue-se a mesma abordagem, só que neste caso é realizado uma requisição (POST) de uma mensagem e por fim, o terceiro cenário (LARGE), aborda o envio de uma grande quantidade de dados entre o cliente e o servidor. Para realizar a medição do experimento foram verificados os seguintes aspectos: não uso de mecanismos de segurança(Plain), uso da criptografia (Enc), uso da assinatura (Sign) e uso da criptografia e assinatura(Sign\&Enc). Logo, a análise compreendeu o estudo de cenários heterogêneos a fim de comparar os diferentes mecanismos de segurança~\cite{verstichel}. Os resultados são sintetizados e apresentados na Figura~\ref{fig:comparativoSOAP_REST}.
 
 \begin{figure}[!htb]
     \centering
@@ -317,4 +317,4 @@ Ao analisar os resultados dos estudos relatados nesta seção e compará-los aos
 
 \subsection{S\'{i}ntese da An\'{a}lise de Desempenho}
 
-Neste cap\'{i}tulo foi realizada uma análise de desempenho, onde ficou evidente que o impacto no desempenho é significativo quando comparado com a não utilização da proposta. Porém os tempos médios obtidos estão dentro de um tempo médio esperado, que é abaixo de 5 segundos. Observou-se ainda, que em um cenário extremo de utilização, onde a PCDF tenha que atender a uma média de 2 duas requisições por segundo, e um período de 1 uma hora, ou seja 1200 requisições, a arquitetura proposta atende perfeitamente, pois consegue atender a 8,62 requisições por segundo em um cenário extremo onde foram realizados 5000 requisições.
+Nesta seção foi apresentada uma análise de desempenho, onde ficou evidente que o impacto no desempenho é significativo quando comparado com a não utilização do Protocolo de Autenticação e Autorização proposto. Porém, os tempos médios obtidos estão dentro de um tempo médio esperado, que é abaixo de 5 segundos, para 50 usuários simultâneos. Observou-se ainda, que em um cenário extremo de utilização, onde a PCDF tenha que atender em média duas requisições por segundo em um período de uma hora, ou seja, 1200 requisições por hora, a arquitetura proposta se mostra perfeitamente eficaz tendo em vista que consegue realizar o atendimento de 8,62 requisições por segundo em um cenário extremo de teste onde foram coletadas amostras de 5000 requisições.

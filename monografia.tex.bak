@@ -53,6 +53,8 @@
 \usepackage{tabularx}
 \usepackage{amssymb,proof}
 \usepackage{setspace}                % controla o espaçamento entre linhas
+
+
 %  \onehalfspace                      % espaçamento 1.5 linha no texto \begin{spacing}{1.0}
 %\usepackage[num,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite} %configuracao correta das referencias bibliograficas.
 
@@ -86,12 +88,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Informações sobre a monografia
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Protocolo de Autenticação e Autorização Seguro para Arquiteturas Orientadas a Serviços}%
+\title{Um Protocolo de Autenticação e Autorização Seguro para Arquiteturas Orientadas a Serviços}%
 
 \orientador{\prof \dr Rodrigo Bonifácio de Almeida}{CIC/UnB}
 \coorientador[a]{\prof[a] \dr[a] Edna Dias Canedo}{CIC/UnB}
 \coordenador{\prof \dr Marcelo Ladeira}{CIC/UnB}
-\diamesano{30}{junho}{2014}%
+\diamesano{14}{julho}{2014}%
 
 \membrobanca{\prof \dr  Laerte Peotta de Melo}{Banco do Brasil}
 \membrobanca{\prof \dr  Rafael Timóteo de Sousa Júnior}{FT/UnB}
@@ -99,9 +101,10 @@
 \autor{Rogério Alves da}{Conceição}
 \CDU{004.4}
 
-\palavraschave{Interoperabilidade, Segurança em Arquiteturas Orientadas a Serviço, Web Services, Arquitetura de Referência em SOA} % palavras-chave do trabalho
-\keywords{Interoperability, Security in service-oriented architectures, Web Services, SOA Reference Architecture} % palavras-chave do trabalho em ingles
-
+\palavraschave{Segurança da Informação, Protocolos de Autenticação e Autorização, Lógica BAN, Interoperabilidade, Arquitetura Orientada a Serviços, Web Services, REST.}
+%\palavraschave{Interoperabilidade, Segurança em Arquiteturas Orientadas a Serviço, Web Services, REST, Protocolos de Autenticação e Autorização, Segurança, Lógica BAN} % palavras-chave do trabalho
+%\keywords{Interoperability, Security in service-oriented architectures, Web Services, REST, Protocols for Authentication and Authorization, Security, BAN Logic} % palavras-chave do trabalho em ingles
+\keywords{Information Security, Protocols Authentication and Authorization, BAN Logic, Interoperability, Service Oriented Architecture, Web Services, REST.}
 
 
 \graphicspath{{.}{img/}}%
@@ -113,37 +116,47 @@
 
 \begin{document}
   \maketitle
-
+   \includepdf[pages={1}]{tex/RogerioConceicao_1017247.pdf}
+  \includepdf[pages={1}]{tex/folhaAprovacao.pdf}
   \begin{dedicatoria}
-  Dedico este trabalho à minha família, pelo apoio, incentivo e compreensão. Sem eles não teria conseguido conluir essa jornada.
-     
+  Dedico este trabalho à minha amada esposa Michelle e aos meus maravilhosos filhos Líris e Rafael, pelo apoio, incentivo e compreensão. Sem eles não teria conseguido concluir essa jornada.
+
   \end{dedicatoria}
 
   \begin{agradecimentos}
    Agradeço primeiramente a Deus que iluminou e guiou meus passos durante essa tragetória, me dando saúde e forças necessárias para superar as dificuldades ao longo do caminho.
-   
+
    Aos meus orientadores, Prof. Dr. Rodrigo Bonifacio de Almeida e Profª. Drª. Edna Dias Canedo, pela orientação, apoio e confiança nesse período de amadurecimento e enriquencimento pessoal e intelectual. Serei eternamente grato por suas valiosas contribuições para a elaboração desta dissertação.
-   
+
    Ao aluno Alexandre Lucchesi, do curso de Engenharia da Computação da UNB, pela contribuição valiosa dada a esta dissertação.
-   
+
    Aos demais professores do Mestrado Profissional em Computação Aplicada, da Universidade de Brasília, pela competência com que transmitiram os conteúdos e ensinamentos.
-   
+
    Aos companheiros de trabalho da Divisão de Tecnologia da Polícia Civil do Distrito Federal, que mesmo diante das correrias e obstáculos encontrados, sempre se dispuseram a me prestar o auxílio necessário.
-   
-  
+
+
   \end{agradecimentos}
 
 \hyphenation{au-xi-li-ar}
 
 \begin{resumo}
-  A DITEC, Divisão de Tecnologia da Polícia Civil do Distrito Federal, tem como responsabilidade estratégica o desenvolvimento dos softwares da instituição, muitas vezes apresentando necessidades de integração e compartilhamento de informações sensíveis com órgãos conveniados. Dada a criticidade desses sistemas e informações compartilhadas, preocupações relacionadas a segurança devem ser tratadas sob uma perspectiva arquitetural dentro da instituição, que atualmente adota diferentes alternativas de integração, desde \emph{Web Services} até a replicação das bases de dados para instituições parceiras. O objetivo desse trabalho é propor uma arquitetura orientada a serviços para ser adotada como alternativa única de integração, balanceando os requisitos de segurança com outros atributos de qualidade; em particular o tempo de processamento das requisições.
+ A DITEC, Divisão de Tecnologia da Polícia Civil do Distrito Federal - (PCDF), tem como responsabilidade estratégica o desenvolvimento dos softwares da instituição, muitas vezes apresentando necessidades de integração e compartilhamento de informações sensíveis com órgãos conveniados. Dada a criticidade desses sistemas e informações compartilhadas, preocupações relacionadas a segurança devem ser tratadas sob uma perspectiva arquitetural dentro da instituição, que atualmente adota diferentes alternativas de integração, desde \emph{Web Services} até a replicação das bases de dados para instituições parceiras. Essa dissertação descreve  um protocolo de autenticação e autorização seguro, aderente a arquitetura \emph{Representational State Transfer} (REST), que tem como finalidade possibilitar que uma arquitetura orientada a serviços possa ser adotada como alternativa única de integração, balanceando os requisitos de segurança com outros atributos de qualidade,  em particular o tempo de processamento das requisições.
+
+ O protocolo proposto foi especificado e analisado formalmente utilizando-se a lógica BAN. O protocolo é voltado para ambientes fechados, onde os potenciais clientes do serviço são conhecidos de forma antecipada e com isso torna-se viável o estabelecimento prévio de contratos para a utilização dos serviços ofertados pela Polícia Civil do Distrito Federal. Isso traz forte influência sob os mecanismos que podem ser usados no processo de autenticação e autorização.
+
+ Com a realização deste trabalho foi possível realizar um mapeamento sistemático da literatura com a identificação e classificação dos trabalhos primários que discutem aspectos de segurança relacionados à computação orientada a serviços. Também foi definida uma arquitetura de referência que pode ser usada na integração de processos de negócio que podem envolver diferentes instituições utilizando computação orientada a serviços. Além disto, foram realizados testes automatizados em um protótipo funcional que permitiu investigar o impacto da adoção do protocolo em termos do custo adicional no tempo de resposta às requisições e \emph{throughput}.
+
 \end{resumo}
 
 \selectlanguage{american}
 \begin{abstract}
- DITEC, Technology Division Civil Police of the Federal District, is responsible for the software's institution strategic development, often presenting needs of integration and sharing of sensitive information with government insured. Given the criticality of these systems and shared information, security concerns should be treated under an architectural perspective within the institution, which currently adopts different integration alternatives, from \ emph {Web Services} to the replication of databases for partner institutions. The aim of this paper is to propose a service-oriented architecture to be adopted as an alternative single integration, balancing security requirements with other quality attributes, in particular the processing time of the requests.
+ DITEC, Technology Division Civil Police of the Federal District, is responsible for the software's institution strategic development, often presenting needs of integration and sharing of sensitive information with government insured. Given the criticality of these systems and shared information, security concerns should be treated under an architectural perspective within the institution, which currently adopts different integration alternatives, from \emph{Web Services} to the replication of databases for partner institutions. This dissertation describes a secure protocol for authentication and authorization, adherent architecture Representational State Transfer(REST), which aims to enable a service-oriented architecture can be adopted as the sole alternative integration, balancing security requirements with other quality attributes, particularly time processing of requests.
 
-\end{abstract}
+ The proposed protocol is specified, and formally assessed using the BAN logic. The protocol is designed for closed environments, where potential customers of the service are known in advance and it becomes feasible the prior establishment of contracts for the use of services offered by Civil Police of the Federal District. This has a strong influence on the mechanisms that can be used in the authentication and authorization process.
+
+ With this work it was possible to conduct a systematic mapping of literature with the identification and classification of primary studies that discuss security issues related to service-oriented computing. Was also defined a reference architecture that can be used in the integration of business processes that may involve different institutions using service-oriented computing. Besides this, automated tests were performed in a functional prototype which allowed to investigate the impact of the adoption of the protocol in terms the additional cost in response time to requests and throughput.
+
+ \end{abstract}
 \selectlanguage{brazil}
 \hyphenation{a-tri-bu-tos}
   \tableofcontents
@@ -159,9 +172,9 @@
   \textual
 
   \input{tex/Capitulo1}
-  \input{tex/Capitulo2}
   \input{tex/Capitulo3}
-  %\input{tex/Capitulo4}
+  \input{tex/Capitulo2}
+    %\input{tex/Capitulo4}
   \input{tex/Capitulo04_rev_Rogerio}
   \input{tex/Capitulo5}
   %\input{tex/cap5}

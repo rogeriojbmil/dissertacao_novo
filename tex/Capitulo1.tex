@@ -40,12 +40,16 @@ As respostas a essas questões de pesquisa possibilitaram a proposição de um p
 Essas perguntas são respondidas no capítulo 5, com a realização de uma análise de desempenho do Protocolo de Autenticação e Autorização proposto.
 
 
-\section{Justificativa}
+\section{Motivação e Justificativa}
 
 Uma vez que a Polícia Civil do Distrito Federal desenvolva produtos de software mais seguros, que auxiliem no trabalho investigativo, ela realizará seu trabalho de uma forma mais efetiva, influenciando diretamente no combate da criminalidade e beneficiando a comunidade em geral e todos os órgãos distritais e federais tais como: Secretaria de Segurança Pública do Distrito Federal, Tribunal de Justiça do Distrito Federal, Ministério da Justiça, Secretarias de Governo Distritais, dentre outros órgãos, que necessitem das informações da instituição para realizar qualquer tipo de integração de software.
 
+Nesse sentido, por exemplo, existe a necessidade de integrar os processos envolvendo \'{o}rg\~{a}o parceiros com a PCDF. Atualmente não há um padrão seguro para integração dos sistemas na Instituição. A integração é realizada por meio de acesso direto a base de dados, replicação da base de dados ou ainda, ela é realizada de forma manual e dispendiosa. Falhas de seguran\c ca nesse contexto podem inviabilizar investiga\c c\~{o}es e levar a execu\c c\~{a}o de a\c c\~{o}es com forte prejuízo a sociedade (como as que podem ser iniciadas a partir da adultera\c c\~{a}o de um mandado pris\~{a}o).
+
+
 \section{Objetivos}\label{sec:Obj}
-O objetivo geral dessa dissertação é avaliar e aplicar o uso de técnicas, ferramentas  e procedimentos que garantam os requisitos de segurança em uma arquitetura orientada a serviços a ser usada para integrar os sistemas e automatizar os processos entre órgão parceiros (TJDFT, MPU, DETRAN, SSP). Mais especificamente, os seguintes objetivos foram delineados:
+
+O objetivo geral dessa dissertação é estabelecer uma arquitetura de referência na construção de software seguro em SOA, por meio de um protocolo de autenticação e autorização, aderente a arquitetura \emph{Representational State Transfer} (REST), que possa ser empregado pela Divisão de Tecnologia da Polícia Civil do Distrito Federal para realizar efetivamente a integração de seus sistemas com os sistemas dos órgãos parceiros. Mais especificamente, os seguintes objetivos foram delineados:
 
 \begin{enumerate}[a )]
 	\item Realizar um mapeamento sistemático da literatura para compreender o estado da arte e da prática de segurança em SOA;
@@ -54,10 +58,14 @@ O objetivo geral dessa dissertação é avaliar e aplicar o uso de técnicas, fe
 
 	\item Estudar as especificações de serviços Web relacionados a segurança e selecionar padrões e ferramentas para garantir confidencialidade, autenticidade e integridade nas integrações da arquitetura orientada a serviços. Essa seleção deve considerar o impacto na disponibilidade e no tempo de resposta dos serviços;
 
-    \item Estabelecer uma arquitetura de referência na construção de software seguro em SOA, por meio de um protocolo de autenticação e autorização, aderente a arquitetura \emph{Representational State Transfer} (REST), que possa ser empregado pela Divisão de Tecnologia da Polícia Civil do Distrito Federal para realizar efetivamente a integração de seus sistemas com os sistemas dos órgãos parceiros.
+    \item Avaliar e aplicar o uso de técnicas, ferramentas  e procedimentos que garantam os requisitos de segurança em uma arquitetura orientada a serviços a ser usada para integrar os sistemas e automatizar os processos entre órgão parceiros (TJDFT, MPU, DETRAN, SSP).
+        
+   % \item Realizar a especifica\c c\~{a}o e formaliza\c c\~{a}o do protocolo de autentica\c c\~{a}o e autoriza\c c\~{a}o proposto  voltado para ambientes SOC.
+
+  \item Realizar a especifica\c c\~{a}o e formaliza\c c\~{a}o de um protocolo de autentica\c c\~{a}o e autoriza\c c\~{a}o  voltado para ambientes SOC, em particular os que seguem o estilo arquitetural REST.
 
 \end{enumerate}
 
 \section{Organização do Trabalho}
 
-Este trabalho está organizado em seis capítulos. No capítulo 2 é apresentado um mapeamento sistemático e os resultados obtidos com a sua realização. No capítulo 3 é realizada uma revisão da literatura onde são abordados os conceitos gerais sobre Arquitetura Orientada a Serviços (SOA), Web Services, REST, segurança e vulnerabilidades em SOA. Além disso, também são apresentados alguns protocolos de autenticação e autorização. No capítulo 4 é apresentado o protocolo de autenticação e autorização proposto e objeto deste trabalho. Neste capítulo são descritos os requisitos e a arquitetura do protocolo e realizada uma análise formal do protocolo utilizando-se a lógica BAN. Neste capítulo também é descrita à implementação de um protótipo do protocolo proposto. No capítulo 5 é realizada uma análise de segurança e desempenho, sendo apresentados os resultados dos experimentos realizados. No capítulo 6 são apresentadas as conclusões do trabalho, bem como trabalhos futuros. 
+Este trabalho está organizado em seis capítulos.  No capítulo 2 é realizada uma revisão da literatura onde são abordados os conceitos gerais sobre Arquitetura Orientada a Serviços (SOA), Web Services, REST, segurança e vulnerabilidades em SOA. Além disso, também são apresentados alguns protocolos de autenticação e autorização. No capítulo 3 é  apresentado  um  mapeamento sistemático e os resultados obtidos com a sua realização. No capítulo 4 é apresentado o protocolo de autenticação e autorização proposto e objeto deste trabalho. Neste capítulo são descritos os requisitos e a arquitetura do protocolo e realizada uma análise formal do protocolo utilizando-se a lógica BAN. Neste capítulo também é descrita à implementação de um protótipo do protocolo proposto. No capítulo 5 é realizada uma análise de segurança e desempenho, sendo apresentados os resultados dos experimentos realizados. No capítulo 6 são apresentadas as conclusões do trabalho, bem como trabalhos futuros. 

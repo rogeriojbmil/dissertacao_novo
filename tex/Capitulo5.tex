@@ -47,15 +47,15 @@ Em um caso mais extremo, outras credenciais podem ser geradas e redistribuídas 
 \subsection{Ponto único de ataque}
 
 Uma das possibilidades verificadas é que, ocorrendo um ataque, o alvo possa não ser Protocolo de Autenticação e Autorização proposto e sim o próprio \servidorAA.
-Neste caso, se o atacante for bem sucedido o servidor pode ficar vulnerável. Esse servidor é responsável pela geração dos desafios de autenticação e pela geração das credenciais de autenticação e autorização. Porém, apesar de realizar estas atividades, ele armazena e consulta os dados gerados no processo de autenticação e autorização em outra máquina, que é um servidor de banco de dados. Em outras palavras, o \servidorAA está em uma máquina diferente do servidor de banco de dados, o que minimiza os problemas relacionados a esse tipo de ataque, pois o servidor pode ser replicado para outra máquina e o que estiver com problemas pode ser facilmente substituído.
+Neste caso, se o atacante for bem sucedido o servidor pode ficar vulnerável. Esse servidor é responsável pela geração dos desafios de autenticação e pela geração das credenciais de autenticação e autorização. Porém, apesar de realizar estas atividades, ele armazena e consulta os dados gerados no processo de autenticação e autorização em outra máquina, que é um servidor de banco de dados. Em outras palavras, o \servidorAA{} está em uma máquina diferente do servidor de banco de dados, o que minimiza os problemas relacionados a esse tipo de ataque, pois o servidor pode ser replicado para outra máquina e o que estiver com problemas pode ser facilmente substituído.
 
 \subsection{S\'{i}ntese da An\'{a}lise de Seguran\c ca}
 
 O Protocolo de Autenticação e Autorização proposto busca atender os atributos básicos de segurança, tais como: confidencialidade, integridade e autenticidade. O Protocolo incorpora mecanismos de segurança tais como: criptografia, assinatura digital e uso de certificados digitais, além da utilização do SSL/ TLS para prover segurança na camada de transporte. Ele se mostra eficiente contra vários tipos de ataques, como por exemplo: \emph{man-in-the-middle} e ataques de repetição. Contudo, alguns pontos requerem mais atenção, como por exemplo: preocupações com ataques do lado do cliente, uma vez que esses ataques são cada vez mais comuns.
 
-\section{Testes de desempenho}
+\section{Análise de Desempenho}
 
-Testes de desempenho são definidos como investiga\c c\~{o}es técnicas realizadas para determinar a capacidade de resposta, a confiabilidade ou escalabilidade de um sistema, sob uma determinada carga de trabalho~\cite{Meier2007}.
+Análises de desempenho são definidas como investiga\c c\~{o}es técnicas realizadas para determinar a capacidade de resposta, a confiabilidade ou escalabilidade de um sistema, sob uma determinada carga de trabalho~\cite{Meier2007}.
 A análise de desempenho possibilita identificar problemas que geralmente são encontrados em sistemas computacionais.
 Esses problemas podem ser agrupados em termos de comparação e configuração de sistemas, identificação de gargalos, caracterização de cargas de trabalho e a previsão de desempenho~\cite{jain1991art}. Dessa forma, foram conduzidos experimentos com o objetivo de analisar o desempenho do Protocolo de Autenticação e Autorização proposto. O restante dessa se\c c\~{a}o descreve os procedimentos e os resultados obtidos com a an\'{a}lise de desempenho.
 
@@ -109,7 +109,7 @@ como as vari\'{a}veis de resposta serão mensuradas e quais procedimentos ser\~{
 Logo, o primeiro passo foi a criação de um serviço REST, que retorna informações sobre ocorrências policiais, tais como:
 quais tipos de ocorrências criminais estão registradas, dados gerais da vítima, autor, dentre outras informações.
 Esse serviço é consumido  no momento da execução dos testes de desempenho da solução proposta.
-Foram realizados 10 cen\'{a}rios de testes, conforme representado na Tabela~\ref{tb:tb_testes}.
+Foram realizados 10 testes, conforme cenários apresentados na Tabela~\ref{tb:tb_testes}.
 
 \begin{table}[h]
 \begin{center}

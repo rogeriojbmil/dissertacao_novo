@@ -2,99 +2,111 @@
 
 \bibitem{gqm}
 Victor~R. Basili, Gianluigi Caldiera, and H.~Dieter Rombach.
-\newblock The goal question metric approach.
+\newblock {The Goal Question Metric Approach}.
 \newblock In {\em Encyclopedia of Software Engineering}. Wiley, 1994.
 
 \bibitem{bernerslee2005uri}
 T.~Berners-Lee, R.~Fielding, and L.~Masinter.
-\newblock Rfc 3986, uniform resource identifier (uri): Generic syntax, 2005.
+\newblock {RFC 3986 Uniform Resource Identifier (URI): Generic Syntax}, 2005.
 
 \bibitem{Bertino2010}
 Elisa Bertino, Lorenzo Martino, Federica Paci, and Anna Squicciarini.
-\newblock {\em Security for Web Services and Service-Oriented Architectures}.
+\newblock {\em {Security for Web Services and Service-Oriented Architectures}}.
 \newblock Springer Publishing Company, Incorporated, 2009.
 
 \bibitem{Booth2004}
 David Booth, Hugo Haas, Francis McCabe, Eric Newcomer, Mike Champion,
   Christopher Ferris, and David Orchard.
-\newblock Web services architecture.
+\newblock {Web Services Architecture}.
 \newblock World Wide Web Consortium, Note NOTE-ws-arch-20040211, February 2004.
 
 \bibitem{Burrows1990}
 Michael Burrows, Martin Abadi, and Roger Needham.
-\newblock A logic of authentication.
+\newblock {A Logic of Authentication}.
 \newblock {\em ACM Trans. Comput. Syst.}, 8(1):18--36, February 1990.
 
 \bibitem{Cerami2002}
 Ethan Cerami.
-\newblock {\em Web Services Essentials}.
+\newblock {\em {Web Services Essentials}}.
 \newblock O'Reilly \& Associates, Inc., Sebastopol, CA, USA, 1st edition, 2002.
 
 \bibitem{Clements2010}
 Paul Clements, David Garlan, Felix Bachmann, James Ivers, Judith Stafford, Len
   Bass, and Paulo Merson.
-\newblock {\em Documenting Software Architectures: Views and Beyond}.
+\newblock {\em {Documenting Software Architectures: Views and Beyond}}.
 \newblock Addison-Wesley Professional, 2nd edition, 2010.
 
 \bibitem{Coetzee2012}
 Marijke Coetzee.
-\newblock Towards a holistic information security governance framework for soa.
+\newblock {Towards a Holistic Information Security Governance Framework for
+  SOA}.
 \newblock {\em 2012 Seventh International Conference on Availability,
   Reliability and Security}, 0:155--160, 2012.
 
+\bibitem{coulouris2013}
+G.~Coulouris, J.~Dollimore, T.~Kindberg, and G.~Blair.
+\newblock {\em {Sistemas Distribu{\'\i}dos - 5ed: Conceitos e Projeto}}.
+\newblock 2013.
+
 \bibitem{COYLE}
 F.~P Coyle.
-\newblock {\em XML, Web Services, and the Data Revolution}.
+\newblock {\em {XML, Web Services, and the Data Revolution}}.
 \newblock Boston: Addison-Wesley, 2002.
 
 \bibitem{Ontology2012}
 Stefania D'Agostini, Valentina~Di Giacomo, Claudia Pandolfo, and Domenico
   Presenza.
-\newblock An ontology for run-time verification of security certificates for
-  soa.
+\newblock {An Ontology for Run-Time Verification of Security Certificates for
+  SOA}.
 \newblock {\em 2012 Seventh International Conference on Availability,
   Reliability and Security}, 0:525--533, 2012.
 
+\bibitem{resolucao41icpbrasil1}
+Infraestrutura de~Chaves Públicas Brasileira (ICP~Brasil).
+\newblock Resolução 41 de 18 de abril de 2006.
+\newblock Technical report, Instituto Nacional de Tecnologia da Informação,
+  Abril 2006.
+
 \bibitem{pattern-driven2008}
 Nelly~A. Delessy and Eduardo.B Fernandez.
-\newblock {\em A pattern-driven process for secure service-oriented
-  applications}.
+\newblock {\em {A pattern-driven process for secure service-oriented
+  applications}}.
 \newblock PhD thesis, Boca Raton, FL, USA, 2008.
 
 \bibitem{ERL09}
 T.~Erl.
-\newblock {\em Soa Principios De Design De Servi{\c{c}}os}.
+\newblock {\em {SOA Principios De Design De Servi{\c{c}}os}}.
 \newblock Prentice Hall Brasil, 2009.
 
 \bibitem{erl2012soa}
 T.~Erl, B.~Carlyle, C.~Pautasso, R.~Balasubramanian, H.~Wilhelmsen, and
   D.~Booth.
-\newblock {\em SOA with REST: Principles, Patterns \& Constraints for Building
-  Enterprise Solutions with REST}.
+\newblock {\em {SOA with REST: Principles, Patterns \& Constraints for Building
+  Enterprise Solutions with REST}}.
 \newblock The Prentice Hall Service Technology Series from Thomas Erl. Pearson
   Education, 2012.
 
 \bibitem{pedromiguel2012}
 Pedro Miguel~Gonçalves Ferreira.
-\newblock Dados abertos ua.
+\newblock {DADOS ABERTOS UA}.
 \newblock Master's thesis, Universidade de Aveiro - Departamento de
   Electrónica, Telecomunicações e Informática, 2012.
 
 \bibitem{Fielding2000}
 Roy~Thomas Fielding.
-\newblock {\em Architectural Styles and the Design of Network-based Software
-  Architectures}.
+\newblock {\em {Architectural Styles and the Design of Network-based Software
+  Architectures}}.
 \newblock PhD thesis, 2000.
 \newblock AAI9980887.
 
 \bibitem{forouzan2013redes}
 B.A. Forouzan and F.~Mosharraf.
-\newblock {\em Redes de Computadores: Uma Abordagem Top-Down}.
+\newblock {\em {Redes de Computadores: Uma Abordagem Top-Down}}.
 \newblock 2013.
 
 \bibitem{goodrich2013}
 M.T. Goodrich and R.~Tamassia.
-\newblock {\em Introdução à Segurança de Computadores}.
+\newblock {\em {Introdução à Segurança de Computadores}}.
 \newblock Bookman, 2013.
 
 \bibitem{oauth210}
@@ -109,19 +121,21 @@ Dick Hardt.
 
 \bibitem{harwood2010security}
 M.~Harwood.
-\newblock {\em Security Strategies in Web Applications and Social Networking}.
+\newblock {\em {Security Strategies in Web Applications and Social
+  Networking}}.
 \newblock Information Systems Security \& Assurance. Jones \& Bartlett
   Learning, 2010.
 
 \bibitem{jain1991art}
 R.~Jain.
-\newblock {\em The Art of Computer Systems Performance Analysis: Techniques for
-  Experimental Design, Measurement, Simulation, and Modeling}.
+\newblock {\em {The Art of Computer Systems Performance Analysis: Techniques
+  for Experimental Design, Measurement, Simulation, and Modeling}}.
 \newblock Wiley Professional Computing. Wiley, 1991.
 
 \bibitem{JensenGHL2007}
 Meiko Jensen, Nils Gruschka, Ralph Herkenhöner, and Norbert Luttenberger.
-\newblock Soa and web services: New technologies, new standards - new attacks.
+\newblock {SOA and Web Services: New Technologies, New Standards - New
+  Attacks}.
 \newblock In {\em ECOWS}, pages 35--44. IEEE Computer Society, 2007.
 
 \bibitem{jwt2014}
@@ -141,7 +155,7 @@ M.~Jones, J.~Bradley, and N.~Sakimura.
 
 \bibitem{Josuttis07}
 Nicolai~M. Josuttis.
-\newblock {\em SOA in Practice: The Art of Distributed System Design}.
+\newblock {\em {SOA in Practice: The Art of Distributed System Design}}.
 \newblock O'Reilly Media, Inc., Beijing, 2007.
 
 \bibitem{SOASecurity2008}
@@ -151,7 +165,7 @@ Ramarao Kanneganti and Prasad Chodavarapu.
 
 \bibitem{kim2010fundamentals}
 David Kim and Michael~G. Solomon.
-\newblock {\em Fundamentals of Information Systems Security}.
+\newblock {\em {Fundamentals of Information Systems Security}}.
 \newblock Jones \& Bartlett Learning, 2010.
 
 \bibitem{guidelines-2007}
@@ -163,34 +177,34 @@ Barbara Kitchenham and Stuart Charters.
 
 \bibitem{lakshmiraghavan2013pro}
 Badrinarayanan Lakshmiraghavan.
-\newblock {\em Pro ASP.NET Web API Security: Securing ASP.NET Web API}.
+\newblock {\em {Pro ASP.NET Web API Security: Securing ASP.NET Web API}}.
 \newblock Apress, Berkely, CA, USA, 1st edition, 2013.
 
 \bibitem{traust08}
 Adam~J. Lee, Marianne Winslett, Jim Basney, and Von Welch.
-\newblock The traust authorization service.
+\newblock {The Traust Authorization Service}.
 \newblock {\em ACM Trans. Inf. Syst. Secur.}, 11(1), 2008.
 
 \bibitem{Vulnerability_Analysis2011}
 Lutz Lowis and Rafael Accorsi.
-\newblock Vulnerability analysis in soa-based business processes.
+\newblock {Vulnerability Analysis in SOA-Based Business Processes}.
 \newblock {\em IEEE Transactions on Services Computing}, 4(3):230--242, 2011.
 
 \bibitem{Madsen2005}
 Paul Madsen, Eve Maler, Thomas Wisniewski, Tony Nadalin, Scott Cantor, Jeff
   Hodges, and Prateek Mishra.
-\newblock Saml v2.0 executive overview.
+\newblock {SAML V2.0 Executive Overview}.
 \newblock Technical report, April 2005.
 
 \bibitem{marks2006}
 E.A. Marks and M.~Bell.
-\newblock {\em Service Oriented Architecture (SOA): A Planning and
-  Implementation Guide for Business and Technology}.
+\newblock {\em {Service Oriented Architecture (SOA): A Planning and
+  Implementation Guide for Business and Technology}}.
 \newblock Gu{\'\i}as de Espa{\~n}a. Wiley, 2006.
 
 \bibitem{Meadows95}
 Catherine~A. Meadows.
-\newblock Formal verification of cryptographic protocols: A survey.
+\newblock {Formal Verification of Cryptographic Protocols: A Survey}.
 \newblock pages 133--150. Springer-Verlag, 1995.
 
 \bibitem{Meier2007}
@@ -201,24 +215,35 @@ J.~Meier, Carlos Farre, Prashant Bansode, Scott Barber, and Dennis Rea.
 
 \bibitem{Menezes1996}
 Alfred~J. Menezes, Scott~A. Vanstone, and Paul C.~Van Oorschot.
-\newblock {\em Handbook of Applied Cryptography}.
+\newblock {\em {Handbook of Applied Cryptography}}.
 \newblock CRC Press, Inc., Boca Raton, FL, USA, 1st edition, 1996.
 
 \bibitem{Molyneaux2009}
 Ian Molyneaux.
-\newblock {\em The Art of Application Performance Testing: Help for Programmers
-  and Quality Assurance}.
+\newblock {\em {The Art of Application Performance Testing: Help for
+  Programmers and Quality Assurance}}.
 \newblock O'Reilly Media, Inc., 1st edition, 2009.
+
+\bibitem{Neuman1994}
+B.~C. Neuman and T.~Ts'o.
+\newblock {Kerberos: An Authentication Service for Computer Networks}.
+\newblock {\em Comm. Mag.}, 32(9):33--38, September 1994.
+
+\bibitem{rfc4120}
+C.~Neuman, T.~Yu, S.~Hartman, and K.~Raeburn.
+\newblock {The Kerberos Network Authentication Service (V5)}.
+\newblock RFC 4120 (Proposed Standard), July 2005.
+\newblock Updated by RFCs 4537, 5021.
 
 \bibitem{Nordbotten09}
 Nils~Agne Nordbotten.
-\newblock Xml and web services security standards.
+\newblock {XML and Web Services Security Standards}.
 \newblock {\em IEEE Communications Surveys and Tutorials}, 11(3):4--21, 2009.
 
 \bibitem{Pautasso2008}
 Cesare Pautasso, Olaf Zimmermann, and Frank Leymann.
-\newblock Restful web services vs. "big"' web services: Making the right
-  architectural decision.
+\newblock {Restful Web Services vs. "Big"' Web Services: Making the Right
+  Architectural Decision}.
 \newblock In {\em Proceedings of the 17th International Conference on World
   Wide Web}, WWW '08, pages 805--814, New York, NY, USA, 2008. ACM.
 
@@ -231,44 +256,44 @@ Kai Petersen, Robert Feldt, Shahid Mujtaba, and Michael Mattsson.
 
 \bibitem{Pulier2005}
 E.~Pulier and H.~Taylor.
-\newblock {\em Understanding enterprise SOA}.
+\newblock {\em {Understanding enterprise SOA}}.
 \newblock Manning Pubs Co Series. Manning, 2005.
 
 \bibitem{Recordon2006}
 David Recordon and Drummond Reed.
-\newblock Openid 2.0: A platform for user-centric identity management.
+\newblock {OpenID 2.0: A Platform for User-centric Identity Management}.
 \newblock In {\em Proceedings of the Second ACM Workshop on Digital Identity
   Management}, DIM '06, pages 11--16, New York, NY, USA, 2006. ACM.
 
 \bibitem{Richardson2007}
 Leonard Richardson and Sam Ruby.
-\newblock {\em Restful Web Services}.
+\newblock {\em {Restful Web Services}}.
 \newblock O'Reilly, first edition, 2007.
 
 \bibitem{rodrigues2011analysis}
 Douglas Rodrigues, Julio~C Estrella, and Kalinka~RLJC Branco.
-\newblock Analysis of security and performance aspects in service-oriented
-  architectures.
+\newblock {Analysis of security and performance aspects in service-oriented
+  architectures}.
 \newblock {\em International Journal of Security and Its Applications}, 2011.
 
 \bibitem{Altair2004}
 Altair~Olivo Santin.
-\newblock {\em Teias de Federa{\c{c}}{\~o}es: Uma abordagem Baseada em Cadeias
+\newblock {\em {Teias de Federa{\c{c}}{\~o}es: Uma abordagem Baseada em Cadeias
   de Confian{\c{c}}a para Autentica{\c{c}}{\~a}o, Autoriza{\c{c}}{\~a}o e
-  Navega{\c{c}}{\~a}o em Sistemas de Larga Escala}.
+  Navega{\c{c}}{\~a}o em Sistemas de Larga Escala}}.
 \newblock PhD thesis, Universidade Federal de Santa Catarina, Centro de
   Tecnol{\'o}gico. Programa de P{\'o}s-Gradua{\c{c}}{\~a}o em Engenharia
   El{\'e}trica., 2004.
 
 \bibitem{Schneier1995}
 Bruce Schneier.
-\newblock {\em Applied Cryptography (2Nd Ed.): Protocols, Algorithms, and
-  Source Code in C}.
+\newblock {\em {Applied Cryptography (2Nd Ed.): Protocols, Algorithms, and
+  Source Code in C}}.
 \newblock John Wiley \& Sons, Inc., New York, NY, USA, 1995.
 
 \bibitem{verstichel}
 Gabriel Serme, Anderson~Santana de~Oliveira, Julien Massiera, and Yves Roudier.
-\newblock Enabling message security for restful services.
+\newblock {Enabling Message Security for RESTful Services}.
 \newblock In {\em Web Services (ICWS), 2012 IEEE 19th International Conference
   on}, pages 114--121. IEEE, June 2012.
 
@@ -279,7 +304,7 @@ W.~Stallings.
 
 \bibitem{TANENBAUM2007}
 Andrew~S. Tanenbaum and Maarten Van~Steen.
-\newblock {\em Sistemas Distribídos Principios e Paradigmas 2ª Edição}.
+\newblock {\em {Sistemas Distribídos Princípios e Paradigmas 2ª Edição}}.
 \newblock São Paulo, 2007.
 
 \bibitem{XACML}
@@ -288,29 +313,30 @@ Andrew~S. Tanenbaum and Maarten Van~Steen.
 
 \bibitem{Verissimo2001}
 Paulo Verissimo and Luis Rodrigues.
-\newblock {\em Distributed Systems for System Architects}.
+\newblock {\em {Distributed Systems for System Architects}}.
 \newblock Kluwer Academic Publishers, Norwell, MA, USA, 2001.
 
 \bibitem{Webber10}
 J~Webber, I~Robinson, and S~Parastatidis.
-\newblock {\em REST in Practice: Hypermedia and Systems Architecture}.
+\newblock {\em {REST in Practice: Hypermedia and Systems Architecture}}.
 \newblock O'Reilly, 2010.
 
 \bibitem{WeberAM07}
 Sam Weber, Paula Austel, and Michael McIntosh.
-\newblock A framework for multi-platform soa security analyses.
+\newblock {A Framework for Multi-Platform SOA Security Analyses}.
 \newblock In {\em 2007 IEEE International Conference on Web Services (ICWS
   2007), July 9-13, 2007, Salt Lake City, Utah, USA}, pages 102--109. IEEE
   Computer Society, 2007.
 
 \bibitem{CrossRealmSOA2012}
 Jie Xu, Dacheng Zhang, Lu~Liu, and Xianxian Li.
-\newblock Dynamic authentication for cross-realm soa-based business processes.
+\newblock {Dynamic Authentication for Cross-Realm SOA-Based Business
+  Processes}.
 \newblock {\em IEEE Transactions on Services Computing}, 5(1):20--32, 2012.
 
 \bibitem{Delegation_Solution2011}
 Yang Zhang and Jun-Liang Chen.
-\newblock A delegation solution for universal identity management in soa.
+\newblock {A Delegation Solution for Universal Identity Management in SOA}.
 \newblock {\em IEEE Transactions on Services Computing}, 4(1):70--81, 2011.
 
 \end{thebibliography}

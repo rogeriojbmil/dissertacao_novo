@@ -39,7 +39,7 @@
 %%         : 0.93 [09/06/2008] - Correção na contagem de páginas, valores
 %%                               load e config para opção hyperref, comandos
 %%                               \ifhyperref e \SetTableFigures, melhor
-%%                               formatação do quadrado CIP.
+%%                               formatação do quadrado CIP. 
 %%         : 0.94 [17/04/2014] - Inclusão da opção mpca.
 %%
 %% Definição de classe para dissertações do departamento de
@@ -100,7 +100,7 @@
 %%                  modo draft).
 %% doublespacing  - Define espaçamento duplo entre linhas.
 %% baselineskip   - Utiliza o comando \baselineskip para definir o espaçamento
-%%                  de linhas. Se não for infomada, o espaçamento é definido
+%%                  de linhas. Se não for infomada, o espaçamento é definido 
 %%                  pelo pacote "setspace" (recomendável, ou seja, só use esta
 %%                  opção se tiver algum motivo para não usar o setspace).
 %%                  Pode ser usada em conjunto com uma das três opções acima.
@@ -125,7 +125,7 @@
 %%
 %% Os comandos \textlinf (lining figures) e \texttabf (tabular figures)
 %% permitem selecionar, respectivamente, números "maiúsculos" (sim, isso
-%% existe!) e números monoespaçados - o que só faz sentido para fontes
+%% existe!) e números monoespaçados - o que só faz sentido para fontes 
 %% que conhenham números maiúsculos x minúsculos e monoespaçados x
 %% proporcionais (Minion Pro, Myriad Pro, Didot, Apple Chancery...).
 %% Essas opção foi implementada apenas para a fonte Adobe Minion Pro no LaTeX,
@@ -137,19 +137,19 @@
 %% aos comandos, pode-se usar os ambientes {linfig} e {tabfig}.
 %% O comando \SetTableFigures pode ser usado para redefinir um ambiente de
 %% modo que os números contidos nele sejam automaticamente formatados
-%% maiúsculos e monoespaçados, por exemplo:
+%% maiúsculos e monoespaçados, por exemplo: 
 %%
 %%   \SetTableFigures{tabular}
 %%   \SetTableFigures{tabularx}
 %%   \SetTableFigures{longtable}
 %%
 %% A capa, quando presente, não é contada na numeração das páginas.
-%% As páginas iniciais, a partir da folha de rosto, são consideradas na
+%% As páginas iniciais, a partir da folha de rosto, são consideradas na 
 %% contagem de páginas, mas não são numeradas.
 %% As páginas seguintes (lista de figuras, etc.) por padrão são numeradas com
 %% algarismos romanos e aparecem no sumário. Entretanto, se prestyle=empty,
-%% não recebem numeração nem aparecem no sumário.
-%% As páginas do conteúdo (da introdução em diante) são numeradas com
+%% não recebem numeração nem aparecem no sumário. 
+%% As páginas do conteúdo (da introdução em diante) são numeradas com 
 %% algarismos arábicos (13, 14, 15...) e começam a partir de 1.
 %%
 %% O sumário, por razões óbvias, deve colocado antes de todas as páginas
@@ -273,11 +273,11 @@
 %%   hyperref apenas quando estiver sendo gerada uma versão para leitura em
 %%   tela, como no seguinte exemplo:
 %%
-%%     %%% não carrega nameref com opção [impressao]
+%%     %%% não carrega nameref com opção [impressao] 
 %%     \ifhyperref{\usepackage{nameref}}{}
 %%     %%% varioref só funciona se carregado entre nameref e hyperref
 %%     \usepackage{varioref}
-%%     %%% não carrega hyperref com opção [impressao]
+%%     %%% não carrega hyperref com opção [impressao] 
 %%     \ifhyperref{\usepackage{hyperref}}{}
 %%
 %% * Recomenda-se o uso do XeTeX ou pdfTeX, já que o dvips (+ps2pdf)
@@ -300,14 +300,14 @@
 %%        del-Rei--MG).
 %%      - O travessão (---) é usado em diálogos, quando o interlocutor muda,
 %%        e pode substituir dois pontos, parênteses ou vírgulas em apostos.
-%%   Antes e depois de travessão emprega-se espaço, nos demais casos não há
+%%   Antes e depois de travessão emprega-se espaço, nos demais casos não há 
 %%   espaço.
 %% * O ponto final marca o fim de uma sentença. Se o ponto for usado com outra
-%%   finalidade, como numa abreviatura, usar \ (ou ~ se não quiser permitir
+%%   finalidade, como numa abreviatura, usar \ (ou ~ se não quiser permitir 
 %%   quebra de linha) para indicar ao TeX que não se trata de fim de sentença
 %%   (ex.: Dr.\ Spock).
 %% * Embora o padrão das normas ABNT (que, com suas "receitinhas de bolo", são
-%%   bastante rudimentares quanto à tipografia) seja espaçamento duplo entre
+%%   bastante rudimentares quanto à tipografia) seja espaçamento duplo entre 
 %%   linhas, o espaçamento deve ser escolhido de acordo com o tipo e tamanho
 %%   das letras.
 %%   A regra a ser seguida é: quanto maiores as linhas (quanto mais palavras
@@ -461,7 +461,7 @@
 
 \newcommand{\ifhyperref}[2]{\if@ForScreenView #1\else #2\fi}
 
-%define macro apenas se estiver indefinida
+%define macro apenas se estiver indefinida 
 \def\@defifundef#1#2{\begingroup\expandafter\ifx\csname #1\endcsname\relax%
 \expandafter\gdef\csname #1\endcsname{#2}
 \fi\endgroup}
@@ -634,8 +634,7 @@
 %maketitle para gerar as páginas iniciais
 \def\maketitle{%
 	\if@ForScreenView\relax\else\capa\fi
-    \pretextual\folharosto
-	%\pretextual\folharosto\cip\folhaaprovacao
+	\pretextual\folharosto\cip\folhaaprovacao
 }
 
 %comandos em português e simplificados
@@ -730,7 +729,7 @@
 	\renewcommand\thesubsection{\thesection.\protect\textlinf{\arabic{subsection}}}
 	\renewcommand\thesubsubsection{\thesubsection.\protect\textlinf{\arabic{subsubsection}}}
 	
-	%evita problema com bookmarksnumbered=true
+	%evita problema com bookmarksnumbered=true 
 	\pdfstringdefDisableCommands{\renewcommand*{\textlinf}[1]{##1}}
 }
 
@@ -875,7 +874,7 @@
 	\pdfbookmark{Abstract}{abstract}%
 		\chapter*{Abstract}}%
 		{\vskip 15pt\noindent\textbf{Keywords:}\ \@@keywords%
-	\end{otherlanguage*}
+	\end{otherlanguage*} 
 	\end{paginatitulo}}
 
 \newenvironment{resumo}

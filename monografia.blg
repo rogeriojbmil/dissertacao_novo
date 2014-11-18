@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: monografia.aux
 The style file: plain.bst
 Database file #1: BibliografiaMPCA.bib
 Warning--can't use both author and editor fields in Cerami2002
+Warning--empty publisher in coulouris2013
 Warning--empty school in pattern-driven2008
 Warning--empty school in Fielding2000
 Warning--can't use both author and editor fields in forouzan2013redes
@@ -9,4 +10,4 @@ Warning--empty publisher in forouzan2013redes
 Warning--empty institution in Madsen2005
 Warning--empty booktitle in Meadows95
 Warning--can't use both author and editor fields in TANENBAUM2007
-(There were 8 warnings)
+(There were 9 warnings)
